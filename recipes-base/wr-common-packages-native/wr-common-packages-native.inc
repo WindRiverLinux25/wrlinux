@@ -12,7 +12,6 @@ DEPENDS = "\
     binutils-native \
     bison-native \
     bmap-tools-native \
-    boost-build-native \
     btrfs-tools-native \
     bzip2-native \
     ca-certificates-native \
@@ -175,8 +174,6 @@ DEPENDS = "\
     postfix-native \
     pseudo-native \
     python3-build-native \
-    python3-cffi-native \
-    python3-cryptography-native \
     python3-docutils-native \
     python3-flit-core-native \
     python3-iniparse-native \
@@ -186,20 +183,10 @@ DEPENDS = "\
     python3-markupsafe-native \
     python3-native \
     python3-packaging-native \
-    python3-pip-native \
-    python3-pycparser-native \
-    python3-pyelftools-native \
     python3-pygments-native \
-    python3-pyparsing-native \
     python3-pyproject-hooks-native \
-    python3-semantic-version-native \
     python3-setuptools-native \
-    python3-setuptools-rust-native \
-    python3-setuptools-scm-native \
     python3-six-native \
-    python3-toml-native \
-    python3-tomli-native \
-    python3-typing-extensions-native \
     python3-wheel-native \
     qemu-helper-native \
     qemu-native \
@@ -233,7 +220,6 @@ DEPENDS = "\
     util-linux-native \
     util-macros-native \
     vala-native \
-    vim-native \
     virglrenderer-native \
     wayland-native \
     wayland-protocols-native \
