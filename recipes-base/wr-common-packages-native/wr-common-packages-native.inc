@@ -9,7 +9,6 @@ DEPENDS = "\
     autoconf-native \
     automake-native \
     bc-native \
-    binutils-native \
     bison-native \
     bmap-tools-native \
     btrfs-tools-native \
@@ -19,7 +18,6 @@ DEPENDS = "\
     cargo-native \
     cdrtools-native \
     chrpath-native \
-    clang-native \
     cmake-native \
     coreutils-native \
     cpio-native \
@@ -111,6 +109,7 @@ DEPENDS = "\
     libsm-native \
     libsolv-native \
     libssh2-native \
+    libtasn1-native \
     libtirpc-native \
     libtool-native \
     libunistring-native \
@@ -138,6 +137,7 @@ DEPENDS = "\
     libxtst-native \
     libxxf86vm-native \
     libyaml-native \
+    llvm-native \
     lua-native \
     lz4-native \
     lzip-native \
