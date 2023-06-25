@@ -6,7 +6,7 @@ Subject: [PATCH] nfs-utils: support mountprog and nfsprog options
 Add back the support for mountprog and nfsprog options since they
 are supported by our kernel NFS client.
 
-Upstream-status: Inappropriate
+Upstream-Status: Inappropriate [WRLinux Specific]
 
 Signed-off-by: Jackie Huang <jackie.huang@windriver.com>
 ---
