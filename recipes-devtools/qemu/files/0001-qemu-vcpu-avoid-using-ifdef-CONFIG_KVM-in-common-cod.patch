@@ -16,6 +16,8 @@ Since there already is a kvm-stub for when CONFIG_KVM is not enabled,
 we can make use of that and make the common code less "ifdeffy" at
 the same time.
 
+Upstream-Status: Inappropriate [WRLinux Specific]
+
 Signed-off-by: Paul Gortmaker <paul.gortmaker@windriver.com>
 
 Rebase to v7.2.0

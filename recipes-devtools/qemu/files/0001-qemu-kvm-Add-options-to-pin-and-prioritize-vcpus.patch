@@ -3,6 +3,8 @@ From: Thomas Gleixner <tglx@linutronix.de>
 Date: Fri, 21 May 2021 17:33:41 +0800
 Subject: [PATCH] qemu-kvm: Add options to pin and prioritize vcpus
 
+Upstream-Status: Inappropriate [WRLinux Specific]
+
 Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 Signed-off-by: Yang Shi <yang.shi@windriver.com>
 Signed-off-by: Paul Barrette <paul.barrette@windriver.com>
