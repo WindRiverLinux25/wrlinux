@@ -83,6 +83,7 @@ preempt_dis/enable() above to ensure non-conflicting resets or similar.
 Hence we can "downgrade" them to migrate_dis/enable() so the reset
 functions can run as-is, without any raw lock conversions or similar.
 
+Upstream-Status: Submitted [https://lore.kernel.org/linux-rt-users/ZJTuDi1HNp9L2zxY@windriver.com/T/#u]
 Signed-off-by: Paul Gortmaker <paul.gortmaker@windriver.com>
 
 diff --git a/drivers/gpu/drm/i915/gt/intel_reset.c b/drivers/gpu/drm/i915/gt/intel_reset.c
