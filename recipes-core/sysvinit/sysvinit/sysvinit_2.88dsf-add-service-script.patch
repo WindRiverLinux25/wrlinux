@@ -6,6 +6,8 @@ Subject: [PATCH] sysvinit_2.88dsf-add-service-script
 This patch is part of the sysvinit_2.88dsf-13.10ubuntu11.diff
 which is the patch for ubuntu12.04
 
+Upstream-Status: Inappropriate [WR Linux specific]
+
 ---
  debian/service/service   |  140 ++++++++++++++++++++++++++++++++++++++++++++++
  debian/service/service.8 |   96 +++++++++++++++++++++++++++++++
