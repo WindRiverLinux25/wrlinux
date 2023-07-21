@@ -70,6 +70,7 @@ SRC_URI = "\
            file://0001-bid_functions.h-decrease-the-alignment-to-8-bytes.patch \
            file://0001-libsanitizer-Remove-cyclades-from-libsanitizer.patch \
            file://0001-Add-initial-octeontx2-support.patch \
+           file://0001-adapt-to-remove_cv-changes-in-gcc13.patch \
 "
 S = "${TMPDIR}/work-shared/gcc-${PV}-${PR}/gcc-${PV}"
 SRC_URI[sha256sum] = "71e197867611f6054aa1119b13a0c0abac12834765fe2d81f35ac57f84f742d1"

@@ -78,6 +78,7 @@ SRC_URI = "\
            file://0001-libsanitizer-Remove-cyclades-from-libsanitizer.patch \
            file://0001-backport-re-PR-sanitizer-92154-new-glibc-breaks-arm-.patch \
            file://0002-backport-re-PR-sanitizer-92154-new-glibc-breaks-arm-.patch \
+           file://0001-adapt-to-remove_cv-changes-in-gcc13.patch \
 "
 SRC_URI[md5sum] = "65b210b4bfe7e060051f799e0f994896"
 SRC_URI[sha256sum] = "64baadfe6cc0f4947a84cb12d7f0dfaf45bb58b7e92461639596c21e02d97d2c"

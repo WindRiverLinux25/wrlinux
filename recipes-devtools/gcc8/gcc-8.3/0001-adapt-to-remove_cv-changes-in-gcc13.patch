@@ -1,0 +1,35 @@
+From d35c9566b445c7167708374702c2ef1952978afd Mon Sep 17 00:00:00 2001
+From: Chen Qi <Qi.Chen@windriver.com>
+Date: Fri, 21 Jul 2023 12:04:49 +0800
+Subject: [PATCH] adapt to remove_cv changes in gcc13
+
+Upstream-Status: Inappropriate [WRLinux Specific]
+
+Signed-off-by: Chen Qi <Qi.Chen@windriver.com>
+---
+ libstdc++-v3/include/bits/unique_ptr.h | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+diff --git a/libstdc++-v3/include/bits/unique_ptr.h b/libstdc++-v3/include/bits/unique_ptr.h
+index c934873a722..b5a4f65c703 100644
+--- a/libstdc++-v3/include/bits/unique_ptr.h
++++ b/libstdc++-v3/include/bits/unique_ptr.h
+@@ -428,14 +428,11 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
+ 
+       __uniq_ptr_impl<_Tp, _Dp> _M_t;
+ 
+-      template<typename _Up>
+-	using __remove_cv = typename remove_cv<_Up>::type;
+-
+       // like is_base_of<_Tp, _Up> but false if unqualified types are the same
+       template<typename _Up>
+ 	using __is_derived_Tp
+ 	  = __and_< is_base_of<_Tp, _Up>,
+-		    __not_<is_same<__remove_cv<_Tp>, __remove_cv<_Up>>> >;
++		    __not_<is_same<remove_cv<_Tp>, remove_cv<_Up>>> >;
+ 
+     public:
+       using pointer	  = typename __uniq_ptr_impl<_Tp, _Dp>::pointer;
+-- 
+2.34.1
+
