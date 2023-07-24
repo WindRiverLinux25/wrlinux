@@ -157,7 +157,6 @@ DEPENDS = "\
     nettle-native \
     ninja-native \
     openssl-native \
-    opkg-native \
     opkg-utils-native \
     orc-native \
     ovmf-native \
