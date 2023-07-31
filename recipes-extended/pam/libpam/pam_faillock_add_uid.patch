@@ -1,43 +1,38 @@
-From 44b82b07b700add833ffc91ff1814027b44fa7a7 Mon Sep 17 00:00:00 2001
+From 30c276e1e89e365ad6f9ef53be6174176a1ec1c7 Mon Sep 17 00:00:00 2001
 From: Changqing Li <changqing.li@windriver.com>
 Date: Mon, 11 Jan 2021 15:40:21 +0800
-Subject: [PATCH] Support accept uid as argument
-
-Upstream-Status: Pending
+Subject: [PATCH] pam_faillock: add option to accept uid as argument
 
 Add options '--uid' for command pam_faillock to accept uid as argument.
 
+Upstream-Status: Submitted [https://github.com/linux-pam/linux-pam/pull/595]
+
 Signed-off-by: Changqing Li <changqing.li@windriver.com>
 ---
- modules/pam_faillock/main.c | 35 ++++++++++++++++++++++++++++++++---
- 1 file changed, 32 insertions(+), 3 deletions(-)
+ modules/pam_faillock/main.c | 35 +++++++++++++++++++++++++++++++----
+ 1 file changed, 31 insertions(+), 4 deletions(-)
 
 diff --git a/modules/pam_faillock/main.c b/modules/pam_faillock/main.c
-index f62e1bb..cc100a2 100644
+index 136be83..1ad6fbb 100644
 --- a/modules/pam_faillock/main.c
 +++ b/modules/pam_faillock/main.c
-@@ -57,6 +57,7 @@ struct options {
- 	unsigned int reset;
- 	const char *dir;
- 	const char *user;
-+	int  uid;
- 	const char *progname;
- };
- 
-@@ -64,10 +65,12 @@ static int
+@@ -59,6 +59,7 @@ static int
  args_parse(int argc, char **argv, struct options *opts)
  {
  	int i;
 +	int cline_user = 0;
+ 	int rv;
+ 	const char *dir = NULL;
+ 	const char *conf = NULL;
+@@ -66,6 +67,7 @@ args_parse(int argc, char **argv, struct options *opts)
  	memset(opts, 0, sizeof(*opts));
  
- 	opts->dir = FAILLOCK_DEFAULT_TALLYDIR;
  	opts->progname = argv[0];
-+	opts->uid = -1;
++	opts->uid = (uid_t)-1;
  
  	for (i = 1; i < argc; ++i) {
- 		if (strcmp(argv[i], "--dir") == 0) {
-@@ -85,6 +88,21 @@ args_parse(int argc, char **argv, struct options *opts)
+ 		if (strcmp(argv[i], "--conf") == 0) {
+@@ -93,6 +95,21 @@ args_parse(int argc, char **argv, struct options *opts)
  				return -1;
  			}
  			opts->user = argv[i];
@@ -59,33 +54,34 @@ index f62e1bb..cc100a2 100644
  		}
  		else if (strcmp(argv[i], "--reset") == 0) {
  			opts->reset = 1;
-@@ -94,14 +112,19 @@ args_parse(int argc, char **argv, struct options *opts)
- 			return -1;
+@@ -120,6 +137,10 @@ args_parse(int argc, char **argv, struct options *opts)
  		}
  	}
-+	if (cline_user > 1) {
-+		fprintf(stderr, "Error, both user and userid options specified!\n");
-+		return -1;
-+	}
+ 
++       if (cline_user > 1) {
++               fprintf(stderr, "Error, both user and userid options specified!\n");
++               return -1;
++       }
  	return 0;
  }
  
- static void
- usage(const char *progname)
+@@ -128,8 +149,8 @@ usage(const char *progname)
  {
--	fprintf(stderr, _("Usage: %s [--dir /path/to/tally-directory] [--user username] [--reset]\n"),
-+	fprintf(stderr, _("Usage: %s [--dir /path/to/tally-directory] [--user username] [--uid userid] [--reset]\n"),
- 		progname);
+ 	fprintf(stderr,
+ 		_("Usage: %s [--dir /path/to/tally-directory]"
+-		  " [--user username] [--reset] [--legacy-output]\n"), progname);
+-
++		  " [--user username] [--uid userid] [--reset] [--legacy-output]\n"), progname);
 +	fprintf(stderr, "\tIf specifying a user, only specify username or uid, not both\n");
  }
  
  static int
-@@ -223,9 +246,15 @@ main (int argc, char *argv[])
+@@ -321,9 +342,15 @@ main (int argc, char *argv[])
  		return 1;
  	}
  
 -	if (opts.user == NULL) {
-+	if (opts.user == NULL && opts.uid == -1) {
++	if (opts.user == NULL && opts.uid == (uid_t)-1) {
  		return do_allusers(&opts);
  	}
  
@@ -99,5 +95,5 @@ index f62e1bb..cc100a2 100644
 +	}
  }
 -- 
-2.17.1
+2.35.5
 
