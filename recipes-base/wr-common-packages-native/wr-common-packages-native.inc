@@ -182,6 +182,7 @@ DEPENDS = "\
     python3-markupsafe-native \
     python3-native \
     python3-packaging-native \
+    python3-pyelftools-native \
     python3-pygments-native \
     python3-pyproject-hooks-native \
     python3-setuptools-native \
