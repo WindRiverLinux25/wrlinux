@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 Wind River Systems, Inc.
+# Copyright (C) 2012-2023 Wind River Systems, Inc.
 #
 
 inherit core-image
@@ -19,7 +19,6 @@ FEATURE_PACKAGES_wr-core-perl = "packagegroup-wr-core-perl"
 FEATURE_PACKAGES_wr-core-python = "packagegroup-wr-core-python"
 FEATURE_PACKAGES_wr-core-mail = "packagegroup-wr-core-mail"
 FEATURE_PACKAGES_ssh-sftp-servers ??= ""
-FEATURE_PACKAGES_wr-core-cut = "packagegroup-wr-core-cut"
 FEATURE_PACKAGES_wr-bsps = "packagegroup-wr-bsps"
 
 # ensure we have password and group files before we do_rootfs
