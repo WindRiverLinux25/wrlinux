@@ -20,7 +20,6 @@ IMAGE_INSTALL += "\
     qtopcua-examples \
     qtpositioning-examples \
     qtquick3d-examples \
-    qtquick3dphysics-examples \
     qtremoteobjects-examples \
     qtscxml-examples \
     qtserialbus-examples \
@@ -32,3 +31,10 @@ IMAGE_INSTALL += "\
     qtwebchannel-examples \
     qtwebsockets-examples \
 "
+
+# from .../layers/meta-qt6/recipes-qt/qt6/qtquick3dphysics_git.bb
+# qtquick3dphysics is compatible only with x86[-64] and arm[-64] architectures
+IMAGE_INSTALL:append:aarch64 = " qtquick3dphysics-examples"
+IMAGE_INSTALL:append:arm = " qtquick3dphysics-examples"
+IMAGE_INSTALL:append:x86 = " qtquick3dphysics-examples"
+IMAGE_INSTALL:append:x86-64 = " qtquick3dphysics-examples"
