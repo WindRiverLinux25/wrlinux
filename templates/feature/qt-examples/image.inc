@@ -25,7 +25,6 @@ IMAGE_INSTALL += "\
     qtserialbus-examples \
     qtserialport-examples \
     qtspeech-examples \
-    qtsvg-examples \
     qtvirtualkeyboard-examples \
     qtwayland-examples \
     qtwebchannel-examples \
