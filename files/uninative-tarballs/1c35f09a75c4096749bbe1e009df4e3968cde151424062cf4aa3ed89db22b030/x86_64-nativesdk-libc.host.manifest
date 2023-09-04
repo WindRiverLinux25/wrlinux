@@ -253,9 +253,9 @@ nativesdk-glibc-gconv-utf-32 x86_64_nativesdk 2.38
 nativesdk-glibc-gconv-utf-7 x86_64_nativesdk 2.38
 nativesdk-glibc-gconv-viscii x86_64_nativesdk 2.38
 nativesdk-glibc-gconvs x86_64_nativesdk 2.38
-nativesdk-ldconfig x86_64_nativesdk 2.38
-nativesdk-libc6 x86_64_nativesdk 2.38
-nativesdk-libc6-dbg x86_64_nativesdk 2.38
+nativesdk-ldconfig x86_64_nativesdk 2.38+git0+1aed90c9c8
+nativesdk-libc6 x86_64_nativesdk 2.38+git0+1aed90c9c8
+nativesdk-libc6-dbg x86_64_nativesdk 2.38+git0+1aed90c9c8
 nativesdk-libcrypt2 x86_64_nativesdk 4.4.36
 nativesdk-libgcc1 x86_64_nativesdk 13.2.0
 nativesdk-libnsl3 x86_64_nativesdk 2.0.0
