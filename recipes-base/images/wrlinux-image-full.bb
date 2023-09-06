@@ -22,7 +22,7 @@ CONTAINER_IMAGE_REMOVE ?= "\
     ostree ostree-upgrade-mgr \
     docker \
     virtual-containerd \
-    python3-docker-compose \
+    docker-compose \
     linux-firmware-bcm43455 \
     linux-firmware-bcm43430 \
     u-boot-uenv \
