@@ -603,7 +603,7 @@ class GenImage(object):
             prefix = '%s/%s-%s' % (self.deploy_dir_image, image, self.machine)
             if type:
                 deploy_files.append('%s.%s' % (prefix, type))
-            deploy_files.append('%s.manifest' % prefix)
+            deploy_files.append('%s.rootfs.manifest' % prefix)
         ovmf = os.path.join(self.deploy_dir_image, 'ovmf.qcow2')
         if os.path.exists(ovmf):
             deploy_files.append(ovmf)
@@ -794,7 +794,7 @@ class GenImage(object):
         for image in self.images:
             self.do_build(target='%s -r %s' % (image, self.container_conf))
 
-        deploy_files = self.get_deploy_files(type='tar.bz2', uboot=False)
+        deploy_files = self.get_deploy_files(type='rootfs.tar.bz2', uboot=False)
 
         deploy_files.append(os.path.join(self.doc_dir, 'container.README.md'))
         deploy_files.append(os.path.join(self.doc_dir, 'LICENSE.README.md'))
