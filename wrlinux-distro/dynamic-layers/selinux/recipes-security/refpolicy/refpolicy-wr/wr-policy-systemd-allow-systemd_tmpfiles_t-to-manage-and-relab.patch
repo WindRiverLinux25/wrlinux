@@ -1,0 +1,59 @@
+From d8653c57c335a4eb554028198972b9864064e6ca Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Tue, 3 Oct 2023 12:59:47 +0800
+Subject: [PATCH] systemd: allow systemd_tmpfiles_t to manage and relabel
+ symlinks
+
+Fixes:
+systemd-tmpfiles[358]: Failed to fstat(/var/lib/rpm): Permission denied
+systemd-tmpfiles[358]: Failed to fstat(/var/lib/dnf): Permission denied
+
+avc:  denied  { read } for  pid=358 comm="systemd-tmpfile" name="dnf"
+dev="sda4" ino=1679
+scontext=system_u:system_r:systemd_tmpfiles_t:s0-s15:c0.c1023
+tcontext=system_u:object_r:var_lib_t:s0 tclass=lnk_file permissive=0
+
+avc:  denied  { getattr } for  pid=358 comm="systemd-tmpfile"
+path="/var/lib/dnf" dev="sda4" ino=1679
+scontext=system_u:system_r:systemd_tmpfiles_t:s0-s15:c0.c1023
+tcontext=system_u:object_r:var_lib_t:s0 tclass=lnk_file permissive=0
+
+avc:  denied  { getattr } for  pid=358 comm="systemd-tmpfile"
+path="/var/lib/rpm" dev="sda4" ino=1678
+scontext=system_u:system_r:systemd_tmpfiles_t:s0-s15:c0.c1023
+tcontext=system_u:object_r:rpm_var_lib_t:s0 tclass=lnk_file permissive=0
+
+avc:  denied  { relabelfrom } for  pid=350 comm="systemd-tmpfile"
+name="rpm" dev="sda4" ino=1678
+scontext=system_u:system_r:systemd_tmpfiles_t:s0-s15:c0.c1023
+tcontext=system_u:object_r:rpm_var_lib_t:s0 tclass=lnk_file permissive=0
+
+avc:  denied  { relabelfrom } for  pid=350 comm="systemd-tmpfile"
+name="dnf" dev="sda4" ino=1679
+scontext=system_u:system_r:systemd_tmpfiles_t:s0-s15:c0.c1023
+tcontext=system_u:object_r:var_lib_t:s0 tclass=lnk_file permissive=0
+
+Upstream-Status: Inappropriate [ostree specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ policy/modules/system/systemd.te | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/policy/modules/system/systemd.te b/policy/modules/system/systemd.te
+index 6ae05c8e4..40723182b 100644
+--- a/policy/modules/system/systemd.te
++++ b/policy/modules/system/systemd.te
+@@ -1788,6 +1788,9 @@ files_setattr_lock_dirs(systemd_tmpfiles_t)
+ # for /etc/mtab
+ files_manage_etc_symlinks(systemd_tmpfiles_t)
+ 
++files_manage_non_auth_files(systemd_tmpfiles_t)
++files_relabel_non_auth_files(systemd_tmpfiles_t)
++
+ fs_list_tmpfs(systemd_tmpfiles_t)
+ fs_relabelfrom_tmpfs_dirs(systemd_tmpfiles_t)
+ fs_getattr_all_fs(systemd_tmpfiles_t)
+-- 
+2.25.1
+

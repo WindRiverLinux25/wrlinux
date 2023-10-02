@@ -1,4 +1,4 @@
-From f81f8ff30c6775180d2daf45b7a21aee4783bb07 Mon Sep 17 00:00:00 2001
+From dca47250e177a642284db83854ed9c9bd4718c46 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Tue, 4 Aug 2020 15:06:58 +0800
 Subject: [PATCH] policy/modules/system/systemd: allow systemd_tmpfiles_t to
@@ -20,10 +20,10 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  1 file changed, 2 insertions(+)
 
 diff --git a/policy/modules/system/systemd.te b/policy/modules/system/systemd.te
-index d5666b149..01c4f1bc9 100644
+index 20c56099c..7966afb3e 100644
 --- a/policy/modules/system/systemd.te
 +++ b/policy/modules/system/systemd.te
-@@ -1720,6 +1720,8 @@ mls_file_upgrade(systemd_tmpfiles_t)
+@@ -1839,6 +1839,8 @@ mls_file_upgrade(systemd_tmpfiles_t)
  userdom_manage_user_runtime_root_dirs(systemd_tmpfiles_t)
  userdom_relabel_user_runtime_root_dirs(systemd_tmpfiles_t)
  

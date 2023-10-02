@@ -1,4 +1,4 @@
-From aeec39dead7c221d639b1c568bd493f56cd956ad Mon Sep 17 00:00:00 2001
+From 975d4276adfa5d05a064766cc9185c600ee85c19 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Mon, 31 Oct 2022 16:08:35 +0800
 Subject: [PATCH] policy/modules/services/acpi: make acpid_t MLS trusted for

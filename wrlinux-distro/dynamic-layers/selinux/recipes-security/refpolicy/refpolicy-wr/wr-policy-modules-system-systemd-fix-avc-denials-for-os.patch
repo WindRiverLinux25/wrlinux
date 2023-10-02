@@ -1,4 +1,4 @@
-From e1ca99e883654084f8aa96a7a14f2ed18a049a28 Mon Sep 17 00:00:00 2001
+From c9fb2bcfef205467995b7413f84c49a3e87dad5f Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Tue, 1 Nov 2022 12:44:59 +0800
 Subject: [PATCH] policy/modules/system/systemd: fix avc denials for
@@ -30,10 +30,10 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  3 files changed, 41 insertions(+)
 
 diff --git a/policy/modules/kernel/files.if b/policy/modules/kernel/files.if
-index 66ddfeee2..46792d8d8 100644
+index 14b34a467..e47fb98d5 100644
 --- a/policy/modules/kernel/files.if
 +++ b/policy/modules/kernel/files.if
-@@ -6880,6 +6880,26 @@ interface(`files_rw_runtime_files',`
+@@ -6953,6 +6953,26 @@ interface(`files_rw_runtime_files',`
  	rw_files_pattern($1, var_run_t, var_run_t)
  ')
  
@@ -61,10 +61,10 @@ index 66ddfeee2..46792d8d8 100644
  ## <summary>
  ##	Delete generic runtime symlinks.
 diff --git a/policy/modules/kernel/kernel.if b/policy/modules/kernel/kernel.if
-index f35cccaff..7a216d776 100644
+index 022affde3..9e9e32530 100644
 --- a/policy/modules/kernel/kernel.if
 +++ b/policy/modules/kernel/kernel.if
-@@ -3000,6 +3000,24 @@ interface(`kernel_unlabeled_filetrans',`
+@@ -3045,6 +3045,24 @@ interface(`kernel_unlabeled_filetrans',`
  	filetrans_pattern($1, unlabeled_t, $2, $3, $4)
  ')
  
@@ -90,10 +90,10 @@ index f35cccaff..7a216d776 100644
  ## <summary>
  ##	Delete unlabeled symbolic links.
 diff --git a/policy/modules/system/systemd.te b/policy/modules/system/systemd.te
-index 4d3a7141f..a8fa6e17f 100644
+index 7966afb3e..6ae05c8e4 100644
 --- a/policy/modules/system/systemd.te
 +++ b/policy/modules/system/systemd.te
-@@ -496,8 +496,10 @@ dev_write_sysfs(systemd_generator_t)
+@@ -502,8 +502,10 @@ dev_write_sysfs(systemd_generator_t)
  files_read_etc_files(systemd_generator_t)
  files_read_etc_runtime_files(systemd_generator_t)
  files_search_runtime(systemd_generator_t)
@@ -104,7 +104,7 @@ index 4d3a7141f..a8fa6e17f 100644
  files_search_all_mountpoints(systemd_generator_t)
  files_list_usr(systemd_generator_t)
  files_dontaudit_getattr_all_dirs(systemd_generator_t)
-@@ -523,6 +525,7 @@ init_read_script_files(systemd_generator_t)
+@@ -529,6 +531,7 @@ init_read_script_files(systemd_generator_t)
  kernel_use_fds(systemd_generator_t)
  kernel_read_system_state(systemd_generator_t)
  kernel_read_kernel_sysctls(systemd_generator_t)

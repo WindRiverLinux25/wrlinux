@@ -1,4 +1,4 @@
-From a6a9002de9eb570b35b19c6bf06263de348ab21e Mon Sep 17 00:00:00 2001
+From c3419b5a5f300b960c19b2f9a1f4cc1c89ea2458 Mon Sep 17 00:00:00 2001
 From: Liwei Song <liwei.song@windriver.com>
 Date: Wed, 8 Jan 2020 05:48:58 +0000
 Subject: [PATCH] file_contexts.subs_dist: set aliases for ostree directories

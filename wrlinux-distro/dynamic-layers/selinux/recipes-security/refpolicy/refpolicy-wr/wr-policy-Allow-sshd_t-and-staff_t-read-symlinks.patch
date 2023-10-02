@@ -1,4 +1,4 @@
-From 2675823ee87ce12afb06b9abf800e5a5bcecd1b4 Mon Sep 17 00:00:00 2001
+From 44cef809febe1dfcf77a2984c8af9db1f27465b9 Mon Sep 17 00:00:00 2001
 From: Liwei Song <liwei.song@windriver.com>
 Date: Fri, 21 Feb 2020 11:23:19 +0800
 Subject: [PATCH] Allow sshd_t and staff_t read symlinks

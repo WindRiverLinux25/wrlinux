@@ -1,4 +1,4 @@
-From 272df1dff3049d298ee777c522d446affe49a658 Mon Sep 17 00:00:00 2001
+From 6d81fab346b51bbe1be6e29dbcee8f6ecb9173c4 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Wed, 8 Jul 2020 11:24:43 +0800
 Subject: [PATCH] policy/modules/system/init: set bin_t label for rc.local
@@ -17,7 +17,7 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  1 file changed, 2 insertions(+)
 
 diff --git a/policy/modules/system/init.fc b/policy/modules/system/init.fc
-index 7f0b7c699..6397bfeea 100644
+index e9e9eae85..c43541aaa 100644
 --- a/policy/modules/system/init.fc
 +++ b/policy/modules/system/init.fc
 @@ -7,6 +7,8 @@

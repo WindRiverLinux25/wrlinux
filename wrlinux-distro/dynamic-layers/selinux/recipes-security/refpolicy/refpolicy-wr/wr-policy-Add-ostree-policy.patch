@@ -1,4 +1,4 @@
-From de6a8b32d13cbb73e0c6116744817f93cf39d45b Mon Sep 17 00:00:00 2001
+From c30e996f6d4ec82e2f13c2067278fd3a71bfa236 Mon Sep 17 00:00:00 2001
 From: Liwei Song <liwei.song@windriver.com>
 Date: Thu, 9 Jan 2020 02:21:51 +0000
 Subject: [PATCH] Add ostree policy
@@ -201,10 +201,10 @@ index 000000000..9239e641b
 +libs_exec_lib_files(ostree_t)
 +libs_run_ldconfig(ostree_t, ostree_roles)
 diff --git a/policy/modules/roles/sysadm.te b/policy/modules/roles/sysadm.te
-index b9968e865..ffe89b11e 100644
+index 1f6db5432..4e8b46dfa 100644
 --- a/policy/modules/roles/sysadm.te
 +++ b/policy/modules/roles/sysadm.te
-@@ -1064,6 +1064,10 @@ optional_policy(`
+@@ -1072,6 +1072,10 @@ optional_policy(`
  	tboot_run_txtstat(sysadm_t, sysadm_r)
  ')
  
