@@ -6,6 +6,7 @@ DESCRIPTION = "A basic initramfs image that boots to a console."
 LICENSE = "MIT"
 
 IMAGE_FSTYPES = "${INITRAMFS_FSTYPES}"
+IMAGE_NAME_SUFFIX ?= ""
 
 inherit wrlinux-image
 
