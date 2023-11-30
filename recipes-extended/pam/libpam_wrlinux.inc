@@ -51,6 +51,7 @@ auth    sufficient       pam_faillock.so authsucc deny=5 even_deny_root unlock_t
     fi
 
     if ${@bb.utils.contains('DISTRO_FEATURES','sysvinit','false','true',d)}; then
+        install -d ${D}${sysconfdir}/tmpfiles.d
         echo "d /run/console 0755 root root - -" >>  ${D}${sysconfdir}/tmpfiles.d/pam.conf
     else
         echo "d root root 0755 /var/run/console none" >> ${D}${sysconfdir}/default/volatiles/99_pam
