@@ -77,6 +77,7 @@ DEPENDS = "\
     ldconfig-native \
     libarchive-native \
     libassuan-native \
+    libbsd-native \
     libcap-native \
     libcap-ng-native \
     libcheck-native \
@@ -90,9 +91,9 @@ DEPENDS = "\
     libgcrypt-native \
     libgpg-error-native \
     libical-native \
-    libice-native \
     libidn2-native \
     libjpeg-turbo-native \
+    libmd-native \
     libmicrohttpd-native \
     libmodulemd-native \
     libmpc-native \
@@ -106,7 +107,6 @@ DEPENDS = "\
     librsvg-native \
     libsdl2-native \
     libslirp-native \
-    libsm-native \
     libsolv-native \
     libssh2-native \
     libtasn1-native \
