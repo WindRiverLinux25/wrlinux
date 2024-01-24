@@ -618,11 +618,11 @@ fi
 
 echo "Env settings from: $ENVFILE"
 
-eval `grep ^FAKEROOTCMD $ENVFILE`
-eval `grep ^RECIPE_SYSROOT_NATIVE $ENVFILE`
-eval `grep ^IMAGE_BOOT_FILES $ENVFILE`
-eval `grep ^DEPLOY_DIR_IMAGE $ENVFILE`
-eval `grep ^IMAGE_BASENAME $ENVFILE`
+eval `grep ^FAKEROOTCMD= $ENVFILE`
+eval `grep ^RECIPE_SYSROOT_NATIVE= $ENVFILE`
+eval `grep ^IMAGE_BOOT_FILES= $ENVFILE`
+eval `grep ^DEPLOY_DIR_IMAGE= $ENVFILE`
+eval `grep ^IMAGE_BASENAME= $ENVFILE`
 eval `grep ^BOOT_ $ENVFILE`
 eval `grep ^STAGING_DIR= $ENVFILE`
 eval `grep ^OSTREE_ $ENVFILE | sed -e 's#\(^[^=]*\):#\1_#g' | perl -p -e '($a,$b) = split(/=/,$_,2); $a =~ s/-/_/g; $_ = "$a=$b"'`
