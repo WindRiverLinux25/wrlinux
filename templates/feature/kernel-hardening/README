@@ -147,6 +147,12 @@ fdt resize 1024
 fdt set /chosen kaslr-seed <0xfeedbeef 0xc0def00d>
 - Boot the target
 
+CONFIG_SECURITY_DMESG_RESTRICT restrict unprivileged access to the kernel syslog.
+Due to KASLR randomizes the location of the kernel machine code on boot, one way
+for an attacker to acquire the addresses they need is via dmesg. Where address
+disclosure could come from a printk in the kernel or out of tree module that has
+been loaded.
+
 6. Direct kernel overwrite
 --------------------------
 CONFIG_STRICT_KERNEL_RWX
@@ -159,6 +165,16 @@ CONFIG_STRICT_MODULE_RWX
 If this is set, module text and rodata memory will be made read-only,
 and non-text memory will be made non-executable. This provides
 protection against certain security exploits (e.g. writing to text)
+
+CONFIG_DEBUG_WX
+Generate a warning if any W+X mappings are found at boot. This is useful
+for discovering cases where the kernel is leaving W+X mappings after
+applying NX, as such mappings are a security risk.
+
+Looking for a message in dmesg output like this:
+<arch>/mm: Checked W+X mappings: passed, no W+X pages found.
+or like this, if the check failed:
+<arch>/mm: Checked W+X mappings: failed, <N> W+X pages found.
 
 7. Privileged access control
 ----------------------------------
@@ -230,6 +246,22 @@ This feature is disabled by default as there is performance impact.
 CONFIG_PAGE_TABLE_ISOLATION and CONFIG_RETPOLINE are enabled in kernel-hardening
 feature to mitigate Meltdown and Spectre. For more details, please refer to:
 https://www.windriver.com/security/announcements/meltdown-spectre/
+
+
+9. Device and driver
+--------------------
+CONFIG_HW_RANDOM_TPM provides kernel-side support for the Random Number Generator
+in the Trusted Platform Module.
+It exposes the TPM's Random Number Generator as a hwrng device. This allows the kernel
+to collect randomness from the TPM at boot, and provides the TPM randomines in /dev/hwrng.
+
+CONFIG_LDISC_AUTOLOAD Automatically load TTY Line Disciplines. Historically the kernel
+has always automatically loaded any line discipline that is in a kernel module when
+a user asks for it to be loaded with the TIOCSETD ioctl, or through other means.
+This is not always the best thing to do on systems where you know you will not be using
+some of the more "ancient" line disciplines, so prevent the kernel from doing this unless
+the request is coming from a process with the CAP_SYS_MODULE permissions.
+
 
 Reference
 ---------
