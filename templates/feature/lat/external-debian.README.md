@@ -12,7 +12,7 @@ Then http://<web-server-url>/debian is accessible
 ### 3.1 Setup project
 $ setup.sh --machines=intel-x86-64 --dl-layers \
     --distro=wrlinux-graphics \
-    --templates feature/ostree feature/lat feature/docker --layers meta-lat
+    --templates feature/ostree feature/lat feature/docker
 
 ### 3.2 Source a build
 $ . ./oe-init-build-env

@@ -26,10 +26,10 @@ The DPDK feature will make the following changes to the target:
  worth noting that the DPDK feature will always prepare the target for
  'linuxapp' support regardless if you plan on using it or not)
 
-In order to use the DPDK feature you must include the feature and meta-dpdk
-layer in your call to setup.sh
+In order to use the DPDK feature you must include the feature in your call to
+setup.sh
 
-   --templates=feature/dpdk --layers=meta-dpdk
+   --templates=feature/dpdk
 
 (for an existing build you can add the DPDK feature by adding the template and layer
  to the build's local.conf and bblayers.conf, respectively)

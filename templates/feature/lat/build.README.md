@@ -11,7 +11,7 @@ bcm-2xxx-rpi4
 ### Setup project
 $ setup.sh --machines=[intel-x86-64|bcm-2xxx-rpi4] --dl-layers \
     --distro=wrlinux-graphics \
-    --templates feature/ostree feature/lat --layers meta-lat
+    --templates feature/ostree feature/lat
 
 ### Source a build
 $ . ./oe-init-build-env
@@ -72,8 +72,7 @@ wget http://<web-server-url>/lat/sdk/wrlinux-graphics-10.2X.XX.X-glibc-x86_64-bc
 
 ## Method 2: Reuse binary distribution build
 ### Setup project
-$ setup.sh --dl-layers --templates feature/ostree feature/lat \
-    --layers meta-lat
+$ setup.sh --dl-layers --templates feature/ostree feature/lat
 
 ### Source a build
 $ . ./oe-init-build-env

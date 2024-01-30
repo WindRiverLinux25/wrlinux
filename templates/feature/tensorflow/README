@@ -4,12 +4,9 @@ This template adds tensorflow to the filesystem.
 1) Supported BSP: qemux86-64|qemuarm64|intel-x86-64
     --machines qemux86-64|qemuarm64|intel-x86-64
 
-2) To use this template, you should add layer meta-tensorflow:
-    --layers meta-tensorflow --templates feature/tensorflow
+2) Add download layers --dl-layers to include predownloaded items
 
-3) Add download layers --dl-layers to include predownloaded items
-
-4) Build image
+3) Build image
 $ bitbake wrlinux-image-std
 
 
