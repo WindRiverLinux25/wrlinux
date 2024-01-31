@@ -12,15 +12,19 @@ Signed-off-by: Michael Barabanov <michael.barabanov@windriver.com>
 Rebase to v7.2.0
 Signed-off-by: He Zhe <zhe.he@windriver.com>
 
+Rebased for qemu 8.2.0 on 20240131.
+
+Signed-off-by: Kai Kang <kai.kang@windriver.com>
+
 ---
- accel/kvm/kvm-accel-ops.c | 144 ++++++++++++++++++++++++++++++++++++++
+ accel/kvm/kvm-accel-ops.c | 144 ++++++++++++++++++++++++++++++++++++++++++++++
  include/sysemu/cpus.h     |   2 +
- qemu-options.hx           |   7 ++
- softmmu/vl.c              |   5 ++
+ qemu-options.hx           |   7 +++
+ system/vl.c               |   5 ++
  4 files changed, 158 insertions(+)
 
 diff --git a/accel/kvm/kvm-accel-ops.c b/accel/kvm/kvm-accel-ops.c
-index fbf4fe349..0b0d741f7 100644
+index 6195150a0..da800cef9 100644
 --- a/accel/kvm/kvm-accel-ops.c
 +++ b/accel/kvm/kvm-accel-ops.c
 @@ -25,6 +25,148 @@
@@ -182,23 +186,21 @@ index fbf4fe349..0b0d741f7 100644
      cpu_thread_signal_created(cpu);
      qemu_guest_random_seed_thread_part2(cpu->random_seed);
 diff --git a/include/sysemu/cpus.h b/include/sysemu/cpus.h
-index 1bace3379..65e2cbbe6 100644
+index b4a566cfe..c94c525fb 100644
 --- a/include/sysemu/cpus.h
 +++ b/include/sysemu/cpus.h
-@@ -51,6 +51,8 @@ void cpu_synchronize_all_post_reset(void);
+@@ -50,4 +50,6 @@ void cpu_synchronize_all_post_reset(void);
  void cpu_synchronize_all_post_init(void);
  void cpu_synchronize_all_pre_loadvm(void);
  
 +void vcpu_parse(const char *optarg);
 +
- #ifndef CONFIG_USER_ONLY
- /* vl.c */
- /* *-user doesn't have configurable SMP topology */
+ #endif
 diff --git a/qemu-options.hx b/qemu-options.hx
-index 7f99d15b2..dea93dad5 100644
+index 42fd09e4d..9df6e27f5 100644
 --- a/qemu-options.hx
 +++ b/qemu-options.hx
-@@ -1147,6 +1147,13 @@ backend describes how QEMU handles the data.
+@@ -1218,6 +1218,13 @@ legacy PC, they are not recommended for modern configurations.
  
  ERST
  
@@ -212,11 +214,11 @@ index 7f99d15b2..dea93dad5 100644
  DEF("fda", HAS_ARG, QEMU_OPTION_fda,
      "-fda/-fdb file  use 'file' as floppy disk 0/1 image\n", QEMU_ARCH_ALL)
  DEF("fdb", HAS_ARG, QEMU_OPTION_fdb, "", QEMU_ARCH_ALL)
-diff --git a/softmmu/vl.c b/softmmu/vl.c
-index 5115221ef..b112e9e39 100644
---- a/softmmu/vl.c
-+++ b/softmmu/vl.c
-@@ -3252,6 +3252,11 @@ void qemu_init(int argc, char **argv)
+diff --git a/system/vl.c b/system/vl.c
+index 2bcd9efb9..d989ee4c4 100644
+--- a/system/vl.c
++++ b/system/vl.c
+@@ -3357,6 +3357,11 @@ void qemu_init(int argc, char **argv)
                  machine_parse_property_opt(qemu_find_opts("smp-opts"),
                                             "smp", optarg);
                  break;
@@ -225,6 +227,6 @@ index 5115221ef..b112e9e39 100644
 +                vcpu_parse(optarg);
 +#endif
 +                break;
+ #ifdef CONFIG_VNC
              case QEMU_OPTION_vnc:
                  vnc_parse(optarg);
-                 break;

@@ -23,9 +23,12 @@ Signed-off-by: Paul Gortmaker <paul.gortmaker@windriver.com>
 Rebase to v7.2.0
 Signed-off-by: He Zhe <zhe.he@windriver.com>
 
+Rebased for qemu 8.2.0 on 20240131.
+
+Signed-off-by: Kai Kang <kai.kang@windriver.com>
 ---
  accel/stubs/kvm-stub.c | 5 +++++
- softmmu/vl.c           | 2 --
+ system/vl.c            | 2 --
  2 files changed, 5 insertions(+), 2 deletions(-)
 
 diff --git a/accel/stubs/kvm-stub.c b/accel/stubs/kvm-stub.c
@@ -40,7 +43,7 @@ index 5d2dd8f35..24ca15b5a 100644
  #include "hw/pci/msi.h"
  
  KVMState *kvm_state;
-@@ -132,3 +133,7 @@ uint32_t kvm_dirty_ring_size(void)
+@@ -124,3 +125,7 @@ uint32_t kvm_dirty_ring_size(void)
  {
      return 0;
  }
@@ -48,11 +51,11 @@ index 5d2dd8f35..24ca15b5a 100644
 +void vcpu_parse(const char *optarg)
 +{
 +}
-diff --git a/softmmu/vl.c b/softmmu/vl.c
+diff --git a/system/vl.c b/system/vl.c
 index b112e9e39..e8bd3268f 100644
---- a/softmmu/vl.c
-+++ b/softmmu/vl.c
-@@ -3253,9 +3253,7 @@ void qemu_init(int argc, char **argv)
+--- a/system/vl.c
++++ b/system/vl.c
+@@ -3358,9 +3358,7 @@ void qemu_init(int argc, char **argv)
                                             "smp", optarg);
                  break;
              case QEMU_OPTION_vcpu:
@@ -60,5 +63,5 @@ index b112e9e39..e8bd3268f 100644
                  vcpu_parse(optarg);
 -#endif
                  break;
+ #ifdef CONFIG_VNC
              case QEMU_OPTION_vnc:
-                 vnc_parse(optarg);
