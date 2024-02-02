@@ -241,7 +241,7 @@ running in kernel mode, by using the ARM Domain access control feature.
 This feature is disabled by default as there is performance impact.
 
 
-8. Meltdown and Spectre
+8. Meltdown and Spectre(x86/x86-64 only)
 -----------------------
 CONFIG_PAGE_TABLE_ISOLATION and CONFIG_RETPOLINE are enabled in kernel-hardening
 feature to mitigate Meltdown and Spectre. For more details, please refer to:
@@ -250,10 +250,10 @@ https://www.windriver.com/security/announcements/meltdown-spectre/
 
 9. Device and driver
 --------------------
-CONFIG_HW_RANDOM_TPM provides kernel-side support for the Random Number Generator
+CONFIG_HW_RANDOM_TPM(x86/x86-64 only) provides kernel-side support for the Random Number Generator
 in the Trusted Platform Module.
 It exposes the TPM's Random Number Generator as a hwrng device. This allows the kernel
-to collect randomness from the TPM at boot, and provides the TPM randomines in /dev/hwrng.
+to collect randomness from the TPM at boot, and provides the TPM randomness in /dev/hwrng.
 
 CONFIG_LDISC_AUTOLOAD Automatically load TTY Line Disciplines. Historically the kernel
 has always automatically loaded any line discipline that is in a kernel module when
