@@ -9,6 +9,7 @@ SRC_URI += "https://src.fedoraproject.org/repo/pkgs/pam/pam-redhat-1.1.4.tar.bz2
             file://pam-1.0.90-redhat-modules.patch \
             file://pam_console_deps.patch \
             file://0001-drop-yylex-to-static-force.patch \
+            ${@bb.utils.contains('PACKAGECONFIG', 'faillock', 'file://pam_faillock_add_uid.patch', '', d)} \
            "
 
 SRC_URI[redhat.md5sum] = "17bf8913b480e63d9464b5ba203a52a7"
