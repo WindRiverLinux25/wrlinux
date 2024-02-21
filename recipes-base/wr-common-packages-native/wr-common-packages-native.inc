@@ -141,6 +141,7 @@ DEPENDS = "\
     lua-native \
     lz4-native \
     lzip-native \
+    lzlib-native \
     lzo-native \
     m4-native \
     make-native \
