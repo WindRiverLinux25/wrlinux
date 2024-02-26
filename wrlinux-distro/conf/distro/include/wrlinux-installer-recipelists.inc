@@ -35,7 +35,6 @@ WRL_RECIPES:filesystems-layer += "\
 
 # Recipes allowed for meta-openembedded/meta-oe
 WRL_RECIPES:openembedded-layer += "\
-    libpwquality \
     libreport \
     libtar \
     fltk \
