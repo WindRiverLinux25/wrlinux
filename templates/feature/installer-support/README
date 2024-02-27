@@ -15,14 +15,12 @@ Limitation
 Building the target installer
 -----------------------------
 1. Summary
-   The target installer is enabled by passing "--layers=meta-anaconda"
-   to setup.sh. There are two images in target installer, one is target
-   image which to be installed to target, another is installer image
-   which to do the installation.
-
-   A target image requires specific components to be compatible with
-   the installer. To install these components set WRTEMPLATE +=
-   'feature/installer-support' in local.conf.
+   The target installer is enabled by passing "--templates
+   feature/installer-support" to setup.sh. Target image requires specific
+   components to be compatible with the installer. These components will
+   be installed with above setting. There are two images in target installer,
+   one is target image which to be installed to target,  the other one is
+   installer image which to do the installation.
 
    For installer image, you are not supposed to change the 'DISTRO'
    setting in target build directory. It may work, but it's not
