@@ -1,13 +1,15 @@
 #
-# Copyright (C) 2014-2023 Wind River Systems, Inc.
+# Copyright (C) 2014-2024 Wind River Systems, Inc.
 #
 # LOCAL REV: add WR specific scripts
 #
 
 DEPENDS += "systemd-systemctl-native"
 
+# conditionally suppress predicatable network interface names
+#
 pkg_postinst:udev:append() {
-        if ! ${@bb.utils.contains('DISTRO_FEATURES','wr-allow-netifnames','true','false',d)}; then
+        if ! ${@bb.utils.contains('DISTRO_FEATURES','pni-names','true','false',d)}; then
 		ln -sf /dev/null $D${sysconfdir}/udev/rules.d/80-net-setup-link.rules
 	fi
 }
