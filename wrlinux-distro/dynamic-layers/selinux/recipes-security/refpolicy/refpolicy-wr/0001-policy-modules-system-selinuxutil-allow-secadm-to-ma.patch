@@ -1,4 +1,4 @@
-From 1111c261ed7c232c365aa774ab9eb77cb4bd9454 Mon Sep 17 00:00:00 2001
+From 665c32a452631db8bdf2ed6e4abb7f52b85803b2 Mon Sep 17 00:00:00 2001
 From: Xin Ouyang <Xin.Ouyang@windriver.com>
 Date: Thu, 22 Aug 2013 13:37:23 +0800
 Subject: [PATCH] policy/modules/system/selinuxutil: allow secadm to manage
@@ -32,10 +32,10 @@ index 86411f9fc..0b02b7f9f 100644
  	read_lnk_files_pattern($1, selinux_config_t, selinux_config_t)
  ')
 diff --git a/policy/modules/system/userdomain.if b/policy/modules/system/userdomain.if
-index 80072c03e..b533bd094 100644
+index 504747917..a173cb282 100644
 --- a/policy/modules/system/userdomain.if
 +++ b/policy/modules/system/userdomain.if
-@@ -1530,6 +1530,10 @@ interface(`userdom_security_admin_template',`
+@@ -1539,6 +1539,10 @@ interface(`userdom_security_admin_template',`
  	logging_read_audit_config($1)
  
  	seutil_manage_bin_policy($1)

@@ -1,0 +1,45 @@
+From 2379c408d24fb26b85e4312dffcd2f40619f630c Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Sat, 21 Oct 2023 11:20:54 +0800
+Subject: [PATCH] domain: allow domain to read symbolic links
+
+Fixes:
+avc:  denied  { read } for  pid=512 comm="login" name="root" dev="sda3"
+ino=869 scontext=system_u:system_r:local_login_t:s0-s15:c0.c1023
+tcontext=system_u:object_r:default_t:s0 tclass=lnk_file permissive=0
+
+avc:  denied  { read } for  pid=644 comm="mount" name="mnt" dev="sda3"
+ino=865 scontext=root:sysadm_r:mount_t:s0-s15:c0.c1023
+tcontext=system_u:object_r:default_t:s0 tclass=lnk_file permissive=0
+
+avc:  denied  { read } for  pid=453 comm="alsactl" name="root"
+dev="sdb3" ino=1600 scontext=system_u:system_r:alsa_t:s0-s15:c0.c1023
+tcontext=root:object_r:user_home_dir_t:s0 tclass=lnk_file permissive=0
+
+avc:  denied  { read } for  pid=1494 comm="lpqd" name="root" dev="sdb3"
+ino=1600 scontext=system_u:system_r:smbd_t:s0-s15:c0.c1023
+tcontext=root:object_r:user_home_dir_t:s0 tclass=lnk_file permissive=0
+
+Upstream-Status: Inappropriate [ostree specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ policy/modules/kernel/domain.te | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/policy/modules/kernel/domain.te b/policy/modules/kernel/domain.te
+index 3aeb3e50f..45fa075b3 100644
+--- a/policy/modules/kernel/domain.te
++++ b/policy/modules/kernel/domain.te
+@@ -128,6 +128,8 @@ term_use_controlling_term(domain)
+ # list the root directory
+ files_list_root(domain)
+ 
++files_read_all_symlinks(domain)
++
+ ifdef(`init_systemd',`
+ 	optional_policy(`
+ 		shutdown_sigchld(domain)
+-- 
+2.25.1
+

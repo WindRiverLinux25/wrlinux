@@ -1,4 +1,4 @@
-From 84fa0b6714bb108f0bace260430e0097119117ea Mon Sep 17 00:00:00 2001
+From 3cd336b3f709cf6afc9a39a83cf73c5bd9b573a0 Mon Sep 17 00:00:00 2001
 From: Wenzong Fan <wenzong.fan@windriver.com>
 Date: Fri, 26 Feb 2016 07:24:57 -0500
 Subject: [PATCH] policy/modules/services/mta: allow user_mail_t to manage

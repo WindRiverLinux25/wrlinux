@@ -1,0 +1,78 @@
+From a4818536d1d5fd9dc8b437056e49aa1ddcff052d Mon Sep 17 00:00:00 2001
+From: Liwei Song <liwei.song@windriver.com>
+Date: Thu, 2 Jan 2020 17:32:58 +0800
+Subject: [PATCH] files: add lable for symlinks /mnt /opt and /root
+
+Add lable for symlinks /mnt /opt and /root.
+
+Upstream-Status: Inappropriate [ostree specific]
+
+Signed-off-by: Liwei Song <liwei.song@windriver.com>
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ config/file_contexts.subs_dist      | 4 ----
+ policy/modules/kernel/files.fc      | 4 ++++
+ policy/modules/system/userdomain.fc | 3 +++
+ 3 files changed, 7 insertions(+), 4 deletions(-)
+
+diff --git a/config/file_contexts.subs_dist b/config/file_contexts.subs_dist
+index 177e7eadc..5c7e0d7fd 100644
+--- a/config/file_contexts.subs_dist
++++ b/config/file_contexts.subs_dist
+@@ -46,10 +46,6 @@
+ /usr/lib/busybox/sbin /usr/sbin
+ /usr/lib/busybox/usr /usr
+ 
+-# The genhomedircon.py will expand /root home directory to /home/root
+-# Add an aliase for it
+-/root /home/root
+-
+ /usr/etc /etc
+ /var/home /home
+ /var/rootdirs/mnt /mnt
+diff --git a/policy/modules/kernel/files.fc b/policy/modules/kernel/files.fc
+index c5012e6b4..885f2e090 100644
+--- a/policy/modules/kernel/files.fc
++++ b/policy/modules/kernel/files.fc
+@@ -124,6 +124,7 @@ HOME_ROOT/lost\+found/.*	<<none>>
+ #
+ # /mnt
+ #
++/mnt				-l	gen_context(system_u:object_r:mnt_t,s0)
+ /mnt(/[^/]*)		-l	gen_context(system_u:object_r:mnt_t,s0)
+ /mnt(/[^/]*)?		-d	gen_context(system_u:object_r:mnt_t,s0)
+ /mnt/[^/]*/.*			<<none>>
+@@ -137,6 +138,7 @@ HOME_ROOT/lost\+found/.*	<<none>>
+ # /opt
+ #
+ /opt			-d	gen_context(system_u:object_r:usr_t,s0)
++/opt			-l	gen_context(system_u:object_r:usr_t,s0)
+ /opt/.*				gen_context(system_u:object_r:usr_t,s0)
+ 
+ /opt/(.*/)?var/lib(64)?(/.*)?	gen_context(system_u:object_r:var_lib_t,s0)
+@@ -230,6 +232,8 @@ ifndef(`distro_redhat',`
+ /usr/src/kernels/.+/lib(/.*)?	gen_context(system_u:object_r:usr_t,s0)
+ ')
+ 
++/ostree(/.*)?		gen_context(system_u:object_r:usr_t,s0)
++
+ #
+ # /var
+ #
+diff --git a/policy/modules/system/userdomain.fc b/policy/modules/system/userdomain.fc
+index 173e314af..c4e3dc789 100644
+--- a/policy/modules/system/userdomain.fc
++++ b/policy/modules/system/userdomain.fc
+@@ -6,6 +6,9 @@ HOME_DIR/\.pki(/.*)?	gen_context(system_u:object_r:user_cert_t,s0)
+ 
+ /tmp/gconfd-%{USERNAME} -d	gen_context(system_u:object_r:user_tmp_t,s0)
+ 
++/root		-d	gen_context(root:object_r:user_home_dir_t,s0)
++/root		-l	gen_context(root:object_r:user_home_dir_t,s0)
++
+ /run/user		-d	gen_context(system_u:object_r:user_runtime_root_t,s0)
+ /run/user/[^/]+	-d	gen_context(system_u:object_r:user_runtime_t,s0)
+ /run/user/[^/]+/.+	-d	<<none>>
+-- 
+2.25.1
+

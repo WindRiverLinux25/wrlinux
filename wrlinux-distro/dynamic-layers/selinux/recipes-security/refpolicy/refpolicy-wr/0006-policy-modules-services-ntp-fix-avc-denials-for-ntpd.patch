@@ -1,4 +1,4 @@
-From 33fa48b73741ba98dfc53946fbfce2f06a5aa405 Mon Sep 17 00:00:00 2001
+From 055f7d716ea4f9c915131e3f203f5adf98de361d Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Sun, 30 Oct 2022 12:09:10 +0800
 Subject: [PATCH] policy/modules/services/ntp: fix avc denials for ntpd_t with

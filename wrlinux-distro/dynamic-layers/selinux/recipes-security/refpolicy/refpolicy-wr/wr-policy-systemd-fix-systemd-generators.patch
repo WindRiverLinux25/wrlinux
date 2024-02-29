@@ -1,0 +1,90 @@
+From 61cae9e37e60462c218cab3f95266bfdf123f7e4 Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Mon, 3 Aug 2020 17:28:11 +0800
+Subject: [PATCH] systemd: fix systemd-generators
+
+Allow systemd_generator_t to read fstab and create var_run_t files.
+
+Fixes:
+avc:  denied  { read } for  pid=275 comm="systemd-fstab-g" name="fstab"
+dev="sdb3" ino=42
+scontext=system_u:system_r:systemd_generator_t:s0-s15:c0.c1023
+tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=0
+systemd-fstab-generator[275]: Failed to open /etc/fstab: Permission
+denied
+
+avc:  denied  { create } for  pid=300 comm="ostree-system-g"
+name="ostree-booted"
+scontext=system_u:system_r:systemd_generator_t:s0-s15:c0.c1023
+tcontext=system_u:object_r:var_run_t:s0 tclass=file permissive=0
+
+avc:  denied  { write } for pid=273 comm="ostree-system-g" name="/"
+dev="tmpfs" ino=3049
+scontext=system_u:system_r:systemd_generator_t:s0-s15:c0.c1023
+tcontext=system_u:object_r:var_run_t:s0-s15:c0.c1023 tclass=dir
+permissive=0
+
+Upstream-Status: Inappropriate [ostree specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ policy/modules/kernel/files.if   | 20 ++++++++++++++++++++
+ policy/modules/system/systemd.te |  4 ++++
+ 2 files changed, 24 insertions(+)
+
+diff --git a/policy/modules/kernel/files.if b/policy/modules/kernel/files.if
+index a2aa85b1c..c668363f4 100644
+--- a/policy/modules/kernel/files.if
++++ b/policy/modules/kernel/files.if
+@@ -7046,6 +7046,26 @@ interface(`files_rw_runtime_files',`
+ 	rw_files_pattern($1, var_run_t, var_run_t)
+ ')
+ 
++########################################
++## <summary>
++##	Create generic runtime files.
++## </summary>
++## <param name="domain">
++##	<summary>
++##	Domain allowed access.
++##	</summary>
++## </param>
++#
++interface(`files_create_runtime_files',`
++	gen_require(`
++		type var_t, var_run_t;
++	')
++
++	allow $1 var_run_t:lnk_file read_lnk_file_perms;
++	list_dirs_pattern($1, var_t, var_run_t)
++	create_files_pattern($1, var_run_t, var_run_t)
++')
++
+ ########################################
+ ## <summary>
+ ##	Delete generic runtime symlinks.
+diff --git a/policy/modules/system/systemd.te b/policy/modules/system/systemd.te
+index a0e6bb405..4953129ba 100644
+--- a/policy/modules/system/systemd.te
++++ b/policy/modules/system/systemd.te
+@@ -516,6 +516,8 @@ dev_write_sysfs(systemd_generator_t)
+ files_read_etc_files(systemd_generator_t)
+ files_read_etc_runtime_files(systemd_generator_t)
+ files_search_runtime(systemd_generator_t)
++files_create_runtime_files(systemd_generator_t)
++files_rw_runtime_files(systemd_generator_t)
+ files_list_boot(systemd_generator_t)
+ files_read_boot_files(systemd_generator_t)
+ files_search_all_mountpoints(systemd_generator_t)
+@@ -548,6 +550,8 @@ kernel_dontaudit_getattr_proc(systemd_generator_t)
+ # Where an unlabeled mountpoint is encounted:
+ kernel_dontaudit_search_unlabeled(systemd_generator_t)
+ 
++kernel_read_unlabeled_files(systemd_generator_t)
++
+ modutils_domtrans(systemd_generator_t)
+ 
+ # write for systemd-zram-generator
+-- 
+2.25.1
+

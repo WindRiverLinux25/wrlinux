@@ -1,4 +1,4 @@
-From 6e9aadc4e7b0297416f4e9835f807c03993085d5 Mon Sep 17 00:00:00 2001
+From d722180fae9677151f9b8359d0ac184ffc2d0666 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Mon, 6 Jul 2020 08:52:42 +0800
 Subject: [PATCH] policy/modules/services/ftp: fix avc denials for ftpd_t with

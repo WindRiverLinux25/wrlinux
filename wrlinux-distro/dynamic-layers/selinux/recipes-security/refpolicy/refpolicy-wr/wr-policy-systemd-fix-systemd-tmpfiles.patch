@@ -1,14 +1,16 @@
-From d8653c57c335a4eb554028198972b9864064e6ca Mon Sep 17 00:00:00 2001
+From bfcc70503b7a58a623042ea4b44d984c4100e480 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
-Date: Tue, 3 Oct 2023 12:59:47 +0800
-Subject: [PATCH] systemd: allow systemd_tmpfiles_t to manage and relabel
- symlinks
+Date: Tue, 4 Aug 2020 15:06:58 +0800
+Subject: [PATCH] systemd: fix systemd-tmpfiles
+
+Allow systemd_tmpfiles_t to manage and relabel symlinks and read/write
+generic kernel sysctls.
 
 Fixes:
 systemd-tmpfiles[358]: Failed to fstat(/var/lib/rpm): Permission denied
 systemd-tmpfiles[358]: Failed to fstat(/var/lib/dnf): Permission denied
 
-avc:  denied  { read } for  pid=358 comm="systemd-tmpfile" name="dnf"
+avc: denied { read } for  pid=358 comm="systemd-tmpfile" name="dnf"
 dev="sda4" ino=1679
 scontext=system_u:system_r:systemd_tmpfiles_t:s0-s15:c0.c1023
 tcontext=system_u:object_r:var_lib_t:s0 tclass=lnk_file permissive=0
@@ -33,18 +35,26 @@ name="dnf" dev="sda4" ino=1679
 scontext=system_u:system_r:systemd_tmpfiles_t:s0-s15:c0.c1023
 tcontext=system_u:object_r:var_lib_t:s0 tclass=lnk_file permissive=0
 
+avc:  denied  { write } for  pid=457 comm="systemd-tmpfile"
+name="printk" dev="proc" ino=17898
+scontext=system_u:system_r:systemd_tmpfiles_t:s0-s15:c0.c1023
+tcontext=system_u:object_r:sysctl_kernel_t:s0 tclass=file permissive=0
+
+systemd-tmpfiles[457]: Failed to open file "/proc/sys/kernel/printk":
+Permission denied
+
 Upstream-Status: Inappropriate [ostree specific]
 
 Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
 ---
- policy/modules/system/systemd.te | 3 +++
- 1 file changed, 3 insertions(+)
+ policy/modules/system/systemd.te | 5 +++++
+ 1 file changed, 5 insertions(+)
 
 diff --git a/policy/modules/system/systemd.te b/policy/modules/system/systemd.te
-index 6ae05c8e4..40723182b 100644
+index 4953129ba..e60b611d5 100644
 --- a/policy/modules/system/systemd.te
 +++ b/policy/modules/system/systemd.te
-@@ -1788,6 +1788,9 @@ files_setattr_lock_dirs(systemd_tmpfiles_t)
+@@ -1847,6 +1847,9 @@ files_setattr_lock_dirs(systemd_tmpfiles_t)
  # for /etc/mtab
  files_manage_etc_symlinks(systemd_tmpfiles_t)
  
@@ -54,6 +64,15 @@ index 6ae05c8e4..40723182b 100644
  fs_list_tmpfs(systemd_tmpfiles_t)
  fs_relabelfrom_tmpfs_dirs(systemd_tmpfiles_t)
  fs_getattr_all_fs(systemd_tmpfiles_t)
+@@ -1901,6 +1904,8 @@ mls_file_upgrade(systemd_tmpfiles_t)
+ userdom_manage_user_runtime_root_dirs(systemd_tmpfiles_t)
+ userdom_relabel_user_runtime_root_dirs(systemd_tmpfiles_t)
+ 
++kernel_rw_kernel_sysctl(systemd_tmpfiles_t)
++
+ tunable_policy(`systemd_tmpfiles_manage_all',`
+ 	# systemd-tmpfiles can be configured to manage anything.
+ 	# have a last-resort option for users to do this.
 -- 
 2.25.1
 

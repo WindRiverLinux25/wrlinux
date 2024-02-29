@@ -20,18 +20,12 @@ SRC_URI += "\
 
 OSTREE_POLICY_PATCHES = "\
         file://wr-policy-Add-ostree-policy.patch \
+        file://wr-policy-domain-allow-domain-to-read-symbolic-links.patch \
         file://wr-policy-file_contexts.subs_dist-set-aliases-for-ostree-direc.patch \
-        file://wr-policy-files-add-lable-for-symlinks-mnt-opt-media-and-root.patch \
-        file://wr-policy-system-mount.te-allow-mount-on-symlink-file.patch \
-        file://wr-policy-system-locallogin.te-allow-login-read-symlink-file.patch \
-        file://wr-policy-allow-mount-to-dirs-under-tmp.patch \
-        file://wr-policy-modules-system-mount-allow-mount-command-to-m.patch \
-        file://wr-policy-modules-system-systemd-allow-systemd_generato.patch \
-        file://wr-policy-modules-system-userdomain-allow-domain-read-h.patch \
-        file://wr-policy-modules-system-systemd-allow-systemd_tmpfiles.patch \
-        file://wr-policy-modules-system-systemd-fix-avc-denials-for-os.patch \
-        file://wr-policy-Allow-sshd_t-and-staff_t-read-symlinks.patch \
-        file://wr-policy-systemd-allow-systemd_tmpfiles_t-to-manage-and-relab.patch \
+        file://wr-policy-files-add-lable-for-symlinks-mnt-opt-and-root.patch \
+        file://wr-policy-mount-allow-mount-command-to-mount-any-directory-or-.patch \
+        file://wr-policy-systemd-fix-systemd-generators.patch \
+        file://wr-policy-systemd-fix-systemd-tmpfiles.patch \
         "
 
 SRC_URI += "${@bb.utils.contains('DISTRO_FEATURES', 'ostree', '${OSTREE_POLICY_PATCHES}', '', d)}"

@@ -1,8 +1,7 @@
-From 9defc24bb4ba191e9c41ad19c6101ba91361b840 Mon Sep 17 00:00:00 2001
+From 05d4865ee97d96378d7768ef43160b3a495181d5 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Mon, 3 Aug 2020 10:51:49 +0800
-Subject: [PATCH] policy/modules/system/mount: allow mount command to mount any
- directory or file
+Subject: [PATCH] mount: allow mount command to mount any directory or file
 
 Fixes:
 avc:  denied  { read } for  pid=306 comm="mount" name="fstab" dev="sdb3"
@@ -17,7 +16,7 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/policy/modules/system/mount.te b/policy/modules/system/mount.te
-index 6cc94e0dd..26d37dcd1 100644
+index 3fc37619e..ef02539cd 100644
 --- a/policy/modules/system/mount.te
 +++ b/policy/modules/system/mount.te
 @@ -10,7 +10,7 @@ policy_module(mount)

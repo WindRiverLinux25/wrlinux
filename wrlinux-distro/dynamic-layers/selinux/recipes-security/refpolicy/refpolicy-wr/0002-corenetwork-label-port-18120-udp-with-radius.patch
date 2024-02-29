@@ -1,4 +1,4 @@
-From e7f902c6fd829f7e6c00ca51e6994e359292d2d6 Mon Sep 17 00:00:00 2001
+From 070a9cd194ddee610bbc32770fd346094d6c3049 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Sun, 16 Oct 2022 12:19:38 +0800
 Subject: [PATCH] corenetwork: label port 18120 udp with radius
