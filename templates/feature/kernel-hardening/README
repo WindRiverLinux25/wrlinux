@@ -55,6 +55,11 @@ the same canary value for the entire duration that the system is up.
 Enable this option to switch to a different method that uses a different canary
 value for each task.
 
+CONFIG_SHADOW_CALL_STACK
+This option enables the compiler's Shadow Call Stack, which uses a shadow stack
+to protect function return addresses from being overwritten by an attacker.
+
+
 2. Heap overflow
 ----------------
 CONFIG_HARDENED_USERCOPY checks for obviously wrong memory regions when
@@ -73,6 +78,7 @@ while trying to find such users.
 CONFIG_SLAB_FREELIST_RANDOM randomizes the freelist order used on creating new
 pages. This security feature reduces the predictability of the kernel slab
 allocator against heap overflows.
+
 
 3. Reduce access to syscalls
 ----------------------------
@@ -107,6 +113,7 @@ bypass due to the vsyscall fixed address mapping. Attempts to use the vsyscalls
 will be reported to dmesg, so that either old or malicious userspace programs
 can be identified.
 
+
 4. Information exposure
 -----------------------
 Clearing memory on free can stop attacks where there is no reallocation control.
@@ -114,6 +121,7 @@ CONFIG_PAGE_POISONING fills the pages with poison patterns after free_pages()
 and verify the patterns before alloc_pages. The filling of the memory helps
 reduce the risk of information leaks from freed data. This does have a potential
 performance impact.
+
 
 5. Kernel Address Space Layout Randomization (KASLR)
 ----------------------------------------------------
@@ -153,6 +161,7 @@ for an attacker to acquire the addresses they need is via dmesg. Where address
 disclosure could come from a printk in the kernel or out of tree module that has
 been loaded.
 
+
 6. Direct kernel overwrite
 --------------------------
 CONFIG_STRICT_KERNEL_RWX
@@ -175,6 +184,13 @@ Looking for a message in dmesg output like this:
 <arch>/mm: Checked W+X mappings: passed, no W+X pages found.
 or like this, if the check failed:
 <arch>/mm: Checked W+X mappings: failed, <N> W+X pages found.
+
+CONFIG_UNMAP_KERNEL_AT_EL0(ARMv8.1 or later)
+Speculation attacks against some high-performance processors can be used to
+bypass MMU permission checks and leak kernel data to userspace. This can be
+defended against by unmapping the kernel when running in userspace, mapping
+it back in on exception entry via a trampoline page in the vector table.
+
 
 7. Privileged access control
 ----------------------------------
@@ -204,7 +220,7 @@ observed in this case.
 
 7.2 ARM/ARM64 features
 
-hardware PAN
+Hardware PAN
 
 CONFIG_ARM64_PAN(ARMv8.1 only)
 Privileged Access Never(PAN; part of the ARMv8.1 Extensions) prevents the
@@ -214,7 +230,11 @@ fail with a permission fault. The feature is enabled by default and
 detected at runtime, and will remain as a 'nop' instruction if the cpu does
 not implement the feature.
 
-software emulated PAN
+CONFIG_ARM64_EPAN(ARMv8.7 and later)
+Enhanced Privileged Access Never (EPAN) allows Privileged Access Never to be
+used with Execute-only mappings.
+
+Software emulated PAN
 
 CONFIG_ARM64_SW_TTBR0_PAN(ARM64 only)
 This feature prevents the kernel from accessing user-space memory directly
@@ -237,17 +257,100 @@ https://www.windriver.com/security/announcements/meltdown-spectre/
 
 9. Device and driver
 --------------------
-CONFIG_HW_RANDOM_TPM(x86/x86-64 only) provides kernel-side support for the Random Number Generator
-in the Trusted Platform Module.
-It exposes the TPM's Random Number Generator as a hwrng device. This allows the kernel
-to collect randomness from the TPM at boot, and provides the TPM randomness in /dev/hwrng.
+CONFIG_HW_RANDOM_TPM(x86/x86-64 only)
+This config provides kernel-side support for the Random Number Generator in the
+Trusted Platform Module.
 
-CONFIG_LDISC_AUTOLOAD Automatically load TTY Line Disciplines. Historically the kernel
-has always automatically loaded any line discipline that is in a kernel module when
-a user asks for it to be loaded with the TIOCSETD ioctl, or through other means.
-This is not always the best thing to do on systems where you know you will not be using
-some of the more "ancient" line disciplines, so prevent the kernel from doing this unless
-the request is coming from a process with the CAP_SYS_MODULE permissions.
+It exposes the TPM's Random Number Generator as a hwrng device. This allows the
+kernel to collect randomness from the TPM at boot, and provides the TPM
+randomness in /dev/hwrng.
+
+CONFIG_LDISC_AUTOLOAD Automatically load TTY Line Disciplines. Historically the
+kernel has always automatically loaded any line discipline that is in a kernel
+module when a user asks for it to be loaded with the TIOCSETD ioctl, or through
+other means.
+
+This is not always the best thing to do on systems where you know you will not
+be using some of the more "ancient" line disciplines, so prevent the kernel from
+doing this unless the request is coming from a process with the CAP_SYS_MODULE
+permissions.
+
+
+10. Control Flow Integrity
+--------------------------
+CONFIG_CFI_CLANG(needs CLANG support)
+This option enables Clang’s forward-edge Control Flow Integrity (CFI)
+checking, where the compiler injects a runtime check to each indirect
+function call to ensure the target is a valid function with the correct
+static type.
+This restricts possible call targets and makes it more difficult for an attacker
+to exploit bugs that allow the modification of stored function pointers.
+
+CONFIG_CFI_PERMISSIVE(needs CLANG support)
+Control Flow Integrity (CFI) violations result in a warning instead of a kernel
+panic when this option was enabled.
+
+
+11. Pointer authentication, 
+    Memory Tagging and Branch Target Identification (ARM64 only)
+----------------------------------------------------------------
+CONFIG_ARM64_PTR_AUTH(ARMv8.3 and later)
+Pointer authentication provides instructions for signing and authenticating
+pointers against secret keys, which can be used to mitigate Return Oriented
+Programming (ROP) and other attacks.
+
+This option enables these instructions at EL0 (i.e. for userspace). Choosing
+this option will cause the kernel to initialise secret keys for each process at
+exec() time, with these keys being context-switched along with the process.
+
+The feature is detected at runtime. If the feature is not present in hardware
+it will not be advertised to userspace/KVM guest nor will it be enabled.
+
+CONFIG_ARM64_PTR_AUTH_KERNEL(ARMv8.3 and later)
+If the compiler supports the -mbranch-protection or -msign-return-address flag
+(e.g. GCC 7 or later), then this option will cause the kernel itself to be
+compiled with return address protection.
+
+In this case, and if the target hardware is known to support pointer
+authentication, then CONFIG_STACKPROTECTOR_STRONG can be disabled with minimal
+loss of protection.
+
+CONFIG_ARM64_BTI(ARMv8.5 and later)
+BTI is intended to provide complementary protection to other control flow
+integrity protection mechanisms, such as the Pointer authentication mechanism
+provided as part of the ARMv8.3 Extensions.
+
+For this reason, it does not make sense to enable this option without also
+enabling support for pointer authentication. Thus, when enabling this option
+you should also select ARM64_PTR_AUTH=y. Userspace binaries must also be
+specifically compiled to make use of this mechanism.
+
+CONFIG_ARM64_BTI_KERNEL(ARMv8.5 and later)
+Build the kernel with Branch Target Identification annotations and enable
+enforcement of this for kernel code. When this option is enabled and the system
+supports BTI all kernel code including modular code must have BTI enabled.
+
+CONFIG_ARM64_MTE(ARMv8.5 and later)
+Memory Tagging provides architectural support for run-time, always-on detection
+of various classes of memory error to aid with software debugging to eliminate
+vulnerabilities arising from memory-unsafe languages.
+
+This option enables the support for the Memory Tagging Extension at EL0
+(i.e. for userspace). Selecting this option allows the feature to be detected
+at runtime. Any secondary CPU not implementing this feature will not be allowed
+a late bring-up.
+
+CONFIG_KASAN_HW_TAGS(ARMv8.5 and later with GCC 10+ or Clang 12+)
+Enables hardware tag-based KASAN mode. This mode requires hardware memory
+tagging support. Currently this mode is only implemented for arm64 CPUs
+starting from ARMv8.5 and relies on Memory Tagging Extension and Top Byte
+Ignore.
+
+CONFIG_ARM64_E0PD(ARMv8.5 and later)
+E0PD (part of the ARMv8.5 extensions) allows us to ensure that EL0 accesses made
+via TTBR1 always fault in constant time, providing similar benefits to KASLR as
+those provided by KPTI, but with lower overhead and without disrupting legitimate
+access to kernel memory such as SPE.
 
 
 Reference
