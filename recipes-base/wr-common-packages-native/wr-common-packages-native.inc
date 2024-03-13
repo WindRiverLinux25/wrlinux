@@ -10,7 +10,7 @@ DEPENDS = "\
     automake-native \
     bc-native \
     bison-native \
-    bmap-tools-native \
+    bmaptool-native \
     btrfs-tools-native \
     bzip2-native \
     ca-certificates-native \
@@ -52,6 +52,7 @@ DEPENDS = "\
     gdk-pixbuf-native \
     gettext-minimal-native \
     gettext-native \
+    git-native \
     glib-2.0-native \
     glslang-native \
     gmp-native \
