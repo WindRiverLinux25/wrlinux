@@ -1,5 +1,5 @@
-This template enables FORTRAN support in gcc and adds required libraries
-to the target image.
+This template enables FORTRAN support in gcc, for host compilation only, and 
+adds the required libraries to the target image to run FORTRAN programs.
 
 To use, add
 
