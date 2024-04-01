@@ -1,7 +1,11 @@
 This template adds gcc-sanitizers and the development libraries
 (libasan-dev, liblsan-dev, libtsan-dev, libubsan-dev).
 
-It is supported for x86 and x86-64 targets only.
+The GCC sanitizers are available for x86, x86-64, and ARM targets.
+However, hardware-assisted address sanitizer (HWASan) is specifically supported only on the AArch64 architecture.
+This information is detailed in the documentation provided at the following link:
+https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html#index-fsanitize_003dhwaddress
+
 
 To use, add
 
