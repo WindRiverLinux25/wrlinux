@@ -39,7 +39,7 @@ python() {
         layers = (d.getVar('RECIPE_LIST_LAYERS') or '').split()
         if d.getVar('PNWHITELIST_LAYERS') is not None:
             layers = layers + (d.getVar('PNWHITELIST_LAYERS') or '').split()
-            bb.warnonce("PNWHITELIST_LAYERS is deprecated please use RECIPE_LIST_LAYERS")
+            bb.fatal("PNWHITELIST_LAYERS is obsolete; please use RECIPE_LIST_LAYERS")
         if layer in layers:
             machine = d.getVar('MACHINE') or ''
             localdata = bb.data.createCopy(d)
@@ -49,12 +49,12 @@ python() {
             recipes = recipes + (localdata.getVar('CUSTOMER_RECIPES') or '').split()
             if localdata.getVar('PNWHITELIST') is not None:
                 recipes = recipes + (localdata.getVar('PNWHITELIST') or '').split()
-                bb.warnonce("PNWHITELIST is deprecated please use CUSTOMER_RECIPES")
+                bb.fatal("PNWHITELIST is obsolete; please use CUSTOMER_RECIPES")
             if not (d.getVar('PN') in recipes or d.getVar('BPN') in recipes):
                 reason = localdata.getVar('RECIPE_LIST_REASON')
                 if localdata.getVar('PNWHITELIST_REASON') is not None:
                     reason = localdata.getVar('PNWHITELIST_REASON')
-                    bb.warnonce("PNWHITELIST_REASON is deprecated please use RECIPE_LIST_REASON")
+                    bb.fatal("PNWHITELIST_REASON is obsolete; please use RECIPE_LIST_REASON")
                 if not reason:
                     reason = 'not in recipe list for layer %s' % layer
                 raise bb.parse.SkipRecipe(reason)
