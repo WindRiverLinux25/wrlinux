@@ -1,4 +1,4 @@
-From 50e564e502378c5b8bfb4e9dccbce23c5496e0f0 Mon Sep 17 00:00:00 2001
+From 0bd319c570bb5b71d3497cd83073b3197eaa6b98 Mon Sep 17 00:00:00 2001
 From: Changqing Li <changqing.li@windriver.com>
 Date: Tue, 20 Apr 2021 14:17:05 +0800
 Subject: [PATCH] build redhad modules
@@ -17,10 +17,10 @@ Signed-off-by: Changqing Li <changqing.li@windriver.com>
  2 files changed, 3 insertions(+)
 
 diff --git a/configure.ac b/configure.ac
-index 5eade7c..30fc2bb 100644
+index b9b0f83..e9c311c 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -639,6 +639,7 @@ AC_CONFIG_FILES([Makefile libpam/Makefile libpamc/Makefile libpamc/test/Makefile
+@@ -754,6 +754,7 @@ AC_CONFIG_FILES([Makefile libpam/Makefile libpamc/Makefile libpamc/test/Makefile
  	po/Makefile.in \
  	Make.xml.rules \
  	modules/Makefile \
@@ -42,5 +42,5 @@ index 8da4641..0d5ad66 100644
  	pam_exec \
  	pam_faildelay \
 -- 
-2.17.1
+2.25.1
 

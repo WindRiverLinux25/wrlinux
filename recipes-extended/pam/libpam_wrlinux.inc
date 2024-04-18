@@ -5,15 +5,12 @@
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/libpam:"
 
-SRC_URI += "https://src.fedoraproject.org/repo/pkgs/pam/pam-redhat-1.1.4.tar.bz2/sha512/ad3b53744505faf7c93b1f0c1ef4434c2567b97e292859963401b0c117e824704713c69f7a661cccd3aecd1208facb39c433703c1f3cdea1dbda2c380006bfc4/pam-redhat-1.1.4.tar.bz2;name=redhat \
+SRC_URI += "https://src.fedoraproject.org/repo/pkgs/pam/pam-redhat-1.1.5.tar.xz/sha512/b93b80e9aa0dd8b38045b2a8cc36006b1b651a2724e64fcd9ed87af1fc36008acf9e62e2950097bebfccd657a064b748311f4b9c826f76d7b8c4299feb070bb8/pam-redhat-1.1.5.tar.xz;name=redhat \
             file://pam-1.0.90-redhat-modules.patch \
-            file://pam_console_deps.patch \
-            file://0001-drop-yylex-to-static-force.patch \
             ${@bb.utils.contains('PACKAGECONFIG', 'faillock', 'file://pam_faillock_add_uid.patch', '', d)} \
            "
 
-SRC_URI[redhat.md5sum] = "17bf8913b480e63d9464b5ba203a52a7"
-SRC_URI[redhat.sha256sum] = "c378e439d331b82e08010eac700e1eff920cd4d6175b7c522d499d97ed8e1838"
+SRC_URI[redhat.sha256sum] = "0fb422bdc4889e0f1d28144d95268266ad3953dcd64ab90f5efb0f2caa2e06cf"
 
 EXTRA_OEMAKE:append = " LOCKDIR=${localstatedir}/run/console"
 
@@ -23,7 +20,7 @@ EXTRA_OEMAKE:append = " LOCKDIR=${localstatedir}/run/console"
 do_lcl_rh_move () {
 	SAVED_PWD=`pwd`; cd ${S}
 	if [ ! -e modules/pam_console ] ; then
-		mv ${WORKDIR}/pam-redhat-1.1.4/* modules
+		mv ${WORKDIR}/pam-redhat-1.1.5/* modules
 	fi
 	cd ${SAVED_PWD}
 }
