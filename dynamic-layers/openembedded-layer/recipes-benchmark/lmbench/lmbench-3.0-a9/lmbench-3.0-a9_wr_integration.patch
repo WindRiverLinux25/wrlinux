@@ -5,7 +5,7 @@ Also fix up the Makefile to allow buildsystem values to be passed in.
 Signed-off-by: Haotian Zhang <haotian.zhang@windriver.com>
 Signed-off-by: Fupan Li <fupan.li@windriver.com>
 
-Upstream-status: inappropriate [ configuration ]
+Upstream-Status: Inappropriate [ configuration ]
 
 Signed-off-by: Mark Hatle <mark.hatle@windriver.com>
 
