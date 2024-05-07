@@ -19,8 +19,6 @@ WRL_RECIPES:meta-python += "\
     python3-ntplib \
     python3-ordered-set \
     python3-pid \
-    python3-prctl \
-    python3-pydbus \
     python3-pykickstart \
     python3-pyparted \
     python3-pyudev \
