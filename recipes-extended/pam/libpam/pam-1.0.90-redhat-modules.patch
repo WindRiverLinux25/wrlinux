@@ -1,4 +1,4 @@
-From 0bd319c570bb5b71d3497cd83073b3197eaa6b98 Mon Sep 17 00:00:00 2001
+From 03e5f8d30d46535bb5d7f9ed23493951dfd68b94 Mon Sep 17 00:00:00 2001
 From: Changqing Li <changqing.li@windriver.com>
 Date: Tue, 20 Apr 2021 14:17:05 +0800
 Subject: [PATCH] build redhad modules
@@ -17,22 +17,22 @@ Signed-off-by: Changqing Li <changqing.li@windriver.com>
  2 files changed, 3 insertions(+)
 
 diff --git a/configure.ac b/configure.ac
-index b9b0f83..e9c311c 100644
+index fc5cc085..3442171b 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -754,6 +754,7 @@ AC_CONFIG_FILES([Makefile libpam/Makefile libpamc/Makefile libpamc/test/Makefile
+@@ -783,6 +783,7 @@ AC_CONFIG_FILES([Makefile libpam/Makefile libpamc/Makefile libpamc/test/Makefile
  	po/Makefile.in \
  	Make.xml.rules \
  	modules/Makefile \
 +	modules/pam_chroot/Makefile modules/pam_console/Makefile \
  	modules/pam_access/Makefile \
-         modules/pam_debug/Makefile modules/pam_deny/Makefile \
- 	modules/pam_echo/Makefile modules/pam_env/Makefile \
+ 	modules/pam_canonicalize_user/Makefile \
+ 	modules/pam_debug/Makefile modules/pam_deny/Makefile \
 diff --git a/modules/Makefile.am b/modules/Makefile.am
-index 8da4641..0d5ad66 100644
+index 0d83386a..a1dae307 100644
 --- a/modules/Makefile.am
 +++ b/modules/Makefile.am
-@@ -47,6 +47,8 @@ SUBDIRS := \
+@@ -48,6 +48,8 @@ SUBDIRS := \
  	pam_debug \
  	pam_deny \
  	pam_echo \
@@ -42,5 +42,5 @@ index 8da4641..0d5ad66 100644
  	pam_exec \
  	pam_faildelay \
 -- 
-2.25.1
+2.42.0
 
