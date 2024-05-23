@@ -50,8 +50,14 @@ auth    sufficient       pam_faillock.so authsucc deny=5 even_deny_root unlock_t
     if ${@bb.utils.contains('DISTRO_FEATURES','sysvinit','false','true',d)}; then
         install -d ${D}${sysconfdir}/tmpfiles.d
         echo "d /run/console 0755 root root - -" >>  ${D}${sysconfdir}/tmpfiles.d/pam.conf
+        if ${@bb.utils.contains('PACKAGECONFIG', 'faillock', 'true', 'false', d)}; then
+            echo "d /run/faillock 0755 root root - -" >>  ${D}${sysconfdir}/tmpfiles.d/pam.conf
+        fi
     else
         echo "d root root 0755 /var/run/console none" >> ${D}${sysconfdir}/default/volatiles/99_pam
+        if ${@bb.utils.contains('PACKAGECONFIG', 'faillock', 'true', 'false', d)}; then
+            echo "d root root 0755 /var/run/faillock none" >> ${D}${sysconfdir}/default/volatiles/99_pam
+        fi
     fi
 }
 
