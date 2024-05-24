@@ -12,11 +12,11 @@ SRC_URI += " \
 
 do_install:append() {
     install -d ${D}${datadir}/plymouth/themes/windriver
-    install -m 0644 ${WORKDIR}/windriver.plymouth   ${D}${datadir}/plymouth/themes/windriver/
-    install -m 0644 ${WORKDIR}/windriver.script   ${D}${datadir}/plymouth/themes/windriver/
-    install -m 0644 ${WORKDIR}/wrl.png   ${D}${datadir}/plymouth/themes/windriver/
-    install -m 0644 ${WORKDIR}/wrl.png ${D}${datadir}/plymouth
-    install -m 0644 ${WORKDIR}/plymouthd.conf ${D}${sysconfdir}/plymouth/
-    install -m 0644 ${WORKDIR}/plymouthd.defaults ${D}${datadir}/plymouth/
+    install -m 0644 ${UNPACKDIR}/windriver.plymouth   ${D}${datadir}/plymouth/themes/windriver/
+    install -m 0644 ${UNPACKDIR}/windriver.script   ${D}${datadir}/plymouth/themes/windriver/
+    install -m 0644 ${UNPACKDIR}/wrl.png   ${D}${datadir}/plymouth/themes/windriver/
+    install -m 0644 ${UNPACKDIR}/wrl.png ${D}${datadir}/plymouth
+    install -m 0644 ${UNPACKDIR}/plymouthd.conf ${D}${sysconfdir}/plymouth/
+    install -m 0644 ${UNPACKDIR}/plymouthd.defaults ${D}${datadir}/plymouth/
 
 }

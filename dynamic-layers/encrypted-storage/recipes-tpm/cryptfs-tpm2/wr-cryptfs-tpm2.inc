@@ -5,7 +5,7 @@ SRC_URI += " \
 	"
 
 do_install:append() {
-    install -m 0500 "${WORKDIR}/init.luks" "${D}"
+    install -m 0500 "${UNPACKDIR}/init.luks" "${D}"
 
     rm -rf "${D}/init.cryptfs"
 }

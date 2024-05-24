@@ -9,9 +9,9 @@ SRC_URI += "file://init-nfs.sh \
 "
 
 do_install() {
-	install -m 0755 ${WORKDIR}/init-nfs.sh ${D}/init-nfs.sh
+	install -m 0755 ${UNPACKDIR}/init-nfs.sh ${D}/init-nfs.sh
 	install -d ${D}${systemd_unitdir}/system
-	install -m 0644 ${WORKDIR}/nfs-boot.service ${D}${systemd_unitdir}/system/
+	install -m 0644 ${UNPACKDIR}/nfs-boot.service ${D}${systemd_unitdir}/system/
 }
 
 SYSTEMD_SERVICE:${PN} = "nfs-boot.service"

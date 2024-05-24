@@ -15,7 +15,7 @@ SRC_URI += " \
 
 do_install:append () {
 	install -d ${D}${sysconfdir}/logrotate.d
-	install -m 644 ${WORKDIR}/syslog.logrotate \
+	install -m 644 ${UNPACKDIR}/syslog.logrotate \
 		${D}${sysconfdir}/logrotate.d/syslog
 }
 

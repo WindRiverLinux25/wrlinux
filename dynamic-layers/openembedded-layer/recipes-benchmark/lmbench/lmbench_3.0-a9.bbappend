@@ -21,12 +21,12 @@ inherit update-alternatives
 
 do_install:append () {
 	install -d ${D}/${WR_LMBENCH}
-	install -m 0755 ${WORKDIR}/wr-lmbench-test.sh ${D}/${WR_LMBENCH}
-	install -m 0755 ${WORKDIR}/dealt_log.sh ${D}/${WR_LMBENCH}
-	install -m 0755 ${WORKDIR}/generate_report.sh ${D}/${WR_LMBENCH}
-	install -m 0664 ${WORKDIR}/README ${D}/${WR_LMBENCH}/
-	cp -r ${WORKDIR}/config ${D}/${WR_LMBENCH}/
-	cp -r ${WORKDIR}/scripts ${D}/${WR_LMBENCH}/
+	install -m 0755 ${UNPACKDIR}/wr-lmbench-test.sh ${D}/${WR_LMBENCH}
+	install -m 0755 ${UNPACKDIR}/dealt_log.sh ${D}/${WR_LMBENCH}
+	install -m 0755 ${UNPACKDIR}/generate_report.sh ${D}/${WR_LMBENCH}
+	install -m 0664 ${UNPACKDIR}/README ${D}/${WR_LMBENCH}/
+	cp -r ${UNPACKDIR}/config ${D}/${WR_LMBENCH}/
+	cp -r ${UNPACKDIR}/scripts ${D}/${WR_LMBENCH}/
 	mv ${D}${bindir}/hello ${D}${bindir}/hello.lmbench
 }
 

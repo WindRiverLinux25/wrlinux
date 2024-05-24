@@ -9,8 +9,8 @@ SRC_URI:append = " file://ptest-summary.sh "
 SRC_URI:append = " file://ptest-diff.sh "
 
 do_install:append () {
-        install -m 0755 ${WORKDIR}/ptest-summary.sh ${D}${bindir}/
-        install -m 0755 ${WORKDIR}/ptest-diff.sh ${D}${bindir}/
+        install -m 0755 ${UNPACKDIR}/ptest-summary.sh ${D}${bindir}/
+        install -m 0755 ${UNPACKDIR}/ptest-diff.sh ${D}${bindir}/
 }
 
 RDEPENDS:${PN} += "bash"

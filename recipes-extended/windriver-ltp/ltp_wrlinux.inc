@@ -55,14 +55,14 @@ do_install(){
 	rm -rf ${D}/opt/${PN}/testcases/open_posix_testsuite/
 
 	# Install wrLinux_posix
-	cp ${WORKDIR}/README ${S}/testcases/open_posix_testsuite/wrLinux_posix/
+	cp ${UNPACKDIR}/README ${S}/testcases/open_posix_testsuite/wrLinux_posix/
 	cp -r ${S}/testcases/open_posix_testsuite/wrLinux_posix ${D}/opt/open_posix_testsuite/
 	install -m 755 ${S}/testcases/open_posix_testsuite/wrLinux_posix/wr-runposix ${D}/opt/open_posix_testsuite/wrLinux_posix/
 	install -m 755 ${S}/testcases/open_posix_testsuite/wrLinux_posix/wr-runposix.install ${D}/opt/open_posix_testsuite/wrLinux_posix/
 	${D}/opt/open_posix_testsuite/wrLinux_posix/wr-runposix.install
 
     # Install wrLinux_ltp
-	cp ${WORKDIR}/README ${S}/wrLinux_ltp/
+	cp ${UNPACKDIR}/README ${S}/wrLinux_ltp/
 	cp -r ${S}/wrLinux_ltp ${D}/opt/${PN}/
 	install -m 755 ${S}/wrLinux_ltp/wr-runltp ${D}/opt/${PN}/wrLinux_ltp/
 }

@@ -12,5 +12,5 @@ SRC_URI += " \
     file://ip-cmdline.sh \
 "
 do_install:append() {
-    install -m 0755 ${WORKDIR}/ip-cmdline.sh ${D}${sysconfdir}/NetworkManager/dispatcher.d/
+    install -m 0755 ${UNPACKDIR}/ip-cmdline.sh ${D}${sysconfdir}/NetworkManager/dispatcher.d/
 }

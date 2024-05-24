@@ -20,7 +20,7 @@ EXTRA_OEMAKE:append = " LOCKDIR=${localstatedir}/run/console"
 do_lcl_rh_move () {
 	SAVED_PWD=`pwd`; cd ${S}
 	if [ ! -e modules/pam_console ] ; then
-		mv ${WORKDIR}/pam-redhat-1.1.5/* modules
+		mv ${UNPACKDIR}/pam-redhat-1.1.5/* modules
 	fi
 	cd ${SAVED_PWD}
 }

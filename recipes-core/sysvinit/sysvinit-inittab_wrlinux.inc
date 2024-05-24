@@ -16,7 +16,7 @@ SYSVINIT_ENABLED_GETTYS = "2 3 4 5 6"
 # as what we did in previous wrlinux versions.
 do_install() {
     install -d ${D}${sysconfdir}
-    install -m 0644 ${WORKDIR}/inittab ${D}${sysconfdir}/inittab
+    install -m 0644 ${UNPACKDIR}/inittab ${D}${sysconfdir}/inittab
 
     if [ "${USE_VT}" = "1" ]; then
         cat <<EOF >>${D}${sysconfdir}/inittab

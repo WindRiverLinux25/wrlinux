@@ -11,7 +11,7 @@ do_install_wrlissue () {
 		echo ${hostname} > ${D}${sysconfdir}/hostname
 	fi
 
-	install -m 644 ${WORKDIR}/issue*  ${D}${sysconfdir}
+	install -m 644 ${S}/issue*  ${D}${sysconfdir}
 	printf "${DISTRO_NAME} ${DISTRO_PRETTY_VERSION} " >> ${D}${sysconfdir}/issue
 	printf "${DISTRO_NAME} ${DISTRO_PRETTY_VERSION} " >> ${D}${sysconfdir}/issue.net
 

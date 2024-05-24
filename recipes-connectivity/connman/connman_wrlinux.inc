@@ -11,7 +11,7 @@ SRC_URI += "file://connman-systemd-wrapper"
 do_install:append () {
     if ${@bb.utils.contains('DISTRO_FEATURES','systemd','true','false',d)}; then
 	install -d ${D}${sbindir}
-	install -m 0755 ${WORKDIR}/connman-systemd-wrapper ${D}${sbindir}
+	install -m 0755 ${UNPACKDIR}/connman-systemd-wrapper ${D}${sbindir}
 	sed -i 's:@SBINDIR@:${sbindir}:g' ${D}${sbindir}/connman-systemd-wrapper
 	sed -i 's#ExecStart=.*#ExecStart=${sbindir}/connman-systemd-wrapper#' ${D}${systemd_unitdir}/system/connman.service
     fi

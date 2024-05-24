@@ -17,7 +17,7 @@ do_mkpxeimage:class-target:anaconda() {
         # Use customer's
         install -m 755 ${PXE_UEFI_GRUB_CONF} boot/grub/grub.cfg
     else
-        install -m 755 ${WORKDIR}/grub.cfg boot/grub/grub.cfg
+        install -m 755 ${UNPACKDIR}/grub.cfg boot/grub/grub.cfg
         # Use default
         sed -i -e "s/@MACHINE@/${MACHINE}/g" \
                -e "s#@APPEND@#${APPEND}#g" \

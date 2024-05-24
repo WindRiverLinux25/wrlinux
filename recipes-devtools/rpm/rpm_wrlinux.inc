@@ -17,5 +17,5 @@ SRC_URI:append:rpm-enforce = " file://0002-signature-error.patch"
 
 do_install:append:rpm-keyring-path () {
 	mkdir -p ${D}${sysconfdir}/rpm/
-	install -m 0644 ${WORKDIR}/macros.krp ${D}${sysconfdir}/rpm/
+	install -m 0644 ${UNPACKDIR}/macros.krp ${D}${sysconfdir}/rpm/
 }

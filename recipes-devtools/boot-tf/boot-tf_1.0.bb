@@ -15,7 +15,8 @@ SRC_URI = "file://boot-tf \
            file://README.md \
 "
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/sources"
+UNPACKDIR = "${S}"
 
 INHIBIT_DEFAULT_DEPS = "1"
 
@@ -35,17 +36,17 @@ BOOT_TF_UPLOAD ??= ""
 
 do_install() {
     install -d ${D}${bindir}
-    install -m 0755 ${WORKDIR}/boot-tf ${D}${bindir}
+    install -m 0755 ${S}/boot-tf ${D}${bindir}
     install -d ${D}${PYTHON_SITEPACKAGES_DIR}
-    install -m 0644 ${WORKDIR}/bootlog*.py ${D}${PYTHON_SITEPACKAGES_DIR}
+    install -m 0644 ${S}/bootlog*.py ${D}${PYTHON_SITEPACKAGES_DIR}
     install -d ${D}${systemd_system_unitdir}
-    install -m 0644 ${WORKDIR}/boot-tf.service ${D}${systemd_system_unitdir}
+    install -m 0644 ${S}/boot-tf.service ${D}${systemd_system_unitdir}
     sed -i -e 's,@BINDIR@,${bindir},g' ${D}${systemd_system_unitdir}/boot-tf.service
     sed -i -e 's,@BOOT_TF_VX_DOWNLOAD@,${BOOT_TF_VX_DOWNLOAD},g' ${D}${systemd_system_unitdir}/boot-tf.service
     sed -i -e 's,@BOOT_TF_UPLOAD@,${BOOT_TF_UPLOAD},g' ${D}${systemd_system_unitdir}/boot-tf.service
 
     install -d ${D}${datadir}/doc/${BPN}
-    install -m 0644 ${WORKDIR}/README.md ${D}${datadir}/doc/${BPN}
+    install -m 0644 ${S}/README.md ${D}${datadir}/doc/${BPN}
 }
 
 FILES:${PN} += "${systemd_system_unitdir} \

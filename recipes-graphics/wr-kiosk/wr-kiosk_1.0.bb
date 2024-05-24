@@ -44,15 +44,15 @@ KIOSK-MODE-FLAG ?= "--kiosk --start-maximized"
 
 do_install() {
     # services
-    install -Dm 0644 ${WORKDIR}/wr-chromium-web-kiosk.service \
+    install -Dm 0644 ${UNPACKDIR}/wr-chromium-web-kiosk.service \
         ${D}${systemd_system_unitdir}/wr-chromium-web-kiosk.service
     sed -i -e 's#@LIBEXECDIR@#${libexecdir}#g' \
         ${D}${systemd_system_unitdir}/wr-chromium-web-kiosk.service
 
-    install -Dm 0644 ${WORKDIR}/X.service ${D}${systemd_system_unitdir}/X.service
+    install -Dm 0644 ${UNPACKDIR}/X.service ${D}${systemd_system_unitdir}/X.service
 
     # customizing script
-    install -Dm 0755 ${WORKDIR}/wr-chromium-web-kiosk.sh ${D}${libexecdir}/wr-chromium-web-kiosk.sh
+    install -Dm 0755 ${UNPACKDIR}/wr-chromium-web-kiosk.sh ${D}${libexecdir}/wr-chromium-web-kiosk.sh
     sed -i -e 's#@EXTENSIONS@#${EXTENSIONS}#g'        \
         -e 's#@STARTING-URL@#${STARTING-URL}#g'       \
         -e 's#@WINDOW-SIZE@#${WINDOW-SIZE}#g'         \
