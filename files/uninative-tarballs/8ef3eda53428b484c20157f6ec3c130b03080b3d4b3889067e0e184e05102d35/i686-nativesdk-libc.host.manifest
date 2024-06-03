@@ -253,13 +253,13 @@ nativesdk-glibc-gconv-utf-32 i686_nativesdk 2.39+git
 nativesdk-glibc-gconv-utf-7 i686_nativesdk 2.39+git
 nativesdk-glibc-gconv-viscii i686_nativesdk 2.39+git
 nativesdk-glibc-gconvs i686_nativesdk 2.39+git
-nativesdk-libc6 i686_nativesdk 2.39+git0+312e159626
-nativesdk-libc6-dbg i686_nativesdk 2.39+git0+312e159626
+nativesdk-libc6 i686_nativesdk 2.39+git0+273a835fe7
+nativesdk-libc6-dbg i686_nativesdk 2.39+git0+273a835fe7
 nativesdk-libcrypt2 i686_nativesdk 4.4.36
-nativesdk-libgcc1 i686_nativesdk 13.2.0
+nativesdk-libgcc1 i686_nativesdk 14.1.0
 nativesdk-libnsl3 i686_nativesdk 2.0.1
 nativesdk-libnss-nis2 i686_nativesdk 3.2
-nativesdk-libstdc++6 i686_nativesdk 13.2.0
+nativesdk-libstdc++6 i686_nativesdk 14.1.0
 nativesdk-libtirpc3 i686_nativesdk 1.3.4
 nativesdk-libxcrypt-compat i686_nativesdk 4.4.36
 nativesdk-patchelf i686_nativesdk 0.18.0
