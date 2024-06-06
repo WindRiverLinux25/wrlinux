@@ -26,6 +26,11 @@ Signed-off-by: He Zhe <zhe.he@windriver.com>
 Rebased for qemu 8.2.0 on 20240131.
 
 Signed-off-by: Kai Kang <kai.kang@windriver.com>
+
+Rebased for qemu 9.0.0 on 20240606.
+
+Signed-off-by: Kai Kang <kai.kang@windriver.com>
+
 ---
  accel/stubs/kvm-stub.c | 5 +++++
  system/vl.c            | 2 --
@@ -43,9 +48,9 @@ index 5d2dd8f35..24ca15b5a 100644
  #include "hw/pci/msi.h"
  
  KVMState *kvm_state;
-@@ -124,3 +125,7 @@ uint32_t kvm_dirty_ring_size(void)
+@@ -129,3 +130,7 @@ bool kvm_hwpoisoned_mem(void)
  {
-     return 0;
+     return false;
  }
 +
 +void vcpu_parse(const char *optarg)
@@ -55,7 +60,7 @@ diff --git a/system/vl.c b/system/vl.c
 index b112e9e39..e8bd3268f 100644
 --- a/system/vl.c
 +++ b/system/vl.c
-@@ -3358,9 +3358,7 @@ void qemu_init(int argc, char **argv)
+@@ -3362,9 +3362,7 @@ void qemu_init(int argc, char **argv)
                                             "smp", optarg);
                  break;
              case QEMU_OPTION_vcpu:

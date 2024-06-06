@@ -16,6 +16,10 @@ Rebased for qemu 8.2.0 on 20240131.
 
 Signed-off-by: Kai Kang <kai.kang@windriver.com>
 
+Rebased for qemu 9.0.0 on 20240606.
+
+Signed-off-by: Kai Kang <kai.kang@windriver.com>
+
 ---
  accel/kvm/kvm-accel-ops.c | 144 ++++++++++++++++++++++++++++++++++++++++++++++
  include/sysemu/cpus.h     |   2 +
@@ -24,7 +28,7 @@ Signed-off-by: Kai Kang <kai.kang@windriver.com>
  4 files changed, 158 insertions(+)
 
 diff --git a/accel/kvm/kvm-accel-ops.c b/accel/kvm/kvm-accel-ops.c
-index 6195150a0..da800cef9 100644
+index b3c946d..b4ff258 100644
 --- a/accel/kvm/kvm-accel-ops.c
 +++ b/accel/kvm/kvm-accel-ops.c
 @@ -25,6 +25,148 @@
@@ -176,7 +180,7 @@ index 6195150a0..da800cef9 100644
  
  static void *kvm_vcpu_thread_fn(void *arg)
  {
-@@ -42,6 +184,8 @@ static void *kvm_vcpu_thread_fn(void *arg)
+@@ -41,6 +183,8 @@ static void *kvm_vcpu_thread_fn(void *arg)
      r = kvm_init_vcpu(cpu, &error_fatal);
      kvm_init_cpu_signals(cpu);
  
@@ -186,7 +190,7 @@ index 6195150a0..da800cef9 100644
      cpu_thread_signal_created(cpu);
      qemu_guest_random_seed_thread_part2(cpu->random_seed);
 diff --git a/include/sysemu/cpus.h b/include/sysemu/cpus.h
-index b4a566cfe..c94c525fb 100644
+index b4a566c..c94c525 100644
 --- a/include/sysemu/cpus.h
 +++ b/include/sysemu/cpus.h
 @@ -50,4 +50,6 @@ void cpu_synchronize_all_post_reset(void);
@@ -197,10 +201,10 @@ index b4a566cfe..c94c525fb 100644
 +
  #endif
 diff --git a/qemu-options.hx b/qemu-options.hx
-index 42fd09e4d..9df6e27f5 100644
+index 8ce85d4..954120b 100644
 --- a/qemu-options.hx
 +++ b/qemu-options.hx
-@@ -1218,6 +1218,13 @@ legacy PC, they are not recommended for modern configurations.
+@@ -1237,6 +1237,13 @@ legacy PC, they are not recommended for modern configurations.
  
  ERST
  
@@ -215,10 +219,10 @@ index 42fd09e4d..9df6e27f5 100644
      "-fda/-fdb file  use 'file' as floppy disk 0/1 image\n", QEMU_ARCH_ALL)
  DEF("fdb", HAS_ARG, QEMU_OPTION_fdb, "", QEMU_ARCH_ALL)
 diff --git a/system/vl.c b/system/vl.c
-index 2bcd9efb9..d989ee4c4 100644
+index c644222..2b210ad 100644
 --- a/system/vl.c
 +++ b/system/vl.c
-@@ -3357,6 +3357,11 @@ void qemu_init(int argc, char **argv)
+@@ -3361,6 +3361,11 @@ void qemu_init(int argc, char **argv)
                  machine_parse_property_opt(qemu_find_opts("smp-opts"),
                                             "smp", optarg);
                  break;
