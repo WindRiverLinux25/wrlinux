@@ -23,15 +23,19 @@ Signed-off-by: Hongxu Jia <hongxu.jia@windriver.com>
 Rebase on 20220612.
 
 Signed-off-by: Kai Kang <kai.kang@windriver.com>
+
+Rebased on 20240605.
+
+Signed-off-by: Kai Kang <kai.kang@windriver.com>
 ---
- configure.ac | 60 ++++++++++++++++++++++++++++++++++++++++++++++++----
+ configure.ac | 60 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
  1 file changed, 56 insertions(+), 4 deletions(-)
 
 diff --git a/configure.ac b/configure.ac
-index 1d7e862d8..9f1963699 100644
+index 85c5739c4..723d0acdb 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -371,21 +371,73 @@ fi
+@@ -374,20 +374,72 @@ fi
  
  AC_CONFIG_COMMANDS([syscalls.h], [cd ${ac_top_srcdir}/include/lapi/syscalls; ./regen.sh])
  
@@ -104,7 +108,6 @@ index 1d7e862d8..9f1963699 100644
  LTP_CHECK_KEYUTILS_SUPPORT
  LTP_CHECK_LIBMNL
  LTP_CHECK_LINUXRANDOM
- LTP_CHECK_NOMMU_LINUX
 -LTP_CHECK_SELINUX
  LTP_CHECK_SYNC_ADD_AND_FETCH
  LTP_CHECK_SYSCALL_EVENTFD
