@@ -1,0 +1,68 @@
+From 2b45a3ed44bb051a64ecdb4cd5f07ec5a26b2558 Mon Sep 17 00:00:00 2001
+From: Hongxu Jia <hongxu.jia@windriver.com>
+Date: Wed, 27 Mar 2024 16:46:39 +0800
+Subject: [PATCH] tweak regex of ostree-system-generator
+
+The ostree has boot params ostree="/ostree/1" on grub
+and uboot which is a synlink point to
+the dir contains "boot.0/OSTREE_OSNAME/***".
+
+So tweak regex of ostree-system-generator.
+
+Upstream-Status: Inappropriate [LAT specific]
+
+Signed-off-by: Hongxu Jia <hongxu.jia@windriver.com>
+
+Rebased to ostree 2024.5
+
+Signed-off-by: Hongxu Jia <hongxu.jia@windriver.com>
+---
+ src/libostree/ostree-impl-system-generator.c | 9 +++++++--
+ src/libostree/ostree-sysroot.c               | 2 +-
+ 2 files changed, 8 insertions(+), 3 deletions(-)
+
+diff --git a/src/libostree/ostree-impl-system-generator.c b/src/libostree/ostree-impl-system-generator.c
+index c5fe503..7104054 100644
+--- a/src/libostree/ostree-impl-system-generator.c
++++ b/src/libostree/ostree-impl-system-generator.c
+@@ -166,6 +166,11 @@ fstab_generator (const char *ostree_target, const bool is_aboot, const char *nor
+   static const char fstab_path[] = "/etc/fstab";
+   static const char var_path[] = "/var";
+ 
++  char ostree_target_new[PATH_MAX] = {0};
++
++  if (readlink(ostree_target, ostree_target_new, sizeof(ostree_target_new)) < 0)
++      return glnx_prefix_error (error, "Failed to readlink %s", ostree_target);
++
+   /* Written by ostree-sysroot-deploy.c. We parse out the stateroot here since we
+    * need to know it to mount /var. Unfortunately we can't easily use the
+    * libostree API to find the booted deployment since /boot might not have been
+@@ -174,10 +179,10 @@ fstab_generator (const char *ostree_target, const bool is_aboot, const char *nor
+   g_autofree char *stateroot = NULL;
+   if (is_aboot)
+     {
+-      if (!_ostree_sysroot_parse_bootlink_aboot (ostree_target, &stateroot, error))
++      if (!_ostree_sysroot_parse_bootlink_aboot (ostree_target_new, &stateroot, error))
+         return glnx_prefix_error (error, "Parsing aboot stateroot");
+     }
+-  else if (!_ostree_sysroot_parse_bootlink (ostree_target, NULL, &stateroot, NULL, NULL, error))
++  else if (!_ostree_sysroot_parse_bootlink (ostree_target_new, NULL, &stateroot, NULL, NULL, error))
+     return glnx_prefix_error (error, "Parsing stateroot");
+ 
+   /* Load /etc/fstab if it exists, and look for a /var mount */
+diff --git a/src/libostree/ostree-sysroot.c b/src/libostree/ostree-sysroot.c
+index a25d0b2..ef714b4 100644
+--- a/src/libostree/ostree-sysroot.c
++++ b/src/libostree/ostree-sysroot.c
+@@ -731,7 +731,7 @@ _ostree_sysroot_parse_bootlink (const char *bootlink, int *out_entry_bootversion
+   static GRegex *regex;
+   if (g_once_init_enter (&regex_initialized))
+     {
+-      regex = g_regex_new ("^/ostree/boot.([01])/([^/]+)/([^/]+)/([0-9]+)$", 0, 0, NULL);
++      regex = g_regex_new ("boot.([01])/([^/]+)/([^/]+)/([0-9]+)$", 0, 0, NULL);
+       g_assert (regex);
+       g_once_init_leave (&regex_initialized, 1);
+     }
+-- 
+2.27.0
+
