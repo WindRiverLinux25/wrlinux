@@ -4,8 +4,6 @@ LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384
 SRC_URI = "file://init-ostree.sh \
 	file://init-ostree-install.sh \
 	file://init.luks-ostree \
-	file://lat-installer.sh \
-	file://lat-installer.hook \
 "
 
 PR = "r9"
@@ -98,8 +96,6 @@ PACKAGES = "${PN}-installer ${PN}-init ${PN}-console ${PN}"
 
 FILES:${PN}-installer = " \
     /install \
-    /lat-installer.sh \
-    /lat-installer.hook \
 "
 FILES:${PN}-init = " \
     /init \
@@ -138,8 +134,6 @@ do_install() {
 	# before even executing /init.
 	install -d ${D}/dev
 	mknod -m 622 ${D}/dev/console c 5 1
-	install -m 0755 ${UNPACKDIR}/lat-installer.sh ${D}/lat-installer.sh
-	install -m 0755 ${UNPACKDIR}/lat-installer.hook ${D}/lat-installer.hook
 }
 
 # While this package maybe an allarch due to it being a 
@@ -148,15 +142,4 @@ do_install() {
 #inherit allarch
 INHIBIT_DEFAULT_DEPS = "1"
 
-FILES:${PN} = " /init /init.luks-ostree /dev /install /lat-installer.sh /lat-installer.hook"
-
 COMPATIBLE_HOST = "(arm|aarch64|i.86|x86_64|powerpc).*-linux"
-
-# For LAT usage
-do_export_yocto_vars() {
-    mkdir -p ${PKGDATA_DIR}
-    echo "[yocto]" > ${PKGDATA_DIR}/.yocto_vars.env
-    echo "MULTIMACH_TARGET_SYS=${MULTIMACH_TARGET_SYS}" >> ${PKGDATA_DIR}/.yocto_vars.env
-    echo "PACKAGE_ARCHS=${PACKAGE_ARCHS}" >> ${PKGDATA_DIR}/.yocto_vars.env
-}
-addtask export_yocto_vars

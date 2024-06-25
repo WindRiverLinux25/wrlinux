@@ -78,7 +78,6 @@ OPTIONAL:
  ecurlarg=ARGS_TO_ECURL_SCRIPT	- Arguments to pass to ecurl script
  lcurl=URL_TO_SCRIPT		- Download+execute script after install
  lcurlarg=ARGS_TO_ECURL_SCRIPT	- Arugments to pass to lcurl script
- ks=ARGS_TO_KICKSTART		- Download+apply kickstart setting
  instiso=ISO_LABEL		- The label of installer ISO image
  Disk sizing
  biosplusefi=1	 		- Create one GPT disk to support booting from both of BIOS and EFI
@@ -103,8 +102,6 @@ log_info() { echo "$0[$$]: $*" >&2; }
 log_error() { echo "$0[$$]: ERROR $*" >&2; }
 
 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/lib/ostree:/usr/lib64/ostree
-
-source /lat-installer.hook
 
 lreboot() {
 	echo b > /proc/sysrq-trigger
@@ -576,9 +573,7 @@ udev_daemon() {
 fatal() {
     echo $1
     echo
-    if [ -e /install.log -a -e /tmp/lat/report_error_log.sh ]; then
-        /bin/bash /tmp/lat/report_error_log.sh
-    elif [ -e /install.log ]; then
+    if [ -e /install.log ]; then
         datetime=$(date +%y%m%d-%H%M%S)
         for label in otaefi boot instboot; do
             local _dev=$(blkid --label $label -o device)
@@ -940,14 +935,6 @@ grub_partition() {
 		a="$a -n $p:$first:$end -c $p:fluxdata"
 	fi
 
-	# Create new partitions (optional), grub
-	if [ "${VSZ}" != 0  -a -n "${KS}" ]; then
-		exec_hook "%part" ${lat_create_part}
-		if [ $? -ne 0 ]; then
-			fatal "Run Kickstart Create Part Script failed"
-		fi
-	fi
-
 	sgdisk $a -p ${dev}
 }
 
@@ -1025,14 +1012,6 @@ ufdisk_partition() {
 			fi
 		fi
 	fi
-
-	# Create new partitions (optional), udisk
-	if [ "${VSZ}" != 0 -a -n "${KS}" ]; then
-		exec_hook "%part" ${lat_create_part}
-		if [ $? -ne 0 ]; then
-			fatal "Run Kickstart Create Part Script failed"
-		fi
-	fi
 }
 
 ##################
@@ -1107,49 +1086,6 @@ fi
 
 if [ "$INSTNET" = dhcp -o "$INSTNET" = dhcp6 ] ; then
 	do_dhcp
-fi
-
-# If local kickstart is not available
-if [ "${KS::7}" = "file://" -a ! -e "${KS:7}" ]; then
-  # Try to find local kickstart from instboot partition
-  cnt=10
-  while [ "$cnt" -gt 0 ] ; do
-    bdev=$(blkid --label instboot || blkid --label ${ISO_INSTLABEL})
-    if [ $? = 0 ]; then
-      break
-    fi
-    sleep 1
-    cnt=$(($cnt - 1))
-  done
-
-  if [ -n "$bdev" ]; then
-    LOCAL_KS="/local-ks.cfg"
-    mkdir /t
-    mount -r $bdev /t
-    if [ -e "/t/${KS:7}" ]; then
-      cp "/t/${KS:7}" ${LOCAL_KS}
-      KS="file://${LOCAL_KS}"
-    fi
-    umount /t
-    rm -rf /t
-  fi
-fi
-
-if [ -n "${KS}" ]; then
-	./lat-installer.sh parse-ks --kickstart=${KS}
-	if [ $? -ne 0 ]; then
-		fatal "Parse Kickstart ${KS} failed"
-	fi
-	if [ -e /tmp/lat/cmdline ]; then
-		CMDLINE=`cat /tmp/lat/cmdline` read_args
-	fi
-fi
-
-if [ -n "${KS}" ]; then
-	exec_hook "%ks-early" ${lat_ks_early}
-	if [ $? -ne 0 ]; then
-		fatal "Run Kickstart Early Script failed"
-	fi
 fi
 
 # Early curl exec
@@ -1261,13 +1197,6 @@ done
 if [ $fail = 1 ] ; then
 	INSTW=0
 	ask_dev
-fi
-
-if [ -n "${KS}" ]; then
-	exec_hook "%pre-part" ${lat_pre_part}
-	if [ $? -ne 0 ]; then
-		fatal "Run Kickstart Per Partitioin Script failed"
-	fi
 fi
 
 cnt=0
@@ -1449,14 +1378,6 @@ elif [ "$INSTFMT" != 0 ] ; then
 	fi
 fi
 
-# Create filesystem on new partitions (optional), grub and udisk
-if [ "${VSZ}" != 0 -a -n "${KS}" ]; then
-	exec_hook "%mkfs" ${lat_make_fs}
-	if [ $? -ne 0 ]; then
-		fatal "Run Kickstart Make FS Script failed"
-	fi
-fi
-
 retries=1
 while [ "${retries}" -le 5 ]; do
 	sleep 0.1
@@ -1465,13 +1386,6 @@ while [ "${retries}" -le 5 ]; do
 	fi
 	retries=$((retries + 1))
 done
-
-if [ -n "${KS}" ]; then
-	./lat-installer.sh pre-install
-	if [ $? -ne 0 ]; then
-		fatal "Run Kickstart Pre Install Script failed"
-	fi
-fi
 
 # OSTree deploy
 
@@ -1725,25 +1639,6 @@ fi
 if [ -d ${PHYS_SYSROOT}/ostree/1/usr/homedirs/home ] ; then
 	tar -C ${PHYS_SYSROOT}/ostree/1/usr/homedirs/home --xattrs --xattrs-include='*' -cf - . | \
 	tar --xattrs --xattrs-include='*' -xf - -C /var1/home 2> /dev/null
-fi
-
-if [ -n "${KS}" ]; then
-	rootfs=`ls ${PHYS_SYSROOT}/ostree/? -d`
-	if [ "$INSTAB" = 1 ] ; then
-		rootfs="$rootfs `ls ${PHYS_SYSROOT}_b/ostree/? -d`"
-	fi
-
-	for root in ${rootfs}; do
-		./lat-installer.sh set-network --root=${root} -v
-		if [ $? -ne 0 ]; then
-			fatal "Run Kickstart Set network failed in ${root}"
-		fi
-
-		./lat-installer.sh post-install --root=${root} -v --instflux=${INSTFLUX} --instos=${INSTOS}
-		if [ $? -ne 0 ]; then
-			fatal "Run Kickstart Post Install Script failed in ${root}"
-		fi
-	done
 fi
 
 if [ "$BIOSPLUSEFI" = "1"  ] ; then
