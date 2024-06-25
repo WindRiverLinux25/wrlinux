@@ -1,2 +1,1 @@
-require ${@bb.utils.contains_any('DISTRO_FEATURES', ['ostree', 'lat'], '${BPN}_lat.inc', '', d)}
-
+require ${@bb.utils.contains('DISTRO_FEATURES', 'ostree', '${BPN}_ostree.inc', '', d)}
