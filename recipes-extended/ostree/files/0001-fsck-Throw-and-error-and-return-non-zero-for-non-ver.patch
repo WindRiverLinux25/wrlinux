@@ -14,8 +14,15 @@ text that is emitted from the ostree fsck.
 
 Signed-off-by: Jason Wessel <jason.wessel@windriver.com>
 
-Upstream-Status: Inappropriate [LAT specific]
+Upstream-Status: Inappropriate [WRLinux specific]
 Signed-off-by: Hongxu Jia <hongxu.jia@windriver.com>
+
+The modified behavior is used by ostree_upgrade.sh, which in fact
+adopts a more strict fsck policy allowing no corruption at all. So
+this patch is WRLinux specific. This patch is needed unless we modifies
+ostree_upgrade.sh script and changes its de-facto fsck policy.
+
+Signed-off-by: Chen Qi <Qi.Chen@windriver.com>
 ---
  src/ostree/ot-builtin-fsck.c | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)

@@ -8,13 +8,16 @@ This patch adds support for copying all files from the deployment's
 directory. This feature can be enabled by 'touch .ostree-bootcsumdir-source'
 in /usr/lib/ostree-boot.
 
-Upstream-Status: Inappropriate [LAT specific]
+Upstream-Status: Inappropriate [WRLinux specific]
 
 Signed-off-by: Hongxu Jia <hongxu.jia@windriver.com>
 
-Rebased on 20230607 for ostree 2023.3.
+This patch is WRLinux specific because the .ostree-bootcsumdir-source is
+WRLinux specific. More specifically, it's the image_types_ostree.bbclass
+that creates this file and makes use of this patch. We'll need this patch
+unless we change the way OSTree is integrated into WRLinux.
 
-Signed-off-by: Kai Kang <kai.kang@windriver.com>
+Signed-off-by: Chen Qi <Qi.Chen@windriver.com>
 ---
  src/libostree/ostree-sysroot-deploy.c | 57 +++++++++++++++++++++++++++
  1 file changed, 57 insertions(+)

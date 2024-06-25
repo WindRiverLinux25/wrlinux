@@ -11,25 +11,28 @@ Having service links in the deploy directory allows a boot loader to
 be more throughly locked down.  For example:
 
 % ls -l rootfs_ota_boot/? |awk '{print $1" "$9" "$10" "$11}'
-lrwxrwxrwx rootfs_ota_boot/1 -> ostree/lat_os-f650e47c2868b887de6e739dc32271c654b049e4e8d61c420d69426afb544455
-lrwxrwxrwx rootfs_ota_boot/2 -> ostree/lat_os-f650e47c2868b887de6e739dc32271c654b049e4e8d61c420d69426afb544455
+lrwxrwxrwx rootfs_ota_boot/1 -> ostree/wrl_os-f650e47c2868b887de6e739dc32271c654b049e4e8d61c420d69426afb544455
+lrwxrwxrwx rootfs_ota_boot/2 -> ostree/wrl_os-f650e47c2868b887de6e739dc32271c654b049e4e8d61c420d69426afb544455
 
 ls -l rootfs_ota/ostree/? |awk '{print $1" "$9" "$10" "$11}'
-lrwxrwxrwx rootfs_ota/ostree/1 -> boot.0/lat_os/f650e47c2868b887de6e739dc32271c654b049e4e8d61c420d69426afb544455/0
-lrwxrwxrwx rootfs_ota/ostree/2 -> boot.0/lat_os/f650e47c2868b887de6e739dc32271c654b049e4e8d61c420d69426afb544455/1
+lrwxrwxrwx rootfs_ota/ostree/1 -> boot.0/wrl_os/f650e47c2868b887de6e739dc32271c654b049e4e8d61c420d69426afb544455/0
+lrwxrwxrwx rootfs_ota/ostree/2 -> boot.0/wrl_os/f650e47c2868b887de6e739dc32271c654b049e4e8d61c420d69426afb544455/1
 
 The kernel arguments are not taken from the ostree "hints" in this
 case, because the configuration is much more locked down.
 The boot loader will use the service links and other variables to
 select a rollback or primary boot choices.
 
-Upstream-Status: Pending
+Upstream-Status: Inappropriate [WRLinux Specific]
 
 Signed-off-by: Hongxu Jia <hongxu.jia@windriver.com>
 
-Rebased on 20230607 for ostree 2023.3.
+This patch is WRLinux specific because of the way ostree is integrated
+into WRLinux. OSTree has its own assumption of integration. WRLinux
+is using something different, thus this patch. This patch is needed
+in WRLinux until WRLinux changes the way ostree is integrated.
 
-Signed-off-by: Kai Kang <kai.kang@windriver.com>
+Signed-off-by: Chen Qi <Qi.Chen@windriver.com>
 ---
  src/libostree/ostree-bootloader-grub2.c |  7 +++
  src/libostree/ostree-bootloader-uboot.c |  7 +++

@@ -4,7 +4,7 @@ SRC_URI += " \
     file://0001-fsck-Throw-and-error-and-return-non-zero-for-non-ver.patch \
     file://0002-u-boot-add-bootdir-to-the-generated-uEnv.txt.patch \
     file://0003-tweak-regex-of-ostree-system-generator.patch \
-    file://0004-deploy-using-etc-in-runtime-as-merge-source.patch \
+    file://0004-ostree-sysroot-deploy-add-OSTREE_ETC_MERGE_DIR-env-v.patch \
     file://0005-create-links-to-the-deploy-directory-in-boot-and-ost.patch \
     file://0006-Allow-updating-files-in-the-boot-directory.patch \
     file://0007-get-output-of-ostree-prepare-root-back.patch \

@@ -9,9 +9,17 @@ thing on /boot/efi
 
 [1] https://github.com/ostreedev/ostree/commit/9a526bbaa5ad6a75e3b0d8052d93934df3e7a20f
 
-Upstream-Status: Inappropriate [LAT specific]
+Upstream-Status: Inappropriate [WRLinux specific]
 
 Signed-off-by: Hongxu Jia <hongxu.jia@windriver.com>
+
+This patch is WRLinux specific because of the way ostree is integrated
+into WRLinux. The /boot/efi is used by various places such as image_types_ostree.bbclass,
+bootfs.sh, init-ostree-install.sh, etc. This patch is needed until we
+change change the above places, which essentially means changing the way
+of how ostree is integrated.
+
+Signed-off-by: Qi Chen <Qi.Chen@windriver.com>
 ---
  src/libostree/ostree-sysroot.c | 3 +++
  1 file changed, 3 insertions(+)

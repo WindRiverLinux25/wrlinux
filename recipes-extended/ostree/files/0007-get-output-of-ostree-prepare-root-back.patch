@@ -3,20 +3,21 @@ From: Hongxu Jia <hongxu.jia@windriver.com>
 Date: Wed, 27 Mar 2024 16:56:32 +0800
 Subject: [PATCH] get output of ostree-prepare-root back
 
-The LAT requires the output of ostree-prepare-root, but commit
-[298c601d ostree-prepare-root: Log journal message after finding
+The init-ostree.sh script requires the output of ostree-prepare-root,
+but commit [298c601d ostree-prepare-root: Log journal message after finding
 deployment] redirect the output as systemd journal message
 
 Get it back
 
-Upstream-Status: Inappropriate [LAT specific]
+Upstream-Status: Inappropriate [WRLinux specific]
 
 Signed-off-by: Hongxu Jia <hongxu.jia@windriver.com>
 
-Rebased to ostree 2024.5.
-Skip unnecessary output as debug
+This patch is WRLinux specific because it's the init-ostree.sh script
+provided by initramfs-ostree recipe that makes use of the output. We'll
+need this patch until we change init-ostree.sh script.
 
-Signed-off-by: Hongxu Jia <hongxu.jia@windriver.com>
+Signed-off-by: Qi Chen <Qi.Chen@windriver.com>
 ---
  src/switchroot/ostree-prepare-root.c | 6 ++++--
  1 file changed, 4 insertions(+), 2 deletions(-)

@@ -4,18 +4,21 @@ Date: Wed, 27 Mar 2024 16:46:39 +0800
 Subject: [PATCH] tweak regex of ostree-system-generator
 
 The ostree has boot params ostree="/ostree/1" on grub
-and uboot which is a synlink point to
+and uboot which is a symlink point to
 the dir contains "boot.0/OSTREE_OSNAME/***".
 
 So tweak regex of ostree-system-generator.
 
-Upstream-Status: Inappropriate [LAT specific]
+Upstream-Status: Inappropriate [WRLinux specific]
 
 Signed-off-by: Hongxu Jia <hongxu.jia@windriver.com>
 
-Rebased to ostree 2024.5
+Such parameters are WRLinux specific. OSTree itself really does
+not have this problem. So this patch is WRLinux specific. We'll
+need to modify the way, if possible, WRLinux integrates OSTree
+to get rid of this local patch.
 
-Signed-off-by: Hongxu Jia <hongxu.jia@windriver.com>
+Signed-off-by: Chen Qi <Qi.Chen@windriver.com>
 ---
  src/libostree/ostree-impl-system-generator.c | 9 +++++++--
  src/libostree/ostree-sysroot.c               | 2 +-
