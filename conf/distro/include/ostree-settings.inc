@@ -1,7 +1,3 @@
-# Define OSTree sample keys directory
-OSTREE_SAMPLE_KEYS_DIR ?= "${LAYER_PATH_wrlinux}/files/ostree-sample-keys"
-OSTREE_KEYS_DIR ?= "${OSTREE_SAMPLE_KEYS_DIR}"
-
 OSTREE_INITRAMFS_IMAGE ?= "initramfs-ostree-image"
 OSTREE_REPO ??= "${DEPLOY_DIR_IMAGE}/ostree_repo"
 
@@ -18,10 +14,6 @@ OSTREE_INST_ARGS ??= "devmd=0"
 #   1 = Skip the FSCK check
 #   2 = Skip the FSCK and the boot
 OSTREE_SKIP_BOOT_DIFF ??= "2"
-
-OSTREE_GPGID ??= "OSTree-Sample-Key"
-OSTREE_GPG_PASSPHRASE ??= "ostree"
-OSTREE_GPGDIR ??= "${OSTREE_KEYS_DIR}/rpm_keys"
 
 # Generate rootfs.ostree.tar.bz2 files which could be used to build a new repo
 # OSTREE_CREATE_TARBALL = "1"
@@ -142,8 +134,6 @@ OSTREE_BOOTSCR_PRECMD ??= ""
 
 # Grub settings for ostree
 OSTREE_GRUB_USER ??= "root"
-# Default password is root found in the file below, which is a generated hash
-OSTREE_GRUB_PW_FILE ??= "${OSTREE_KEYS_DIR}/boot_keys/boot_cfg_pw"
 
 OSTREE_KERNEL ??= "${KERNEL_IMAGETYPE}"
 RAMDISK_EXT ?= ".${INITRAMFS_FSTYPES}"
