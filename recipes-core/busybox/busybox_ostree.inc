@@ -1,3 +1,4 @@
+# partprobe is used by init-ostree-install.sh
 SRC_URI += "\
     file://partprobe.cfg \
 "
