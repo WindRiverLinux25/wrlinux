@@ -6,7 +6,7 @@ OSTREE_INITRAMFS_IMAGE ?= "initramfs-ostree-image"
 OSTREE_REPO ??= "${DEPLOY_DIR_IMAGE}/ostree_repo"
 
 OSTREE_BRANCHNAME ??= "${IMAGE_BASENAME}"
-OSTREE_OSNAME ??= "lat_os"
+
 # This is set to the name of the loader to include into a disk image
 # Not all BSPs will need this, so it can be unset by the BSP
 OSTREE_BOOTLOADER_INCLUDE ??= "${OSTREE_BOOTLOADER}"
@@ -145,49 +145,5 @@ OSTREE_GRUB_USER ??= "root"
 # Default password is root found in the file below, which is a generated hash
 OSTREE_GRUB_PW_FILE ??= "${OSTREE_KEYS_DIR}/boot_keys/boot_cfg_pw"
 
-OSTREE_SUPPORTED_ARM64_MACHINES ??= " \
-    bcm-2xxx-rpi4 \
-    xilinx-zynqmp \
-    nxp-imx8 \
-    marvell-cn96xx \
-    nxp-s32g \
-    intel-socfpga-64 \
-    ti-j72xx \
-    aptiv_cvc_sousa \
-    aptiv-cvc-fl \
-    axxiaarm64 \
-    nxp-ls1043 \
-    nxp-lx2xxx \
-"
-
-OSTREE_SUPPORTED_ARM32_MACHINES ??= " \
-    xilinx-zynq \
-    nxp-imx6 \
-    nxp-ls1028 \
-    axxiaarm \
-"
-
-OSTREE_SUPPORTED_ARM_MACHINES ?= " \
-    ${OSTREE_SUPPORTED_ARM64_MACHINES} \
-    ${OSTREE_SUPPORTED_ARM32_MACHINES} \
-"
-
 OSTREE_KERNEL ??= "${KERNEL_IMAGETYPE}"
 RAMDISK_EXT ?= ".${INITRAMFS_FSTYPES}"
-
-BOOTFILES ??= ""
-
-OSTREE_WIFI_PACKAGES ??= ""
-OSTREE_WIFI_PACKAGES:intel-x86-64 = " \
-    packagegroup-base-wifi \
-    linux-firmware-iwlwifi-6000g2a-6 \
-    linux-firmware-iwlwifi-6000g2b-6 \
-    linux-firmware-iwlwifi-135-6 \
-    linux-firmware-iwlwifi-8000c \
-    linux-firmware-iwlwifi-8265 \
-    linux-firmware-iwlwifi-7265d \
-    linux-firmware-iwlwifi-9000 \
-    linux-firmware-iwlwifi-misc \
-    kernel-module-iwlmvm \
-    kernel-module-iwlwifi \
-"
