@@ -5,6 +5,9 @@
 addhandler linux_yocto_rewrite_uri
 linux_yocto_rewrite_uri[eventmask] = "bb.event.RecipePreFinalise"
 
+# Disable shallow tarball for kernel
+BB_GIT_SHALLOW = "0"
+
 python linux_yocto_rewrite_uri() {
     pass
 }
