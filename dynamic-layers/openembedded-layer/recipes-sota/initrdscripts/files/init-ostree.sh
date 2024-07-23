@@ -411,7 +411,7 @@ done
 udevadm control -e
 
 cd $ROOT_MOUNT
-for x in dev proc sys; do
+for x in dev proc sys run; do
 	log_info "Moving /$x to new rootfs"
 	mount --move "/$x" "$x"
 done
