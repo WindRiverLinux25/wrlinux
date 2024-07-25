@@ -109,6 +109,9 @@ python gen_vr_recipe_handler() {
                     if old_patches == new_patches:
                         vr = old_vr
 
+        # Replace .vr -> ${VENDOR_REVISION_PREFIX}
+        vr_prefix = d.getVar("VENDOR_REVISION_PREFIX") or ""
+        vr = vr.removeprefix(vr_prefix)
         vr = '${VENDOR_REVISION_PREFIX}%s' % vr
         vr_out = "VENDOR_REVISION[%s] ??= '%s'" % (file_short, vr)
         if new_patches:
