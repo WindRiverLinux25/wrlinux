@@ -33,6 +33,10 @@ def get_current_vendor_revision(d):
 
     vendor_revision = '%s%s' % (year_version, update_version)
 
+    vr_prefix = d.getVar('VENDOR_REVISION_PREFIX') or ''
+    if vr_prefix:
+        vendor_revision = vr_prefix + vendor_revision
+
     vr_suffix = d.getVar('VENDOR_REVISION_SUFFIX') or ''
     if vr_suffix:
         vendor_revision += vr_suffix
