@@ -15,7 +15,7 @@ VENDOR_REVISION_ALL ?= "${VENDOR_REVISION_DIR}/wrlinux-vendor-revision.conf"
 VENDOR_REVISION_SUFFIX ??= ""
 
 addhandler gen_vr_prepare
-gen_vr_prepare[eventmask] = "bb.event.ConfigParsed"
+gen_vr_prepare[eventmask] = "bb.event.CacheLoadStarted"
 python gen_vr_prepare() {
     vendor_revision_dir = d.getVar('VENDOR_REVISION_DIR')
     # Need a fresh VENDOR_REVISION_DIR and CACHE dir
