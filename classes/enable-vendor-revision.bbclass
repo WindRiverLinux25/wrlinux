@@ -14,9 +14,18 @@ def vr_need_skip(d):
              bb.data.inherits_class('nativesdk', d):
         return True
 
-    # VR only makes sense when there are sources
-    if not d.getVar('SRC_URI'):
+    src_uri = d.getVar('SRC_URI')
+    # VR does not makes sense for no source
+    if not src_uri:
         return True
+
+    # VR only makes sense when there are patches
+    for s in src_uri.split():
+        if s.endswith('.patch') or s.endswith('.diff'):
+            return False
+
+    # VR does not makes sense for no patches
+    return True
 
 def get_file_short(d):
     return '/'.join(d.getVar('FILE').split('/')[-4:]).replace('/', '_')

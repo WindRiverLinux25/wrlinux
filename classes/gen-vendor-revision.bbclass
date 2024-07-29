@@ -114,12 +114,11 @@ python gen_vr_recipe_handler() {
         vr_prefix = d.getVar("VENDOR_REVISION_PREFIX") or ""
         vr = vr.removeprefix(vr_prefix)
         vr = '${VENDOR_REVISION_PREFIX}%s' % vr
-        vr_out = "VENDOR_REVISION[%s] ??= '%s'" % (file_short, vr)
         if new_patches:
             vr_out = "VENDOR_REVISION[%s] ??= '%s %s'" % (file_short, vr, new_patches)
-        out_file = os.path.join(d.getVar('VENDOR_REVISION_DIR'), file_short)
-        with open(out_file, 'w') as f:
-            f.write('%s\n' % vr_out)
+            out_file = os.path.join(d.getVar('VENDOR_REVISION_DIR'), file_short)
+            with open(out_file, 'w') as f:
+                f.write('%s\n' % vr_out)
 
     patches = []
     localdata = bb.data.createCopy(d)
@@ -146,28 +145,18 @@ python gen_vr_all_handler () {
     import glob
     vendor_revision_dir = d.getVar('VENDOR_REVISION_DIR')
     patches = []
-    nopatches = []
     output = d.getVar('VENDOR_REVISION_ALL')
     output_dir = os.path.dirname(output)
     for recipe in glob.glob(os.path.join(vendor_revision_dir, '*')):
         with open(recipe) as f:
             for line in f:
-                if not line in (patches + nopatches):
+                if not line in (patches):
                     line_split = line.split()
                     if len(line_split) > 3:
                         patches.append(line)
-                    else:
-                        nopatches.append(line)
     patches.sort()
-    nopatches.sort()
-    output_nopatches = os.path.join(output_dir, 'wrlinux-vendor-revision-nopatches.inc')
     with open(output, 'w') as f:
         f.write('require %s\n\n' % "wrlinux-vendor-revision-manual.inc")
-        if nopatches:
-            f.write('require %s\n\n' % os.path.basename(output_nopatches))
-            with open(output_nopatches, 'w') as f2:
-                f2.write(''.join(nopatches))
-                bb.note('The recipes without patches are saved to %s' % output_nopatches)
         f.write(''.join(patches))
     bb.note('The recipes with patches are saved to %s' % output)
 }
