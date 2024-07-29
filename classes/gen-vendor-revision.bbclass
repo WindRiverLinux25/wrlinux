@@ -121,12 +121,14 @@ python gen_vr_recipe_handler() {
             f.write('%s\n' % vr_out)
 
     patches = []
-    src_uri = d.getVar('SRC_URI')
+    localdata = bb.data.createCopy(d)
+    localdata.setVar('OVERRIDES', localdata.getVar('OVERRIDES') + localdata.getVar('GEN_VENDOR_REVISION_OVERRIDES'))
+    src_uri = localdata.getVar('SRC_URI')
     for s in src_uri.split():
         if s.endswith('.patch') or s.endswith('.diff'):
             if not s.startswith("file://"):
                 continue
-            fetcher = bb.fetch2.Fetch([s], d)
+            fetcher = bb.fetch2.Fetch([s], localdata)
             local = fetcher.localpath(s)
             patches += get_cve_patch(local)
     update_vr(patches)
