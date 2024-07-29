@@ -41,7 +41,8 @@ python gen_vr_recipe_handler() {
         return
 
     # Only generate vr for supported recipes
-    wrl_supported = d.getVar('WRLINUX_SUPPORTED_RECIPE')
+    bpn = d.getVar('BPN')
+    wrl_supported = d.getVar('WRLINUX_SUPPORTED_RECIPE') or d.getVar('WRLINUX_SUPPORTED_RECIPE:pn-%s' % bpn)
     if wrl_supported and wrl_supported.strip() == '0':
         return
 
