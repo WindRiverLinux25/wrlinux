@@ -126,8 +126,6 @@ python gen_vr_recipe_handler() {
     src_uri = localdata.getVar('SRC_URI')
     for s in src_uri.split():
         if s.endswith('.patch') or s.endswith('.diff'):
-            if not s.startswith("file://"):
-                continue
             fetcher = bb.fetch2.Fetch([s], localdata)
             local = fetcher.localpath(s)
             patches += get_cve_patch(local)
