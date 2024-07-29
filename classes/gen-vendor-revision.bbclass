@@ -168,3 +168,7 @@ python gen_vr_all_handler () {
         f.write(''.join(patches))
     bb.note('The recipes with patches are saved to %s' % output)
 }
+
+# Workaround Exception during build_dependencies for fetcher_hashes_dummyfunc
+# https://git.openembedded.org/openembedded-core/commit/?id=a8e7b0f932b9ea69b3a218fca18041676c65aba0
+fetcher_hashes_dummyfunc[vardepvalue] = ""
