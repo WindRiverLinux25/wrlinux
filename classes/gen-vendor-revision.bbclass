@@ -43,13 +43,13 @@ python gen_vr_recipe_handler() {
 
     import hashlib
 
-    if vr_need_skip(d):
-        return
-
     # Only generate vr for supported recipes
     bpn = d.getVar('BPN')
     wrl_supported = d.getVar('WRLINUX_SUPPORTED_RECIPE') or d.getVar('WRLINUX_SUPPORTED_RECIPE:pn-%s' % bpn)
     if wrl_supported and wrl_supported.strip() == '0':
+        return
+
+    if vr_need_skip(d):
         return
 
     def get_cve_patch(patch):
@@ -127,12 +127,8 @@ python gen_vr_recipe_handler() {
     patches = []
     localdata = bb.data.createCopy(d)
     localdata.setVar('OVERRIDES', localdata.getVar('OVERRIDES') + localdata.getVar('GEN_VENDOR_REVISION_OVERRIDES'))
-    src_uri = localdata.getVar('SRC_URI')
-    for s in src_uri.split():
-        if s.endswith('.patch') or s.endswith('.diff'):
-            fetcher = bb.fetch2.Fetch([s], localdata)
-            local = fetcher.localpath(s)
-            patches += get_cve_patch(local)
+    for local in get_src_patches(localdata):
+        patches += get_cve_patch(local)
     update_vr(patches)
 }
 

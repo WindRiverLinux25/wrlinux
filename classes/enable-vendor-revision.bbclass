@@ -7,25 +7,25 @@
 # To avoid confusions with PR Server
 VENDOR_REVISION_PREFIX ??= ".vr"
 
-def vr_need_skip(d):
+def get_src_patches(d):
+    import oe.patch
+    local_patches = set()
+    for patch in oe.patch.src_patches(d):
+        _, _, local, _, _, parm = bb.fetch.decodeurl(patch)
+        local_patches.add(local)
+    return local_patches
 
+def vr_need_skip(d):
     packages = d.getVar('PACKAGES')
     if (not packages) or bb.data.inherits_class('nopackages', d) or \
              bb.data.inherits_class('nativesdk', d):
         return True
 
-    src_uri = d.getVar('SRC_URI')
-    # VR does not makes sense for no source
-    if not src_uri:
+    # Skip VR when no patches
+    if get_src_patches(d):
+        return False
+    else:
         return True
-
-    # VR only makes sense when there are patches
-    for s in src_uri.split():
-        if s.endswith('.patch') or s.endswith('.diff'):
-            return False
-
-    # VR does not makes sense for no patches
-    return True
 
 def get_file_short(d):
     return '/'.join(d.getVar('FILE').split('/')[-4:]).replace('/', '_')
@@ -56,6 +56,11 @@ python() {
     """
     Set PR:append = "VENDOR_REVISION" for the recipes
     """
+
+    # Skip when gen-vendor-revision is inherited
+    if bb.data.inherits_class('gen-vendor-revision', d):
+        bb.debug(1, 'Skipping enabling VR for %s since gen-vendor-revision is inherited' % d.getVar('PN'))
+        return
 
     if vr_need_skip(d):
         return
