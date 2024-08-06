@@ -14,6 +14,12 @@ VENDOR_REVISION_ALL ?= "${VENDOR_REVISION_DIR}/wrlinux-vendor-revision.conf"
 #VENDOR_REVISION_SUFFIX = ".ccm01"
 VENDOR_REVISION_SUFFIX ??= ""
 
+addhandler gen_vr_fatal
+gen_vr_fatal[eventmask] = "bb.event.BuildStarted"
+python gen_vr_fatal() {
+    bb.fatal('Only bitbake -p is supported when gen-vendor-revision.bbclass is enabled!')
+}
+
 addhandler gen_vr_prepare
 gen_vr_prepare[eventmask] = "bb.event.CacheLoadStarted"
 python gen_vr_prepare() {
