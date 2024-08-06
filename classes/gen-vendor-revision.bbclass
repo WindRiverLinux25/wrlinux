@@ -98,11 +98,9 @@ python gen_vr_recipe_handler() {
 
         # No checking is needed in the following cases:
         # - No old_val: It's a new vr, just update it
-        # - len(old_vr) != len(vr): The vr has changed a lot such as
-        #   VENDOR_REVISION_SUFFIX is newly defined, just update it.
         if old_val:
             old_vr = old_val.split()[0]
-            if old_vr and len(old_vr) == len(vr):
+            if old_vr:
                 # In different RCPL, check whether need update
                 if old_vr != vr:
                     old_patches = ' '.join(old_val.split()[1:])
