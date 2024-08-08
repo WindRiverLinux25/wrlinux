@@ -118,11 +118,23 @@ python gen_vr_recipe_handler() {
         vr_prefix = d.getVar("VENDOR_REVISION_PREFIX") or ""
         vr = vr.removeprefix(vr_prefix)
         vr = '${VENDOR_REVISION_PREFIX}%s' % vr
+        out_lines = []
+        val = ""
         if new_patches:
-            vr_out = "VENDOR_REVISION[%s] ??= '%s %s'" % (file_short, vr, new_patches)
+            val = '%s %s' % (vr, new_patches)
+            out_lines.append("VENDOR_REVISION[%s] ??= '%s'" % (file_short, val))
+
+        if is_work_shared(d):
+            s_short = get_var_short(d.getVar('S'))
+            if val:
+                out_lines.append("VENDOR_REVISION[%s] ?= '%s'" % (s_short, val))
+            else:
+                out_lines.append("VENDOR_REVISION[%s] ??= '${@d.getVarFlag(\"VENDOR_REVISION\", \"%s\")}'" \
+                    % (file_short, s_short))
+        if out_lines:
             out_file = os.path.join(d.getVar('VENDOR_REVISION_DIR'), file_short)
             with open(out_file, 'w') as f:
-                f.write('%s\n' % vr_out)
+                f.write('%s\n' % '\n'.join(out_lines))
 
     patches = []
     localdata = bb.data.createCopy(d)
@@ -149,9 +161,7 @@ python gen_vr_all_handler () {
         with open(recipe) as f:
             for line in f:
                 if not line in (patches):
-                    line_split = line.split()
-                    if len(line_split) > 3:
-                        patches.append(line)
+                    patches.append(line)
     patches.sort()
     with open(output, 'w') as f:
         f.write('require %s\n\n' % "wrlinux-vendor-revision-manual.inc")

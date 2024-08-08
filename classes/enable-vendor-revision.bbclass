@@ -15,7 +15,15 @@ def get_src_patches(d):
         local_patches.add(local)
     return local_patches
 
+def is_work_shared(d):
+    sharedworkdir = os.path.join(d.getVar('TMPDIR'), 'work-shared')
+    return d.getVar('S').startswith(sharedworkdir)
+
 def vr_need_skip(d):
+
+    if is_work_shared(d):
+        return False
+
     packages = d.getVar('PACKAGES')
     if (not packages) or bb.data.inherits_class('nopackages', d) or \
              bb.data.inherits_class('nativesdk', d):
@@ -27,8 +35,11 @@ def vr_need_skip(d):
     else:
         return True
 
+def get_var_short(var):
+    return '/'.join(var.split('/')[-4:]).replace('/', '_')
+
 def get_file_short(d):
-    return '/'.join(d.getVar('FILE').split('/')[-4:]).replace('/', '_')
+    return get_var_short(d.getVar('FILE'))
 
 def get_current_vendor_revision(d):
     year_version = d.getVar('WRLINUX_YEAR_VERSION')
@@ -73,6 +84,11 @@ python() {
         if val:
             # The first item is VENDOR_REVISION
             vr = val.split()[0]
+            # The d.getVarFlag("VENDOR_REVISION", "tmp-glibc_work-shared_qemux86-64_kernel-source")
+            # return None when kernel doesn't have patches, and vr_need_skip()
+            # can't skip work-shared recipes. The None is a string here.
+            if vr == 'None':
+                return
 
     if not vr:
         # It's a new recipe, defult to current VR
