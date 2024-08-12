@@ -10,6 +10,7 @@ VENDOR_REVISION_PREFIX ??= ".vr"
 def get_src_patches(d):
     import oe.patch
     local_patches = set()
+    bb.fetch.get_hashvalue(d)
     for patch in oe.patch.src_patches(d):
         _, _, local, _, _, parm = bb.fetch.decodeurl(patch)
         local_patches.add(local)
