@@ -1,1 +1,0 @@
-../../../scripts/gen-image/doc/appsdk.README.md
