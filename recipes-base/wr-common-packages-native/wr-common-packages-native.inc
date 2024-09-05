@@ -180,16 +180,13 @@ DEPENDS = "\
     python3-editables-native \
     python3-flit-core-native \
     python3-hatchling-native \
-    python3-importlib-metadata-native \
     python3-iniparse-native \
     python3-installer-native \
     python3-jinja2-native \
     python3-mako-native \
     python3-markupsafe-native \
-    python3-more-itertools-native \
     python3-native \
     python3-packaging-native \
-    python3-pathlib2-native \
     python3-pathspec-native \
     python3-pip-native \
     python3-pluggy-native \
@@ -200,12 +197,9 @@ DEPENDS = "\
     python3-setuptools-native \
     python3-setuptools-scm-native \
     python3-six-native \
-    python3-toml-native \
-    python3-tomli-native \
     python3-trove-classifiers-native \
     python3-typing-extensions-native \
     python3-wheel-native \
-    python3-zipp-native \
     qemu-helper-native \
     qemu-native \
     qemu-system-native \
@@ -247,7 +241,7 @@ DEPENDS = "\
     xrandr-native \
     xtrans-native \
     xz-native \
-    yocto-cfg-fragments-native \
+    yocto-cfg-fragments-6.6-native \
     zlib-native \
     zstd-native \
     "
