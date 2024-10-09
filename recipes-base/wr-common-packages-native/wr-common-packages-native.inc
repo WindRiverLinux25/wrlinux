@@ -220,6 +220,7 @@ DEPENDS = "\
     swig-native \
     syslinux-native \
     systemd-systemctl-native \
+    tar-native \
     tcl-native \
     texinfo-dummy-native \
     tzcode-native \
