@@ -69,9 +69,15 @@ python() {
     Set PR:append = "VENDOR_REVISION" for the recipes
     """
 
+    pn = d.getVar('PN')
+    # Skip when WRLINUX_VENDOR_REVISION_FILE is NULL
+    if not d.getVar('WRLINUX_VENDOR_REVISION_FILE'):
+        bb.debug(1, 'Skipping enabling VR for %s since WRLINUX_VENDOR_REVISION_FILE is NULL.' % pn)
+        return
+
     # Skip when gen-vendor-revision is inherited
     if bb.data.inherits_class('gen-vendor-revision', d):
-        bb.debug(1, 'Skipping enabling VR for %s since gen-vendor-revision is inherited' % d.getVar('PN'))
+        bb.debug(1, 'Skipping enabling VR for %s since gen-vendor-revision is inherited' % pn)
         return
 
     if vr_need_skip(d):
