@@ -22,13 +22,13 @@ python do_install () {
 
 do_install_base () {
     install -d ${D}${libexecdir}/${BPN}
-    install -m 0755 ${WORKDIR}/run_container.sh ${D}${libexecdir}/${BPN}/
+    install -m 0755 ${UNPACKDIR}/run_container.sh ${D}${libexecdir}/${BPN}/
 
     install -d ${D}${systemd_unitdir}/system/
-    install -m 0664 ${WORKDIR}/run_container.service ${D}${systemd_unitdir}/system
+    install -m 0664 ${UNPACKDIR}/run_container.service ${D}${systemd_unitdir}/system
 
     install -d ${D}${sysconfdir}/wr-containers
-    install -m 0644 ${WORKDIR}/containers.conf ${D}${sysconfdir}/wr-containers
+    install -m 0644 ${UNPACKDIR}/containers.conf ${D}${sysconfdir}/wr-containers
 }
 
 python write_containers_conf () {
