@@ -78,8 +78,13 @@ python recipelist_noprovider_handler() {
 
     cache_dir = d.getVar('CACHE')
     cache_file = os.path.join(cache_dir, 'bb_cache.dat')
-    dump_cache_tool = os.path.join(d.getVar('COREBASE'), 'bitbake/contrib/dump_cache.py')
-    cmd = [dump_cache_tool, '-m', 'pn,packages,provides,rprovides,appends,skipped,skipreason', cache_file]
+    # The bb_cache.dat maybe a broken symlink when last parsing was failed.
+    if os.path.exists(cache_file):
+        dump_cache_tool = os.path.join(d.getVar('COREBASE'), 'bitbake/contrib/dump_cache.py')
+        cmd = [dump_cache_tool, '-m', 'pn,packages,provides,rprovides,appends,skipped,skipreason', cache_file]
+    else:
+        bb.warn("%s doesn't exist or is an broken symlink, skip figuring out recipes list" % cache_file)
+        return
 
     try:
         dumped_result = subprocess.check_output(cmd, stderr=subprocess.STDOUT).decode('utf-8')
