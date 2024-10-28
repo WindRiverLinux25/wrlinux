@@ -29,7 +29,7 @@ RECIPE_LIST_CURRENT_LAYER ?= "${@bb.utils.get_file_layer(d.getVar('FILE'), d)}"
 RECIPE_LIST_REASON ?= "Not supported in this configuration by Wind River. ${RECIPE_LIST_KEY_MSG} CUSTOMER_RECIPES:${RECIPE_LIST_CURRENT_LAYER} += '${BPN}'"
 RECIPE_LIST_REASON_ADDON ?= "You may also have to add: BB_NO_NETWORK = '0'"
 
-python() {
+python recipelist_check() {
     from pathlib import Path
 
     if d.getVar('RECIPE_LIST_LAYERS') == '':
@@ -243,3 +243,6 @@ python recipelist_noprovider_handler() {
 
 addhandler recipelist_noprovider_handler
 recipelist_noprovider_handler[eventmask] = "bb.event.NoProvider"
+
+addhandler recipelist_check
+recipelist_check[eventmask] = "bb.event.RecipePostKeyExpansion"
