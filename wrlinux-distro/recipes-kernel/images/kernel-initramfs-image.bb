@@ -71,6 +71,8 @@ do_install() {
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+INSANE_SKIP:${PN}:qemuppc64 = "textrel"
+
 pkg_postinst:${PN} () {
 #!/bin/sh
     if [ "x${INSTALL_BUNDLE}" = "x1" ] ; then
