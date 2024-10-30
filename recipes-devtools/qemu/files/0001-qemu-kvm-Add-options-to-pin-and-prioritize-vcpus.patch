@@ -20,6 +20,10 @@ Rebased for qemu 9.0.0 on 20240606.
 
 Signed-off-by: Kai Kang <kai.kang@windriver.com>
 
+Rebased for qemu 9.1.0 on 20241030.
+
+Signed-off-by: Kai Kang <kai.kang@windriver.com>
+
 ---
  accel/kvm/kvm-accel-ops.c | 144 ++++++++++++++++++++++++++++++++++++++++++++++
  include/sysemu/cpus.h     |   2 +
@@ -222,7 +226,7 @@ diff --git a/system/vl.c b/system/vl.c
 index c644222..2b210ad 100644
 --- a/system/vl.c
 +++ b/system/vl.c
-@@ -3361,6 +3361,11 @@ void qemu_init(int argc, char **argv)
+@@ -3377,6 +3377,11 @@ void qemu_init(int argc, char **argv)
                  machine_parse_property_opt(qemu_find_opts("smp-opts"),
                                             "smp", optarg);
                  break;

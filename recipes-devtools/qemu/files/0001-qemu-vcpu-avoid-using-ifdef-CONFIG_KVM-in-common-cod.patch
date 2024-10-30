@@ -31,6 +31,10 @@ Rebased for qemu 9.0.0 on 20240606.
 
 Signed-off-by: Kai Kang <kai.kang@windriver.com>
 
+Rebased for qemu 9.1.0 on 20241030.
+
+Signed-off-by: Kai Kang <kai.kang@windriver.com>
+
 ---
  accel/stubs/kvm-stub.c | 5 +++++
  system/vl.c            | 2 --
@@ -48,9 +52,9 @@ index 5d2dd8f35..24ca15b5a 100644
  #include "hw/pci/msi.h"
  
  KVMState *kvm_state;
-@@ -129,3 +130,7 @@ bool kvm_hwpoisoned_mem(void)
+@@ -134,3 +135,7 @@ int kvm_create_guest_memfd(uint64_t size, uint64_t flags, Error **errp)
  {
-     return false;
+     return -ENOSYS;
  }
 +
 +void vcpu_parse(const char *optarg)
@@ -60,7 +64,7 @@ diff --git a/system/vl.c b/system/vl.c
 index b112e9e39..e8bd3268f 100644
 --- a/system/vl.c
 +++ b/system/vl.c
-@@ -3362,9 +3362,7 @@ void qemu_init(int argc, char **argv)
+@@ -3378,9 +3378,7 @@ void qemu_init(int argc, char **argv)
                                             "smp", optarg);
                  break;
              case QEMU_OPTION_vcpu:
