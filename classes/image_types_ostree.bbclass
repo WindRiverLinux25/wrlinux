@@ -53,7 +53,7 @@ python ostree_check_rpm_public_key () {
     if not os.path.exists(gpg_path):
         status, output = oe.utils.getstatusoutput('mkdir -m 0700 -p %s' % gpg_path)
         if status:
-            raise bb.build.FuncFailed('Failed to create gpg keying %s: %s' %
+            raise bb.fatal('Failed to create gpg keying %s: %s' %
                                       (gpg_path, output))
     gpg_bin = d.getVar('GPG_BIN', True) or \
               bb.utils.which(os.getenv('PATH'), 'gpg')
