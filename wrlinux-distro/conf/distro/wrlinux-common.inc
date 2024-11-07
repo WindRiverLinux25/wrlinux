@@ -8,9 +8,6 @@
 # We need this to add multilib support to the built-in QEMU BSPs
 include conf/distro/include/wrlinux-bsp-${MACHINE}.inc
 
-# PACKAGECONFIG settings for WRLinux
-include conf/distro/include/wrlinux-packageconfigs.inc
-
 MAINTAINER = "Wind River <info@windriver.com>"
 
 WRLINUX_VARIANT ??= ""
@@ -64,21 +61,6 @@ DISTRO_EXTRA_RDEPENDS:append:qemuall = " ${WRLINUXQEMUDEPS}"
 #default locale / local language processing settings
 IMAGE_LINGUAS ?= ""
 
-# MIRRORS are used only if we don't have a local copy, and the stated upstream
-# is no longer available.
-MIRRORS =+ "\
-bzr://.*/.*      http://downloads.yoctoproject.org/mirror/sources/ \n \
-cvs://.*/.*      http://downloads.yoctoproject.org/mirror/sources/ \n \
-git://.*/.*      http://downloads.yoctoproject.org/mirror/sources/ \n \
-gitsm://.*/.*    http://downloads.yoctoproject.org/mirror/sources/ \n \
-hg://.*/.*       http://downloads.yoctoproject.org/mirror/sources/ \n \
-osc://.*/.*      http://downloads.yoctoproject.org/mirror/sources/ \n \
-p4://.*/.*       http://downloads.yoctoproject.org/mirror/sources/ \n \
-svn://.*/.*      http://downloads.yoctoproject.org/mirror/sources/ \n \
-ftp://.*/.*      http://downloads.yoctoproject.org/mirror/sources/ \n \
-http://.*/.*     http://downloads.yoctoproject.org/mirror/sources/ \n \
-https://.*/.*    http://downloads.yoctoproject.org/mirror/sources/ \n"
-
 # The CONNECTIVITY_CHECK_URI's are used to test whether we can succesfully
 # fetch from the network (and warn you if not). To disable the test set
 # the variable to be empty.
@@ -124,17 +106,7 @@ MULTILIBS ?= ""
 MULTILIB_CONF = "${@'conf/multilib.conf' if d.getVar('MULTILIBS') and d.getVar('PACKAGE_CLASSES').split()[0] != 'package_deb' else ''}"
 require ${MULTILIB_CONF}
 
-# dnsmasq and named (provided by bind) use the same default port 53:
-# | dnsmasq: failed to create listening socket for port 53: Address already in use
-# So disable the service by default, and if the user want to use both of them,
-# it need to be set to a different port in dnsmasq.conf before starting the service.
-INITSCRIPT_PARAMS:pn-dnsmasq = "stop 20 0 1 6 ."
-SYSTEMD_AUTO_ENABLE:pn-dnsmasq = "disable"
-
 require conf/distro/include/wrlinux-distro-settings.conf
-
-# Exclude download layers from eSDK.
-SDK_LAYERS_EXCLUDE_PATTERN ?= ".*-dl$ .*-dl-[0-9.]+$"
 
 # By default we only support 'standard' kernels.  A machine configuration,
 # user, or other configuration file can override this.
@@ -151,15 +123,6 @@ SKIP_RECIPE[musl-obstack] ?= "only glibc is supported for wrlinux"
 SKIP_RECIPE[musl-utils] ?= "only glibc is supported for wrlinux"
 SKIP_RECIPE[libc-test] ?= "only glibc is supported for wrlinux"
 SKIP_RECIPE[newlib] ?= "only glibc is supported for wrlinux"
-
-# do_kernel_version_sanity_check in oe-core checks if the defined version in
-# metadata(LINUX_VERSION) matches the version written in the source code. For
-# release branches we have Jenkins to take care of the version updating. For
-# CI/CD branch we aim to use the latest source and directly use Yocto kernel
-# source code which frequently gets updated. But oe-core does not tightly follow
-# the latest version. We don't necessarily frequently manually bump up the
-# version.
-KERNEL_VERSION_SANITY_SKIP = "1"
 
 # SANITY_TESTED_DISTROS used to defined the distribution list which we used to build wrlinux
 SANITY_TESTED_DISTROS ?= " \
