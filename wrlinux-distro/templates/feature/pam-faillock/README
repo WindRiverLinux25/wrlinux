@@ -9,7 +9,7 @@ Template pam-faillock enable pam_faillock PAM module by default.
 Notes
 ==========
 * pam-faillock doesn't work well with 'ssh_allow_empty_password' which is
-  added by IMAGE_FEATURES 'allow-empty-password' or 'debug-tweaks':
+  added by IMAGE_FEATURES 'allow-empty-password':
 
   When a user with non-empty password tries to login with ssh, it will be
   treated as a failed attempt before entering password.
