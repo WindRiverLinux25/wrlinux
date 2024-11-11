@@ -26,6 +26,7 @@ PROVIDES = "virtual/kernel-initramfs-image"
 inherit kernelsrc kernel-arch
 
 do_install[depends] += "virtual/kernel:do_deploy"
+do_populate_lic[depends] += "virtual/kernel:do_shared_workdir"
 
 B = "${WORKDIR}/${BPN}-${PV}"
 
