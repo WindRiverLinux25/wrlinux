@@ -1,0 +1,101 @@
+
+	Intel Open Visual Inference and Neural network Optimization (OpenVINO)
+
+1. Overview
+===========
+
+Intel Open Visual Inference and Neural network Optimization (OpenVINO)
+is use to help developers and data scientists speed up computer vision
+workloads, streamline deep learning inference and deployments, and enable
+easy, heterogeneous execution across Intel platforms.
+
+2. Build Configuration
+======================
+
+When OpenVINO feature is enabled, the following components will be added
+to your final image:
+
+    openvino-inference-engine
+    open-model-zoo
+
+To enable this feature, please add the following configuration parameter:
+    --template=feature/openvino
+
+Some demos in OpenVINO require graphics support, and it works well with
+the following types of images:
+
+    wrlinux-image-std-sato
+    wrlinux-image-std + xfce
+
+3. OpenVINO Sample Applications
+=================================
+You can find demos in /usr/share/openvino/open-model-zoo/demos and some
+useful tools are installed in /usr/share/openvino/open-model-zoo/tools.
+
+Before running the demos, you need to download the .xml and .bin files
+to your host using the following tools:
+
+/usr/share/openvino/open-model-zoo/tools/model_tools/downloader.py
+
+Take human_pose_estimation_demo as an example:
+
+   $ /usr/share/openvino/open-model-zoo/tools/model_tools/downloader.py --print_all | grep human-pose-estimation
+   higher-hrnet-w32-human-pose-estimation
+   human-pose-estimation-0001
+   human-pose-estimation-0005
+   human-pose-estimation-0006
+   human-pose-estimation-0007
+   human-pose-estimation-3d-0001
+   single-human-pose-estimation-0001
+
+   $ /usr/share/openvino/open-model-zoo/tools/model_tools/downloader.py --name human-pose-estimation-0001
+
+The XML file will be downloaded into the ./intel directory
+
+root@intel-x86-64:~# tree intel/
+intel/
+`-- human-pose-estimation-0001
+    |-- FP16
+    |   |-- human-pose-estimation-0001.bin
+    |   `-- human-pose-estimation-0001.xml
+    `-- FP32
+        |-- human-pose-estimation-0001.bin
+        `-- human-pose-estimation-0001.xml
+
+If a usb camera (/dev/video0) is connected, run with:
+
+   $ /usr/bin/human_pose_estimation_demo -i 0 -m intel/human-pose-estimation-0001/FP32/human-pose-estimation-0001.xml -d CPU -at openpose
+
+Running with -h will show the available target devices that can be specified with -d:
+
+   $ /usr/bin/human_pose_estimation_demo -h
+   ...
+   Available target devices:  CPU
+
+4. Additional Documentation
+===========================
+
+For more documentation and demonstrations, please refer to:
+https://docs.openvino.ai/2024/documentation.html
+
+5. Known Issues
+================
+
+1) When downloading XML files, you may encounter the following errors:
+   requests.exceptions.SSLError: HTTPSConnectionPool(host='storage.openvinotoolkit.org', port=443): Max retries exceeded with url: /repositories/open_model_zoo/2023.0/models_bin/1/human-pose-estimation-0001/FP32/human-pose-estimation-0001.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+
+   Please use a network proxy to download. For example:
+   $ https_proxy="proxy_server:port" /usr/share/openvino/open-model-zoo/tools/model_tools/downloader.py --name human-pose-estimation-0001
+
+2) Running demo with .mp4 files may fail because gstreamer1.0-libav is not installed,
+   add the following line to conf/local.conf to install it: 
+
+   BB_NO_NETWORK ?= '0'
+   # WARNING, these settings will install commercial packages on target images.
+   LICENSE_FLAGS_WHITELIST:append = " commercial"
+   IMAGE_INSTALL:append = " gstreamer1.0-libav"
+
+
+#@TYPE: Wrtemplate
+#@NAME: openvino
+#@DESCRIPTION: Intel Open Visual Inference and Neural network Optimization (OpenVINO)
