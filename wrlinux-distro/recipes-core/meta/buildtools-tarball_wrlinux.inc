@@ -4,6 +4,7 @@ TOOLCHAIN_OUTPUTNAME:osv-wrlinux = "${SDK_ARCH}-${BUILDTOOLS}-nativesdk-standalo
 TOOLCHAIN_HOST_TASK:append:osv-wrlinux = " \
       nativesdk-python3-jinja2 \
       nativesdk-libgcc \
+      nativesdk-openssh-ssh \
      "
 
 # use anspass to save and retrieve credentials
