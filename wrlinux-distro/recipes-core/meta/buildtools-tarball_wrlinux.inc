@@ -1,14 +1,7 @@
 # Force the name, we don't want ?= or our SDK naming will be used.
 TOOLCHAIN_OUTPUTNAME:osv-wrlinux = "${SDK_ARCH}-${BUILDTOOLS}-nativesdk-standalone-${DISTRO_VERSION}"
 
-# for toaster
-#
 TOOLCHAIN_HOST_TASK:append:osv-wrlinux = " \
-      nativesdk-python3-django nativesdk-python3-django-south \
-      nativesdk-python3-numbers nativesdk-python3-email \
-      nativesdk-python3-html nativesdk-python3-resource \
-      nativesdk-python3-debugger \
-      nativesdk-python3-pytz nativesdk-python3-beautifulsoup4 \
       nativesdk-python3-jinja2 \
       nativesdk-libgcc \
      "
