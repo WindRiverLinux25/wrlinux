@@ -1,0 +1,13 @@
+This template builds native agent-proxy.
+
+agent-proxy provides proxy communications between a deployed target
+with minimal network communications and Workbench to make on-target
+development and debugging possible.
+
+To use this template, add the following to your setup line:
+
+    --templates feature/agent-proxy
+
+#@TYPE: Wrtemplate
+#@NAME: agent-proxy
+#@DESCRIPTION: Build native agent-proxy
