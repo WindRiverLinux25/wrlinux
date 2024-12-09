@@ -110,7 +110,7 @@ def package_compare_impl(pkgtype, d):
                 if not os.path.exists(line_new):
                     skip = False
                     break
-    if skip:
+    if skip and bb.utils.to_boolean(d.getVar('PACKAGE_COMPARE_FAST')):
         bb.note("Skipping package comparing since all packages' PE, PV and PR are the same")
         return
 
