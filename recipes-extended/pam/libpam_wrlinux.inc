@@ -5,24 +5,23 @@
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/libpam:"
 
-SRC_URI += "https://src.fedoraproject.org/repo/pkgs/pam/pam-redhat-1.1.5.tar.xz/sha512/b93b80e9aa0dd8b38045b2a8cc36006b1b651a2724e64fcd9ed87af1fc36008acf9e62e2950097bebfccd657a064b748311f4b9c826f76d7b8c4299feb070bb8/pam-redhat-1.1.5.tar.xz;name=redhat \
-            file://pam-1.0.90-redhat-modules.patch \
+SRC_URI += "https://src.fedoraproject.org/repo/pkgs/pam/pam-redhat-1.3.0.tar.xz/sha512/1e17f5c9653d33eafc0070f57b7c7637f36689432c08c63d98a816d073e58b35a6711477eb559a216c4e98c694a75d5febafc68aa967e090e8c97602c0bef362/pam-redhat-1.3.0.tar.xz;name=redhat \
+            file://0001-modules-meson.build-enable-build-redhat-pam-modules.patch \
+            file://0002-modules-pam_postgresok-change-uid-to-28.patch \
             ${@bb.utils.contains('PACKAGECONFIG', 'faillock', 'file://pam_faillock_add_uid.patch', '', d)} \
            "
 
-SRC_URI[redhat.sha256sum] = "0fb422bdc4889e0f1d28144d95268266ad3953dcd64ab90f5efb0f2caa2e06cf"
-
-EXTRA_OEMAKE:append = " LOCKDIR=${localstatedir}/run/console"
+SRC_URI[redhat.sha256sum] = "d112f0abf253552657adb8196cc4711bed4d5cb0edff1210c6b98fd509ca598b"
 
 # If necessary, move pam-redhat modules to where they will be built.
 # We create a local function and use sh.
 #
 do_lcl_rh_move () {
-	SAVED_PWD=`pwd`; cd ${S}
-	if [ ! -e modules/pam_console ] ; then
-		mv ${UNPACKDIR}/pam-redhat-1.1.5/* modules
-	fi
-	cd ${SAVED_PWD}
+    SAVED_PWD=`pwd`; cd ${S}
+    if [ ! -e modules/pam_chroot ] ; then
+        mv ${UNPACKDIR}/pam-redhat-1.3.0/* modules/
+    fi
+    cd ${SAVED_PWD}
 }
 
 # Now, we define our own do_patch.  We rely on the fact

@@ -1,4 +1,4 @@
-From ffdc115e7488aaddeb3a86529b54290f5b51222d Mon Sep 17 00:00:00 2001
+From aa752cb9d30072912dd3b5d51a86ab2fe6f08970 Mon Sep 17 00:00:00 2001
 From: Changqing Li <changqing.li@windriver.com>
 Date: Mon, 11 Jan 2021 15:40:21 +0800
 Subject: [PATCH] pam_faillock: add option to accept uid as argument
@@ -13,10 +13,10 @@ Signed-off-by: Changqing Li <changqing.li@windriver.com>
  1 file changed, 58 insertions(+), 4 deletions(-)
 
 diff --git a/modules/pam_faillock/main.c b/modules/pam_faillock/main.c
-index 136be834..b34b30b9 100644
+index c6dd19c..ff0e647 100644
 --- a/modules/pam_faillock/main.c
 +++ b/modules/pam_faillock/main.c
-@@ -55,10 +55,29 @@
+@@ -56,10 +56,29 @@
  #include "faillock.h"
  #include "faillock_config.h"
  
@@ -46,7 +46,7 @@ index 136be834..b34b30b9 100644
  	int rv;
  	const char *dir = NULL;
  	const char *conf = NULL;
-@@ -66,6 +85,7 @@ args_parse(int argc, char **argv, struct options *opts)
+@@ -67,6 +86,7 @@ args_parse(int argc, char **argv, struct options *opts)
  	memset(opts, 0, sizeof(*opts));
  
  	opts->progname = argv[0];
@@ -54,7 +54,7 @@ index 136be834..b34b30b9 100644
  
  	for (i = 1; i < argc; ++i) {
  		if (strcmp(argv[i], "--conf") == 0) {
-@@ -93,6 +113,24 @@ args_parse(int argc, char **argv, struct options *opts)
+@@ -94,6 +114,24 @@ args_parse(int argc, char **argv, struct options *opts)
  				return -1;
  			}
  			opts->user = argv[i];
@@ -79,7 +79,7 @@ index 136be834..b34b30b9 100644
  		}
  		else if (strcmp(argv[i], "--reset") == 0) {
  			opts->reset = 1;
-@@ -120,6 +158,10 @@ args_parse(int argc, char **argv, struct options *opts)
+@@ -121,6 +159,10 @@ args_parse(int argc, char **argv, struct options *opts)
  		}
  	}
  
@@ -90,7 +90,7 @@ index 136be834..b34b30b9 100644
  	return 0;
  }
  
-@@ -128,8 +170,8 @@ usage(const char *progname)
+@@ -129,8 +171,8 @@ usage(const char *progname)
  {
  	fprintf(stderr,
  		_("Usage: %s [--dir /path/to/tally-directory]"
@@ -101,7 +101,7 @@ index 136be834..b34b30b9 100644
  }
  
  static int
-@@ -321,9 +363,21 @@ main (int argc, char *argv[])
+@@ -323,9 +365,21 @@ main (int argc, char *argv[])
  		return 1;
  	}
  

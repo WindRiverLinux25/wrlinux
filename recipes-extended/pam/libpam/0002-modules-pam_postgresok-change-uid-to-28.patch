@@ -1,0 +1,31 @@
+From 232757d8dc40384db38281bd2d0f99f1d94ddd9e Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Thu, 26 Dec 2024 15:31:15 +0800
+Subject: [PATCH] modules/pam_postgresok: change uid to 28
+
+The default uid for postgres user is 28 in meta-oe rather than 26 in
+redhat linux.
+
+Upstream-Status: Inappropriate [WRLinux Specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ modules/pam_postgresok/pam_postgresok.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/modules/pam_postgresok/pam_postgresok.c b/modules/pam_postgresok/pam_postgresok.c
+index 0961b72..786a233 100644
+--- a/modules/pam_postgresok/pam_postgresok.c
++++ b/modules/pam_postgresok/pam_postgresok.c
+@@ -69,7 +69,7 @@ int pam_sm_authenticate(pam_handle_t *pamh,int flags,int argc
+     uid = getuid();
+     pw = pam_modutil_getpwuid(pamh, uid);
+ 
+-    if ((uid == 26) && (pw != NULL) && (strcmp(pw->pw_name, "postgres") == 0))
++    if ((uid == 28) && (pw != NULL) && (strcmp(pw->pw_name, "postgres") == 0))
+ 	retval = PAM_SUCCESS;
+ 
+     if (ctrl & PAM_DEBUG_ARG) {
+-- 
+2.25.1
+

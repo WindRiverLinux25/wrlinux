@@ -1,0 +1,39 @@
+From e9accec3d7156f650523a367d9fb17fc8057c2e8 Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Thu, 26 Dec 2024 15:16:14 +0800
+Subject: [PATCH] modules/meson.build: enable build redhat pam modules
+
+Enable build redhat pam modules:
+  pam_chroot
+  pam_postgresok
+
+Upstream-Status: Inappropriate [WRLinux Specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ modules/meson.build | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/modules/meson.build b/modules/meson.build
+index 20cebdb..f7a1a5e 100644
+--- a/modules/meson.build
++++ b/modules/meson.build
+@@ -6,6 +6,7 @@ pam_module_link_args = ['-Wl,--version-script=' + pam_module_map_path]
+ 
+ subdir('pam_access')
+ subdir('pam_canonicalize_user')
++subdir('pam_chroot')
+ subdir('pam_debug')
+ subdir('pam_deny')
+ subdir('pam_echo')
+@@ -29,6 +30,7 @@ subdir('pam_motd')
+ subdir('pam_namespace')
+ subdir('pam_nologin')
+ subdir('pam_permit')
++subdir('pam_postgresok')
+ subdir('pam_pwhistory')
+ subdir('pam_rhosts')
+ subdir('pam_rootok')
+-- 
+2.25.1
+
