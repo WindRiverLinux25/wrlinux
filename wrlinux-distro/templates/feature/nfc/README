@@ -18,7 +18,7 @@ please refer to Documentation/networking/nfc.txt, NFC website, and iso
 website for more information about architecture overview, device driver
 interface description, and protocols:
 
-	- https://01.org/linux-nfc/documentation
+	- https://docs.kernel.org/networking/nfc.html
 
 1. How to build WRLinux kernel and filesystem with NFC feature
 --------------------------------------------------------------

@@ -48,7 +48,7 @@ the tmp*/deploy/images/$MACHINE/ostree_repo directory.  This
 repository will be used to create a local repository inside the image,
 from which a "deployment" will be checked out for use as the OS.
 
-You can read more about OSTree at: https://ostree.readthedocs.io/en/latest/
+You can read more about OSTree at: https://ostreedev.github.io/ostree/introduction
 
 The wrlinux layer also provides an initial image deployment tool
 called bootfs.sh.  You can see the help message by running the

@@ -46,7 +46,7 @@ Maybe some other simulated devices is not covered for now.
 
 For more hardware details please consider this online documentation:
 
-http://qemu.weilnetz.de/qemu-doc.html
+http://qemu.weilnetz.de/doc/latest
 http://wiki.qemu.org/Documentation/HardwareManuals
 
 The simulated target is provided by qemu-system-ppc. For detailed

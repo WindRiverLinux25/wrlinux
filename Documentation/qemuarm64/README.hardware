@@ -43,7 +43,7 @@ created BSP
 
 For more hardware details please consider this online documentation:
 
-http://qemu.weilnetz.de/qemu-doc.html
+http://qemu.weilnetz.de/doc/latest
 http://wiki.qemu.org/Documentation/HardwareManuals
 
 The simulated target is provided by qemu-system-aarch64. For detailed

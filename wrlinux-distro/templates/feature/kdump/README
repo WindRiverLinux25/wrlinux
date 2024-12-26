@@ -18,4 +18,4 @@ Crash is a self-contained tool that can be used to investigate either live
 systems, kernel core dumps created from the netdump, diskdump and kdump packages
 from Red Hat Linux, the mcore kernel patch offered by Mission Critical Linux, or
 the LKCD kernel patch. For details please refer to
-https://people.redhat.com/anderson/crash_whitepaper/
+https://crash-utility.github.io/crash_whitepaper.html

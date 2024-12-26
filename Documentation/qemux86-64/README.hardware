@@ -83,7 +83,7 @@ machine.
 
 For more hardware details please consider this online documentation:
 
-http://qemu.weilnetz.de/qemu-doc.html#QEMU-PC-System-emulator
+http://qemu.weilnetz.de/doc/latest/system/targets.html
 http://wiki.qemu.org/Documentation/HardwareManuals
 
 
