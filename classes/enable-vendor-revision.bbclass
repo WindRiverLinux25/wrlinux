@@ -18,6 +18,13 @@ def get_src_patches(d):
 
 def is_work_shared(d):
     sharedworkdir = os.path.join(d.getVar('TMPDIR'), 'work-shared')
+
+    # Due to meta-xilinx used the xlnx-embeddedsw class to hard link
+    # copy the source files from work share directory to the working
+    # directory. Add it as corner case of work-shared recipes
+    if bb.data.inherits_class("xlnx-embeddedsw", d):
+        return True
+
     return d.getVar('S').startswith(sharedworkdir)
 
 def vr_need_skip(d):
