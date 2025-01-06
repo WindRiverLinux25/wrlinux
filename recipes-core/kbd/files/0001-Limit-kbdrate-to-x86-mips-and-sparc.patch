@@ -1,4 +1,4 @@
-From cb29df8cd6dca7c5d26b1ecd461208f0d67dc5f8 Mon Sep 17 00:00:00 2001
+From 30e74663b0cbb25e06eae3f61f0eaf753e98605d Mon Sep 17 00:00:00 2001
 From: Dennis Hall <dennis.hall@windriver.com>
 Date: Fri, 13 Dec 2019 00:28:51 -0800
 Subject: [PATCH] Limit kbdrate to x86, mips and sparc.
@@ -36,7 +36,7 @@ Signed-off-by: Kai Kang <kai.kang@windriver.com>
  1 file changed, 11 insertions(+)
 
 diff --git a/src/kbdrate.c b/src/kbdrate.c
-index ad12c7d..4357385 100644
+index 65baf20..bae8108 100644
 --- a/src/kbdrate.c
 +++ b/src/kbdrate.c
 @@ -80,6 +80,7 @@ beats rebuilding the kernel!
@@ -47,7 +47,7 @@ index ad12c7d..4357385 100644
  
  #ifdef __sparc__
  #include <asm/param.h>
-@@ -354,6 +355,16 @@ int main(int argc, char **argv)
+@@ -333,6 +334,16 @@ int main(int argc, char **argv)
  	int silent = 0;
  	int c;
  
@@ -60,7 +60,10 @@ index ad12c7d..4357385 100644
 +		"ERROR:  %s should only be used on MIPS, x86 and Sparc archicture boards\n", basename(argv[0]));
 +        exit(1);
 +#endif
-+ 	set_progname(argv[0]);
- 	set_progname(argv[0]);
++
  	setuplocale();
  
+ 	const char *short_opts = "r:d:pshV";
+-- 
+2.47.0
+
