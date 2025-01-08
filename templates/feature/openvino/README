@@ -92,7 +92,7 @@ https://docs.openvino.ai/2024/documentation.html
 
    BB_NO_NETWORK ?= '0'
    # WARNING, these settings will install commercial packages on target images.
-   LICENSE_FLAGS_WHITELIST:append = " commercial"
+   LICENSE_FLAGS_ACCEPTED:append = " commercial"
    IMAGE_INSTALL:append = " gstreamer1.0-libav"
 
 
