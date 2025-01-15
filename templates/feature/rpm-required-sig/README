@@ -1,4 +1,0 @@
-Instruct RPM to enforce package signature authentication on the target.
-
-Only signatures known by RPM will allow a package to be installed,
-otherwise an error will be generated and installation prevented.
