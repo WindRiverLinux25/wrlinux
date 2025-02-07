@@ -5,6 +5,8 @@ SRC_URI += " \
 
 PACKAGECONFIG[POSIX_26] = ",,,"
 
+inherit nativesdk_multilib_header
+
 # For Distro only
 GLIBC_GETLOADER64 ?= ""
 python() {
