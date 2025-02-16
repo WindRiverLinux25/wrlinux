@@ -76,7 +76,9 @@ def get_current_vendor_revision(d):
 
     return vendor_revision
 
-python() {
+addhandler append_vr_to_pr
+append_vr_to_pr[eventmask] = "bb.event.RecipeTaskPreProcess"
+python append_vr_to_pr() {
     """
     Set PR:append = "VENDOR_REVISION" for the recipes
     """
