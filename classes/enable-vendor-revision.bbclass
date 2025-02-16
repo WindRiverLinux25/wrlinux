@@ -7,6 +7,8 @@
 # To avoid confusions with PR Server
 VENDOR_REVISION_PREFIX ??= ".vr"
 
+VENDOR_REVISION_SKIP ??= ""
+
 def get_src_patches(d):
     import oe.patch
     local_patches = set()
@@ -28,6 +30,9 @@ def is_work_shared(d):
     return d.getVar('S').startswith(sharedworkdir)
 
 def vr_need_skip(d):
+
+    if bb.utils.to_boolean(d.getVar('VENDOR_REVISION_SKIP')):
+        return True
 
     if is_work_shared(d):
         return False
