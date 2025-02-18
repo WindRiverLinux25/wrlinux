@@ -1,4 +1,4 @@
-From 6d850051f21ca18023a46c36abb11d44bd98532c Mon Sep 17 00:00:00 2001
+From f34acc14594fdcee944ee179b24550bcf5b4747a Mon Sep 17 00:00:00 2001
 From: Liwei Song <liwei.song@windriver.com>
 Date: Thu, 9 Jan 2020 02:21:51 +0000
 Subject: [PATCH] Add ostree policy
@@ -243,10 +243,10 @@ index 000000000..e1004e945
 +	usermanage_run_useradd(ostree_t, ostree_roles)
 +')
 diff --git a/policy/modules/roles/sysadm.te b/policy/modules/roles/sysadm.te
-index 22a8d7587..277efb24b 100644
+index 8f34434d0..c40713ea2 100644
 --- a/policy/modules/roles/sysadm.te
 +++ b/policy/modules/roles/sysadm.te
-@@ -771,6 +771,10 @@ optional_policy(`
+@@ -779,6 +779,10 @@ optional_policy(`
  	openvswitch_admin(sysadm_t, sysadm_r)
  ')
  
@@ -258,10 +258,10 @@ index 22a8d7587..277efb24b 100644
  	pacemaker_admin(sysadm_t, sysadm_r)
  ')
 diff --git a/policy/modules/system/unconfined.te b/policy/modules/system/unconfined.te
-index 6c9769b04..ae571d091 100644
+index 6dc1d9484..4cc33d10f 100644
 --- a/policy/modules/system/unconfined.te
 +++ b/policy/modules/system/unconfined.te
-@@ -155,6 +155,10 @@ optional_policy(`
+@@ -158,6 +158,10 @@ optional_policy(`
  	oddjob_domtrans_mkhomedir(unconfined_t)
  ')
  

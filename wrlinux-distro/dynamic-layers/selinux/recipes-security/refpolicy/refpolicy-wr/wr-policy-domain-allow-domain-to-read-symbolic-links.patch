@@ -1,4 +1,4 @@
-From 2379c408d24fb26b85e4312dffcd2f40619f630c Mon Sep 17 00:00:00 2001
+From 415489c305d5757783937ddee78f3ebc0b6a3d7e Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Sat, 21 Oct 2023 11:20:54 +0800
 Subject: [PATCH] domain: allow domain to read symbolic links
@@ -28,7 +28,7 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  1 file changed, 2 insertions(+)
 
 diff --git a/policy/modules/kernel/domain.te b/policy/modules/kernel/domain.te
-index 3aeb3e50f..45fa075b3 100644
+index e3eee0590..e02400e11 100644
 --- a/policy/modules/kernel/domain.te
 +++ b/policy/modules/kernel/domain.te
 @@ -128,6 +128,8 @@ term_use_controlling_term(domain)

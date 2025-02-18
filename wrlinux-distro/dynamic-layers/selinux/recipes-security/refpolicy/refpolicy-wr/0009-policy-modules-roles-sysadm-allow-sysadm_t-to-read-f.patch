@@ -1,4 +1,4 @@
-From 2868fdd98f6e4d3ecc3753a737c7513000468b91 Mon Sep 17 00:00:00 2001
+From 633e6b1451b8e02ed572d295bc69c92821e381f3 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Tue, 4 Aug 2020 14:51:12 +0800
 Subject: [PATCH] policy/modules/roles/sysadm: allow sysadm_t to read
@@ -14,11 +14,12 @@ Upstream-Status: Inappropriate [wrlinux specific]
 
 Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
 ---
- policy/modules/roles/sysadm.te | 2 ++
- 1 file changed, 2 insertions(+)
+ policy/modules/roles/sysadm.te   | 2 ++
+ policy/modules/system/systemd.te | 1 +
+ 2 files changed, 3 insertions(+)
 
 diff --git a/policy/modules/roles/sysadm.te b/policy/modules/roles/sysadm.te
-index 4f3207d52..22a8d7587 100644
+index 5fbcc7204..8f34434d0 100644
 --- a/policy/modules/roles/sysadm.te
 +++ b/policy/modules/roles/sysadm.te
 @@ -64,6 +64,8 @@ init_admin(sysadm_t)
@@ -30,6 +31,18 @@ index 4f3207d52..22a8d7587 100644
  ifdef(`direct_sysadm_daemon',`
  	optional_policy(`
  		init_run_daemon(sysadm_t, sysadm_r)
+diff --git a/policy/modules/system/systemd.te b/policy/modules/system/systemd.te
+index 45d4db784..c8637cc52 100644
+--- a/policy/modules/system/systemd.te
++++ b/policy/modules/system/systemd.te
+@@ -1331,6 +1331,7 @@ corenet_rw_tun_tap_dev(systemd_networkd_t)
+ corenet_udp_bind_dhcpc_port(systemd_networkd_t)
+ corenet_udp_bind_generic_node(systemd_networkd_t)
+ 
++dev_dontaudit_getattr_all_chr_files(systemd_networkd_t)
+ dev_read_urand(systemd_networkd_t)
+ dev_read_sysfs(systemd_networkd_t)
+ dev_write_kmsg(systemd_networkd_t)
 -- 
 2.25.1
 

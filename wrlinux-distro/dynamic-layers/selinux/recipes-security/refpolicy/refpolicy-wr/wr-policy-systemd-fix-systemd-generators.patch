@@ -1,4 +1,4 @@
-From 61cae9e37e60462c218cab3f95266bfdf123f7e4 Mon Sep 17 00:00:00 2001
+From 8acd29bcbabfef3dae629055b730534b77aff09c Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Mon, 3 Aug 2020 17:28:11 +0800
 Subject: [PATCH] systemd: fix systemd-generators
@@ -33,10 +33,10 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  2 files changed, 24 insertions(+)
 
 diff --git a/policy/modules/kernel/files.if b/policy/modules/kernel/files.if
-index a2aa85b1c..c668363f4 100644
+index dbd7efa60..c098af168 100644
 --- a/policy/modules/kernel/files.if
 +++ b/policy/modules/kernel/files.if
-@@ -7046,6 +7046,26 @@ interface(`files_rw_runtime_files',`
+@@ -7124,6 +7124,26 @@ interface(`files_rw_runtime_files',`
  	rw_files_pattern($1, var_run_t, var_run_t)
  ')
  
@@ -64,10 +64,10 @@ index a2aa85b1c..c668363f4 100644
  ## <summary>
  ##	Delete generic runtime symlinks.
 diff --git a/policy/modules/system/systemd.te b/policy/modules/system/systemd.te
-index a0e6bb405..4953129ba 100644
+index c8637cc52..c6c080601 100644
 --- a/policy/modules/system/systemd.te
 +++ b/policy/modules/system/systemd.te
-@@ -516,6 +516,8 @@ dev_write_sysfs(systemd_generator_t)
+@@ -569,6 +569,8 @@ dev_read_vsock(systemd_generator_t)
  files_read_etc_files(systemd_generator_t)
  files_read_etc_runtime_files(systemd_generator_t)
  files_search_runtime(systemd_generator_t)
@@ -76,9 +76,9 @@ index a0e6bb405..4953129ba 100644
  files_list_boot(systemd_generator_t)
  files_read_boot_files(systemd_generator_t)
  files_search_all_mountpoints(systemd_generator_t)
-@@ -548,6 +550,8 @@ kernel_dontaudit_getattr_proc(systemd_generator_t)
- # Where an unlabeled mountpoint is encounted:
- kernel_dontaudit_search_unlabeled(systemd_generator_t)
+@@ -604,6 +606,8 @@ kernel_dontaudit_search_unlabeled(systemd_generator_t)
+ # vmware_vsock
+ kernel_request_load_module(systemd_generator_t)
  
 +kernel_read_unlabeled_files(systemd_generator_t)
 +

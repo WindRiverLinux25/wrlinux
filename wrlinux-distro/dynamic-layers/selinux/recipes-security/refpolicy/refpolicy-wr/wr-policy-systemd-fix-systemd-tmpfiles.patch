@@ -1,4 +1,4 @@
-From bfcc70503b7a58a623042ea4b44d984c4100e480 Mon Sep 17 00:00:00 2001
+From 5e182a0c4e4fe4ea8d1e1037ead7c535d7093075 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Tue, 4 Aug 2020 15:06:58 +0800
 Subject: [PATCH] systemd: fix systemd-tmpfiles
@@ -51,10 +51,10 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  1 file changed, 5 insertions(+)
 
 diff --git a/policy/modules/system/systemd.te b/policy/modules/system/systemd.te
-index 4953129ba..e60b611d5 100644
+index c6c080601..327e8649a 100644
 --- a/policy/modules/system/systemd.te
 +++ b/policy/modules/system/systemd.te
-@@ -1847,6 +1847,9 @@ files_setattr_lock_dirs(systemd_tmpfiles_t)
+@@ -1994,6 +1994,9 @@ files_setattr_lock_dirs(systemd_tmpfiles_t)
  # for /etc/mtab
  files_manage_etc_symlinks(systemd_tmpfiles_t)
  
@@ -64,7 +64,7 @@ index 4953129ba..e60b611d5 100644
  fs_list_tmpfs(systemd_tmpfiles_t)
  fs_relabelfrom_tmpfs_dirs(systemd_tmpfiles_t)
  fs_getattr_all_fs(systemd_tmpfiles_t)
-@@ -1901,6 +1904,8 @@ mls_file_upgrade(systemd_tmpfiles_t)
+@@ -2049,6 +2052,8 @@ mls_file_upgrade(systemd_tmpfiles_t)
  userdom_manage_user_runtime_root_dirs(systemd_tmpfiles_t)
  userdom_relabel_user_runtime_root_dirs(systemd_tmpfiles_t)
  

@@ -1,4 +1,4 @@
-From 618b547ab50b3ed77699ab6702e284e9527603c7 Mon Sep 17 00:00:00 2001
+From 7d4e737875caec00a50fe4d9d7475847e9ffa9a2 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Mon, 31 Oct 2022 16:08:35 +0800
 Subject: [PATCH] policy/modules/services/acpi: make acpid_t MLS trusted for
@@ -17,7 +17,7 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  1 file changed, 2 insertions(+)
 
 diff --git a/policy/modules/services/acpi.te b/policy/modules/services/acpi.te
-index c4ca7f7f6..a1ff381f2 100644
+index 106bdee6b..a5c036fe2 100644
 --- a/policy/modules/services/acpi.te
 +++ b/policy/modules/services/acpi.te
 @@ -156,6 +156,8 @@ userdom_dontaudit_use_unpriv_user_fds(acpid_t)

@@ -1,4 +1,4 @@
-From a4818536d1d5fd9dc8b437056e49aa1ddcff052d Mon Sep 17 00:00:00 2001
+From ec21785ff87ee2fb265c11761392cf20d7bebcab Mon Sep 17 00:00:00 2001
 From: Liwei Song <liwei.song@windriver.com>
 Date: Thu, 2 Jan 2020 17:32:58 +0800
 Subject: [PATCH] files: add lable for symlinks /mnt /opt and /root
