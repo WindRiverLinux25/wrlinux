@@ -79,9 +79,6 @@ WARN_TO_ERROR_QA ?= "already-stripped compile-host-path install-host-path \
 WARN_QA:remove = "${WARN_TO_ERROR_QA}"
 ERROR_QA:append = " ${WARN_TO_ERROR_QA}"
 
-# Allow dangling .bbappends for now
-BB_DANGLINGAPPENDS_WARNONLY = "1"
-
 # Change base package dependency in -dbg packages from recommends to suggests
 RRECOMMENDS:${PN}-dbg = ""
 RSUGGESTS:${PN}-dbg = "${PN} (= ${EXTENDPKGV})"
