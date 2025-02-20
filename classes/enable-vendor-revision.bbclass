@@ -9,6 +9,9 @@ VENDOR_REVISION_PREFIX ??= ".vr"
 
 VENDOR_REVISION_SKIP ??= ""
 
+# Set it to "0" to enable VR for non-WRLinux provided recipes.
+VENDOR_REVISION_WRLINUX_SUPPORTED_ONLY ??= "1"
+
 def get_src_patches(d):
     import oe.patch
     local_patches = set()
@@ -30,6 +33,14 @@ def is_work_shared(d):
     return d.getVar('S').startswith(sharedworkdir)
 
 def vr_need_skip(d):
+
+    # Only enable vr for supported recipes
+    if bb.utils.to_boolean(d.getVar('VENDOR_REVISION_WRLINUX_SUPPORTED_ONLY')):
+        bpn = d.getVar('BPN')
+        wrl_supported = d.getVar('WRLINUX_SUPPORTED_RECIPE') or d.getVar('WRLINUX_SUPPORTED_RECIPE:pn-%s' % bpn)
+        if (not wrl_supported) or wrl_supported.strip() != '1':
+            bb.debug(1, 'Skipping enabling VR for %s since it is not a WRLinux supported recipe.' % bpn)
+            return True
 
     if bb.utils.to_boolean(d.getVar('VENDOR_REVISION_SKIP')):
         return True
