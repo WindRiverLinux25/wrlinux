@@ -18,10 +18,10 @@ the installer is to do RPMs install; if set INSTALLER_TARGET_BUILD = \
 
 def get_installer_banner(d):
     if d.getVar('DISTRO',True) == 'wrlinux-installer':
-        return d.getVar('installer_build_msg', True)
-    elif "feature/installer-support" in d.getVar("WRTEMPLATE", True).split():
-        return d.getVar('target_build_msg', True)
+        return d.getVar('installer_build_msg')
+    elif "feature/installer-support" in d.getVar("WRTEMPLATE").split():
+        return d.getVar('target_build_msg')
     else:
-        return d.getVar('target_build_warnmsg', True)
+        return d.getVar('target_build_warnmsg')
 
 CONFIG_BANNER[installer] = "${@get_installer_banner(d)}"
