@@ -1,0 +1,23 @@
+Instructs RPM to enforce package signature verification on the target.
+
+Only packages signed by a signature known to RPM are allowed to be
+installed. Otherwise the installation will be blocked and an error will
+be generated.
+
+To use this template, add the following to your setup line:
+
+    --templates feature/rpm-required-sig
+
+Add the following lines to conf/local.conf:
+
+    INHERIT += "sign_rpm"
+    RPM_GPG_PASSPHRASE = "foo"
+    RPM_GPG_NAME = "bar"
+
+Additionally, you can set %_pkgverify_level rpm macro to "signature" or
+"all" on the target to enhance the package verification level (see the
+/usr/lib/rpm/macros file for details).
+
+#@TYPE: Wrtemplate
+#@NAME: rpm-required-sig
+#@DESCRIPTION: Instructs RPM to enforce package signature verification on the target.

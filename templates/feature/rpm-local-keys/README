@@ -1,0 +1,90 @@
+Instructs RPM to look for Armored PGP keys on the local disk when needed.
+
+Using Keyring Path support, we point rpm to a local directory where it can
+read the key when requested. This can make it easier for external programs
+to manage the keys that RPM uses to verify packages. When used with
+feature/rpm-required-sig, it makes it easier to make the key available to
+RPM for authorized installations.
+
+The local key should be installed to /etc/rpm/keys/ (you may need to
+create this directory). The key file is in the format of an ASCII
+armored file. You can get the key using the following command:
+
+$ gpg --list-keys
+
+pub   2048R/5D64AD52 2015-10-14
+uid                  testuser (nocomment) <testuser@testemail.com>
+sub   2048R/CBE5FB13 2015-10-14
+
+The key can be exported using:
+
+$ gpg --export -a "testuser" > test.key
+
+Then copy to /etc/rpm/keys on the target.
+
+Q & A
+1. How to prepare signed rpm packages and signed repository for testing?
+
+Here is an example referencing oe-core:
+1) Load the public/private key to your build system, there is a test
+   pair in oe-core with the key name "testuser".
+
+$ gpg --batch --import \
+  path_to_project/layers/oe-core/meta-selftest/files/signing/key.pub \
+  path_to_project/layers/oe-core/meta-selftest/files/signing/key.secret
+
+$ gpg --list-keys
+------------------------------------
+pub   2048R/5D64AD52 2015-10-14
+uid                  testuser (nocomment) <testuser@testemail.com>
+sub   2048R/CBE5FB13 2015-10-14
+
+2) Build a signed rpm package (e.g. "ed") and a signed repository
+
+$ mkdir -p path_to_build_ed
+$ . path_to_project/oe-init-build-env .
+
+Add the following lines to conf/local.conf:
+
+INHERIT += "sign_rpm"
+RPM_GPG_PASSPHRASE = "test123"
+RPM_GPG_NAME = "testuser"
+
+INHERIT += "sign_package_feed"
+PACKAGE_FEED_GPG_NAME = "testuser"
+PACKAGE_FEED_GPG_PASSPHRASE_FILE = "path_to_project/layers/oe-core/meta-selftest/files/signing/key.passphrase"
+
+
+$ bitbake ed
+
+$ bitbake package-index
+
+3) Copy the public key to the target
+
+$ scp path_to_project/layers/oe-core/meta-selftest/files/signing/key.pub root@<target_ip>:/etc/rpm/keys
+
+
+2. How to access remote repository via http?
+
+1) Install and start Apache HTTP server
+
+$ systemctl start apache2
+
+2) Create repository
+
+$ sudo ln -snf path_to_build_ed/tmp/deploy/rpm /var/www/html/rpm
+
+3) Add repo to target system
+
+$ cat >> test.repo << END
+[test]
+name=test_name
+baseurl=http://<http-server-ipaddress>/rpm
+enabled=1
+END
+
+$ scp test.repo root@<target_ip>:/etc/yum.repos.d/
+
+#@TYPE: Wrtemplate
+#@NAME: rpm-local-keys
+#@DESCRIPTION: Instructs RPM to look for Armored PGP keys on the local disk when needed.
