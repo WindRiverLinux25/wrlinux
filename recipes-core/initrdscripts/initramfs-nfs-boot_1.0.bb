@@ -7,6 +7,8 @@ inherit systemd
 SRC_URI += "file://init-nfs.sh \
 	        file://nfs-boot.service \
 "
+S = "${WORKDIR}/sources"
+UNPACKDIR = "${S}"
 
 do_install() {
 	install -m 0755 ${UNPACKDIR}/init-nfs.sh ${D}/init-nfs.sh
