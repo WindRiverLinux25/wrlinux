@@ -5,4 +5,4 @@
 *.orig
 *.rej
 *~
-files/uninative-tarballs/
+files/uninative-tarballs-*
