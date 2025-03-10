@@ -1,4 +1,4 @@
-From 6377c71f5f8b307465f8a52fd4f66660098f2bc4 Mon Sep 17 00:00:00 2001
+From 2c0358bb05f60eb19a1d554efaba53a6bd1e5671 Mon Sep 17 00:00:00 2001
 From: Jin Li <jin.li@windriver.com>
 Date: Mon, 25 May 2020 18:59:02 -0700
 Subject: [PATCH] change some auto-detecting options to configurable ones
@@ -28,16 +28,16 @@ Rebased on 20240605.
 
 Signed-off-by: Kai Kang <kai.kang@windriver.com>
 ---
- configure.ac | 60 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ configure.ac | 60 ++++++++++++++++++++++++++++++++++++++++++++++++----
  1 file changed, 56 insertions(+), 4 deletions(-)
 
 diff --git a/configure.ac b/configure.ac
-index 85c5739c4..723d0acdb 100644
+index 795ea2162..223b36d04 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -374,20 +374,72 @@ fi
+@@ -388,20 +388,72 @@ fi
  
- AC_CONFIG_COMMANDS([syscalls.h], [cd ${ac_top_srcdir}/include/lapi/syscalls; ./regen.sh])
+ AC_CONFIG_COMMANDS([syscalls.h], [cd ${ac_top_srcdir}/include/lapi/syscalls; ./generate_syscalls.sh ../syscalls.h; cd - >/dev/null])
  
 +# options knobs
 +
@@ -113,5 +113,5 @@ index 85c5739c4..723d0acdb 100644
  LTP_CHECK_SYSCALL_EVENTFD
  LTP_CHECK_SYSCALL_FCNTL
 -- 
-2.42.0
+2.47.0
 
