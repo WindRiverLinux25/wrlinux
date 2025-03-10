@@ -23,4 +23,4 @@ require ${YOCTO_UNINATIVE_INC}
 # Put checksum into UNINATIVE_URL, and move the tarball into a directory named
 # by checksum, so that we will get errors when it is updated.
 #
-UNINATIVE_URL = "file://${LAYER_PATH_wrlinux}/files/uninative-tarballs/${@d.getVarFlag('UNINATIVE_CHECKSUM', '${BUILD_ARCH}')}/"
+UNINATIVE_URL = "file://${LAYER_PATH_wrlinux}/files/uninative-tarballs-${UNINATIVE_VERSION}/${@d.getVarFlag('UNINATIVE_CHECKSUM', '${BUILD_ARCH}')}/"
