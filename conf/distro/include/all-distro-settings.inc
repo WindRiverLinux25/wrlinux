@@ -19,6 +19,9 @@ PROFILING_OPTIMIZATION:remove:pn-glibc:x86 = "-fno-omit-frame-pointer"
 PROFILING_OPTIMIZATION:remove:pn-stress-ng:x86-64 = "-fno-omit-frame-pointer"
 PROFILING_OPTIMIZATION:remove:pn-stress-ng:x86 = "-fno-omit-frame-pointer"
 
+# Set for SPDX 3
+SPDX_AUTHORS_openembedded_comment ??= "${DISTRO_NAME} ${DISTRO_VERSION}"
+
 # PACKAGECONFIG settings for WRLinux
 include conf/distro/include/wrlinux-packageconfigs.inc
 
