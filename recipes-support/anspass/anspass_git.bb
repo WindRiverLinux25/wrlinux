@@ -19,8 +19,6 @@ SRCREV = "726c141fe582add0addf7d128aa33d1e3c532b56"
 
 PV = "1.0+git${SRCPV}"
 
-inherit autotools-brokensep
-
 S = "${WORKDIR}/git"
 
 BBCLASSEXTEND = "native nativesdk"
