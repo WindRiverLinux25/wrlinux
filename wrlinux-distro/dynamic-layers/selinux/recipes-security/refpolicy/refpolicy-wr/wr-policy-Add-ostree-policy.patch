@@ -1,4 +1,4 @@
-From f34acc14594fdcee944ee179b24550bcf5b4747a Mon Sep 17 00:00:00 2001
+From 956f484f467a72c33aa4f922aaf3dbb790bb472a Mon Sep 17 00:00:00 2001
 From: Liwei Song <liwei.song@windriver.com>
 Date: Thu, 9 Jan 2020 02:21:51 +0000
 Subject: [PATCH] Add ostree policy
@@ -258,11 +258,11 @@ index 8f34434d0..c40713ea2 100644
  	pacemaker_admin(sysadm_t, sysadm_r)
  ')
 diff --git a/policy/modules/system/unconfined.te b/policy/modules/system/unconfined.te
-index 6dc1d9484..4cc33d10f 100644
+index 744037c03..82a9a8565 100644
 --- a/policy/modules/system/unconfined.te
 +++ b/policy/modules/system/unconfined.te
 @@ -158,6 +158,10 @@ optional_policy(`
- 	oddjob_domtrans_mkhomedir(unconfined_t)
+ 	oddjob_run_mkhomedir(unconfined_t, unconfined_r)
  ')
  
 +optional_policy(`
