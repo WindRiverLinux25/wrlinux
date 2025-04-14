@@ -49,5 +49,5 @@ RRECOMMENDS:${PN} = " \
     mtd-utils-misc \
     "
 
-RDEPENDS:${PN}:append:x86 = " pmtools iasl"
-RDEPENDS:${PN}:append:x86-64 = " pmtools iasl"
+RDEPENDS:${PN}:append:x86 = " acpica iasl"
+RDEPENDS:${PN}:append:x86-64 = " acpica iasl"
