@@ -21,4 +21,8 @@ PV = "1.0+git${SRCPV}"
 
 S = "${WORKDIR}/git"
 
+do_install() {
+    make DESTDIR=${D} install
+}
+
 BBCLASSEXTEND = "native nativesdk"
