@@ -36,11 +36,19 @@ def vr_need_skip(d):
 
     # Only enable vr for supported recipes
     if bb.utils.to_boolean(d.getVar('VENDOR_REVISION_WRLINUX_SUPPORTED_ONLY')):
+        # Check whether the recipe is from Wind River Linux layers
+        pf = d.getVar('PF')
+        layer = bb.utils.get_file_layer(d.getVar('FILE'), d)
+        if not layer in d.getVar('RECIPE_LIST_LAYERS_ORIG').split():
+            bb.debug(1, 'Skipping VR for %s since it is not from a WRLinux layer.' % d.getVar('PF'))
+            return True
+
         bpn = d.getVar('BPN')
         wrl_supported = d.getVar('WRLINUX_SUPPORTED_RECIPE') or d.getVar('WRLINUX_SUPPORTED_RECIPE:pn-%s' % bpn)
         if (not wrl_supported) or wrl_supported.strip() != '1':
-            bb.debug(1, 'Skipping enabling VR for %s since it is not a WRLinux supported recipe.' % bpn)
+            bb.debug(1, 'Skipping VR for %s since it is not a WRLinux supported recipe.' % pf)
             return True
+
 
     if bb.utils.to_boolean(d.getVar('VENDOR_REVISION_SKIP')):
         return True
@@ -94,15 +102,15 @@ python append_vr_to_pr() {
     Set PR:append = "VENDOR_REVISION" for the recipes
     """
 
-    pn = d.getVar('PN')
+    pf = d.getVar('PF')
     # Skip when WRLINUX_VENDOR_REVISION_FILE is NULL
     if not d.getVar('WRLINUX_VENDOR_REVISION_FILE'):
-        bb.debug(1, 'Skipping enabling VR for %s since WRLINUX_VENDOR_REVISION_FILE is NULL.' % pn)
+        bb.debug(1, 'Skipping VR for %s since WRLINUX_VENDOR_REVISION_FILE is NULL.' % pf)
         return
 
     # Skip when gen-vendor-revision is inherited
     if bb.data.inherits_class('gen-vendor-revision', d):
-        bb.debug(1, 'Skipping enabling VR for %s since gen-vendor-revision is inherited' % pn)
+        bb.debug(1, 'Skipping VR for %s since gen-vendor-revision is inherited' % pf)
         return
 
     if vr_need_skip(d):
