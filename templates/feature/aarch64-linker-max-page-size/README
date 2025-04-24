@@ -1,0 +1,11 @@
+This template sets aarch64's userspace max-page-size to ${AARCH64_LINKER_MAX_PAGE_SIZE}
+
+To use, add
+
+--templates feature/aarch64-linker-max-page-size
+
+as a setup option.
+
+#@TYPE: Wrtemplate
+#@NAME: aarch64-linker-max-page-size
+#@DESCRIPTION: Set aarch64's max-page-size to ${AARCH64_LINKER_MAX_PAGE_SIZE}
