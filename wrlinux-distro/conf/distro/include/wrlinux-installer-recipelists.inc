@@ -14,6 +14,7 @@ WRL_RECIPES:gnome-layer += "\
 WRL_RECIPES:meta-python += "\
     python3-blivet \
     python3-blivetgui \
+    python3-dbus-next \
     python3-langtable \
     python3-meh \
     python3-ntplib \
