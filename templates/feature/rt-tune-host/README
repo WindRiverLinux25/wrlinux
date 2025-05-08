@@ -1,6 +1,0 @@
-This template adds options for the configuration of a balanced real time
-kernel-type for host system primarily running guests.
-
-#@TYPE: Wrtemplate
-#@NAME: rt-tune-host
-#@DESCRIPTION: Tune kernel options for real-time kernel for host system
