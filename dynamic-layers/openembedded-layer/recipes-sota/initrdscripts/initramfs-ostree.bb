@@ -88,6 +88,9 @@ RDEPENDS:${PN}-init = " \
     ostree-switchroot \
 "
 
+S = "${WORKDIR}/sources"
+UNPACKDIR = "${S}"
+
 do_configure() {
 }
 
