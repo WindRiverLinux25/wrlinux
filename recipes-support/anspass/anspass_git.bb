@@ -13,6 +13,7 @@ DEPENDS = "libgcrypt"
 
 SRC_URI = "git://github.com/WindRiver-OpenSourceLabs/anspass;branch=master;protocol=https \
            file://0001-anspassd.c-correct-blank-password-checking.patch \
+           file://0001-Add-url-encoded-username-password-entry.patch \
 "
 
 SRCREV = "726c141fe582add0addf7d128aa33d1e3c532b56"
