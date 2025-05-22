@@ -6,14 +6,6 @@
 
 DEPENDS += "systemd-systemctl-native"
 
-# conditionally suppress predicatable network interface names
-#
-pkg_postinst:udev:append() {
-        if ${@bb.utils.contains('DISTRO_FEATURES','no-pni-names','true','false',d)}; then
-                ln -sf /dev/null $D${sysconfdir}/udev/rules.d/80-net-setup-link.rules
-        fi
-}
-
 do_install:append() {
         # Enable all sysrq functions
         if ${@bb.utils.contains('DISTRO_FEATURES','systemdebug','true','false',d)}; then
