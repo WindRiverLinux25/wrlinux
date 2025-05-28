@@ -66,4 +66,4 @@ require conf/distro/include/security_flags_wrs.inc
 # not supported in 10.22.33.x and earlier releases.
 #
 PNI_NAMES_FEATURES ??= "pni-names"
-DISTRO_FEATURES += "${PNI_NAMES_FEATURES}"
+DISTRO_FEATURES:append = " ${PNI_NAMES_FEATURES}"
