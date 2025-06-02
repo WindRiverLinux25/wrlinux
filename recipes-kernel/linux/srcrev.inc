@@ -29,7 +29,7 @@ SRCREV_machine:kb-v6.12-standard-mti-malta64 ?= "98a85ed93bd5eaefe30c4aa3f7c1554
 LINUX_VERSION:kb-v6.12-standard-mti-malta64 = "6.12.30"
 SRCREV_machine:kb-v6.12-standard-nvidia-sdk-5.15-nvidia-soc ?= "9f109da4d2142db25fbcf583d6ec87f8fd7505df"
 LINUX_VERSION:kb-v6.12-standard-nvidia-sdk-5.15-nvidia-soc = "6.12.30"
-SRCREV_machine:kb-v6.12-standard-nxp-sdk-6.12-nxp-soc ?= "71bdc6d9ae98cf9d4400ca96df53e6d001e1eb95"
+SRCREV_machine:kb-v6.12-standard-nxp-sdk-6.12-nxp-soc ?= "107120d0de6ce0ba0a3658574a2723c83cee4b3f"
 LINUX_VERSION:kb-v6.12-standard-nxp-sdk-6.12-nxp-soc = "6.12.30"
 SRCREV_machine:kb-v6.12-standard-preempt-rt-arm-versatile-926ejs ?= "821b488cebc6a3ef5e69fdff96b915ca37af33a2"
 LINUX_VERSION:kb-v6.12-standard-preempt-rt-arm-versatile-926ejs = "6.12.30"
@@ -39,7 +39,7 @@ SRCREV_machine:kb-v6.12-standard-preempt-rt-bcm-2xxx-rpi ?= "b480cf08668916fabf9
 LINUX_VERSION:kb-v6.12-standard-preempt-rt-bcm-2xxx-rpi = "6.12.30"
 SRCREV_machine:kb-v6.12-standard-preempt-rt-nvidia-sdk-5.15-nvidia-soc ?= "3e563d344b1611112e20adb4b4634ab75f2ae430"
 LINUX_VERSION:kb-v6.12-standard-preempt-rt-nvidia-sdk-5.15-nvidia-soc = "6.12.30"
-SRCREV_machine:kb-v6.12-standard-preempt-rt-nxp-sdk-6.12-nxp-soc ?= "4668c640d245a7b43aa9404278a99cd25fdefd73"
+SRCREV_machine:kb-v6.12-standard-preempt-rt-nxp-sdk-6.12-nxp-soc ?= "0fb6f73f35741dfe10d6b561e0efd0d53a3cb0e2"
 LINUX_VERSION:kb-v6.12-standard-preempt-rt-nxp-sdk-6.12-nxp-soc = "6.12.30"
 SRCREV_machine:kb-v6.12-standard-preempt-rt-x86 ?= "b1b97590389ab90c249afe412ba5c8873a62733a"
 LINUX_VERSION:kb-v6.12-standard-preempt-rt-x86 = "6.12.30"
@@ -58,4 +58,4 @@ LINUX_VERSION:kb-v6.12-standard-xilinx-zynqmp = "6.12.30"
 
 # yocto-kernel-cache entries
 KERNEL_CACHE_BRANCH_6.12 = "yocto-6.12"
-SRCREV_meta_6.12 = "60484dda26122958e5f4d8f813424fa637770bf6"
+SRCREV_meta_6.12 = "3a5fec1707626251d69b7548f024856d838cc7db"
