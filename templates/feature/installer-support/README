@@ -284,7 +284,7 @@ Building the target installer
 
     10.2 initrd boot
          Use recipe wrlinux-image-installer-initramfs to support initrd boot,
-         please copy initramfs (wrlinux-image-installer-initramfs-qemux86-64.cpio.gz)
+         please copy initramfs (wrlinux-image-installer-initramfs-qemux86-64.rootfs.cpio.gz)
          to tftp download dir.
 
          We must add param "LABEL=initrd-install" to PXE config file.
