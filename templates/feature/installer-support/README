@@ -190,11 +190,11 @@ Building the target installer
 
 5. Use custom installer.conf
    The second build can use installer.conf to help speed up the build
-   process when package based installs, the user can set WRL_INSTALLER_CONF
+   process when package based installs, the user can set INSTALLER_CONF
    in the conf file, for example:
 
    edit local.conf
-   WRL_INSTALLER_CONF = "/my/installer.conf"
+   INSTALLER_CONF = "/my/installer.conf"
 
    You can customize the contents of installer.conf when needed, for example,
    add packages that you will like to install, but if you do, you must ensure
@@ -252,14 +252,14 @@ Building the target installer
        NOTE: You need to use a proper name for the target build project
              since its basename will be used in the selection menus.
 
-       NOTE: The number of the entries in WRL_INSTALLER_CONF or
+       NOTE: The number of the entries in INSTALLER_CONF or
              KICKSTART_FILE must be the same as the number of target build
              projects.
-             For example, if you want to use WRL_INSTALLER_CONF or
+             For example, if you want to use INSTALLER_CONF or
              KICKSTART_FILE for target_build1, target_build2 and
              target_build3, set each of the three in the conf file.
 
-             WRL_INSTALLER_CONF = "/my/target1.conf /my/target2.conf \
+             INSTALLER_CONF = "/my/target1.conf /my/target2.conf \
                                     /my/target3.conf"
              KICKSTART_FILE = "/my/target1.ks /my/target2.ks \
                                /my/target3.ks"
