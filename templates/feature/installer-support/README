@@ -4,7 +4,7 @@ Limitation
    is i.86|x86_64
    (Set MACHINE = "qemux86-64|qemux86|intel-x86-64" in the build)
 
-2) The target installer based on fedora 37, so it requires:
+2) The target installer based on fedora 42, so it requires:
    - systemd as init manager
    - python3
    - dnf2/rpm4 package management
@@ -117,7 +117,7 @@ Building the target installer
        $ bitbake -c build_native_sysroot build-sysroots
 
        Create the qemu disk:
-       $ ./tmp-glibc/sysroots/x86_64/usr/bin/qemu-img create -f qcow hd0.vdisk 5000M
+       $ tmp/sysroots-components/x86_64/qemu-system-native/usr/bin/qemu-img create -f qcow hd0.vdisk 5000M
 
        Start qemu with installer image:
        $ runqemu qemux86-64 wrlinux-image-installer iso slirp qemuparams="-drive file=hd0.vdisk,if=virtio,format=qcow"
