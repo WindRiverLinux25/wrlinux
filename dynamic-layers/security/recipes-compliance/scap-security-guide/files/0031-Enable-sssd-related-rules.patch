@@ -1,0 +1,36 @@
+From f8428b8cf1f72680e36df5f42a4f51c697b8964b Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Mon, 27 May 2024 21:31:52 +0800
+Subject: [PATCH] Enable sssd-related rules
+
+Upstream-Status: Inappropriate [WRLinux specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ .../sssd-ldap/sssd_ldap_configure_tls_ca_dir/bash/shared.sh     | 2 +-
+ .../services/sssd/sssd-ldap/sssd_ldap_start_tls/bash/shared.sh  | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/linux_os/guide/services/sssd/sssd-ldap/sssd_ldap_configure_tls_ca_dir/bash/shared.sh b/linux_os/guide/services/sssd/sssd-ldap/sssd_ldap_configure_tls_ca_dir/bash/shared.sh
+index 2c4b0b39..227f21ea 100644
+--- a/linux_os/guide/services/sssd/sssd-ldap/sssd_ldap_configure_tls_ca_dir/bash/shared.sh
++++ b/linux_os/guide/services/sssd/sssd-ldap/sssd_ldap_configure_tls_ca_dir/bash/shared.sh
+@@ -1,4 +1,4 @@
+-# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_almalinux
++# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_almalinux,multi_platform_wrlinux
+ 
+ {{{ bash_instantiate_variables("var_sssd_ldap_tls_ca_dir") }}}
+ 
+diff --git a/linux_os/guide/services/sssd/sssd-ldap/sssd_ldap_start_tls/bash/shared.sh b/linux_os/guide/services/sssd/sssd-ldap/sssd_ldap_start_tls/bash/shared.sh
+index b93c3447..2684ca1d 100644
+--- a/linux_os/guide/services/sssd/sssd-ldap/sssd_ldap_start_tls/bash/shared.sh
++++ b/linux_os/guide/services/sssd/sssd-ldap/sssd_ldap_start_tls/bash/shared.sh
+@@ -1,4 +1,4 @@
+-# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_almalinux
++# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_almalinux,multi_platform_wrlinux
+ 
+ {{{ bash_sssd_ldap_config(parameter="ldap_id_use_start_tls", value="true") }}}
+ 
+-- 
+2.34.1
+

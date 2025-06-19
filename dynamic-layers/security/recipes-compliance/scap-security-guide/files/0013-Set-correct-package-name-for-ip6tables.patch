@@ -1,0 +1,25 @@
+From 7a24ebf9f81f564d57810a2897bf462d8cabf1ff Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Wed, 9 Nov 2022 12:49:47 +0800
+Subject: [PATCH] Set correct package name for ip6tables
+
+Upstream-Status: Inappropriate [WRLinux specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ .../iptables_activation/service_ip6tables_enabled/rule.yml       | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/linux_os/guide/system/network/network-iptables/iptables_activation/service_ip6tables_enabled/rule.yml b/linux_os/guide/system/network/network-iptables/iptables_activation/service_ip6tables_enabled/rule.yml
+index 8c90fb0e..9493f226 100644
+--- a/linux_os/guide/system/network/network-iptables/iptables_activation/service_ip6tables_enabled/rule.yml
++++ b/linux_os/guide/system/network/network-iptables/iptables_activation/service_ip6tables_enabled/rule.yml
+@@ -48,4 +48,5 @@ template:
+     vars:
+         servicename: ip6tables
+         packagename: iptables-ipv6
++        packagename@wrlinuxlts25: iptables
+ {{%- endif %}}
+-- 
+2.34.1
+

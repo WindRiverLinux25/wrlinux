@@ -1,0 +1,25 @@
+From 6ba2b110191230900eb9930b24aa3c106b7b6108 Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Fri, 24 May 2024 14:49:01 +0800
+Subject: [PATCH] Enable accounts_logon_fail_delay rule
+
+Upstream-Status: Inappropriate [WRLinux specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ .../accounts-session/accounts_logon_fail_delay/bash/shared.sh   | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/linux_os/guide/system/accounts/accounts-session/accounts_logon_fail_delay/bash/shared.sh b/linux_os/guide/system/accounts/accounts-session/accounts_logon_fail_delay/bash/shared.sh
+index 1732224a..45744f76 100644
+--- a/linux_os/guide/system/accounts/accounts-session/accounts_logon_fail_delay/bash/shared.sh
++++ b/linux_os/guide/system/accounts/accounts-session/accounts_logon_fail_delay/bash/shared.sh
+@@ -1,4 +1,4 @@
+-# platform = Red Hat Virtualization 4,multi_platform_ol,multi_platform_rhel,multi_platform_sle,multi_platform_slmicro5,multi_platform_almalinux
++# platform = Red Hat Virtualization 4,multi_platform_ol,multi_platform_rhel,multi_platform_sle,multi_platform_slmicro5,multi_platform_almalinux,multi_platform_wrlinux
+ 
+ {{{ bash_instantiate_variables("var_accounts_fail_delay") }}}
+ 
+-- 
+2.34.1
+

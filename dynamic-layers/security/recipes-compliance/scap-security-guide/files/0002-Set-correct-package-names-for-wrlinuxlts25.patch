@@ -1,0 +1,111 @@
+From 78af7d8aab8e049cad72fbd8fd85097fa23f2a58 Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Thu, 27 Jan 2022 09:47:52 +0800
+Subject: [PATCH] Set correct package names for wrlinuxlts25
+
+Set correct package names for WRLinuxlts25, otherwise the packages can
+not be found in STIG.
+
+Upstream-Status: Inappropriate [WRLinux specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ products/wrlinuxlts25/product.yml              |  5 +++++
+ .../oval/installed_env_has_login_defs.xml      |  4 ++--
+ shared/applicability/package.yml               | 18 +++++++++++++-----
+ 3 files changed, 20 insertions(+), 7 deletions(-)
+
+diff --git a/products/wrlinuxlts25/product.yml b/products/wrlinuxlts25/product.yml
+index c3207572..71cba230 100644
+--- a/products/wrlinuxlts25/product.yml
++++ b/products/wrlinuxlts25/product.yml
+@@ -23,3 +23,8 @@ cpes:
+       name: "cpe:/o:windriver:wrlinux:lts25"
+       title: "Wind River Linux LTS25"
+       check_id: installed_OS_is_wrlinuxlts25
++
++# Mapping of CPE platform to package
++platform_package_overrides:
++  login_defs: "shadow"
++  pam: "libpam-runtime"
+diff --git a/shared/applicability/oval/installed_env_has_login_defs.xml b/shared/applicability/oval/installed_env_has_login_defs.xml
+index 8a9b4b46..9ab63e2a 100644
+--- a/shared/applicability/oval/installed_env_has_login_defs.xml
++++ b/shared/applicability/oval/installed_env_has_login_defs.xml
+@@ -17,7 +17,7 @@
+ {{% if pkg_system == "rpm" %}}
+   <linux:rpminfo_test check="all" check_existence="at_least_one_exists"
+   id="test_env_has_login_defs_installed" version="1"
+-  {{% if product in ["sle12", "sle15", "slmicro5"] %}}
++  {{% if product in ["sle12", "sle15", "slmicro5"] or 'wrlinux' in product %}}
+   comment="system has package shadow installed, which provides the /etc/login.defs file.">
+   {{% else %}}
+   comment="system has package shadow-utils installed, which provides the /etc/login.defs file.">
+@@ -25,7 +25,7 @@
+     <linux:object object_ref="obj_env_has_login_defs_installed" />
+   </linux:rpminfo_test>
+   <linux:rpminfo_object id="obj_env_has_login_defs_installed" version="1">
+-    <linux:name>{{% if product in ["sle12", "sle15", "slmicro5"] %}}shadow{{% else %}}shadow-utils{{% endif %}}</linux:name>
++    <linux:name>{{% if product in ["sle12", "sle15", "slmicro5"] or 'wrlinux' in product %}}shadow{{% else %}}shadow-utils{{% endif %}}</linux:name>
+   </linux:rpminfo_object>
+ {{% elif pkg_system == "dpkg" %}}
+   <linux:dpkginfo_test check="all" check_existence="all_exist"
+diff --git a/shared/applicability/package.yml b/shared/applicability/package.yml
+index d2e7b75f..f95f931b 100644
+--- a/shared/applicability/package.yml
++++ b/shared/applicability/package.yml
+@@ -16,14 +16,18 @@ args:
+     pkgname: apport
+   audit:
+     {{% if pkg_system == "rpm" %}}
+-    pkgname: audit
++    {{% if 'wrlinux' in product %}}
++      pkgname: auditd
+     {{% else %}}
+-    pkgname: auditd
++      pkgname: audit
++    {{% endif %}}
++    {{% else %}}
++      pkgname: auditd
+     {{% endif %}}
+   autofs:
+     pkgname: autofs
+   avahi:
+-    {{% if 'ubuntu' in product %}}
++    {{% if 'ubuntu' in product or 'wrlinux' in product %}}
+     pkgname: avahi-daemon
+     {{% else %}}
+     pkgname: avahi
+@@ -75,7 +79,11 @@ args:
+     pkgname: openssh
+   pam:
+     {{% if pkg_system == "rpm" %}}
++    {{% if 'wrlinux' in product %}}
++      pkgname: libpam-runtime
++    {{% else %}}
+       pkgname: pam
++    {{% endif %}}
+     {{% else %}}
+       pkgname: libpam-runtime
+     {{% endif %}}
+@@ -89,7 +97,7 @@ args:
+     pkgname: rsh-server
+   shadow-utils:
+     {{% if pkg_system == "rpm" %}}
+-    {{% if product in ["kylinserver10", "openeuler2203", "sle12", "sle15", "slmicro5"] %}}
++    {{% if product in ["kylinserver10", "openeuler2203", "sle12", "sle15", "slmicro5"] or 'wrlinux' in product %}}
+       pkgname: shadow
+     {{% else %}}
+       pkgname: shadow-utils
+@@ -109,7 +117,7 @@ args:
+   squid:
+     pkgname: squid
+   sssd:
+-    {{% if product in ["sle12", "sle15"] %}}
++    {{% if product in ["sle12", "sle15"] or 'wrlinux' in product %}}
+       pkgname: sssd
+     {{% else %}}
+       pkgname: sssd-common
+-- 
+2.34.1
+

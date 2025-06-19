@@ -1,0 +1,96 @@
+From 64018c210ea563a91cee00bca17fb3b9e3c2414d Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Thu, 10 Jul 2025 19:15:00 +0800
+Subject: [PATCH] Enable require_singleuser_auth rule
+
+Upstream-Status: Inappropriate [WRLinux specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ .../require_singleuser_auth/oval/shared.xml            | 10 +++++-----
+ .../accounts-physical/require_singleuser_auth/rule.yml |  6 +++---
+ 2 files changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/oval/shared.xml b/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/oval/shared.xml
+index 6324644e..01da47fd 100644
+--- a/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/oval/shared.xml
++++ b/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/oval/shared.xml
+@@ -13,7 +13,7 @@
+         <criterion comment="authentication for single user mode is configured in the override file"
+         test_ref="test_require_rescue_service_override" />
+       </criteria>
+-      {{%- if 'ol' not in families  and 'rhel' not in product and "fedora" != product-%}}
++      {{%- if 'ol' not in families  and 'rhel' not in product and "fedora" != product and 'wrlinux' not in product -%}}
+       <criterion test_ref="test_require_rescue_service_runlevel1" />
+       <criterion test_ref="test_no_custom_runlevel1_target" negate="true"/>
+       <criterion test_ref="test_no_custom_rescue_service" negate="true"/>
+@@ -23,7 +23,7 @@
+ 
+   <ind:textfilecontent54_test check="all" check_existence="all_exist"
+     comment="Tests that
+-    {{% if product in ["fedora", "rhcos4", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product -%}}
++    {{% if product in ["fedora", "rhcos4", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product or 'wrlinux' in product -%}}
+     /usr/lib/systemd/systemd-sulogin-shell
+     {{%- else -%}}
+     /sbin/sulogin
+@@ -45,7 +45,7 @@
+ 
+   <ind:textfilecontent54_test check="all" check_existence="all_exist"
+     comment="Tests that
+-    {{%- if product in ["fedora", "rhcos4", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product -%}}
++    {{%- if product in ["fedora", "rhcos4", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product or 'wrlinux' in product -%}}
+     /usr/lib/systemd/systemd-sulogin-shell
+     {{%- else -%}}
+     /sbin/sulogin
+@@ -67,7 +67,7 @@
+   
+ 
+   <ind:textfilecontent54_state id="state_require_rescue_service" version="1">
+-    {{%- if product in ["fedora", "rhcos4", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product -%}}
++    {{%- if product in ["fedora", "rhcos4", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product or 'wrlinux' in product -%}}
+     <ind:subexpression datatype="string" operation="pattern match">.*/usr/lib/systemd/systemd-sulogin-shell[ ]+rescue</ind:subexpression>
+     {{%- else -%}}
+     <ind:subexpression datatype="string" operation="pattern match">/bin/sh[\s]+-c[\s]+\"(/usr)?/sbin/sulogin;[\s]+/usr/bin/systemctl[\s]+--fail[\s]+--no-block[\s]+default\"</ind:subexpression>
+@@ -81,7 +81,7 @@
+   </ind:textfilecontent54_test>
+ 
+ 
+-  {{%- if product not in ["ol8"] and 'rhel' not in product -%}}
++  {{%- if product not in ["ol8"] and 'rhel' not in product and 'wrlinux' not in product -%}}
+   <ind:textfilecontent54_test check="all" check_existence="all_exist"
+     comment="Tests that the systemd rescue.service is in the runlevel1.target"
+     id="test_require_rescue_service_runlevel1" version="1">
+diff --git a/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/rule.yml b/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/rule.yml
+index bc0beb98..8f0f0fff 100644
+--- a/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/rule.yml
++++ b/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/rule.yml
+@@ -56,7 +56,7 @@ ocil: |-
+     To check if authentication is required for single-user mode, run the following command:
+     <pre>$ grep sulogin /usr/lib/systemd/system/rescue.service</pre>
+     The output should be similar to the following, and the line must begin with
+-    {{% if product in ["fedora", "rhcos4", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product -%}}
++    {{% if product in ["fedora", "rhcos4", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product or 'wrlinux' in product -%}}
+         ExecStart and /usr/lib/systemd/systemd-sulogin-shell.
+         <pre>ExecStart=-/usr/lib/systemd/systemd-sulogin-shell rescue</pre>
+     {{%- else -%}}
+@@ -68,7 +68,7 @@ ocil: |-
+     <pre>grep ExecStart /etc/systemd/system/rescue.service.d/*.conf</pre>
+     The output should contain two lines:
+     <pre>ExecStart=
+-    {{% if product in ["fedora", "rhcos4", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product -%}}
++    {{% if product in ["fedora", "rhcos4", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product or 'wrlinux' in product -%}}
+     ExecStart=-/usr/lib/systemd/systemd-sulogin-shell rescue</pre>
+     {{%- else -%}}
+     ExecStart=-/bin/sh -c "/sbin/sulogin; /usr/bin/systemctl --fail --no-block default"</pre>
+@@ -98,7 +98,7 @@ fixtext: |-
+ 
+     Ensure that there are following two lines  in <tt>/etc/systemd/system/rescue.service.d/10-remediation.conf</tt>:
+     <pre>ExecStart=
+-    {{% if product in ["fedora", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product -%}}
++    {{% if product in ["fedora", "sle12", "sle15", "slmicro5"] or 'ol' in families or 'rhel' in product or 'wrlinux' in product -%}}
+     ExecStart=-/usr/lib/systemd/systemd-sulogin-shell rescue</pre>
+     {{%- else -%}}
+     ExecStart=-/bin/sh -c "/sbin/sulogin; /usr/bin/systemctl --fail --no-block default"</pre>
+-- 
+2.34.1
+

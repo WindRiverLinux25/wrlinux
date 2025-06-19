@@ -1,0 +1,25 @@
+From c44e204147ead56e5a198ee72149af3f44a8ac7b Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Thu, 23 May 2024 20:59:43 +0800
+Subject: [PATCH] Enable rsyslog_cron_logging rule
+
+Upstream-Status: Inappropriate [WRLinux specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ .../rsyslog_cron_logging/bash/shared.sh                         | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/linux_os/guide/system/logging/ensure_rsyslog_log_file_configuration/rsyslog_cron_logging/bash/shared.sh b/linux_os/guide/system/logging/ensure_rsyslog_log_file_configuration/rsyslog_cron_logging/bash/shared.sh
+index 8fa32223..b762ff5a 100644
+--- a/linux_os/guide/system/logging/ensure_rsyslog_log_file_configuration/rsyslog_cron_logging/bash/shared.sh
++++ b/linux_os/guide/system/logging/ensure_rsyslog_log_file_configuration/rsyslog_cron_logging/bash/shared.sh
+@@ -1,4 +1,4 @@
+-# platform = Red Hat Virtualization 4,multi_platform_fedora,multi_platform_ol,multi_platform_rhel
++# platform = Red Hat Virtualization 4,multi_platform_fedora,multi_platform_ol,multi_platform_rhel,multi_platform_wrlinux
+ 
+ if ! grep -s "^\s*cron\.\*\s*/var/log/cron$" /etc/rsyslog.conf /etc/rsyslog.d/*.conf; then
+ 	mkdir -p /etc/rsyslog.d
+-- 
+2.34.1
+

@@ -1,0 +1,28 @@
+From 32824e18e9b07dcbac2c803d38468c113d33fc49 Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Fri, 11 Nov 2022 12:24:51 +0800
+Subject: [PATCH] Fix sudo_remove_nopasswd rule
+
+Upstream-Status: Inappropriate [WRLinux specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ shared/macros/10-bash.jinja | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/shared/macros/10-bash.jinja b/shared/macros/10-bash.jinja
+index 3f4af1ea..c8999c9a 100644
+--- a/shared/macros/10-bash.jinja
++++ b/shared/macros/10-bash.jinja
+@@ -1408,7 +1408,7 @@ for f in /etc/sudoers /etc/sudoers.d/* ; do
+   if ! test -z "$matching_list"; then
+     while IFS= read -r entry; do
+       # comment out "{{{ parameter }}}" matches to preserve user data
+-      sed -i "s/^${entry}$/# &/g" $f
++      sed -i "s|^${entry}$|# &|g" $f
+     done <<< "$matching_list"
+ 
+     /usr/sbin/visudo -cf $f &> /dev/null || echo "Fail to validate $f with visudo"
+-- 
+2.34.1
+

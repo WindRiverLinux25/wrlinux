@@ -1,0 +1,28 @@
+From ed123d404b4aa965a2dfe052b2508ea8b6a60087 Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Sun, 28 Apr 2024 12:40:31 +0800
+Subject: [PATCH] Set grub2 boot path for wrlinux
+
+Upstream-Status: Inappropriate [WRLinux specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ product_properties/10-grub.yml | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/product_properties/10-grub.yml b/product_properties/10-grub.yml
+index 436c6b49..15a33706 100644
+--- a/product_properties/10-grub.yml
++++ b/product_properties/10-grub.yml
+@@ -24,4 +24,8 @@ overrides:
+ {{% else %}}
+   grub2_uefi_boot_path: "/boot/grub"
+ {{% endif %}}
++{{% if "wrlinux" in families %}}
++  grub2_boot_path: "/boot/grub"
++  grub2_uefi_boot_path: "/boot/EFI/BOOT"
++{{% endif %}}
+ {{% endif %}}
+-- 
+2.34.1
+

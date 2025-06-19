@@ -1,0 +1,87 @@
+From 2d430d6a21d056f96e0e247ac98ab7fcaebe8ba0 Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Fri, 2 Sep 2022 10:04:57 +0800
+Subject: [PATCH] Enable display_login_attempts rule
+
+Upstream-Status: Inappropriate [WRLinux specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ .../accounts-pam/display_login_attempts/bash/shared.sh | 10 +++++++---
+ .../display_login_attempts/oval/shared.xml             |  6 +++++-
+ .../accounts-pam/display_login_attempts/rule.yml       |  4 ++--
+ 3 files changed, 14 insertions(+), 6 deletions(-)
+
+diff --git a/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/bash/shared.sh b/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/bash/shared.sh
+index 2c790b82..42b692c2 100644
+--- a/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/bash/shared.sh
++++ b/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/bash/shared.sh
+@@ -1,6 +1,6 @@
+-# platform = multi_platform_sle,multi_platform_slmicro,Red Hat Virtualization 4,multi_platform_fedora,multi_platform_ol,multi_platform_rhel,multi_platform_ubuntu,multi_platform_almalinux
++# platform = multi_platform_sle,multi_platform_slmicro,Red Hat Virtualization 4,multi_platform_fedora,multi_platform_ol,multi_platform_rhel,multi_platform_ubuntu,multi_platform_almalinux,multi_platform_wrlinux
+ 
+-{{%- if "sle" in product or "slmicro" in product or "ubuntu" in product %}}
++{{%- if "sle" in product or "slmicro" in product or "ubuntu" in product or "wrlinux" in product %}}
+ {{%- set pam_lastlog_path = "/etc/pam.d/login" %}}
+ {{%- set after_match = "^\s*session.*include\s+common-session$" %}}
+ {{%- else %}}
+@@ -10,10 +10,14 @@
+ 
+ {{%- if "ol" in product or "slmicro" in product or "ubuntu" in product %}}
+ {{%- set control = "required" %}}
+-{{%- elif "sle" in product %}}
++{{%- elif "sle" in product or "wrlinux" in product %}}
+ {{%- set control = "optional" %}}
+ {{%- else %}}
+ {{%- set control = "[default=1]" %}}
+ {{%- endif %}}
+ 
++{{%- if "wrlinux" in product %}}
++{{{ bash_ensure_pam_module_configuration(pam_lastlog_path, 'session', control, 'pam_lastlog2.so', '', '', after_match) }}}
++{{%- else %}}
+ {{{ bash_pam_lastlog_enable_showfailed(pam_lastlog_path, control, after_match) }}}
++{{%- endif %}}
+diff --git a/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/oval/shared.xml b/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/oval/shared.xml
+index 422af7a3..8fc4f460 100644
+--- a/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/oval/shared.xml
++++ b/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/oval/shared.xml
+@@ -1,4 +1,4 @@
+-{{%- if "sle" in product or "slmicro" in product or "ubuntu" in product %}}
++{{%- if "sle" in product or "slmicro" in product or "ubuntu" in product or "wrlinux" in product %}}
+ {{% set pam_lastlog_path = "/etc/pam.d/login" %}}
+ {{% else %}}
+ {{% set pam_lastlog_path = "/etc/pam.d/postlogin" %}}
+@@ -26,7 +26,11 @@
+        https://github.com/ComplianceAsCode/content/issues/9031 -->
+   <ind:textfilecontent54_object id="obj_display_login_attempts" version="2">
+     <ind:filepath>{{{ pam_lastlog_path }}}</ind:filepath>
++    {{% if 'wrlinux' in product %}}
++    <ind:pattern operation="pattern match">^\s*session\s+.*\s+pam_lastlog2\.so\s.*$</ind:pattern>
++    {{% else %}}
+     <ind:pattern operation="pattern match">^\s*session\s+.*\s+pam_lastlog\.so\b(?!.*\ssilent\s).*\sshowfailed\s.*$</ind:pattern>
++    {{% endif %}}
+     <ind:instance datatype="int" operation="equals">1</ind:instance>
+   </ind:textfilecontent54_object>
+ </def-group>
+diff --git a/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/rule.yml b/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/rule.yml
+index 60b2ae3a..0424c91c 100644
+--- a/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/rule.yml
++++ b/linux_os/guide/system/accounts/accounts-pam/display_login_attempts/rule.yml
+@@ -1,4 +1,4 @@
+-{{%- if "sle" in product or "slmicro" in product or "ubuntu" in product %}}
++{{%- if "sle" in product or "slmicro" in product or "ubuntu" in product or "wrlinux" in product %}}
+ {{%- set pam_lastlog_path = "/etc/pam.d/login" %}}
+ {{%- else %}}
+ {{%- set pam_lastlog_path = "/etc/pam.d/postlogin" %}}
+@@ -6,7 +6,7 @@
+ 
+ {{%- if "ol" in product or "slmicro" in product or "ubuntu" in product %}}
+ {{%- set control = "required" %}}
+-{{%- elif "sle" in product %}}
++{{%- elif "sle" in product or "wrlinux" in product %}}
+ {{%- set control = "optional" %}}
+ {{%- else %}}
+ {{%- set control = "[default=1]" %}}
+-- 
+2.34.1
+

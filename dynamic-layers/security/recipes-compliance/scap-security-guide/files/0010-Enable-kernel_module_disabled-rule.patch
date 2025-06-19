@@ -1,0 +1,25 @@
+From d39a5ddef547ed24b3ee0d22314b2461bffb7e79 Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Tue, 8 Nov 2022 16:15:16 +0800
+Subject: [PATCH] Enable kernel_module_disabled rule
+
+Upstream-Status: Inappropriate [WRLinux specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ shared/templates/kernel_module_disabled/bash.template | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/shared/templates/kernel_module_disabled/bash.template b/shared/templates/kernel_module_disabled/bash.template
+index 314a31ee..a65bc3bb 100644
+--- a/shared/templates/kernel_module_disabled/bash.template
++++ b/shared/templates/kernel_module_disabled/bash.template
+@@ -1,4 +1,4 @@
+-# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_almalinux,multi_platform_rhv,multi_platform_ubuntu,multi_platform_sle,multi_platform_slmicro
++# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_almalinux,multi_platform_rhv,multi_platform_ubuntu,multi_platform_sle,multi_platform_slmicro,multi_platform_wrlinux
+ # reboot = true
+ # strategy = disable
+ # complexity = low
+-- 
+2.34.1
+

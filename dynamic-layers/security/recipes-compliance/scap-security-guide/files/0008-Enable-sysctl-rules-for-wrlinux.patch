@@ -1,0 +1,26 @@
+From 30722225286f976e37f1f108590b421910ea137f Mon Sep 17 00:00:00 2001
+From: Yi Zhao <yi.zhao@windriver.com>
+Date: Tue, 8 Nov 2022 15:56:32 +0800
+Subject: [PATCH] Enable sysctl rules for wrlinux
+
+Upstream-Status: Inappropriate [WRLinux specific]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ shared/templates/sysctl/bash.template | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/shared/templates/sysctl/bash.template b/shared/templates/sysctl/bash.template
+index 1f417d31..0ea2b165 100644
+--- a/shared/templates/sysctl/bash.template
++++ b/shared/templates/sysctl/bash.template
+@@ -1,4 +1,5 @@
+-# platform = multi_platform_debian,multi_platform_fedora,multi_platform_ol,multi_platform_almalinux,multi_platform_rhel,multi_platform_rhv,multi_platform_sle,multi_platform_slmicro,multi_platform_ubuntu
++# platform = multi_platform_debian,multi_platform_fedora,multi_platform_ol,multi_platform_almalinux,multi_platform_rhel,multi_platform_rhv,multi_platform_sle,multi_platform_slmicro,multi_platform_ubuntu,multi_platform_wrlinux
++
+ # reboot = true
+ # strategy = disable
+ # complexity = low
+-- 
+2.34.1
+
