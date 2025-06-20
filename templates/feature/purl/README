@@ -1,0 +1,19 @@
+This template sets the software_packageUrl value in SPDX 3.0 SBOM.
+
+This template depends on the openembedded-core commit
+c8e6953a0b6f59ffca994c440069db39e60b12d2.
+That commit set a variable SPDX_PACKAGE_URL to enable the
+software_packageUrl field in SPDX 3.0 SBOM.
+
+This template fill the variable value for each installed package.
+Developer can insert private information into the purl qualifiers
+field through SPDX_PURL_QUALIFIERS_EXTEND variable.
+Through SPDX_PURL_SUBPATH variable set the purl subpath field.
+
+To use the template, add "--templates feature/purl" as a setup
+option.
+
+#@TYPE: Wrtemplate
+#@NAME: purl
+#@DESCRIPTION: Enable software_packageUrl field in SPDX 3.0 SBOM.
+
