@@ -27,7 +27,7 @@ RDEPENDS:packagegroup-core-boot-wrs = "\
     base-files \
     base-passwd \
     busybox \
-    ${VIRTUAL-RUNTIME_initscripts} \
+    ${@bb.utils.contains("DISTRO_FEATURES", "sysvinit", "${VIRTUAL-RUNTIME_initscripts}", "", d)} \
     ${@bb.utils.contains("MACHINE_FEATURES", "keyboard", "${VIRTUAL-RUNTIME_keymaps}", "", d)} \
     modutils-initscripts \
     netbase \
