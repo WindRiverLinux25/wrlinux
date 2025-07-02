@@ -123,18 +123,14 @@ SKIP_RECIPE[newlib] ?= "only glibc is supported for wrlinux"
 
 # SANITY_TESTED_DISTROS used to defined the distribution list which we used to build wrlinux
 SANITY_TESTED_DISTROS ?= " \
-            ubuntu-20.04 \n \
             ubuntu-22.04 \n \
             ubuntu-24.04 \n \
-            fedora-39 \n \
-            fedora-40 \n \
             fedora-41 \n \
-            opensuseleap-15.5 \n \
-            rhel-7.8 \n \
-            rhel-8.0 \n \
-            rhel-8.2 \n \
-            rhel-8.4 \n \
-            rhel-9.0 \n \
-            sled-15 \n \
-            sled-15.4 \n \
+            fedora-42 \n \
+            opensuseleap-15.6 \n \
+            rhel-8.10 \n \
+            rhel-9.6 \n \
+            rhel-10 \n \
+            sled-15.7 \n \
+            elxr-12 \n \
             "
