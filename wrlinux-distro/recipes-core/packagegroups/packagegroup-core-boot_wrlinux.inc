@@ -9,7 +9,7 @@ ALLOW_EMPTY:packagegroup-wr-boot:osv-wrlinux = "1"
 RDEPENDS:packagegroup-wr-boot:osv-wrlinux = "${PN} ${WR_MACHINE_ESSENTIAL_EXTRA_RDEPENDS}"
 
 # add wr-init
-RDEPENDS:${PN}:append:osv-wrlinux = " wr-init"
+RDEPENDS:${PN}:append:osv-wrlinux = " ${@bb.utils.contains('DISTRO_FEATURES','sysvinit','wr-init','',d)}"
 
 # Need these, but images may choose to pull them from various
 # packages, e.g. busybox or bash+busybox-oe-min.
