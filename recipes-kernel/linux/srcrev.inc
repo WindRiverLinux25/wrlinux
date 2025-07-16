@@ -78,4 +78,4 @@ LINUX_VERSION:kb-v6.12-standard-xlnx-soc = "6.12.38"
 
 # yocto-kernel-cache entries
 KERNEL_CACHE_BRANCH_6.12 = "yocto-6.12"
-SRCREV_meta_6.12 = "f55254a882f2862bcfc9aee354dbd157b5d9dfcb"
+SRCREV_meta_6.12 = "5db57044962c6155c4e82f06d87e90dfe49a59e6"
