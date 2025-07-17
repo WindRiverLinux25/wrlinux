@@ -1,0 +1,57 @@
+From 77cf605d5e4e8bc98cfb27a15041505642fcb9d5 Mon Sep 17 00:00:00 2001
+From: "Ivan A. Melnikov" <iv@altlinux.org>
+Date: Tue, 27 Aug 2024 12:27:49 +0400
+Subject: [PATCH] Fix float128 support when long double is not supported
+
+The idea of selecting type_layout here is:
+- find the matching layout if one exists;
+- otherwise, select the largest layout supported.
+
+Expressing this in a bit more clear way hides unsupported
+layouts from the compiler with preprocessor conditions,
+which fixes compilation when float128 is supported, but
+long doubles are not supported by Boost.Charconv on a
+given platform.
+
+Fixes #220.
+
+Upstream-Status: Backport
+[https://github.com/boostorg/charconv/commit/77cf605d5e4e8bc98cfb27a15041505642fcb9d5]
+
+Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
+---
+ src/to_chars_float_impl.hpp | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+
+diff --git a/src/to_chars_float_impl.hpp b/src/to_chars_float_impl.hpp
+index d4c357a..2480328 100644
+--- a/src/to_chars_float_impl.hpp
++++ b/src/to_chars_float_impl.hpp
+@@ -274,13 +274,17 @@ to_chars_result to_chars_hex(char* first, char* last, Real value, int precision)
+         typename std::conditional<std::is_same<Real, float>::value, ieee754_binary32,
+             typename std::conditional<std::is_same<Real, double>::value, ieee754_binary64,
+                     #ifdef BOOST_CHARCONV_HAS_FLOAT128
+-                    typename std::conditional<std::is_same<Real, __float128>::value || BOOST_CHARCONV_LDBL_BITS == 128, ieee754_binary128, ieee754_binary80>::type
+-                    #elif BOOST_CHARCONV_LDBL_BITS == 128
+-                    ieee754_binary128
+-                    #elif BOOST_CHARCONV_LDBL_BITS == 80
+-                    ieee754_binary80
+-                    #else
+-                    ieee754_binary64
++                    typename std::conditional<std::is_same<Real, __float128>::value, ieee754_binary128,
++                    #endif
++                        #if BOOST_CHARCONV_LDBL_BITS == 128
++                        ieee754_binary128
++                        #elif BOOST_CHARCONV_LDBL_BITS == 80
++                        ieee754_binary80
++                        #else
++                        ieee754_binary64
++                        #endif
++                    #ifdef BOOST_CHARCONV_HAS_FLOAT128
++                    >::type
+                     #endif
+             >::type>::type
+         #ifdef BOOST_CHARCONV_HAS_FLOAT16
+-- 
+2.34.1
+
