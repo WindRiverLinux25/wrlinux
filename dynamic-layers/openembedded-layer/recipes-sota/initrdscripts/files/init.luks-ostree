@@ -246,7 +246,7 @@ _luks_create() {
     # generate random seeds
     [ -e ${TMP_DIR}/rngd.pid ] || rngd -r /dev/urandom --pid ${TMP_DIR}/rngd.pid
 
-    cmd="luks-setup -f $TPM_EVICT_OPT -d ${luks_rawdev_path} -n ${LUKS_PREFIX_LABEL}_${luks_rawdev_path##*/} -R"
+    cmd="luks-setup -f $TPM_EVICT_OPT -d ${luks_rawdev_path} -n ${LUKS_PREFIX_LABEL}_${luks_rawdev_path##*/} -R -p"
     cmd="echo Y | $cmd"
     eval "$cmd"
 
@@ -416,7 +416,7 @@ _luks_map() {
 
     [ -z "${luks_rawdev}" ] && return 1
 
-    mount | grep "luks_${luks_rawdev##*/}" || luks-setup -N -m -d "${luks_rawdev}" -n "luks_${luks_rawdev##*/}"
+    mount | grep "luks_${luks_rawdev##*/}" || luks-setup -N -m -d "${luks_rawdev}" -n "luks_${luks_rawdev##*/}" -p
 
     return 0
 }
@@ -428,7 +428,7 @@ _luks_unmap() {
 
     [ -z "${luks_rawdev}" ] && return 1
 
-    luks-setup -N -u -d "${luks_rawdev}" -n "luks_${luks_rawdev##*/}"
+    luks-setup -N -u -d "${luks_rawdev}" -n "luks_${luks_rawdev##*/}" -p
     [ $? == 0 ] || {
         print_warning "Unable to unmap luks partition ${luks_rawdev} !"
         return 1

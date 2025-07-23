@@ -1303,7 +1303,7 @@ if [ "$BL" = "grub" -a "$INSTFMT" != "0" ] ; then
 	pi=$((p1+1))
 	dashe="-e"
 	if [ $LUKS -eq 3 ] ; then
-		echo Y | luks-setup -f $dashe -d ${fs_dev}${pi} -n luksotaboot -k /usr/share/grub/boot.key || \
+		echo Y | luks-setup -f $dashe -d ${fs_dev}${pi} -n luksotaboot -k /usr/share/grub/boot.key -p || \
 			fatal "Cannot create LUKS volume luksotaboot"
 		dashe=""
 		mkfs.ext4 -F -L otaboot /dev/mapper/luksotaboot
@@ -1313,7 +1313,7 @@ if [ "$BL" = "grub" -a "$INSTFMT" != "0" ] ; then
 
 	pi=$((pi+1))
 	if [ $LUKS -gt 1 ] ; then
-		echo Y | luks-setup -f $dashe -d ${fs_dev}${pi} -n luksotaroot || \
+		echo Y | luks-setup -f $dashe -d ${fs_dev}${pi} -n luksotaroot -p || \
 			fatal "Cannot create LUKS volume luksotaroot"
 		dashe=""
 		mkfs.ext4 -F -L otaroot /dev/mapper/luksotaroot
@@ -1324,7 +1324,7 @@ if [ "$BL" = "grub" -a "$INSTFMT" != "0" ] ; then
 	if [ "$INSTAB" = "1" ] ; then
 		pi=$((pi+1))
 		if [ $LUKS -eq 3 ] ; then
-			echo Y | luks-setup -f $dashe -d ${fs_dev}${pi} -n luksotaboot_b -k /usr/share/grub/boot.key || \
+			echo Y | luks-setup -f $dashe -d ${fs_dev}${pi} -n luksotaboot_b -k /usr/share/grub/boot.key -p || \
 				fatal "Cannot create LUKS volume luksotaboot_b"
 			dashe=""
 			mkfs.ext4 -F -L otaboot_b /dev/mapper/luksotaboot_b
@@ -1334,7 +1334,7 @@ if [ "$BL" = "grub" -a "$INSTFMT" != "0" ] ; then
 
 		pi=$((pi+1))
 		if [ $LUKS -gt 1 ] ; then
-			echo Y | luks-setup -f -d ${fs_dev}${pi} -n luksotaroot_b || \
+			echo Y | luks-setup -f -d ${fs_dev}${pi} -n luksotaroot_b -p || \
 				fatal "Cannot create LUKS volume luksotaroot_b"
 			mkfs.ext4 -F -L otaroot_b /dev/mapper/luksotaroot_b
 		else
@@ -1346,7 +1346,7 @@ if [ "$BL" = "grub" -a "$INSTFMT" != "0" ] ; then
 		pi=$((pi+1))
 		FLUXPART=${pi}
 		if [ $LUKS -gt 0 ] ; then
-			echo Y | luks-setup -f $dashe -d ${fs_dev}${FLUXPART} -n luksfluxdata || \
+			echo Y | luks-setup -f $dashe -d ${fs_dev}${FLUXPART} -n luksfluxdata -p || \
 				fatal "Cannot create LUKS volume luksfluxdata"
 			dashe=""
 			mkfs.ext4 -F -L fluxdata /dev/mapper/luksfluxdata
