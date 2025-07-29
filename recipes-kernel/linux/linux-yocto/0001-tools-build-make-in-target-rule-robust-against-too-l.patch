@@ -1,0 +1,49 @@
+From 577a25e1cf79039c01a275bb1a7e630c35af91ae Mon Sep 17 00:00:00 2001
+From: Changqing Li <changqing.li@windriver.com>
+Date: Mon, 28 Jul 2025 16:48:24 +0800
+Subject: [PATCH] tools/build: make in-target rule robust against too long
+ argument error
+
+The command length of in-target scales with the depth of the directory
+times the number of objects in the Makefile. When there are many
+objects, and O=[absolute_path] is set, and the absolute_path is
+relatively long. It is possile that this line "$(call
+if_changed,$(host)ld_multi)" will report error:
+"make[4]: /bin/sh: Argument list too long"
+
+For example, build perf tools with O=/long/output/path
+
+Like built-in.a and *.mod rules in scripts/Makefile.build, add 
+$(objpredix)/ by the shell command instead of by Make's builtin
+function.
+
+Upstream-Status: Submitted [https://lore.kernel.org/lkml/20250728093153.2330009-1-changqing.li@windriver.com/]
+
+Signed-off-by: Changqing Li <changqing.li@windriver.com>
+---
+ tools/build/Makefile.build | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/tools/build/Makefile.build b/tools/build/Makefile.build
+index ffe988867703..e26a6c1928b3 100644
+--- a/tools/build/Makefile.build
++++ b/tools/build/Makefile.build
+@@ -90,11 +90,13 @@ quiet_cmd_gen = GEN     $@
+ # If there's nothing to link, create empty $@ object.
+ quiet_cmd_ld_multi = LD      $@
+       cmd_ld_multi = $(if $(strip $(obj-y)),\
+-                     $(LD) -r -o $@  $(filter $(obj-y),$^),rm -f $@; $(AR) rcs $@)
++                     printf "$(objprefix)%s " $(patsubst $(objprefix)%,%,$(filter $(obj-y),$^)) | \
++                     xargs $(LD) -r -o $@,rm -f $@; $(AR) rcs $@)
+ 
+ quiet_cmd_host_ld_multi = HOSTLD  $@
+       cmd_host_ld_multi = $(if $(strip $(obj-y)),\
+-                          $(HOSTLD) -r -o $@  $(filter $(obj-y),$^),rm -f $@; $(HOSTAR) rcs $@)
++                          printf "$(objprefix)%s " $(patsubst $(objprefix)%,%,$(filter $(obj-y),$^)) | \
++                          xargs $(HOSTLD) -r -o $@,rm -f $@; $(HOSTAR) rcs $@)
+ 
+ ifneq ($(filter $(obj),$(hostprogs)),)
+   host = host_
+-- 
+2.34.1
+
