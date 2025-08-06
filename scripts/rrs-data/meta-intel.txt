@@ -1,0 +1,45 @@
+* intel-cmt-cat 25.04 25.04 Up-to-date
+    - intel-cmt-cat: upgrade 24.05 -> 25.04 | 25.04 | U | Default | 2025-05-15
+    - intel-cmt-cat : upgrade 23.11.1 -> 24.05 | 24.05 | U | Default | 2024-07-30
+    - intel-cmt-cat : upgrade 23.11 -> 23.11.1 | 23.11.1 | U | Default | 2024-03-11
+    - intel-cmt-cat: upgrade 23.08 -> 23.11 | 23.11 | U | Default | 2023-12-07
+    - intel-cmt-cat: upgrade 4.6.0 -> 23.08 | 23.08 | U | Default | 2023-08-29
+    - intel-cmt-cat: upgrade 4.5.0 -> 4.6.0 | 4.6.0 | U | Default | 2023-06-16
+    - intel-cmt-cat: add recipe | 4.5.0 | U | Default | 2023-04-05
+* intel-microcode 20250512 20250512 Up-to-date
+    - intel-microcode: upgrade 20250211 -> 20250512 | 20250512 | U | Default | 2025-05-14
+    - intel-microcode: upgrade 20241112 -> 20250211 | 20250211 | U | Default | 2025-02-13
+    - intel-microcode: upgrade 20241029 -> 20241112 | 20241112 | U | Default | 2024-11-18
+    - intel-microcode: upgrade 20240910 -> 20241029 | 20241029 | U | Default | 2024-11-06
+    - intel-microcode: upgrade 20240813 -> 20240910 | 20240910 | U | Default | 2024-09-12
+    - intel-microcode: upgrade 20240531 -> 20240813 | 20240813 | U | Default | 2024-08-21
+    - intel-microcode: upgrade 20240514 -> 20240531 | 20240531 | U | Default | 2024-06-04
+    - intel-microcode: upgrade 20240312 -> 20240514 | 20240514 | U | Default | 2024-05-17
+    - intel-microcode: upgrade 20231114 -> 20240312 | 20240312 | U | Default | 2024-03-28
+    - intel-microcode: upgrade 20230808 -> 20231114 | 20231114 | U | Default | 2023-11-15
+    - intel-microcode: upgrade 20230512 -> 20230808 | 20230808 | U | Default | 2023-08-09
+    - intel-microcode: upgrade 20230214 -> 20230512 | 20230512 | U | Default | 2023-05-18
+    - intel-microcode: upgrade 20221108 -> 20230214 | 20230214 | U | Default | 2023-02-15
+    - intel-microcode: upgrade 20220809 -> 20221108 | 20221108 | U | Default | 2022-11-09
+    - intel-microcode: upgrade 20220510 -> 20220809 | 20220809 | U | Default | 2022-08-12
+    - intel-microcode: upgrade 20220419 -> 20220510 | 20220510 | U | Default | 2022-05-18
+    - intel-microcode: upgrade 20220207 -> 20220419 | 20220419 | U | Default | 2022-05-06
+    - intel-microcode: upgrade 20210608 -> 20220207 | 20220207 | U | Default | 2022-02-09
+    - Initial import at master release start. | 20210608 | U | Default | 2021-09-30
+* itt 3.26.1 3.26.1 Up-to-date
+    - itt: upgrade 3.25.3 -> 3.26.1 | 3.26.1 | U | Default | 2025-05-19
+    - itt : upgrade 3.25.2-> 3.25.3 | 3.25.3 | U | Default | 2024-10-22
+    - itt : upgrade 3.25.1 -> 3.25.2 | 3.25.2 | U | Default | 2024-08-23
+    - itt : upgrade 3.24.8 -> 3.25.1 | 3.25.1 | U | Default | 2024-07-30
+    - itt: upgrade v3.24.7 -> v3.24.8 | 3.24.8 | U | Default | 2024-06-18
+    - itt : upgrade 3.24.6 -> 3.24.7 | 3.24.7 | U | Default | 2024-05-03
+    - itt: upgrade 3.24.2 -> 3.24.6 | 3.24.6 | U | Default | 2024-01-24
+    - itt : upgrade 3.24.0 -> 3.24.2 | 3.24.2 | U | Default | 2023-07-13
+    - itt: upgrade 3.23.0 -> 3.24.0 | 3.24.0 | U | Default | 2023-03-28
+    - itt: upgrade 3.22.5 -> 3.23.0 | 3.23.0 | U | Default | 2022-03-02
+    - itt: upgrade 3.22.4 -> 3.22.5 | 3.22.5 | U | Default | 2022-01-26
+    - itt: upgrade 3.21.2 -> 3.22.4 | 3.22.4 | U | Default | 2021-11-24
+    - itt: upgrade 3.20.1 -> 3.21.2 | 3.21.2 | U | Default | 2021-10-11
+    - Initial import at master release start. | 3.20.1 | U | Default | 2021-09-30
+* iucode-tool 2.3.1  Unknown
+    - Initial import at master release start. | 2.3.1 | U | Default | 2021-09-30

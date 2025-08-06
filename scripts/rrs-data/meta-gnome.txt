@@ -1,0 +1,75 @@
+* dconf 0.40.0 0.40.0 Up-to-date
+    - Initial import at master release start. | 0.40.0 | U | Default | 2021-09-24
+* gnome-menus 3.36.0 3.36.0 Up-to-date
+    - Rename gnome-menus3 -> gnome-menus | 3.36.0 | U | Default | 2022-01-05
+* gtksourceview3 3.24.11 5.16.0 Not updated
+    - Initial import at master release start. | 3.24.11 | U | Default | 2021-09-24
+* gtksourceview4 4.8.4 5.16.0 Not updated
+    - gtksourceview4: Upgrade 4.8.2 -> 4.8.4 | 4.8.4 | U | Default | 2023-11-14
+    - gtksourceview4: upgrade 4.8.1 -> 4.8.2 | 4.8.2 | U | Default | 2022-01-05
+    - Initial import at master release start. | 4.8.1 | U | Default | 2021-09-24
+* gvfs 1.57.2  Unknown
+    - gvfs: update 1.56.1 -> 1.57.2 | 1.57.2 | U | Default | 2025-03-18
+    - gvfs: update 1.56.0 -> 1.56.1 | 1.56.1 | U | Default | 2024-12-11
+    - gvfs: update 1.54.0 -> 1.56.0 | 1.56.0 | U | Default | 2024-10-11
+    - gvfs: update 1.52.2 -> 1.54.0 | 1.54.0 | U | Default | 2024-03-23
+    - gvfs: update 1.52.1 -> 1.52.2 | 1.52.2 | U | Default | 2024-01-19
+    - gvfs: upgrade 1.52.0 -> 1.52.1 | 1.52.1 | U | Default | 2023-11-06
+    - gvfs: upgrade 1.51.90 -> 1.52.0 | 1.52.0 | U | Default | 2023-09-20
+    - gvfs: update 1.51.1 -> 1.51.90 | 1.51.90 | U | Default | 2023-08-10
+    - gvfs: upgrade 1.50.4 -> 1.51.1 | 1.51.1 | U | Default | 2023-07-07
+    - gvfs: upgrade 1.50.3 -> 1.50.4 | 1.50.4 | U | Default | 2023-03-25
+    - gvfs: upgrade 1.50.2 -> 1.50.3 | 1.50.3 | U | Default | 2023-01-17
+    - gvfs: upgrade 1.50.0 -> 1.50.2 | 1.50.2 | U | Default | 2022-07-05
+    - gvfs: upgrade 1.49.1 -> 1.50.0 | 1.50.0 | U | Default | 2022-03-24
+    - gvfs: upgrade 1.48.1 -> 1.49.1 | 1.49.1 | U | Default | 2022-02-03
+    - Initial import at master release start. | 1.48.1 | U | Default | 2021-09-24
+* keybinder 3.0+gitAUTOINC+736ccef40d 3.0 Up-to-date
+    - Initial import at master release start. | 3.0+gitAUTOINC+736ccef40d | U | Default | 2021-09-24
+* libgsf 1.14.53 1.14.53 Up-to-date
+    - libgsf: upgrade 1.14.52 -> 1.14.53 | 1.14.53 | U | Default | 2024-10-14
+    - libgsf: upgrade 1.14.51 -> 1.14.52 | 1.14.52 | U | Default | 2024-02-09
+    - libgsf: Upgrade 1.14.50 -> 1.14.51 | 1.14.51 | U | Default | 2023-11-06
+    - libgsf: upgrade 1.14.49 -> 1.14.50 | 1.14.50 | U | Default | 2022-07-19
+    - libgsf: upgrade 1.14.48 -> 1.14.49 | 1.14.49 | U | Default | 2022-03-29
+    - libgsf: upgrade 1.14.47 -> 1.14.48 | 1.14.48 | U | Default | 2022-01-05
+    - Initial import at master release start. | 1.14.47 | U | Default | 2021-09-24
+* libgtop 2.41.3  Unknown
+    - libgtop: update 2.41.1 -> 2.41.3 | 2.41.3 | U | Default | 2024-03-23
+    - libgtop: update 2.40.0 -> 2.41.1 | 2.41.1 | U | Default | 2023-03-28
+    - Initial import at master release start. | 2.40.0 | U | Default | 2021-09-24
+* libnma 1.10.6 1.10.6 Up-to-date
+    - libnma: upgrade 1.10.4 -> 1.10.6 | 1.10.6 | U | Default | 2023-01-17
+    - libnma: upgrade 1.8.36 -> 1.8.38 | 1.8.38 | U | Default | 2022-04-14
+    - libnma: upgrade 1.8.34 -> 1.8.36 | 1.8.36 | U | Default | 2022-04-07
+    - libnma: upgrade 1.8.32 -> 1.8.34 | 1.8.34 | U | Default | 2022-01-25
+    - libnma: update to 1.8.32 | 1.8.32 | U | Default | 2021-12-10
+    - Initial import at master release start. | 1.8.30 | U | Default | 2021-09-24
+* libtimezonemap 0.4.6  Unknown
+    - Initial import at master release start. | 0.4.6 | U | Default | 2021-09-24
+* libuser 0.64 0.64 Up-to-date
+    - libuser: upgrade v0.63 -> v0.64 | 0.64 | U | Default | 2023-03-17
+    - libuser: Upgrade to 0.63 | 0.63 | U | Default | 2022-08-31
+    - Initial import at master release start. | 0.62 | U | Default | 2021-09-24
+* libwnck 2.31.0 43.2 Not updated
+    - Initial import at master release start. | 2.31.0 | U | Default | 2021-09-24
+* libxklavier 5.4 5.4 Up-to-date
+    - Initial import at master release start. | 5.4 | U | Default | 2021-09-24
+* metacity 3.52.0 3.56.0 Not updated
+    - metacity: upgrade 3.50.0 -> 3.52.0 | 3.52.0 | U | Default | 2024-04-02
+    - metacity: upgrade 3.46.1 -> 3.50.0 | 3.50.0 | U | Default | 2023-10-23
+    - metacity: upgrade 3.46.0 -> 3.46.1 | 3.46.1 | U | Default | 2022-12-28
+    - metacity: upgrade 3.44.0 -> 3.46.0 | 3.46.0 | U | Default | 2022-10-10
+    - metacity: upgrade 3.42.0 -> 3.44.0 | 3.44.0 | U | Default | 2022-03-24
+    - metacity: upgrade 3.40.0 -> 3.42.0 | 3.42.0 | U | Default | 2022-01-05
+    - Initial import at master release start. | 3.40.0 | U | Default | 2021-09-24
+* network-manager-applet 1.36.0 1.36.0 Up-to-date
+    - network-manager-applet: upgrade 1.34.0 -> 1.36.0 | 1.36.0 | U | Default | 2024-02-09
+    - network-manager-applet: upgrade 1.32.0 -> 1.34.0 | 1.34.0 | U | Default | 2023-11-06
+    - network-manager-applet: upgrade 1.30.0 -> 1.32.0 | 1.32.0 | U | Default | 2023-04-24
+    - network-manager-applet: upgrade 1.26.0 -> 1.30.0 | 1.30.0 | U | Default | 2023-01-04
+    - network-manager-applet: upgrade 1.24.0 -> 1.24.0 | 1.26.0 | U | Default | 2022-04-14
+    - Initial import at master release start. | 1.24.0 | U | Default | 2021-09-24
+* usermode 1.114 1.114 Up-to-date
+    - usermode: upgrade 1.113 -> 1.114 | 1.114 | U | Default | 2022-01-12
+    - Initial import at master release start. | 1.113 | U | Default | 2021-09-24

@@ -1,0 +1,76 @@
+* anspass 1.0+gitAUTOINC+726c141fe5  Unknown
+    - Initial import at master release start. | 1.0+gitAUTOINC+726c141fe5 | U | Default | 2021-09-22
+* boost 1.86.0 1.88.0 Not updated
+    - boost: add recipe for 1.86.0 | 1.86.0 | U | Default | 2025-04-25
+    - Revert "boost: add boost 1.75.0" | 1.75.0 | R | Default | 2022-11-11
+    - boost: add boost 1.75.0 | 1.75.0 | U | Default | 2022-03-17
+* boost-build-native 1.86.0 1.88.0 Not updated
+    - boost: add recipe for 1.86.0 | 1.86.0 | U | Default | 2025-04-25
+* boot-tf 1.0 1.0 Up-to-date
+    - boot-tf_1.0.bb: Add it to generate boot tracing file | 1.0 | U | Default | 2023-09-18
+* build-compare 2020.05.29+gitAUTOINC+102d844ce0 2020.05.29-new-commits-available Not updated
+    - Initial import at master release start. | 2020.05.29+gitAUTOINC+102d844ce0 | U | Default | 2021-09-22
+* chrome-virtual-keyboard 1.11.3+gitAUTOINC+e2b9adf488 1.12.8 Not updated
+    - Initial import at master release start. | 1.11.3+gitAUTOINC+e2b9adf488 | U | Default | 2021-09-22
+* initramfs-module-resizefs 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
+* initramfs-nfs-boot 1.0 1.0 Up-to-date
+    - feature/initramfs-nfsroot: Add nfs boot via initramfs | 1.0 | U | Default | 2023-11-15
+* initramfs-ostree 1.0 1.0 Up-to-date
+    - wrlinux: add ostree related contents from meta-lat | 1.0 | U | Default | 2024-08-26
+* initramfs-ostree-image 1.0 1.0 Up-to-date
+    - wrlinux: add ostree related contents from meta-lat | 1.0 | U | Default | 2024-08-26
+* kernel-initramfs-image 1.0  Unknown
+    - Update LICENSE variable to use SPDX license identifiers | 1.0 | U | Default | 2022-03-24
+* mttyexec 0.1 0.1 Up-to-date
+    - mttyexec: add from meta-lat | 0.1 | U | Default | 2024-08-26
+* nativesdk-multiconfig-multlib-toolchain-packager 0.1  Unknown
+    - nativesdk-multiconfig-multlib-toolchain-packager: add recipe | 0.1 | U | Default | 2025-02-11
+* ostree-upgrade-mgr 1.0 1.0 Up-to-date
+    - wrlinux: add ostree related contents from meta-lat | 1.0 | U | Default | 2024-08-26
+* packagegroup-core-boot-wrs 1.0  Unknown
+    - Update LICENSE variable to use SPDX license identifiers | 1.0 | U | Default | 2022-03-24
+* packagegroup-wr-bsps 1.0  Unknown
+    - update license name to use SPDX license identifiers | 1.0 | U | Default | 2022-03-29
+* packagegroup-wr-core-criu 1.0  Unknown
+    - wrlinux-ovp: relocate packagegroups that still may have value. | 1.0 | U | Default | 2022-12-13
+* packagegroup-wr-core-interactive 1.0  Unknown
+    - update license name to use SPDX license identifiers | 1.0 | U | Default | 2022-03-29
+* packagegroup-wr-core-lttng-toolchain 1.0  Unknown
+    - wrlinux-ovp: relocate packagegroups that still may have value. | 1.0 | U | Default | 2022-12-13
+* packagegroup-wr-core-net 1.0  Unknown
+    - packagegroup-wr-core-net.bb: fix one yocto compatible issue | 1.0 | U | Default | 2021-11-10
+* packagegroup-wr-core-security 1.0  Unknown
+    - wrlinux: update BBFILE_COLLECTIONS for meta-integrity | 1.0 | U | Default | 2023-02-02
+* packagegroup-wr-core-sys-util 1.0  Unknown
+    - update license name to use SPDX license identifiers | 1.0 | U | Default | 2022-03-29
+* packagegroup-wr-core-trace-tools 1.0  Unknown
+    - wrlinux-ovp: relocate packagegroups that still may have value. | 1.0 | U | Default | 2022-12-13
+* run-container 0.1  Unknown
+    - run-container: adapt to UNPACKDIR change | 0.1 | U | Default | 2024-10-21
+* tiny-init 1.0  Unknown
+    - recipes: WORKDIR -> UNPACKDIR transition | 1.0 | U | Default | 2024-05-27
+* u-boot-uenv 2.0 2.0 Up-to-date
+    - wrlinux: add ostree related contents from meta-lat | 2.0 | U | Default | 2024-08-26
+* windriver-logos 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
+* wr-common-packages-native 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
+* wr-init 1.0  Unknown
+    - recipes: WORKDIR -> UNPACKDIR transition | 1.0 | U | Default | 2024-05-27
+* wr-kiosk 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
+* wr-systemd-container 1.0  Unknown
+    - wrlinux: Handle the syntax of XXX:append += "YYY" | 1.0 | U | Default | 2021-11-17
+* wr-themes 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
+* wrlinux-image-initramfs 1.0  Unknown
+    - wrlinux-image-initramfs: Set IMAGE_NAME_SUFFIX to empty | 1.0 | U | Default | 2023-11-15
+* wrlinux-image-installer 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
+* wrlinux-image-installer-initramfs 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
+* wrlinux-image-std 1.0  Unknown
+    - wrlinux-image-std: Customize the default memory for qemuppc64 | 1.0 | U | Default | 2023-08-10
+* wrlinux-image-tiny-initramfs 1.0  Unknown
+    - wrlinux-image-tiny-initramfs: Install os-release | 1.0 | U | Default | 2024-03-11

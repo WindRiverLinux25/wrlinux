@@ -1,0 +1,21 @@
+* open-model-zoo 2025.0.0 2024.6.0 Unknown
+    - open-model-zoo : upgrade 2024.6.0 -> 2025.0.0 | 2025.0.0 | U | Default | 2025-02-14
+    - open-model-zoo : upgrade 2024.4.0 -> 2024.6.0 | 2024.6.0 | U | Default | 2024-12-20
+    - open-model-zoo : upgrade 2024.3.0 -> 2024.4.0 | 2024.4.0 | U | Default | 2024-09-30
+    - open-model-zoo : upgrade 2024.2.0 -> 2024.3.0 | 2024.3.0 | U | Default | 2024-08-23
+    - open-model-zoo : upgrade 2024.1.0 -> 2024.2.0 | 2024.2.0 | U | Default | 2024-06-26
+    - open-model-zoo : upgrade 2024.0.0 -> 2024.1.0 | 2024.1.0 | U | Default | 2024-05-24
+    - open-model-zoo : upgrade 2023.3.0 -> 2024.0.0 | 2024.0.0 | U | Default | 2024-05-24
+    - open-model-zoo: upgrade 2023.2.0 -> 2023.3.0 | 2023.3.0 | U | Default | 2024-05-24
+    - Initial commit with openvino 2023.2.0 | 2023.2.0 | U | Default | 2024-05-06
+* openvino-inference-engine 2025.0.0 2025.2.0 Not updated
+    - openvino-inference-engine : upgrade 2024.6.0 -> 2025.0.0 | 2025.0.0 | U | Default | 2025-02-14
+    - openvino-inference-engine : upgrade 2024.5.0 -> 2024.6.0 | 2024.6.0 | U | Default | 2024-12-20
+    - openvino-inference-engine : upgrade 2024.4.0 -> 2024.5.0 | 2024.5.0 | U | Default | 2024-11-25
+    - openvino-inference-engine : upgrade 2024.3.0 -> 2024.4.0 | 2024.4.0 | U | Default | 2024-09-30
+    - openvino-inference-engine : upgrade 2024.2.0 -> 2024.3.0 | 2024.3.0 | U | Default | 2024-08-23
+    - openvino-inference-engine : upgrade 2024.1.0 -> 2024.2.0 | 2024.2.0 | U | Default | 2024-06-25
+    - openvino-inference-engine : upgrade 2024.0.0 -> 2024.1.0 | 2024.1.0 | U | Default | 2024-05-24
+    - openvino-inference-engine : upgrade 2023.3.0 -> 2024.0.0 | 2024.0.0 | U | Default | 2024-05-24
+    - openvino-inference-engine: upgrade 2023.2.0 -> 2023.3.0 | 2023.3.0 | U | Default | 2024-05-24
+    - Initial commit with openvino 2023.2.0 | 2023.2.0 | U | Default | 2024-05-06

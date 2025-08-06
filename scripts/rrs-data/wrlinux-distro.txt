@@ -1,0 +1,28 @@
+* kernel-initramfs-image 1.0 1.0 Up-to-date
+    - kernel-initramfs-image.bb: disable a QA error for qemuppc64 | 1.0 | U | Default | 2024-10-31
+* nativesdk-multiconfig-multlib-toolchain-packager 0.1 0.1 Up-to-date
+    - nativesdk-multiconfig-multlib-toolchain-packager: add recipe | 0.1 | U | Default | 2025-02-11
+* packagegroup-core-boot-wrs 1.0 1.0 Up-to-date
+    - packagegroup-core-boot-wrs: remove 3 VIRTUAL-RUNTIME_* configs | 1.0 | U | Default | 2023-08-29
+* packagegroup-wr-core-criu 1.0 1.0 Up-to-date
+    - wrlinux-ovp: relocate packagegroups that still may have value. | 1.0 | U | Default | 2022-12-13
+* packagegroup-wr-core-lttng-toolchain 1.0 1.0 Up-to-date
+    - wrlinux-ovp: relocate packagegroups that still may have value. | 1.0 | U | Default | 2022-12-13
+* packagegroup-wr-core-security 1.0 1.0 Up-to-date
+    - wrlinux: update BBFILE_COLLECTIONS for meta-integrity | 1.0 | U | Default | 2023-02-02
+* packagegroup-wr-core-sys-util 1.0 1.0 Up-to-date
+    - packagegroup-wr-core-sys-util: remove crda | 1.0 | U | Default | 2023-01-19
+* packagegroup-wr-core-trace-tools 1.0 1.0 Up-to-date
+    - wrlinux-ovp: relocate packagegroups that still may have value. | 1.0 | U | Default | 2022-12-13
+* run-container 0.1 0.1 Up-to-date
+    - run-container: adapt to UNPACKDIR change | 0.1 | U | Default | 2024-10-21
+* tiny-init 1.0 1.0 Up-to-date
+    - recipes: WORKDIR -> UNPACKDIR transition | 1.0 | U | Default | 2024-05-27
+* wr-init 1.0 1.0 Up-to-date
+    - recipes: WORKDIR -> UNPACKDIR transition | 1.0 | U | Default | 2024-05-27
+* wrlinux-image-initramfs 1.0 1.0 Up-to-date
+    - wrlinux-image-initramfs: Set IMAGE_NAME_SUFFIX to empty | 1.0 | U | Default | 2023-11-15
+* wrlinux-image-std 1.0 1.0 Up-to-date
+    - wrlinux-image-std: Customize the default memory for qemuppc64 | 1.0 | U | Default | 2023-08-10
+* wrlinux-image-tiny-initramfs 1.0 1.0 Up-to-date
+    - wrlinux-image-tiny-initramfs: Install os-release | 1.0 | U | Default | 2024-03-11

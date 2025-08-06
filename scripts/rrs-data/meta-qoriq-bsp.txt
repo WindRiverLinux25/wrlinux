@@ -1,0 +1,8 @@
+* optee-client-qoriq 4.4.0+git  Unknown
+    - optee: Switch to lf-6.12.3_1.0.0 release branch | 4.4.0+git | U | Default | 2024-12-26
+* optee-os-qoriq 4.4.0+git  Unknown
+    - optee: Upgrade 4.2.0 -> 4.4.0 [LFOPTEE-381] | 4.4.0+git | U | Default | 2024-10-09
+* optee-os-qoriq-tadevkit 4.4.0+git  Unknown
+    - optee: Upgrade 4.2.0 -> 4.4.0 [LFOPTEE-381] | 4.4.0+git | U | Default | 2024-10-09
+* optee-test-qoriq 4.4.0+git  Unknown
+    - optee: Upgrade 4.2.0 -> 4.4.0 [LFOPTEE-381] | 4.4.0+git | U | Default | 2024-10-09

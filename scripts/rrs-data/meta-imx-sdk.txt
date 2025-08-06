@@ -1,0 +1,2 @@
+* dpdk 22.11 2310 Not updated
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 22.11 | U | Default | 2023-12-08

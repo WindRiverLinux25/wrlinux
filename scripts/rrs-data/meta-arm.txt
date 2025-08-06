@@ -1,0 +1,71 @@
+* optee-client 4.3.0 4.6.0 Not updated
+    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
+    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
+* optee-examples 4.4.0 4.6.0 Not updated
+    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
+    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
+* optee-os 4.3.0 4.6.0 Not updated
+    - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
+    - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
+    - arm/optee: update to 4.3.0 | 4.3.0 | U | Default | 2024-10-01
+    - arm/optee: update to 4.2.0 | 4.2.0 | U | Default | 2024-05-07
+    - arm/optee: update to 4.1 | 4.1.0 | U | Default | 2024-01-26
+    - arm/optee: update to 4.0.0 | 4.0.0 | U | Default | 2023-10-30
+    - arm/optee: update to 3.22.0 | 3.22.0 | U | Default | 2023-07-17
+    - arm/optee-os: update to 3.20.0 | 3.20.0 | U | Default | 2023-03-10
+    - arm/optee-os: update to 3.20.0 | 3.18.0 | D | Default | 2023-03-10
+    - arm/optee: optee-os include cleanup | 3.19.0 | U | Default | 2023-03-10
+    - arm/optee-os: Fix FILESEXTRAPATHS | 3.18.0 | D | Default | 2023-01-10
+    - arm/optee: support optee 3.19 | 3.19.0 | U | Default | 2023-01-08
+    - arm/optee: remove old versions | 3.18.0 | U | Default | 2022-09-21
+    - Include Trusted Services SPs into optee-os image | 3.14.0 | D | Default | 2022-08-31
+    - arm/optee-os: backport linker warning patches | 3.18.0 | U | Default | 2022-08-26
+    - arm/optee-os: backport RWX permission error patch | 3.14.0 | D | Default | 2022-08-22
+    - arm-bsp/optee: add optee-os support for N1SDP target | 3.18.0 | U | Default | 2022-08-16
+    - arm/optee: Update to 3.18 | 3.14.0 | D | Default | 2022-08-15
+    - optee-os: Add section attribute parameters when clang is used | 3.18.0 | U | Default | 2022-08-15
+    - optee-os.inc: support multilib | 3.14.0 | D | Default | 2022-08-02
+    - arm/optee: support optee-os v3.18.0 | 3.18.0 | U | Default | 2022-07-29
+    - arm/optee: support optee-os v3.18.0 | 3.17.0 | U | Default | 2022-07-29
+    - arm/optee: ignore buildpath warnings | 3.14.0 | D | Default | 2022-07-19
+    - arm/optee: update to v3.17 | 3.17.0 | U | Default | 2022-06-14
+    - optee: Pass HOST_CC_ARCH for locating compiler runtime | 3.14.0 | D | Default | 2022-05-10
+    - Add new target: "qemuarm-secureboot" | 3.16.0 | U | Default | 2022-05-06
+    - arm/optee: remove redundant ${S} in LIC_FILES_CHKSUM | 3.14.0 | D | Default | 2022-05-06
+    - arm/optee: Upgrade from 3.14 to 3.16 | 3.16.0 | U | Default | 2022-03-16
+    - Initial import at master release start. | 3.14.0 | U | Default | 2021-09-27
+* optee-os-tadevkit 4.4.0 4.6.0 Not updated
+    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
+    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
+* optee-test 4.3.0 4.6.0 Not updated
+    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
+    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
+* trusted-firmware-a 2.10.12 2.13.0 Not updated
+    - metadata: add whitespace around assignments | 2.10.12 | D | Default | 2025-04-04
+    - arm/trusted-firmware-a: update 2.12.0 recipe to 2.12.1 | 2.12.1 | U | Default | 2025-03-20
+    - arm/trusted-firmware-a: update the LTS to v2.10.12 | 2.10.12 | D | Default | 2025-02-25
+    - arm/trusted-firmware-a: Move 2.11 to meta-arm-bsp | 2.11.0 | N | Default | 2025-02-11
+    - arm/trusted-firmware-a: add support for 2.12.0 | 2.12.0 | U | Default | 2025-01-10
+    - arm/trusted-firmware-a: update 2.10 LTS to the latest versions | 2.10.9 | D | Default | 2025-01-10
+    - trusted-firmware-a: fix panic on kv260/zynqmp | 2.11.0 | U | Default | 2024-09-30
+    - arm/trusted-firmware-a: update LICENSE entry | 2.10.4 | D | Default | 2024-09-03
+    - arm/trusted-firmware-a: add support for 2.11.0 | 2.11.0 | U | Default | 2024-06-04
+    - arm/trusted-firmware-a: update to lts-2.10.4 | 2.10.4 | U | Default | 2024-05-01
+    - arm/trusted-firmware-a: update to 2.10.3 release | 2.10.3 | U | Default | 2024-04-11
+    - arm/trusted-firmware-a: update to 2.10.2 | 2.10.2 | U | Default | 2024-03-20
+    - arm/trusted-firmware-a: update to 2.10 | 2.10.0 | U | Default | 2023-12-05
+    - arm/trusted-firmware-a: update to 2.9.0 | 2.9.0 | U | Default | 2023-08-11
+    - trusted-firmware-a: update to the latest TF-A LTS | 2.8.6 | U | Default | 2023-06-09
+    - arm/trusted-firmware-a: update version and relocate fiptool | 2.8.0 | U | Default | 2023-02-24
+    - arm/trusted-firmware-a: ignore buildpath warnings | 2.7.0 | U | Default | 2022-07-19
+    - arm-bsp/n1sdp: revert "fix boot due to TF-A 2.7 update" | 2.6 | R | Default | 2022-06-30
+    - arm-bsp/n1sdp: fix boot due to TF-A 2.7 update | 2.6 | D | Default | 2022-06-22
+    - arm/trusted-firmware-a: rename to 2.7.0 to match upstream | 2.7.0 | U | Default | 2022-06-16
+    - arm/trusted-firmware-a: Update to 2.7.0 | 2.7 | U | Default | 2022-06-14
+    - arm/edk2-firmware: add PROVIDES virtual/bootloader | 2.6 | U | Default | 2022-04-22
+    - arm/trusted-firmware-a: remove TF-A 2.5 | 2.5 | N | Default | 2022-01-11
+    - arm/trusted-firmware-a: add new recipe for 2.6 | 2.6 | U | Default | 2021-12-07
+    - arm/trusted-firmware-a: improve OpenSSL build fix | 2.5 | U | Default | 2021-10-26
+    - arm/trusted-firmware-a: remove obsolete TF-A 1.5 | 1.5 | N | Default | 2021-10-26
+    - Initial import at master release start. | 1.5 | U | Default | 2021-09-27
+    - Initial import at master release start. | 2.5 | U | Default | 2021-09-27

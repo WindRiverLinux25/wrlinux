@@ -1,0 +1,8 @@
+* qat17 4.28.0-00004  Unknown
+    - qat17: upgrade to version 4.28.0-00004 | 4.28.0-00004 | U | Default | 2025-05-06
+    - qat17: upgrade 4.23.0-00001 -> qat17_4.24.0-00005 | 4.24.0-00005 | U | Default | 2024-01-26
+    - qat17: update to 4.23.0-00001 | 4.23.0-00001 | U | Default | 2023-10-06
+    - qat17: bump to 4.22.0-00001 | 4.22.0-00001 | U | Default | 2023-07-03
+    - qat17: bump to 4.20.0-00001 | 4.20.0-00001 | U | Default | 2023-02-20
+    - qat17: update to 4.19.0-00005 | 4.19.0-00005 | U | Default | 2022-11-03
+    - Initial import at master release start. | 4.14.0-00031 | U | Default | 2022-02-21

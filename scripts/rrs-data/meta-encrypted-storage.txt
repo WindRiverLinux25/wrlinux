@@ -1,0 +1,9 @@
+* cryptfs-tpm2 0.7.10+git 0.7.10 Up-to-date
+    - cryptfs-tpm2: upgrade to latest git rev | 0.7.10+git | U | Default | 2024-09-03
+    - cryptfs-tpm2: update to latest git rev | 0.7.0+gitAUTOINC+91ac485a24 | U | Default | 2023-04-27
+    - cryptfs-tpm2: upgrade to latest git rev | 0.7.0+gitAUTOINC+62e7f47774 | U | Default | 2021-11-12
+    - Initial import at master release start. | 0.7.0+gitAUTOINC+87c35c6309 | U | Default | 2021-10-21
+* packagegroup-luks 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-10-21
+* packagegroup-luks-initramfs 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-10-21

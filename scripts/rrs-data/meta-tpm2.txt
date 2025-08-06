@@ -1,0 +1,21 @@
+* packagegroup-tpm2 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-10-21
+* packagegroup-tpm2-initramfs 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-10-21
+* tpm2-abrmd 3.0.0 3.0.0 Up-to-date
+    - tpm2-abrmd: upgrade 2.3.3 -> 3.0.0 | 3.0.0 | U | Default | 2023-04-27
+    - tpm2-abrmd: upgrade 2.3.2 -> 2.3.3 | 2.3.3 | U | Default | 2021-11-12
+    - Initial import at master release start. | 2.3.2 | U | Default | 2021-10-21
+* tpm2-tools 5.7 5.7 Up-to-date
+    - Update and rename tpm2-tools_5.6.bb to tpm2-tools_5.7.bb | 5.7 | U | Default | 2024-05-20
+    - tpm2-tools: upgrade 5.5 -> 5.6 | 5.6 | U | Default | 2024-02-26
+    - tpm2-tools: upgrade 4.3.2 -> 5.5 | 5.5 | U | Default | 2023-04-27
+    - tpm2-tools: upgrade 4.1.3 -> 4.3.2 | 4.3.2 | U | Default | 2021-11-12
+    - Initial import at master release start. | 4.1.3 | U | Default | 2021-10-21
+* tpm2-tss 4.1.3 4.1.3 Up-to-date
+    - tpm2-tss: upgrade 4.0.2 -> 4.1.3 | 4.1.3 | U | Default | 2024-06-03
+    - tpm2-tss: upgrade 4.0.1 -> 4.0.2 | 4.0.2 | U | Default | 2024-05-18
+    - tpm2-tss: upgrade 3.2.2 -> 4.0.1 | 4.0.1 | U | Default | 2023-08-30
+    - tpm2-tss: upgrade 2.4.6 -> 3.2.2 | 3.2.2 | U | Default | 2023-04-27
+    - tpm2-tss: upgrade 2.3.3 -> 2.4.6 | 2.4.6 | U | Default | 2021-11-12
+    - Initial import at master release start. | 2.3.3 | U | Default | 2021-10-21

@@ -1,0 +1,6 @@
+* initrdscripts-secure-core 1.0 1.0 Up-to-date
+    - meta: rename to meta-secure-core-common | 1.0 | U | Default | 2023-12-08
+* kernel-initramfs 1.0 1.0 Up-to-date
+    - meta: rename to meta-secure-core-common | 1.0 | U | Default | 2023-12-08
+* secure-core-image-initramfs 1.0 1.0 Up-to-date
+    - meta: rename to meta-secure-core-common | 1.0 | U | Default | 2023-12-08

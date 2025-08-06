@@ -1,0 +1,45 @@
+* kernel-module-isp-vvcam 4.2.2.25.1 15.0.0.1.3.0 Not updated
+    - kernel-module-isp-vvcam: Upgrade version from 4.2.2.24.4 to 4.2.2.25.1 [YOCIMX-8467] | 4.2.2.25.1 | U | Default | 2024-10-28
+    - kernel-module-isp-vvcam: Upgrade version from 4.2.2.24.3 to 4.2.2.24.4 [YOCIMX-8357] | 4.2.2.24.4 | U | Default | 2024-09-30
+    - kernel-module-isp-vvcam: Upgrade version from 4.2.2.24.2 to 4.2.2.24.3 [YOCIMX-7718] | 4.2.2.24.3 | U | Default | 2024-05-20
+    - kernel-module-isp-vvcam: Upgrade version from 4.2.2.24.1 to 4.2.2.24.2 [YOCIMX-7719] | 4.2.2.24.2 | U | Default | 2024-04-01
+    - kernel-module-isp-vvcam: Upgrade version from 4.2.2.24.0 to 4.2.2.24.1 [YOCIMX-7509] | 4.2.2.24.1 | U | Default | 2023-12-11
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 4.2.2.24.0 | U | Default | 2023-12-08
+* optee-client 4.4.0.imx 3.16.0 Unknown
+    - optee-client: Update optee-client_4.4.0.imx.bb to commit 49e646d | 4.4.0.imx | U | Default | 2024-10-09
+    - optee: Upgrade 4.2.0.imx -> 4.4.0.imx [LFOPTEE-381] | 4.2.0.imx | R | Default | 2024-10-09
+    - optee-client: Update optee-client_4.2.0.imx.bb to commit 3eac340 | 4.2.0.imx | U | Default | 2024-04-18
+    - LFOPTEE-330 optee: remove 4.0.0 recipes | 4.0.0.imx | R | Default | 2024-04-18
+    - optee: add imx91evk support | 4.0.0.imx | U | Default | 2024-04-03
+    - OPTEE: Drop old v3.21 recipes | 3.21.0.imx | N | Default | 2024-04-02
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 4.0.0.imx | U | Default | 2023-12-08
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 3.21.0.imx | U | Default | 2023-12-08
+* optee-os 4.4.0.imx 3.16.0 Unknown
+    - optee: Upgrade 4.2.0.imx -> 4.4.0.imx [LFOPTEE-381] | 4.4.0.imx | U | Default | 2024-10-09
+    - LFOPTEE-330 optee: remove 4.0.0 recipes | 4.0.0.imx | N | Default | 2024-04-18
+    - LFOPTEE-330 optee: add recipes for 4.2.0 | 4.2.0.imx | U | Default | 2024-04-18
+    - optee: add imx91evk support | 4.0.0.imx | U | Default | 2024-04-03
+    - OPTEE: Drop old v3.21 recipes | 3.21.0.imx | N | Default | 2024-04-02
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 4.0.0.imx | U | Default | 2023-12-08
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 3.21.0.imx | U | Default | 2023-12-08
+* optee-os-tadevkit 4.4.0.imx 3.16.0 Unknown
+    - optee: Upgrade 4.2.0.imx -> 4.4.0.imx [LFOPTEE-381] | 4.4.0.imx | U | Default | 2024-10-09
+    - LFOPTEE-330 optee: remove 4.0.0 recipes | 4.0.0.imx | N | Default | 2024-04-18
+    - LFOPTEE-330 optee: add recipes for 4.2.0 | 4.2.0.imx | U | Default | 2024-04-18
+    - optee: add imx91evk support | 4.0.0.imx | U | Default | 2024-04-03
+    - OPTEE: Drop old v3.21 recipes | 3.21.0.imx | N | Default | 2024-04-02
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 4.0.0.imx | U | Default | 2023-12-08
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 3.21.0.imx | U | Default | 2023-12-08
+* optee-test 4.4.0.imx 3.16.0 Unknown
+    - optee: Upgrade 4.2.0.imx -> 4.4.0.imx [LFOPTEE-381] | 4.4.0.imx | U | Default | 2024-10-09
+    - LFOPTEE-330 optee: remove 4.0.0 recipes | 4.0.0.imx | N | Default | 2024-04-18
+    - LFOPTEE-330 optee: add recipes for 4.2.0 | 4.2.0.imx | U | Default | 2024-04-18
+    - optee: add imx91evk support | 4.0.0.imx | U | Default | 2024-04-03
+    - OPTEE: Drop old v3.21 recipes | 3.21.0.imx | N | Default | 2024-04-02
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 4.0.0.imx | U | Default | 2023-12-08
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 3.21.0.imx | U | Default | 2023-12-08
+* packagegroup-fsl-optee-imx 1.0 1.0 Up-to-date
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 1.0 | U | Default | 2023-12-08
+* u-boot-imx 2024.04 2018.07 Unknown
+    - u-boot-imx/u-boot-imx-tools: Upgrade to 2024.04 [YOCIMX-7848] | 2024.04 | U | Default | 2024-04-10
+    - Rename all the layers in meta-imx [YOCIMX-7393] | 2023.04 | U | Default | 2023-12-08

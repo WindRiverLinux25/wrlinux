@@ -1,0 +1,30 @@
+* ceetm git 21.08 Unknown
+    - Initial import at master release start. | git | U | Default | 2021-09-29
+* dce git 2160 Unknown
+    - Initial import at master release start. | git | U | Default | 2021-09-29
+* dpdk 19.11-20.12 2310 Not updated
+    - Merge pull request #1456 from YoeDistro/yoe/mut | 19.11-20.12 | D | Default | 2023-03-14
+    - dpdk: Use nonarch_base_libdir instead of hardcoding /lib for module path | 20.11 | U | Default | 2023-03-14
+    - Merge pull request #1450 from YoeDistro/yoe/mut | 19.11-20.12 | D | Default | 2023-03-13
+    - dpdk: Always use gcc compiler | 20.11 | U | Default | 2023-03-13
+    - Merge pull request #1330 from junzhuimx/master | 19.11-20.12 | D | Default | 2022-12-15
+    - Switch NXP QorIQ repositories to github.com | 20.11 | U | Default | 2022-12-15
+    - Merge pull request #995 from zandrey/topic/clarify-obsole-license | 19.11-20.12 | D | Default | 2022-03-03
+    - layer: Update LICENSE variable to use SPDX license identifiers | 20.11 | U | Default | 2022-03-03
+    - Merge pull request #980 from Freescale/topic/generalize-soc-overrides | 19.11-20.12 | D | Default | 2022-02-23
+    - Generalize overrides subsystem for NXP and Mainline support | 20.11 | U | Default | 2022-02-21
+    - Merge pull request #888 from ting-liu/master | 19.11-20.12 | D | Default | 2021-10-15
+    - dpdk: add 20.11 recipe | 20.11 | U | Default | 2021-10-15
+    - Initial import at master release start. | 19.11-20.12 | U | Default | 2021-09-29
+* dpdk-module 20.11 2310 Not updated
+    - dpdk: add 20.11 recipe | 20.11 | U | Default | 2021-10-15
+* fmc git 21.08 Unknown
+    - Initial import at master release start. | git | U | Default | 2021-09-29
+* fmlib git 21.08 Unknown
+    - Initial import at master release start. | git | U | Default | 2021-09-29
+* rcw git 2162 Unknown
+    - Initial import at master release start. | git | U | Default | 2021-09-29
+* restool git 3108 Unknown
+    - Initial import at master release start. | git | U | Default | 2021-09-29
+* tsntool git 1028 Unknown
+    - Initial import at master release start. | git | U | Default | 2021-09-29

@@ -1,0 +1,314 @@
+* aardvark-dns 1.14.0 1.15.0 Not updated
+    - aardvark-dns: update to v1.14.0 | 1.14.0 | U | Default | 2025-03-11
+    - aardvark-dns: update to v1.11.0 | 1.11.0 | U | Default | 2024-07-10
+    - aardvark-dns: update to v1.10.0 | 1.10.0 | U | Default | 2024-03-15
+    - aardvark-dns: update to v1.9.0 | 1.9.0 | U | Default | 2024-01-04
+    - aardvark-dns: update to v1.7.0 | 1.7.0 | U | Default | 2023-08-24
+    - aardvark-dns: add the recipe | 1.2.0 | U | Default | 2023-03-08
+* buildah 1.39.1 1.40.1 Not updated
+    - buildah: update to v1.39.1 | 1.39.1 | U | Default | 2025-03-06
+    - buildah: update to v1.37.5 | 1.37.5 | U | Default | 2025-01-17
+    - buildah: update to v1.37.1 | 1.37.1 | U | Default | 2024-08-20
+    - buildah: update to 1.36 | 1.36 | U | Default | 2024-05-29
+    - buildah: update to 1.34 | 1.34.1 | U | Default | 2024-03-15
+    - buildah: update to 1.33.3 | 1.33.3 | U | Default | 2024-01-19
+    - buildah: update to 1.33.2 | 1.33.2 | U | Default | 2024-01-04
+    - buildah: update to 1.32.0 | 1.32.0 | U | Default | 2023-11-06
+    - buildah: update to 1.31.3 | 1.31.3 | U | Default | 2023-09-15
+    - buildah: update to 1.31.1 | 1.31.1 | U | Default | 2023-08-24
+    - buildah: update to 1.31 | 1.31 | U | Default | 2023-08-01
+    - buildah: update to 1.29.x | 1.29 | U | Default | 2023-02-27
+    - buildah: update to 1.28.x | 1.28 | U | Default | 2023-01-10
+    - buildah: update to 1.27 | 1.27 | U | Default | 2022-08-26
+    - buildah: add recipe for buildah v1.26 | 1.26 | U | Default | 2022-06-20
+* catatonit 0.2.0 0.2.1 Not updated
+    - catatonit: update to version 0.2.0 | 0.2.0 | U | Default | 2023-11-06
+    - catatonit: Integrate version 0.1.7 | 0.1.7 | U | Default | 2022-09-16
+* cgroup-lite 1.15  Unknown
+    - Initial import at master release start. | 1.15 | U | Default | 2021-09-22
+* cni v1.2.3+git4c9ae43c0eaa85ec1ab27781e9b258f13e7fd0ca 1.3.0 Not updated
+    - cni: update to v1.2.3 | v1.2.3+git4c9ae43c0eaa85ec1ab27781e9b258f13e7fd0ca | U | Default | 2024-10-03
+    - cni: update to v1.2.0-rc0 | v1.2.0-rc0+gitb62753aa2bfa365c1ceaff6f25774a8047c896b5 | U | Default | 2024-03-15
+    - cni: update to 1.1,2 | v1.1.2+gitf024754da8d49bdac31d99d04355ddfe0340f8eb | U | Default | 2023-01-10
+    - cni: update to 1.1.0 | v1.1.0+git940e66269988c38f4c09b00bda4456d2db007b35 | U | Default | 2022-06-03
+    - cni: update to v1.0.1 | v1.0.1+git35efaabf93d23a28fb2fb01dccbe80caed196d19 | U | Default | 2022-03-21
+    - Initial import at master release start. | v0.8.0+gitb5ab16f010e822936eb974690ecec38ba69afc01 | U | Default | 2021-09-22
+* conmon 2.1.12+git 2.1.13 Not updated
+    - conmon: update to 2.1.12 | 2.1.12+git | U | Default | 2024-07-11
+    - conmon: update to 2.1.10 | 2.1.10+git | U | Default | 2024-03-15
+    - conmon: update to 2.1.8 | 2.1.8+git | U | Default | 2023-09-15
+    - conmon: update to 2.1.7 | 2.1.7+gitAUTOINC+75f8ceba35 | U | Default | 2023-08-24
+    - conmon: update to 2.1.3-tip | 2.1.3+gitAUTOINC+9a3af8f438 | U | Default | 2023-04-05
+    - conmon: update to 2.1.3 | 2.1.3+gitAUTOINC+19110c9746 | U | Default | 2022-08-26
+    - conmon: update to v2.1.0 | 2.1.0+gitAUTOINC+4c41ec2a21 | U | Default | 2022-03-21
+    - conmon: update to v2.0.30 | 2.0.30+gitAUTOINC+e67bb4d9bb | U | Default | 2021-11-22
+    - Initial import at master release start. | 2.0.29+gitAUTOINC+1ef246896b | U | Default | 2021-09-22
+* container-host-config 1.0 1.0 Up-to-date
+    - containers: add container-host-config recipe | 1.0 | U | Default | 2023-02-17
+* containerd v2.0.5 2.1.2 Not updated
+    - containerd: upgrade to 2.0.5 | v2.0.5 | U | Default | 2025-04-22
+    - containerd: update to v2.0.3 | v2.0.2+git | U | Default | 2025-03-06
+    - containerd: update to v2.0.1 | v2.0.1+git | U | Default | 2025-01-17
+    - containerd: update to v2.0.0 | v2.0.0+git | U | Default | 2024-12-10
+    - containerd: update to v2.0.0-rc.6 | v2.0.0-rc.6+git | U | Default | 2024-11-15
+    - containerd: update to v2.0.0-rc.4 | v2.0.0-rc.4+git | U | Default | 2024-10-03
+    - containerd: update to 2.0.0-rc.3 | v2.0.0-rc.3+git | U | Default | 2024-07-10
+    - containerd: update to v2.0.0-rc.2 | v2.0.0-rc.2+git | U | Default | 2024-05-29
+    - containerd: update to v2.0.0-rc.1 | v2.0.0-rc.1+git | U | Default | 2024-05-14
+    - containerd: consolidate to "containerd" | v2.0.0-beta.0+git | U | Default | 2024-05-14
+* cri-o 1.32.2+git318db72eb0b3d18c22c995aa7614a13142287296 1.33.1 Not updated
+    - cri-o: update to v1.32.2 | 1.32.2+git318db72eb0b3d18c22c995aa7614a13142287296 | U | Default | 2025-03-11
+    - cri-o: update to v1.31.4-tip | 1.31.4+git33d75981bee230f791709975125d7386fe2c530a | U | Default | 2025-01-17
+    - cri-o: update to v1.31.0 | 1.31.0+git04500243ec0cd775e76bcec1c822aaa3faa11177 | U | Default | 2024-07-11
+    - cri-o: update to 1.30 | 1.30.0+git5aff11c7c1afdc785adafd7da3c3f2a6ac51b88d | U | Default | 2024-03-15
+    - cri-o: update to 1.29.0 | 1.29.0+gitf8ccf314a68ac03d3f46097d90c573078ee5e494 | U | Default | 2023-11-06
+    - cri-o: update to release 1.28.0 | 1.28.0+git6c5e39a4f971ee9f9db82e570280b6162dd42fcb | U | Default | 2023-09-15
+    - cri-o: update to 1.27.1 | 1.27.1+gitab7845e07e67ba714818af91cdbc67b12da87bcc | U | Default | 2023-08-24
+    - cri-o: update to 1.27.0 | 1.27.0+git81ac4cea5c12b114bed373e7070265086c71e666 | U | Default | 2023-06-07
+    - cri-o: update to 1.26.2 | 1.26.2+gitc0557b868876e6b824e9a947f7a6f647973b1700 | U | Default | 2023-04-05
+    - cri-o: update to 1.25.2 | 1.25.2+git1a6bb9c9bdbdbbac144c8c985b4258b09e3364a2 | U | Default | 2023-02-17
+    - cri-o: update to 1.25 | 1.25.0+git78992d1604052a8939d52264157427c74c86de0d | U | Default | 2022-08-09
+    - cri-o: update to 1.24.1 | 1.24.1+gita3bbde8a77c323aa6a485da9a9046299155c6016 | U | Default | 2022-06-08
+    - cri-o: update to 1.23.1 | 1.23.1+git1607c6ec2eddc927ef736db5525761e49df13e24 | U | Default | 2022-03-21
+    - cri-o: update to 1.22.1 | 1.22.1+gite3dfe61cafa3922bf7ad9b0a2ac3dc7e6873209b | U | Default | 2021-11-22
+    - Initial import at master release start. | 1.22.0+git1d447191ee73ead59f344f354edac5d64f377e15 | U | Default | 2021-09-22
+* cri-tools 1.30.0+git767879cca5c6bd2f89b6cf6c7829736109c99b2a 1.33.0 Not updated
+    - cri-tools: update to v1.30.0 | 1.30.0+git767879cca5c6bd2f89b6cf6c7829736109c99b2a | U | Default | 2024-07-11
+    - cri-tools: update to v1.29.0 | 1.29.0+git17b4dd65d660fec94d7a5a070e3e89ef640f1087 | U | Default | 2024-03-15
+    - cri-tools: update to v1.28.0 | 1.28.0+gitd5f3f2df025a319368b68a3c7b3f3c7d890979ca | U | Default | 2023-09-15
+    - cri-tools: update to v1.27.0 | 1.27.0+gite73a7139ed4986d6a0db784ae7a036841a02b351 | U | Default | 2023-06-07
+    - cri-tools: update to v1.26.1 | 1.26.1+git4daea44918cc34b63617c6c9e9923f43d47ddfdd | U | Default | 2023-04-05
+    - cri-tools: update to v1.24.2 | 1.24.2+git77d02a0356e9e1dca58d44e54dd0799e89856387 | U | Default | 2022-08-26
+    - cri-tools: update to v1.23.0 | 1.23.0+git23f44eaa489ecd8931ee64de08baa7be9dbdb394 | U | Default | 2022-03-21
+    - cri-tools: update to v1.22.0 | 1.22.0+gita989838814805e1053688e0e94adf13d60e716c6 | U | Default | 2021-11-22
+    - Initial import at master release start. | 1.21.0+gitde32df077e6b0e9e31ce367dfc34c1b6b46e30fa | U | Default | 2021-09-22
+* criu 4.1+git 4.1 Up-to-date
+    - criu: update to v4.1 | 4.1+git | U | Default | 2025-04-03
+    - criu: update to v3.19 | 3.19.0+git | U | Default | 2024-03-15
+    - criu: 3.17 -> 3.17.1 | 3.17.1+git${SRCPV} | U | Default | 2022-10-04
+    - criu: Upgrade to 3.17 to fix restore and fix build | 3.17+git${SRCPV} | U | Default | 2022-05-12
+    - criu: update to 3.16.1 | 3.16.1+git${SRCPV} | U | Default | 2021-10-18
+    - Initial import at master release start. | 3.14+git${SRCPV} | U | Default | 2021-09-22
+* docker-compose v2.33.1 2.37.1 Not updated
+    - docker-compose: update to v2.33.1 | v2.33.1 | U | Default | 2025-03-11
+    - Revert "docker-compose: WIP [needs go 1.22.10+]: not for merge: update to v2.32.2" | v2.28.1 | D | Default | 2025-01-17
+    - docker-compose: WIP [needs go 1.22.10+]: not for merge: update to v2.32.2 | v2.32.2 | U | Default | 2025-01-17
+    - docker-compose: update to v2.28.1 | v2.28.1 | U | Default | 2024-07-11
+    - docker-compose: update to v2.26.0 | v2.26.0 | U | Default | 2024-04-04
+    - Revert "docker-compose: update to v2.24.6" | v2.21.0 | D | Default | 2024-03-20
+    - docker-compose: update to v2.24.6 | v2.24.6 | U | Default | 2024-03-15
+    - docker-compose: v2.20.3 -> v2.21.0 | v2.21.0 | U | Default | 2023-12-04
+    - docker-compose: upgrade to v2.20.3 | v2.20.3 | U | Default | 2023-09-15
+    - docker-compose: update to v2.17.2 | v2.17.2 | U | Default | 2023-04-05
+    - docker-compose: update to v2.15.1 | v2.15.2 | U | Default | 2023-02-10
+    - docker-compose2: introduce go version of docker-compose | v2.11.2 | U | Default | 2022-10-25
+* docker-distribution v3.0.0 3.0.0 Up-to-date
+    - docker-distribution: bump to v3.0.0 stable version | v3.0.0 | D | Default | 2025-04-22
+    - docker-distribution: update to v3.0.0-beta.1 | v3.0.0-beta.1 | U | Default | 2024-07-11
+    - docker-distribution: update to 2.8.3 | v2.8.3+git | U | Default | 2023-11-06
+    - docker-distribution: update to 2.8.2 | v2.8.2+gitAUTOINC+8728c52ef2 | U | Default | 2023-08-24
+    - docker-distribution: upgrade to 2.8.1 | v2.8.1+gitAUTOINC+b5ca020cfb | U | Default | 2022-06-20
+    - docker-distribution: update to 2.8.0 | v2.8.0+gitAUTOINC+3b7b534569 | U | Default | 2022-03-21
+    - Initial import at master release start. | v2.7.1 | U | Default | 2021-09-22
+* fuse-overlayfs 1.9 1.15 Not updated
+    - fuse-overlayfs: Update to v1.9 | 1.9 | U | Default | 2022-07-15
+    - Initial import at master release start. | 0.6.4 | U | Default | 2021-09-22
+* go-md2man 1.0.10+gitAUTOINC+f79a8a8ca6 2.0.7 Not updated
+    - Initial import at master release start. | 1.0.10+gitAUTOINC+f79a8a8ca6 | U | Default | 2021-09-22
+* irqbalance 1.8.0+gitAUTOINC+b3adb5fd14 1.9.4 Not updated
+    - irqbalance: update to 1.8.0-tip | 1.8.0+gitAUTOINC+b3adb5fd14 | U | Default | 2022-03-29
+    - irqbalance: bump SRCREV to latest | 1.8.0+gitAUTOINC+a972665483 | U | Default | 2021-11-08
+    - Initial import at master release start. | 1.8.0 | U | Default | 2021-09-22
+* kubernetes v1.32.0+git 1.33.1 Not updated
+    - kubernetes: fix runtime init error caused by git shallow tarball | v1.32.0+git | U | Default | 2025-04-15
+    - kubernetes: remove local recipe to sync to upstream for LTS25 | v1.29.1 | R | Default | 2025-04-15
+    - kubernetes: upgrade 1.26.8 -> 1.29.1 | v1.29.1 | U | Default | 2025-04-14
+    - kubernetes: upgrade 1.26.1 -> 1.26.8 | v1.26.8 | U | Default | 2025-04-14
+    - kubernetes: add 1.26.1 version | v1.26.1 | D | Default | 2025-04-14
+    - Revert "k8s: WIP [needs newer go]: not for merge: update to -tip" | v1.30.2+git7e92bb98e3005b357974decc0b95235f74016082 | D | Default | 2025-01-17
+    - k8s: WIP [needs newer go]: not for merge: update to -tip | v1.32.0+git | U | Default | 2025-01-17
+    - kubernetes: update to v1.30.2 | v1.30.2+git7e92bb98e3005b357974decc0b95235f74016082 | U | Default | 2024-07-15
+    - kubernetes: update to 1.29.1 | v1.29.1+gita02da633101bd7919153dd56412b09221c0139bf | U | Default | 2024-03-15
+    - kubernetes: update to 1.28.2 | v1.28.2+gite3b5e621f07f0fee298f641ebded61b8f393fe27 | U | Default | 2023-11-06
+    - kubernetes: update to v1.27.1 | v1.27.1+git2555e0f90e80a13628f47eca5cde34decc89babb | U | Default | 2023-06-07
+    - kubernetes: update to v1.27.x-rc | v1.27.0-rc+gitbcd6658c10cdf42a9eea1748b8742e8995b55ca7 | U | Default | 2023-03-28
+    - kubernetes: update to 1.24 release | v1.24.0+git8b1b4db3834ddf7cf1b97137180f413cb9e2186f | U | Default | 2022-06-03
+    - k8s: update to 1.23.6 | v1.23.6+gitfbcfa33018159c033aee77b0d5456df6771aa9b5 | U | Default | 2022-03-28
+    - kubernetes: update to v1.23.2 | v1.23.2+gitfa546d8cc76fe7c07c538d55efd2e6dd4ec919a5 | U | Default | 2022-01-07
+    - kubernetes: update to 1.23.x series | v1.23.1+gitdd1b0a124713105e94ed58ffc2115ee8c1fd9f72 | U | Default | 2021-12-10
+    - k8s: set to 1.22.3 release | v1.22.2+git8b5a19147530eaac9476b0ab82980b4088bbc1b2 | D | Default | 2021-10-12
+    - Initial import at master release start. | v1.23-alpha+gitf6331c74b673d3039240edc77cd66696bbefdd9c | U | Default | 2021-09-22
+* libvirt v11.1.0+git 2017 Not updated
+    - libvirt: update to v11.1.0 | v11.1.0+git | U | Default | 2025-03-26
+    - libvirt: update to v11.0.0 -tip | v11.0.0+git | U | Default | 2025-01-17
+    - libvirt: update to v10.5.0 and convert to git | v10.5.0+git | U | Default | 2024-07-10
+    - libvirt: update to 10.0.0 | 10.0.0 | U | Default | 2024-01-19
+    - libvirt: update to 9.6.0 | 9.6.0 | U | Default | 2023-08-24
+    - libvirt: update to 9.2.0 | 9.2.0 | U | Default | 2023-04-06
+    - libvirt: uprev to 8.1.0 | 8.1.0 | U | Default | 2022-03-25
+    - Initial import at master release start. | 7.2.0 | U | Default | 2021-09-22
+* libvirt-glib 5.0.0 5.0.0 Up-to-date
+    - libvirt-glib: update 4.0.0 -> 5.0.0 | 5.0.0 | U | Default | 2024-03-15
+    - libvirt-glib: add recipe | 4.0.0 | U | Default | 2022-12-07
+* lxc v6.0.3 6.0.4 Not updated
+    - lxc: update to v6.0.3 | v6.0.3 | U | Default | 2025-01-17
+    - lxc: update to v6.0.1 | v6.0.1 | U | Default | 2024-07-15
+    - lxc: update to v6.0.0 | 6.0.0+git | U | Default | 2024-05-29
+    - lxc: update to 5.0.3 | 5.0.3+gitAUTOINC+cb8e38aca2 | U | Default | 2023-08-24
+    - lxc: update to 5.0.2-tip | 5.0.2+gitAUTOINC+727adc0522 | U | Default | 2023-04-05
+    - lxc: update to v5.0.2 | 5.0.2+gitAUTOINC+d571736812 | U | Default | 2023-01-19
+    - lxc: update to 5.x and meson | 5.0.1+gitAUTOINC+133aa416ca | U | Default | 2022-08-26
+    - lxc: update to 4.0.12 | 4.0.12+gitAUTOINC+5ba5725cb4 | U | Default | 2022-03-21
+    - lxc: update to 4.0.11 | 4.0.11+gitAUTOINC+48e079bf31 | U | Default | 2021-11-02
+    - Initial import at master release start. | 4.0.10+gitAUTOINC+cec7cb14b2 | U | Default | 2021-09-22
+* nerdctl v2.0.3 2.1.2 Not updated
+    - nerdctl: update to v2.0.3 | v2.0.3 | U | Default | 2025-03-24
+    - nerdctl: update to v2.0.2 | v2.0.2 | U | Default | 2025-01-17
+    - nerdctl: update to v2.0.0-beta | v2.0.0-beta.1 | U | Default | 2024-03-15
+    - nerdctl: upgrade to v1.5.0 | v1.5.0 | U | Default | 2023-09-15
+    - nerdctl: update to v1.3.0 | v1.3.0 | U | Default | 2023-04-05
+    - nerdctl: update to 0.22.2 | v0.22.2 | U | Default | 2022-08-09
+    - nerdctl: update to v0.18 | v0.18.0 | U | Default | 2022-04-21
+    - nerdctl: introduce recipe | v0.17.0 | U | Default | 2022-03-21
+* netavark 1.14.1 1.15.2 Not updated
+    - netavark: update to v1.14.1 | 1.14.1 | U | Default | 2025-03-24
+    - netavark: update to v1.13.1 | 1.13.1 | U | Default | 2025-01-17
+    - netavark: update to v1.11.0 | 1.11.0 | U | Default | 2024-07-16
+    - netavark: update to 1.10.3 | 1.10.3 | U | Default | 2024-03-15
+    - netavark: update to v1.9.0 | 1.9.0 | U | Default | 2024-01-04
+    - netavark: update to 1.7.0 | 1.7.0 | U | Default | 2023-08-24
+    - netavark: update the netavark version | 1.2.0 | U | Default | 2023-03-08
+    - netavark: add the netavark recipe | 1.1.0 | U | Default | 2023-03-08
+* oci-image-tools 1.0.0-rc3+gitAUTOINC+11f9988298 0.3.0 Unknown
+    - oci-image-tools: update to 1.0.0-rc3 | 1.0.0-rc3+gitAUTOINC+11f9988298 | U | Default | 2022-03-21
+    - Initial import at master release start. | 0.2.0-dev+gitAUTOINC+93db3b16e6 | U | Default | 2021-09-22
+* oci-runtime-tools 0.9.0+gitAUTOINC+0105384f68 0.9.0 Up-to-date
+    - oci-runtime-tools: update to 0.9.0 | 0.9.0+gitAUTOINC+0105384f68 | U | Default | 2022-03-21
+    - Initial import at master release start. | 0.1.0+gitAUTOINC+6e7da8148f | U | Default | 2021-09-22
+* oci-systemd-hook 0.2.0+gitAUTOINC+05e692346c 0.2.0 Up-to-date
+    - Initial import at master release start. | 0.2.0+gitAUTOINC+05e692346c | U | Default | 2021-09-22
+* openvswitch 3.5.0 3.5.0 Up-to-date
+    - openvswitch: update to v3.5.0 | 3.5.0 | U | Default | 2025-03-24
+    - openvswitch: update to v3.4.1 | 3.4.1 | U | Default | 2025-01-17
+    - openvswitch: 3.3.0 | 3.3.0 | U | Default | 2024-04-04
+    - openvswitch: 3.2.1 | 3.2.1+ | U | Default | 2024-01-19
+    - openvswitch: 3.1.2 | 3.1.1+AUTOINC+8b1795c69f | U | Default | 2023-08-24
+    - ovs: update to 3.1.1 | 3.1.1+AUTOINC+771c989a9a | U | Default | 2023-04-21
+    - ovs: Uprev from 3.0.3 to 3.0.4 | 3.0.4+AUTOINC+2a98be5ada | U | Default | 2023-04-17
+    - ovs: update to 3.0.3 | 3.0.3+AUTOINC+7b5c4240c1 | U | Default | 2023-01-10
+    - openvswitch: uprev from v2.17.0-30-g2404d4536 to v2.17.1 | 2.17.1+AUTOINC+41bb202fb3 | U | Default | 2022-04-20
+    - ovs: update to v2.17.0 | 2.17.0+AUTOINC+2404d45367 | U | Default | 2022-03-28
+    - openvswitch: uprev from v2.15.1 to v2.15.3 | 2.15.3+AUTOINC+e4d2df62e6 | U | Default | 2022-02-04
+    - ovs: update to 2.15.1 | 2.15.1+AUTOINC+f8274b78c3 | U | Default | 2021-10-01
+    - Initial import at master release start. | 2.15+AUTOINC+8dc1733eae | U | Default | 2021-09-22
+* packagegroup-container 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
+* podman v5.4.2 5.5.1 Not updated
+    - podman: update to 5.4.2 | v5.4.2 | U | Default | 2025-04-21
+    - podman: remove local recipe to sync to upstream for LTS25 | 5.3.1 | R | Default | 2025-04-15
+    - podman: upgrade to 5.3.1 | 5.3.1 | U | Default | 2025-04-14
+    - podman: Upgrade 4.4.2 -> 5.0.1 | 5.0.1 | U | Default | 2025-04-14
+    - podman: add 4.4.2 | 4.4.2 | D | Default | 2025-04-14
+    - podman: update to v5.4.1 | v5.4.1 | U | Default | 2025-03-24
+    - podman: update to v5.3.1 | v5.3.1 | U | Default | 2024-12-10
+    - podman: update to v5.2.3 | v5.2.3 | U | Default | 2024-11-15
+    - podman: update to v5.2.1 | v5.2.1 | U | Default | 2024-08-20
+    - podman: update to v5.2.0-rc1 | v5.2.0-rc1 | U | Default | 2024-07-16
+    - podman: update to 5.1.1 | 5.1.1+git | U | Default | 2024-07-10
+    - podman: update to 5.0.1 | 5.0.1+git | U | Default | 2024-04-04
+    - podman: update to 5.0.0 | 5.0.0+git | U | Default | 2024-03-22
+    - podman: update to 5.0.0-rc | 5.0.0-rc4+git | U | Default | 2024-03-15
+    - podman: update to v4.8.2 | 4.8.2+git | U | Default | 2024-01-04
+    - podman: update to 4.7.1 | 4.7.1+git | U | Default | 2023-11-06
+    - podman: update to 4.6.0 | 4.6.0+gitAUTOINC+2215847e66 | U | Default | 2023-08-24
+    - podman: update to 4.6 | 4.6.0-rc1+gitAUTOINC+932b8a997e | U | Default | 2023-08-01
+    - podman: update to 4.5.1 | 4.5.1+gitAUTOINC+dae7df5a13 | U | Default | 2023-07-25
+    - podman: update to 4.5.0 | 4.5.0+gitAUTOINC+c926b12c54 | U | Default | 2023-06-07
+    - podman: update to 4.4.3 | 4.4.3+gitAUTOINC+6172f29f98 | U | Default | 2023-03-24
+    - podman: update to 4.4 | 4.4.1+gitAUTOINC+73f52c051b | U | Default | 2023-02-17
+    - podman: update to 4.3 | 4.3.0+gitAUTOINC+9ce592fcb9 | U | Default | 2022-12-01
+    - podman: update to 4.2 | 4.2.0+gitAUTOINC+754ec89a8a | U | Default | 2022-08-26
+    - podman: update to v4.1.0 | 4.1.0+gitAUTOINC+cedbbfa543 | U | Default | 2022-06-03
+    - podman: update to v4.0.1 | 4.0.1+gitAUTOINC+717edd7b84 | U | Default | 2022-03-21
+    - podman: update to 3.4.2 | 3.4.2+gitAUTOINC+72031783c5 | U | Default | 2021-11-22
+    - podman: upate to v3.4.o | 3.4.0+gitAUTOINC+6e8de00bb2 | U | Default | 2021-10-04
+    - Initial import at master release start. | 3.3.1+gitAUTOINC+364efce396 | U | Default | 2021-09-22
+* python3-docker 7.1.0 7.1.0 Up-to-date
+    - devtools: update to latest | 7.1.0 | U | Default | 2025-06-04
+    - python3-docker: Update to 7.0.0 | 7.0.0 | U | Default | 2024-02-01
+    - Initial import at master release start. | 5.0.0 | U | Default | 2021-09-22
+* python3-docker-pycreds 0.4.0 0.4.0 Up-to-date
+    - Initial import at master release start. | 0.4.0 | U | Default | 2021-09-22
+* python3-dockerpty 0.4.1 0.4.1 Up-to-date
+    - Initial import at master release start. | 0.4.1 | U | Default | 2021-09-22
+* python3-dotenv 1.1.0 1.0.1 Unknown
+    - devtools: update to latest | 1.1.0 | U | Default | 2025-06-04
+    - Initial import at master release start. | 0.17.0 | U | Default | 2021-09-22
+* python3-fastentrypoints 0.12 0.12 Up-to-date
+    - Initial import at master release start. | 0.12 | U | Default | 2021-09-22
+* runc-opencontainers 1.2.6+git 1.3.0 Not updated
+    - runc-opencontainers: upgrade to 1.2.6 | 1.2.6+git | U | Default | 2025-04-21
+    - runc-opencontainers: update to v1.2.0 | 1.2.0+git | U | Default | 2025-01-17
+    - runc: update to v1.2.0-rc.3 | 1.2.0-rc.3+git | U | Default | 2024-10-03
+    - runc-opencontainers: update to 1.2.0-rc2 | 1.2.0-rc.2+git | U | Default | 2024-07-16
+    - runc-opencontainers: update to 1.1.12 | 1.1.12+git | U | Default | 2024-03-15
+    - runc-opencontainers: update to 1.1.11 | 1.1.11+git | U | Default | 2024-03-15
+    - runc-opencontainers: update to 1.1.10 | 1.1.10+git | U | Default | 2023-11-24
+    - runc-opencontainers: update to 1.9.0 | 1.1.9+git | U | Default | 2023-09-15
+    - runc-opencontainers: update to 1.1.8 | 1.1.8+gitAUTOINC+aa68c400a8 | U | Default | 2023-08-24
+    - runc-opencontainers: update to 1.1.7-tip | 1.1.7+gitAUTOINC+ca73c9fd4b | U | Default | 2023-07-25
+    - runc-opencontainers: update to 1.1.7 | 1.1.7+gitAUTOINC+b6109acd4d | U | Default | 2023-06-07
+    - runc-opencontainers: update to 1.1.5 | 1.1.5+gitAUTOINC+17a2d451d6 | U | Default | 2023-04-05
+    - runc-opencontainers: update to 1.1.0-tip | 1.1.4+gitAUTOINC+c6781d100a | U | Default | 2023-02-17
+    - runc-opencontainers: update to 1.4.0-tip | 1.1.4+gitAUTOINC+bd4d05c0ca | U | Default | 2023-02-10
+    - runc: update to 1.1.4-tip | 1.1.4+gitAUTOINC+974efd2dfc | U | Default | 2022-12-07
+    - runc-docker: update to 1.1.4-tip | 1.1.4+gitAUTOINC+1e7bb5b773 | U | Default | 2022-12-01
+    - runc: update to 1.1.3 | 1.1.3+gitAUTOINC+1e7bb5b773 | U | Default | 2022-08-09
+    - runc: update to 1.1.2 | 1.1.2+gitAUTOINC+b507e2da6c | U | Default | 2022-06-03
+    - runc-opencontainers: update to 1.1.0-tip | 1.1.0+gitAUTOINC+b9460f26b4 | U | Default | 2022-03-21
+    - runc: update to v1.1.0 | 1.1.0+gitAUTOINC+d7f7b22a85 | U | Default | 2022-02-03
+    - runc: update to 1.0.3 | 1.0.3+gitAUTOINC+e0124d569c | U | Default | 2021-12-10
+    - Initial import at master release start. | 1.0.2+gitAUTOINC+86d83333d7 | U | Default | 2021-09-22
+* skopeo v1.18.0+git 1.19.0 Not updated
+    - skopeo: update to v1.18.0 | v1.18.0+git | U | Default | 2025-03-24
+    - skopeo: update to v1.17.0 | v1.17.0+git | U | Default | 2025-01-17
+    - skopeo: update to v1.16.0 | v1.16.0+git | U | Default | 2024-08-20
+    - skopeo: update to v1.15.2 | v1.15.2+git | U | Default | 2024-07-16
+    - skopeo: update to v1.14.2 | v1.14.2+git | U | Default | 2024-03-15
+    - skopeo: update to 1.14.1 | v1.14.1+git | U | Default | 2024-03-15
+    - skopeo: update to 1.14.0 | v1.14.0+git | U | Default | 2024-01-04
+    - skopeo: update to 1.13.1 | v1.13.1+gitAUTOINC+416218f501 | U | Default | 2023-08-24
+    - skopeo: update to 1.13.0 | v1.13.0+gitAUTOINC+8b9999e1d5 | U | Default | 2023-08-01
+    - skopeo: update to 1.12.0 | v1.12.0+gitAUTOINC+cf5027809a | U | Default | 2023-06-15
+    - skopeo: update to 1.11.2 | v1.11.2+gitAUTOINC+d79588e6c1 | U | Default | 2023-04-06
+    - skopeo: update to 1.11.0-tip | v1.11.0+gitAUTOINC+1e70fee21d | U | Default | 2023-04-06
+    - skopeo: update to 1.11.0 | v1.11.0+gitAUTOINC+95680f3c07 | U | Default | 2023-02-17
+    - skopeo: update to v1.10.0 | v1.10.0+gitAUTOINC+4517ea0b7b | U | Default | 2023-01-10
+    - skopeo: update to v1.8.0 | v1.8.0+gitAUTOINC+b95e081162 | U | Default | 2022-08-09
+    - skopeo: update to 1.6.1 | v1.6.1+gitAUTOINC+3e2defd6d3 | U | Default | 2022-03-21
+    - skopeo: update to v1.5.2 | v1.5.2+gitAUTOINC+1d24e657fa | U | Default | 2021-11-30
+    - Initial import at master release start. | v1.4.1+gitAUTOINC+01e51ce610 | U | Default | 2021-09-22
+* slirp4netns 1.3.2 1.3.3 Not updated
+    - slirp4netns: upgrade to 1.3.2 | 1.3.2 | U | Default | 2025-04-21
+    - slirp4netns: update to v1.3.1 | 1.3.1+git | U | Default | 2025-01-17
+    - slip4netns: update to 1.2.0 | 1.2.0+gitAUTOINC+323aa69a68 | U | Default | 2022-03-21
+    - Initial import at master release start. | 0.4.1 | U | Default | 2021-09-22
+* sloci-image v0.1.0+gitAUTOINC+4015e49763 0.1.2 Not updated
+    - Initial import at master release start. | v0.1.0+gitAUTOINC+4015e49763 | U | Default | 2021-09-22
+* tini 0.19.0 0.19.0 Up-to-date
+    - Initial import at master release start. | 0.19.0 | U | Default | 2021-09-22
+* umoci v0.4.7-dev+gitAUTOINC+758044fc26 0.5.0 Not updated
+    - Initial import at master release start. | v0.4.7-dev+gitAUTOINC+758044fc26 | U | Default | 2021-09-22
+* virt-manager v5.0.0+git 5.0.0 Up-to-date
+    - virt-manager: update to v5.0.0 | v5.0.0+git | U | Default | 2025-01-17
+    - virt-manager: add package | 4.1.0 | U | Default | 2024-03-15
+* yocto-cfg-fragments-6.10 v6.10+git8650ed99a9e181fbb5a0e3718809f734564ea91f  Unknown
+    - kernel/cfg: import docker configuration tweaks | v6.10+git8650ed99a9e181fbb5a0e3718809f734564ea91f | U | Default | 2024-11-15
+    - kernel/cfg: allow multiple kernel configuration options | v6.10+git5161bedbdc3ff6f22a75fb5afb96a4077f4b4ab0 | U | Default | 2024-08-12
+* yocto-cfg-fragments-6.12 v6.12+git722f1da424c10f7a7cd02646657bbc56b86c2c7b  Unknown
+    - kernel-cfg: update to 6.12-tip | v6.12+git722f1da424c10f7a7cd02646657bbc56b86c2c7b | U | Default | 2025-04-04
+    - kernel: add v6.12 configuration and support | v6.12+git38b941ae2f4f28c0ba40b2ba6da466f6f5fe3ba0 | U | Default | 2024-12-10
+* yq 4.45.1+git 8 Not updated
+    - yq: Correct the version (4.45.1+) | 4.45.1+git | U | Default | 2025-06-04
+    - yq: Upgrade to 4.30.8 | 4.30.8+gitdd6cf3df146f3e2c0f8c765a6ef9e35780ad8cc1 | U | Default | 2023-02-10
+    - Initial import at master release start. | 1.13.1+gite0f5cb3c5958e57c7f250a7030e92c768c1b2b19 | U | Default | 2021-09-22

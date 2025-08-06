@@ -1,0 +1,11 @@
+* dracut 106 107 Not updated
+    - dracut: upgrade 103 -> 106 | 106 | U | Default | 2025-02-25
+    - dracut: upgrade 102 -> 103 | 103 | U | Default | 2024-09-11
+    - dracut: Switch to dracut-ng and upgrade to version 102 | 102 | U | Default | 2024-06-08
+    - dracut: upgrade 055 -> 056 | 056 | U | Default | 2022-04-07
+    - dracut: upgrade 051 -> 055 | 055 | U | Default | 2022-01-18
+    - Initial import at master release start. | 051 | U | Default | 2021-09-24
+* grubby 8.40 8.40 Unknown
+    - grubby: drop version 8.40 | 8.40 | N | Default | 2023-01-04
+    - Initial import at master release start. | 8.40 | U | Default | 2021-09-24
+    - Initial import at master release start. | git | U | Default | 2021-09-24

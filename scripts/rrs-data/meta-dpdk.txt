@@ -1,0 +1,45 @@
+* dpdk 22.11.7 24.11.2 Not updated
+    - dpdk: upgrade 22.11.7 -> 22.11.7 | 22.11.7 | U | Default | 2024-12-04
+    - dpdk: upgrade 22.11.5 -> 22.11.6 | 22.11.6 | U | Default | 2024-08-22
+    - dpdk: upgrade 21.11 -> 22.11 | 22.11.5 | D | Default | 2024-05-27
+    - dpdk: update 23.11 -> 23.11.1 | 23.11.1 | U | Default | 2024-05-27
+    - dpdk: 23.07 -> 23.11 (LTS) | 23.11 | U | Default | 2023-12-08
+    - dpdk.inc: switch to using https protocol | 21.11.5 | D | Default | 2023-10-03
+    - dpdk/23: update to 23.07 | 23.07 | U | Default | 2023-10-03
+    - dpdk/21.11: update to 21.11.5 | 21.11.5 | U | Default | 2023-10-03
+    - dpdk/21.11: upgrade 21.11.3 -> 21.11.4 | 21.11.4 | U | Default | 2023-07-07
+    - dpdk/21.11: upgrade 21.11.2 -> 21.11.3 | 21.11.3 | D | Default | 2023-05-11
+    - dpdk: upgrade 22.07.0 -> 23.03 | 23.03 | U | Default | 2023-05-10
+    - dpdk/21.11.2: add libxdp library in PACKAGECONFIG | 21.11.2 | U | Default | 2022-10-31
+    - dpdk/20.11: drop recipe | 20.11.6 | N | Default | 2022-10-25
+    - dpdk/22.07.0: add recipe | 22.07.0 | U | Default | 2022-10-25
+    - dpdk/21.11 : update version to 21.11.2 | 21.11.2 | U | Default | 2022-09-06
+    - dpdk/20.11: update to v20.11.6 | 20.11.6 | U | Default | 2022-09-06
+    - dpdk/20.11: update to v20.11.5 | 20.11.5 | D | Default | 2022-05-06
+    - dpdk/21.11: update to v21.11.1 | 21.11.1 | U | Default | 2022-05-06
+    - Update LICENSE variable to use SPDX license identifiers | 20.11.1 | U | Default | 2022-03-22
+    - dpdk/19.11: drop recipe | 19.11.9 | N | Default | 2021-12-10
+    - dpdk/21.11: add recipe | 21.11.0 | U | Default | 2021-12-10
+    - Initial import at master release start. | 20.11.1 | U | Default | 2021-12-08
+    - Initial import at master release start. | 19.11.9 | U | Default | 2021-12-08
+* dpdk-module 22.11.7 24.11.2 Not updated
+    - dpdk: upgrade 22.11.7 -> 22.11.7 | 22.11.7 | U | Default | 2024-12-04
+    - dpdk-module/22.11: upgrade 22.11.5 -> 22.11.6 | 22.11.6 | U | Default | 2024-08-22
+    - dpdk: upgrade 21.11 -> 22.11 | 22.11.5 | D | Default | 2024-05-27
+    - dpdk: 23.07 -> 23.11 (LTS) | 23.07 | N | Default | 2023-12-08
+    - dpdk.inc: switch to using https protocol | 21.11.5 | D | Default | 2023-10-03
+    - dpdk/23: update to 23.07 | 23.07 | U | Default | 2023-10-03
+    - dpdk/21.11: update to 21.11.5 | 21.11.5 | U | Default | 2023-10-03
+    - dpdk-module/21.11: upgrade 21.11.3 -> 21.11.4 | 21.11.4 | U | Default | 2023-07-07
+    - dpdk-module/21.11: upgrade 21.11.2 -> 21.11.3 | 21.11.3 | D | Default | 2023-05-11
+    - dpdk-module: upgrade 22.07.0 -> 23.03 | 23.03 | U | Default | 2023-05-10
+    - dpdk/20.11: drop recipe | 20.11.6 | N | Default | 2022-10-25
+    - dpdk/22.07.0: add recipe | 22.07.0 | U | Default | 2022-10-25
+    - dpdk-module/21.11 : update version to 21.11.2 | 21.11.2 | U | Default | 2022-09-06
+    - dpdk-module/20.11 : update version to 20.11.6 | 20.11.6 | U | Default | 2022-09-06
+    - dpdk/20.11: update to v20.11.5 | 20.11.5 | D | Default | 2022-05-06
+    - dpdk/21.11: update to v21.11.1 | 21.11.1 | U | Default | 2022-05-06
+    - Update LICENSE variable to use SPDX license identifiers | 21.11.0 | U | Default | 2022-03-22
+    - dpdk-module: Set its COMPATIBLE_MACHINE and COMPATIBLE_HOST to align with dpdk | 20.11.1 | D | Default | 2022-01-26
+    - dpdk/21.11: add recipe | 21.11.0 | U | Default | 2021-12-10
+    - Initial import at master release start. | 20.11.1 | U | Default | 2021-12-08

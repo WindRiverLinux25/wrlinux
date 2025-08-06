@@ -1,0 +1,89 @@
+* python3-banal-native 1.0.6 1.0.6 Up-to-date
+    - add recipe python3-scancode-native and its depends | 1.0.6 | U | Default | 2024-09-30
+* python3-binaryornot-native 0.4.4 0.4.4 Up-to-date
+    - add recipe python3-scancode-native and its depends | 0.4.4 | U | Default | 2024-09-30
+* python3-charset-normalizer-native 2.1.1 3.3.2 Not updated
+    - add recipe python3-scancode-native and its depends | 2.1.1 | U | Default | 2024-09-30
+* python3-commoncode-native 32.2.0 32.3.0 Not updated
+    - python3-commoncode-native: upgrade 31.0.3 -> 32.2.0 | 32.2.0 | U | Default | 2025-02-24
+    - add recipe python3-scancode-native and its depends | 31.0.3 | U | Default | 2024-09-30
+* python3-construct-native 2.10.70 2.10.70 Up-to-date
+    - add recipe python3-scancode-native and its depends | 2.10.70 | U | Default | 2024-09-30
+* python3-container-inspector-native 32.0.1 32.0.1 Up-to-date
+    - add recipe python3-scancode-native and its depends | 32.0.1 | U | Default | 2024-09-30
+* python3-debian-inspector-native 31.1.0  Unknown
+    - add recipe python3-scancode-native and its depends | 31.1.0 | U | Default | 2024-09-30
+* python3-dockerfile-parse-native 2.0.1 2.0.1 Up-to-date
+    - add recipe python3-scancode-native and its depends | 2.0.1 | U | Default | 2024-09-30
+* python3-dparse-native 0.7.0 0.7.0 Up-to-date
+    - add recipe python3-scancode-native and its depends | 0.7.0 | U | Default | 2024-09-30
+* python3-extractcode-7z-system-provided-native 32.0.0  Unknown
+    - add recipe python3-scancode-native and its depends | 32.0.0 | U | Default | 2024-09-30
+* python3-extractcode-libarchive-system-provided-native 32.0.0  Unknown
+    - add recipe python3-scancode-native and its depends | 32.0.0 | U | Default | 2024-09-30
+* python3-extractcode-native 31.0.0 31.0.0 Up-to-date
+    - add recipe python3-scancode-native and its depends | 31.0.0 | U | Default | 2024-09-30
+* python3-fasteners-native 0.19 0.19 Up-to-date
+    - add recipe python3-scancode-native and its depends | 0.19 | U | Default | 2024-09-30
+* python3-fingerprints-native 1.2.3 1.2.3 Up-to-date
+    - add recipe python3-scancode-native and its depends | 1.2.3 | U | Default | 2024-09-30
+* python3-ftfy-native 6.3.1 6.3.1 Up-to-date
+    - python3-ftfy-native: 6.2.0 -> 6.3.1 | 6.3.1 | U | Default | 2025-01-26
+    - add recipe python3-scancode-native and its depends | 6.2.0 | U | Default | 2024-09-30
+* python3-future-native 1.0.0 1.0.0 Up-to-date
+    - add recipe python3-scancode-native and its depends | 1.0.0 | U | Default | 2024-09-30
+* python3-gemfileparser-native 0.8.0 0.8.0 Up-to-date
+    - add recipe python3-scancode-native and its depends | 0.8.0 | U | Default | 2024-09-30
+* python3-inflection-native 0.5.1 0.5.1 Up-to-date
+    - add recipe python3-scancode-native and its depends | 0.5.1 | U | Default | 2024-09-30
+* python3-intbitset-native 4.0.0 4.0.0 Up-to-date
+    - python3-intbitset-native: 3.1.0 -> 4.0.0 | 4.0.0 | U | Default | 2025-01-06
+    - add recipe python3-scancode-native and its depends | 3.1.0 | U | Default | 2024-09-30
+* python3-isodate-native 0.6.1 0.7.2 Not updated
+    - add recipe python3-scancode-native and its depends | 0.6.1 | U | Default | 2024-09-30
+* python3-jaraco-functools-native 4.0.1  Unknown
+    - add recipe python3-scancode-native and its depends | 4.0.1 | U | Default | 2024-09-30
+* python3-javaproperties-native 0.8.1 0.8.2 Not updated
+    - add recipe python3-scancode-native and its depends | 0.8.1 | U | Default | 2024-09-30
+* python3-jsonstreams-native 0.6.0 0.6.0 Up-to-date
+    - add recipe python3-scancode-native and its depends | 0.6.0 | U | Default | 2024-09-30
+* python3-normality-native 2.5.0 2.5.0 Up-to-date
+    - add recipe python3-scancode-native and its depends | 2.5.0 | U | Default | 2024-09-30
+* python3-packageurl-python-native 0.15.0 0.15.0 Up-to-date
+    - add recipe python3-scancode-native and its depends | 0.15.0 | U | Default | 2024-09-30
+* python3-packvers-native 21.5 21.5 Up-to-date
+    - add recipe python3-scancode-native and its depends | 21.5 | U | Default | 2024-09-30
+* python3-parameter-expansion-patched-native 0.3.1  Unknown
+    - add recipe python3-scancode-native and its depends | 0.3.1 | U | Default | 2024-09-30
+* python3-patch-native 1.16 1.16 Up-to-date
+    - add recipe python3-scancode-native and its depends | 1.16 | U | Default | 2024-09-30
+* python3-pdfminer-six-native 20231228  Unknown
+    - add recipe python3-scancode-native and its depends | 20231228 | U | Default | 2024-09-30
+* python3-pip-requirements-parser-native 32.0.1 32.0.1 Up-to-date
+    - add recipe python3-scancode-native and its depends | 32.0.1 | U | Default | 2024-09-30
+* python3-pkginfo-native 30.0.0 30.0.0 Up-to-date
+    - add recipe python3-scancode-native and its depends | 30.0.0 | U | Default | 2024-09-30
+* python3-plugincode-native 32.0.0 32.0.0 Up-to-date
+    - add recipe python3-scancode-native and its depends | 32.0.0 | U | Default | 2024-09-30
+* python3-publicsuffix2-native 2.20191221 2.20191221 Up-to-date
+    - add recipe python3-scancode-native and its depends | 2.20191221 | U | Default | 2024-09-30
+* python3-pyahocorasick-native 2.1.0 2.1.0 Up-to-date
+    - add recipe python3-scancode-native and its depends | 2.1.0 | U | Default | 2024-09-30
+* python3-pygmars-native 0.8.0 0.9.0 Not updated
+    - add recipe python3-scancode-native and its depends | 0.8.0 | U | Default | 2024-09-30
+* python3-pymaven-patch-native 0.3.2 0.3.2 Up-to-date
+    - add recipe python3-scancode-native and its depends | 0.3.2 | U | Default | 2024-09-30
+* python3-saneyaml-native 0.6.0 0.6.1 Not updated
+    - add recipe python3-scancode-native and its depends | 0.6.0 | U | Default | 2024-09-30
+* python3-scancode-native 32.1.0 32.3.3 Not updated
+    - add recipe python3-scancode-native and its depends | 32.1.0 | U | Default | 2024-09-30
+* python3-setuptools-git-versioning-native 1.13.6 2.0.0 Not updated
+    - add recipe python3-scancode-native and its depends | 1.13.6 | U | Default | 2024-09-30
+* python3-text-unidecode-native 1.3 1.3 Up-to-date
+    - add recipe python3-scancode-native and its depends | 1.3 | U | Default | 2024-09-30
+* python3-typecode-libmagic-system-provided-native 32.0.0  Unknown
+    - add recipe python3-scancode-native and its depends | 32.0.0 | U | Default | 2024-09-30
+* python3-typecode-native 30.0.1 30.0.2 Not updated
+    - add recipe python3-scancode-native and its depends | 30.0.1 | U | Default | 2024-09-30
+* python3-urlpy-native 0.5 0.5 Up-to-date
+    - add recipe python3-scancode-native and its depends | 0.5 | U | Default | 2024-09-30

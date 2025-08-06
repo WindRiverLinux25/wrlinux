@@ -1,0 +1,78 @@
+* ding-libs 0.6.1 0.6.1 Up-to-date
+    - Initial import at master release start. | 0.6.1 | U | Default | 2021-09-28
+* dm-verity-image-initramfs 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-28
+* ecryptfs-utils 111 111 Up-to-date
+    - Initial import at master release start. | 111 | U | Default | 2021-09-28
+* libgssglue 0.9 011 Not updated
+    - libgssglue: upgrade 0.8 -> 0.9 | 0.9 | U | Default | 2025-04-13
+    - libgssglue: update to 0.8 | 0.8 | U | Default | 2023-12-29
+    - libgssglue: update to 0.7 | 0.7 | U | Default | 2022-09-25
+    - Initial import at master release start. | 0.4 | U | Default | 2021-09-28
+* libmhash 0.9.9.9  Unknown
+    - Initial import at master release start. | 0.9.9.9 | U | Default | 2021-09-28
+* openscap 1.4.1 1.4.2 Not updated
+    - openscap: upgrade 1.4.0 -> 1.4.1 | 1.4.1 | U | Default | 2025-03-12
+    - openscap: upgrade 1.3.10 -> 1.4.0 | 1.4.0 | U | Default | 2024-08-20
+    - openscap: upgrade 1.3.9 -> 1.3.10 | 1.3.10 | U | Default | 2024-05-09
+    - openscap: update to 1.3.9 | 1.3.9 | U | Default | 2023-09-25
+    - openscap: update to 1.3.8 | 1.3.8 | U | Default | 2023-06-25
+    - openscap: Drop OE specific recipe | 1.3.3+gitAUTOINC+a85943eee4 | N | Default | 2023-06-20
+    - openscap: Fix native build missing depends | 1.3.7 | U | Default | 2023-06-20
+    - openscap git: add DEFAULT_PREFERENCE | 1.3.3+gitAUTOINC+a85943eee4 | D | Default | 2023-03-20
+    - openscap: update to 1.3.7 | 1.3.7 | U | Default | 2023-03-20
+    - openscap: update to 1.3.6 | 1.3.6 | U | Default | 2023-03-20
+    - recipes: Update SRC_URI branch and protocols | 1.3.3+gitAUTOINC+a85943eee4 | U | Default | 2021-11-04
+    - recipes: Update SRC_URI branch and protocols | 1.3.3 | U | Default | 2021-11-04
+* python3-json2html 1.3.0 1.3.0 Up-to-date
+    - python3-json2html: add new pkg | 1.3.0 | U | Default | 2023-07-31
+* python3-pyinotify 0.9.6 0.9.6 Up-to-date
+    - python3-pyinotify: fail2ban needs this module | 0.9.6 | U | Default | 2023-12-29
+* python3-xmldiff 2.7.0 2.7.0 Up-to-date
+    - python3-xmldiff: upgrade 2.6.3 -> 2.7.0 | 2.7.0 | U | Default | 2025-04-13
+    - python3-json2html: add new pkg | 2.6.3 | U | Default | 2023-07-31
+* python3-yamlpath 3.8.2 3.8.2 Up-to-date
+    - python3-yamlpath: upgrade 3.8.0 -> 3.8.2 | 3.8.2 | U | Default | 2025-04-13
+    - python3-yamlpath: Add new pkg | 3.8.0 | U | Default | 2023-07-31
+* samhain-client 4.5.2 4.5.2 Up-to-date
+    - samhain: upgrade 4.4.10 -> 4.5.2 | 4.5.2 | U | Default | 2025-04-13
+    - samhain: Update to 4.4.10 | 4.4.10 | U | Default | 2023-05-22
+    - samhain: update to 4.4.9 | 4.4.9 | U | Default | 2022-05-23
+    - samhain: update to 4.4.7 | 4.4.7 | U | Default | 2022-04-07
+    - samhain: upgrade 4.4.3 -> 4.4.6 | 4.4.6 | U | Default | 2022-01-30
+    - Initial import at master release start. | 4.4.3 | U | Default | 2021-09-28
+* samhain-server 4.5.2 4.5.2 Up-to-date
+    - samhain: upgrade 4.4.10 -> 4.5.2 | 4.5.2 | U | Default | 2025-04-13
+    - samhain: Update to 4.4.10 | 4.4.10 | U | Default | 2023-05-22
+    - samhain: update to 4.4.9 | 4.4.9 | U | Default | 2022-05-23
+    - samhain: update to 4.4.7 | 4.4.7 | U | Default | 2022-04-07
+    - samhain: upgrade 4.4.3 -> 4.4.6 | 4.4.6 | U | Default | 2022-01-30
+    - Initial import at master release start. | 4.4.3 | U | Default | 2021-09-28
+* samhain-standalone 4.5.2 4.5.2 Up-to-date
+    - samhain: upgrade 4.4.10 -> 4.5.2 | 4.5.2 | U | Default | 2025-04-13
+    - samhain: Update to 4.4.10 | 4.4.10 | U | Default | 2023-05-22
+    - samhain: update to 4.4.9 | 4.4.9 | U | Default | 2022-05-23
+    - samhain: update to 4.4.7 | 4.4.7 | U | Default | 2022-04-07
+    - samhain: upgrade 4.4.3 -> 4.4.6 | 4.4.6 | U | Default | 2022-01-30
+    - Initial import at master release start. | 4.4.3 | U | Default | 2021-09-28
+* scap-security-guide 0.1.76 0.5.0 Not updated
+    - scap-security-guide: upgrade 0.1.75 -> 0.1.76 | 0.1.76 | U | Default | 2025-04-13
+    - scap-security-guide: upgrade 0.1.74 -> 0.1.75 | 0.1.75 | U | Default | 2025-03-12
+    - scap-security-guide: upgrade 0.1.73 -> 0.1.74 | 0.1.74 | U | Default | 2024-08-20
+    - scap-security-guide: upgrade 0.1.72 -> 0.1.73 | 0.1.73 | U | Default | 2024-06-17
+    - scap-security-guide: upgrade 0.1.71 -> 0.1.72 | 0.1.72 | U | Default | 2024-05-09
+    - scap-security-guide: update to 0.1.71 | 0.1.71 | U | Default | 2024-01-28
+    - scap-security-guide: update to 0.1.69+ | 0.1.69 | U | Default | 2023-09-08
+    - openscap: move to main meta-security layer | 0.1.67 | U | Default | 2023-06-20
+    - scap-security-guide_git: drop oe version | 0.1.44+gitAUTOINC+5fdfdcb2e9 | N | Default | 2023-06-20
+    - scap-security-guide: update to 0.1.67 | 0.1.67 | U | Default | 2023-06-11
+    - recipes: Update SRC_URI branch and protocols | 0.1.44+gitAUTOINC+5fdfdcb2e9 | U | Default | 2021-11-04
+    - recipes: Update SRC_URI branch and protocols | 0.1.44 | U | Default | 2021-11-04
+* sssd 2.10.2  Unknown
+    - sssd: upgrade 2.9.2 -> 2.10.2 | 2.10.2 | U | Default | 2025-04-13
+    - sssd: Update to 2.9.2 | 2.9.2 | U | Default | 2023-09-25
+    - sssd: 2.7.4 -> 2.9.1 | 2.9.1 | U | Default | 2023-08-06
+    - update sssd to 2.7.4 | 2.7.4 | U | Default | 2022-09-12
+    - sssd: upgrade 2.7.1 -> 2.7.3 | 2.7.3 | U | Default | 2022-07-30
+    - sssd: update to 2.7.1 | 2.7.1 | U | Default | 2022-06-18
+    - Initial import at master release start. | 2.5.2 | U | Default | 2021-09-28

@@ -1,0 +1,13 @@
+* pi-bluetooth 0.1.17  Unknown
+    - Initial import at master release start. | 0.1.17 | U | Default | 2021-09-24
+* rpi-bootfiles 20240319  Unknown
+    - rpi-bootfiles: Resort to github APIs for tarballs | 20240319 | U | Default | 2024-03-27
+    - Initial import at master release start. | 20210914 | U | Default | 2021-09-24
+* rpi-cmdline 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
+* rpi-config git  Unknown
+    - Initial import at master release start. | git | U | Default | 2021-09-24
+* rpi-u-boot-scr 1.0 1.0 Up-to-date
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
+* udev-rules-rpi 1.0  Unknown
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
