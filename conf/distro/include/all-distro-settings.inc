@@ -67,3 +67,5 @@ require conf/distro/include/security_flags_wrs.inc
 #
 PNI_NAMES_FEATURES ??= "pni-names"
 DISTRO_FEATURES:append = " ${PNI_NAMES_FEATURES}"
+
+EXTRA_IMAGEDEPENDS:remove:qemuriscv64:pn-${INITRAMFS_IMAGE} = "opensbi"
