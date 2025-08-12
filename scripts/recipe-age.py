@@ -77,39 +77,51 @@ class AgeVersion(object):
                             status = ' '.join(line_split[3:])
                         else:
                             status = 'Unknown'
-                        outline = ('%s,%s,%s,%s,%s' % (recipe, layername, current_version, upstream_version, status))
                     if begin:
                         last_update = 'Unknown'
                         line_strip = line.strip()
                         if line_strip.startswith('- '):
                             last_update = line.split()[-1]
                             begin = False
+                            recipes_list = []
                             if self.recipes:
-                                if recipe in self.recipes:
-                                    self.recipes_found.add(recipe)
-                                else:
+                                recipes_check = [recipe]
+                                if not (recipe.endswith('-native') and recipe.startswith('nativesdk-')):
+                                    recipes_check.append('%s-native' % recipe)
+                                    recipes_check.append('nativesdk-%s' % recipe)
+                                for recipe_check in recipes_check:
+                                    if recipe_check in self.recipes:
+                                        recipes_list.append(recipe_check)
+                                        self.recipes_found.add(recipe_check)
+                                if not recipes_list:
                                     continue
-                            if 'Initial import ' in line_strip:
-                                outline += ',Initial import on %s,Unknown' % last_update
-                            else:
-                                last_update_split = last_update.split('-')
-                                date1 = datetime.datetime(int(last_update_split[0]), int(last_update_split[1]), int(last_update_split[2]))
-                                age = (datetime.datetime.now() - date1).days
-                                outline += ',%s,%s' % (last_update, age)
-                                if age > 365:
-                                    if not ('packagegroup-' in outline or '-image-' in outline):
-                                        if 'Up-to-date' in outline:
-                                            outlines_old_updated.append(outline)
-                                        else:
-                                            outlines_old_not_updated.append(outline)
-                            outlines.append(outline)
+
+                            if not recipes_list:
+                                recipes_list = [recipe]
+
+                            for recipe in recipes_list:
+                                outline = ('%s,%s,%s,%s,%s' % (recipe, layername, current_version, upstream_version, status))
+                                if 'Initial import ' in line_strip:
+                                    outline += ',Initial import on %s,Unknown' % last_update
+                                else:
+                                    last_update_split = last_update.split('-')
+                                    date1 = datetime.datetime(int(last_update_split[0]), int(last_update_split[1]), int(last_update_split[2]))
+                                    age = (datetime.datetime.now() - date1).days
+                                    outline += ',%s,%s' % (last_update, age)
+                                    if age > 365:
+                                        if not ('packagegroup-' in outline or '-image-' in outline):
+                                            if 'Up-to-date' in outline:
+                                                outlines_old_updated.append(outline)
+                                            else:
+                                                outlines_old_not_updated.append(outline)
+                                outlines.append(outline)
 
         outlines.sort()
         outlines = header + outlines
         outfile = os.path.join(self.args.outdir, 'all_recipes.csv')
         print('Saving results to %s' % outfile)
         with open(outfile, 'w') as f:
-            f.write('\n'.join(outlines))
+            f.write('%s\n' % '\n'.join(outlines))
 
         for lines in (outlines_old_updated, outlines_old_not_updated):
             if len(lines) > 0:
@@ -122,7 +134,7 @@ class AgeVersion(object):
                 lines = header_new + lines
                 print('Copying recipes to %s' % outfile)
                 with open(outfile, 'w') as f:
-                    f.write('\n'.join(lines))
+                    f.write('%s\n' % '\n'.join(lines))
 
         if self.recipes:
             remaining = self.recipes - self.recipes_found
@@ -130,7 +142,7 @@ class AgeVersion(object):
                 notfound = os.path.join(self.args.outdir, "recipes_not_found.txt")
                 print("WARNING: Check %s for the recipes can't be found in rrs!" % notfound, file=sys.stderr)
                 with open(notfound, 'w') as f:
-                    f.write('\n'.join(sorted(remaining)))
+                    f.write('%s\n' % '\n'.join(sorted(remaining)))
             else:
                 print("All the recipes from sbom are found.")
 
