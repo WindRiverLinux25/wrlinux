@@ -6,6 +6,7 @@ import os
 import subprocess
 import shutil
 import glob
+import json
 
 from collections import OrderedDict
 import datetime
@@ -23,7 +24,7 @@ class AgeVersion(object):
             help = "Specify outdir, default: recipe-age",
             action="store", dest="outdir", default="recipe-age")
         parser.add_argument("-s", "--sbom",
-            help = "Specify spdx/sbom tarball, only check the recipes from sbom",
+            help = "Specify spdx/sbom, only check the recipes from sbom",
             action="store", dest="sbom", default='')
 
         self.args = parser.parse_args()
@@ -43,13 +44,25 @@ class AgeVersion(object):
         unpack_dir = os.path.join(self.args.outdir, 'sbom')
         shutil.rmtree(unpack_dir, ignore_errors=True)
         os.makedirs(unpack_dir)
-        cmd = 'tar xf %s -C %s' % (self.args.sbom, unpack_dir)
-        print('Running %s' % cmd)
-        subprocess.check_output(cmd, shell=True).decode('utf-8')
-        recipes = glob.glob('%s/recipe-*.spdx.json' % unpack_dir)
-        for r in recipes:
-            recipe = os.path.basename(r)[7:-10]
-            self.recipes.add(recipe)
+        if '.tar.' in self.args.sbom:
+            cmd = 'tar xf %s -C %s' % (self.args.sbom, unpack_dir)
+            print('Running %s' % cmd)
+            subprocess.check_output(cmd, shell=True).decode('utf-8')
+            recipes = glob.glob('%s/recipe-*.spdx.json' % unpack_dir)
+            for r in recipes:
+                recipe = os.path.basename(r)[7:-10]
+                self.recipes.add(recipe)
+        elif self.args.sbom.endswith('.json'):
+            with open(self.args.sbom) as f:
+                data = json.load(f)
+                for _, v in data.items():
+                    if isinstance(v, list):
+                        for v_dict in v:
+                            for k1, v1 in v_dict.items():
+                                if k1 == 'name' and 'do_create_spdx:recipe' in v1:
+                                    self.recipes.add(v1.replace(':do_create_spdx:recipe', ''))
+        else:
+            raise Exception('Unsuported spdx file %s' % self.args.sbom)
 
     def read_rrs_data(self):
         print('Reading rrs data from %s' % self.args.rrs_data)
