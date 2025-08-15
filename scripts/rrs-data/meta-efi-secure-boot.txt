@@ -11,7 +11,7 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-10-21
 * seloader 0.4.6+gitAUTOINC+8b90f76a8d  Unknown
     - Initial import at master release start. | 0.4.6+gitAUTOINC+8b90f76a8d | U | Default | 2021-10-21
-* shim 16.0 16.0 Up-to-date
+* shim 16.0 16.1 Not updated
     - shim: upgrade 15.8 -> 16.0 | 16.0 | U | Default | 2025-04-24
     - shim: upgrade 15.7 -> 15.8 | 15.8 | U | Default | 2024-02-02
     - shim: upgrade 15.2 -> 15.7 | 15.7 | U | Default | 2023-08-21

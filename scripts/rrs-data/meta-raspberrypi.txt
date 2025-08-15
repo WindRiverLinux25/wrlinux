@@ -9,5 +9,6 @@
     - Initial import at master release start. | git | U | Default | 2021-09-24
 * rpi-u-boot-scr 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
-* udev-rules-rpi 1.0  Unknown
+* udev-rules-rpi 20230510  Unknown
+    - udev-rules-rpi: explicitly set PV | 20230510 | U | Default | 2025-07-18
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24

@@ -5,7 +5,7 @@
     - aardvark-dns: update to v1.9.0 | 1.9.0 | U | Default | 2024-01-04
     - aardvark-dns: update to v1.7.0 | 1.7.0 | U | Default | 2023-08-24
     - aardvark-dns: add the recipe | 1.2.0 | U | Default | 2023-03-08
-* buildah 1.39.1 1.40.1 Not updated
+* buildah 1.39.1 1.41.2 Not updated
     - buildah: update to v1.39.1 | 1.39.1 | U | Default | 2025-03-06
     - buildah: update to v1.37.5 | 1.37.5 | U | Default | 2025-01-17
     - buildah: update to v1.37.1 | 1.37.1 | U | Default | 2024-08-20
@@ -45,7 +45,7 @@
     - Initial import at master release start. | 2.0.29+gitAUTOINC+1ef246896b | U | Default | 2021-09-22
 * container-host-config 1.0 1.0 Up-to-date
     - containers: add container-host-config recipe | 1.0 | U | Default | 2023-02-17
-* containerd v2.0.5 2.1.2 Not updated
+* containerd v2.0.5 2.1.4 Not updated
     - containerd: upgrade to 2.0.5 | v2.0.5 | U | Default | 2025-04-22
     - containerd: update to v2.0.3 | v2.0.2+git | U | Default | 2025-03-06
     - containerd: update to v2.0.1 | v2.0.1+git | U | Default | 2025-01-17
@@ -56,7 +56,7 @@
     - containerd: update to v2.0.0-rc.2 | v2.0.0-rc.2+git | U | Default | 2024-05-29
     - containerd: update to v2.0.0-rc.1 | v2.0.0-rc.1+git | U | Default | 2024-05-14
     - containerd: consolidate to "containerd" | v2.0.0-beta.0+git | U | Default | 2024-05-14
-* cri-o 1.32.2+git318db72eb0b3d18c22c995aa7614a13142287296 1.33.1 Not updated
+* cri-o 1.32.2+git318db72eb0b3d18c22c995aa7614a13142287296 1.33.3 Not updated
     - cri-o: update to v1.32.2 | 1.32.2+git318db72eb0b3d18c22c995aa7614a13142287296 | U | Default | 2025-03-11
     - cri-o: update to v1.31.4-tip | 1.31.4+git33d75981bee230f791709975125d7386fe2c530a | U | Default | 2025-01-17
     - cri-o: update to v1.31.0 | 1.31.0+git04500243ec0cd775e76bcec1c822aaa3faa11177 | U | Default | 2024-07-11
@@ -82,14 +82,14 @@
     - cri-tools: update to v1.23.0 | 1.23.0+git23f44eaa489ecd8931ee64de08baa7be9dbdb394 | U | Default | 2022-03-21
     - cri-tools: update to v1.22.0 | 1.22.0+gita989838814805e1053688e0e94adf13d60e716c6 | U | Default | 2021-11-22
     - Initial import at master release start. | 1.21.0+gitde32df077e6b0e9e31ce367dfc34c1b6b46e30fa | U | Default | 2021-09-22
-* criu 4.1+git 4.1 Up-to-date
+* criu 4.1+git 4.1.1 Not updated
     - criu: update to v4.1 | 4.1+git | U | Default | 2025-04-03
     - criu: update to v3.19 | 3.19.0+git | U | Default | 2024-03-15
     - criu: 3.17 -> 3.17.1 | 3.17.1+git${SRCPV} | U | Default | 2022-10-04
     - criu: Upgrade to 3.17 to fix restore and fix build | 3.17+git${SRCPV} | U | Default | 2022-05-12
     - criu: update to 3.16.1 | 3.16.1+git${SRCPV} | U | Default | 2021-10-18
     - Initial import at master release start. | 3.14+git${SRCPV} | U | Default | 2021-09-22
-* docker-compose v2.33.1 2.37.1 Not updated
+* docker-compose v2.33.1 2.39.2 Not updated
     - docker-compose: update to v2.33.1 | v2.33.1 | U | Default | 2025-03-11
     - Revert "docker-compose: WIP [needs go 1.22.10+]: not for merge: update to v2.32.2" | v2.28.1 | D | Default | 2025-01-17
     - docker-compose: WIP [needs go 1.22.10+]: not for merge: update to v2.32.2 | v2.32.2 | U | Default | 2025-01-17
@@ -119,7 +119,7 @@
     - irqbalance: update to 1.8.0-tip | 1.8.0+gitAUTOINC+b3adb5fd14 | U | Default | 2022-03-29
     - irqbalance: bump SRCREV to latest | 1.8.0+gitAUTOINC+a972665483 | U | Default | 2021-11-08
     - Initial import at master release start. | 1.8.0 | U | Default | 2021-09-22
-* kubernetes v1.32.0+git 1.33.1 Not updated
+* kubernetes v1.32.0+git 1.33.4 Not updated
     - kubernetes: fix runtime init error caused by git shallow tarball | v1.32.0+git | U | Default | 2025-04-15
     - kubernetes: remove local recipe to sync to upstream for LTS25 | v1.29.1 | R | Default | 2025-04-15
     - kubernetes: upgrade 1.26.8 -> 1.29.1 | v1.29.1 | U | Default | 2025-04-14
@@ -161,7 +161,7 @@
     - lxc: update to 4.0.12 | 4.0.12+gitAUTOINC+5ba5725cb4 | U | Default | 2022-03-21
     - lxc: update to 4.0.11 | 4.0.11+gitAUTOINC+48e079bf31 | U | Default | 2021-11-02
     - Initial import at master release start. | 4.0.10+gitAUTOINC+cec7cb14b2 | U | Default | 2021-09-22
-* nerdctl v2.0.3 2.1.2 Not updated
+* nerdctl v2.0.3 2.1.3 Not updated
     - nerdctl: update to v2.0.3 | v2.0.3 | U | Default | 2025-03-24
     - nerdctl: update to v2.0.2 | v2.0.2 | U | Default | 2025-01-17
     - nerdctl: update to v2.0.0-beta | v2.0.0-beta.1 | U | Default | 2024-03-15
@@ -203,7 +203,10 @@
     - Initial import at master release start. | 2.15+AUTOINC+8dc1733eae | U | Default | 2021-09-22
 * packagegroup-container 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
-* podman v5.4.2 5.5.1 Not updated
+* podman v5.4.2 5.5.2 Not updated
+    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | v5.4.2 | U | Default | 2025-07-14
+    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | v5.4.2 | U | Default | 2025-07-14
+    - podman: fix CVE-2025-6032 | v5.4.1 | D | Default | 2025-07-08
     - podman: update to 5.4.2 | v5.4.2 | U | Default | 2025-04-21
     - podman: remove local recipe to sync to upstream for LTS25 | 5.3.1 | R | Default | 2025-04-15
     - podman: upgrade to 5.3.1 | 5.3.1 | U | Default | 2025-04-14
@@ -269,7 +272,7 @@
     - runc: update to v1.1.0 | 1.1.0+gitAUTOINC+d7f7b22a85 | U | Default | 2022-02-03
     - runc: update to 1.0.3 | 1.0.3+gitAUTOINC+e0124d569c | U | Default | 2021-12-10
     - Initial import at master release start. | 1.0.2+gitAUTOINC+86d83333d7 | U | Default | 2021-09-22
-* skopeo v1.18.0+git 1.19.0 Not updated
+* skopeo v1.18.0+git 1.20.0 Not updated
     - skopeo: update to v1.18.0 | v1.18.0+git | U | Default | 2025-03-24
     - skopeo: update to v1.17.0 | v1.17.0+git | U | Default | 2025-01-17
     - skopeo: update to v1.16.0 | v1.16.0+git | U | Default | 2024-08-20
@@ -310,5 +313,6 @@
     - kernel: add v6.12 configuration and support | v6.12+git38b941ae2f4f28c0ba40b2ba6da466f6f5fe3ba0 | U | Default | 2024-12-10
 * yq 4.45.1+git 8 Not updated
     - yq: Correct the version (4.45.1+) | 4.45.1+git | U | Default | 2025-06-04
+    - yq: update to v4.30.8 | 4.30.8+gitde2f77b49cbd40fd67031ee602245d0acc4ac482 | D | Default | 2025-04-16
     - yq: Upgrade to 4.30.8 | 4.30.8+gitdd6cf3df146f3e2c0f8c765a6ef9e35780ad8cc1 | U | Default | 2023-02-10
     - Initial import at master release start. | 1.13.1+gite0f5cb3c5958e57c7f250a7030e92c768c1b2b19 | U | Default | 2021-09-22

@@ -1,10 +1,10 @@
-* optee-client 4.3.0 4.6.0 Not updated
+* optee-client 4.3.0 4.7.0 Not updated
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
-* optee-examples 4.4.0 4.6.0 Not updated
+* optee-examples 4.4.0 4.7.0 Not updated
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
-* optee-os 4.3.0 4.6.0 Not updated
+* optee-os 4.3.0 4.7.0 Not updated
     - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
     - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
     - arm/optee: update to 4.3.0 | 4.3.0 | U | Default | 2024-10-01
@@ -34,10 +34,10 @@
     - arm/optee: remove redundant ${S} in LIC_FILES_CHKSUM | 3.14.0 | D | Default | 2022-05-06
     - arm/optee: Upgrade from 3.14 to 3.16 | 3.16.0 | U | Default | 2022-03-16
     - Initial import at master release start. | 3.14.0 | U | Default | 2021-09-27
-* optee-os-tadevkit 4.4.0 4.6.0 Not updated
+* optee-os-tadevkit 4.4.0 4.7.0 Not updated
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
-* optee-test 4.3.0 4.6.0 Not updated
+* optee-test 4.3.0 4.7.0 Not updated
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
 * trusted-firmware-a 2.10.12 2.13.0 Not updated

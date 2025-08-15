@@ -1,4 +1,6 @@
-* apache2 2.4.63 2.4.63 Up-to-date
+* apache2 2.4.65  Unknown
+    - apache2: upgrade 2.4.64 -> 2.4.65 | 2.4.65 | U | Default | 2025-08-14
+    - apache2: upgrade 2.4.63 -> 2.4.64 | 2.4.64 | U | Default | 2025-08-04
     - apache2: upgrade 2.4.62 -> 2.4.63 | 2.4.63 | U | Default | 2025-02-10
     - apache2: upgrade 2.4.61 -> 2.4.62 | 2.4.62 | U | Default | 2024-08-09
     - apache2: Upgrade 2.4.60 -> 2.4.61 | 2.4.61 | U | Default | 2024-07-16
@@ -14,7 +16,7 @@
     - Apache: Several CVE fixes | 2.4.51 | U | Default | 2021-10-22
     - apache2: upgrade 2.4.48 -> 2.4.49 | 2.4.49 | U | Default | 2021-09-24
     - Initial import at master release start. | 2.4.48 | U | Default | 2021-09-24
-* nginx 1.27.4 1.28.0 Not updated
+* nginx 1.27.4 1.29.1 Not updated
     - nginx: upgrade 1.27.3 to 1.27.4 | 1.27.4 | U | Default | 2025-02-17
     - nginx: upgrade 1.26.2 to 1.26.3 | 1.26.3 | D | Default | 2025-02-17
     - nginx: Upgrade mainline release version 1.27.1 -> 1.27.3 | 1.27.3 | U | Default | 2024-12-10

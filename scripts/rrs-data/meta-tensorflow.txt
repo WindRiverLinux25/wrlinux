@@ -33,7 +33,7 @@
     - tensorboard: 2.9.0 -> 2.10.0 | 2.10.0 | U | Default | 2022-09-21
     - tensorboard: 2.6.0 -> 2.9.0 | 2.9.0 | U | Default | 2022-05-19
     - Initial import at master release start. | 2.6.0 | U | Default | 2021-10-22
-* tensorflow 2.19.0 2.19.0 Up-to-date
+* tensorflow 2.19.0 2.20.0 Not updated
     - tensorflow: upgrade 2.17.0 -> 2.19.0 | 2.19.0 | U | Default | 2025-04-09
     - tensorflow: 2.16.1 -> 2.17.0 | 2.17.0 | U | Default | 2024-08-23
     - tensorflow/tensorflow-lite/tensorflow-native: upgrade to 2.16.1 | 2.16.1 | U | Default | 2024-03-15
@@ -54,7 +54,7 @@
     - tensorflow-estimator/tensorflow-estimator-native: 2.9 -> 2.10 | 2.10 | U | Default | 2022-09-21
     - tensorflow-estimator: upgrade 2.6 -> 2.9 | 2.9 | U | Default | 2022-05-19
     - Initial import at master release start. | 2.6 | U | Default | 2021-10-22
-* tensorflow-lite 2.19.0 2.19.0 Up-to-date
+* tensorflow-lite 2.19.0 2.20.0 Not updated
     - tensorflow: upgrade 2.17.0 -> 2.19.0 | 2.19.0 | U | Default | 2025-04-09
     - tensorflow: 2.16.1 -> 2.17.0 | 2.17.0 | U | Default | 2024-08-23
     - tensorflow/tensorflow-lite/tensorflow-native: upgrade to 2.16.1 | 2.16.1 | U | Default | 2024-03-15

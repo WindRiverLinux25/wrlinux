@@ -20,7 +20,7 @@
 * gigolo 0.5.3 0.6.0 Not updated
     - gigolo: upgrade 0.5.2 -> 0.5.3 | 0.5.3 | U | Default | 2023-11-06
     - Initial import at master release start. | 0.5.2 | U | Default | 2021-09-24
-* libxfce4ui 4.20.0 4.21.1 Not updated
+* libxfce4ui 4.20.0 4.21.2 Not updated
     - libxfce4ui: 4.19.6 -> 4.20.0 | 4.20.0 | U | Default | 2024-12-19
     - libxfce4ui: Upgrade 4.19.3 -> 4.19.6 | 4.19.6 | U | Default | 2024-11-26
     - libxfce4ui: upgrade 4.18.3 -> 4.19.3 | 4.19.3 | U | Default | 2023-11-06
@@ -35,7 +35,7 @@
     - libxfce4util: 4.18.0 -> 4.18.1 | 4.18.1 | U | Default | 2023-04-13
     - libxfce4util: 4.16.0 -> 4.18.0 | 4.18.0 | U | Default | 2022-12-28
     - Initial import at master release start. | 4.16.0 | U | Default | 2021-09-24
-* libxfce4windowing 4.20.0 4.20.3 Not updated
+* libxfce4windowing 4.20.0 4.20.4 Not updated
     - libxfce4windowing: add recipe | 4.20.0 | U | Default | 2024-12-19
 * menulibre 2.4.0  Unknown
     - menulibre: Upgrade to 2.4.0 | 2.4.0 | U | Default | 2024-05-23
@@ -58,7 +58,7 @@
     - ristretto: upgrade 0.12.0 -> 0.12.1 | 0.12.1 | U | Default | 2022-01-05
     - ristretto: upgrade 0.11.0 -> 0.12.0 | 0.12.0 | U | Default | 2021-11-20
     - Initial import at master release start. | 0.11.0 | U | Default | 2021-09-24
-* thunar 4.20.0 4.21.1 Not updated
+* thunar 4.20.0 4.21.2 Not updated
     - thunar: 4.19.0 -> 4.20.0 | 4.20.0 | U | Default | 2024-12-19
     - thunar: upgrade 4.18.4 -> 4.19.0 | 4.19.0 | U | Default | 2023-11-06
     - thunar: 4.18.0 -> 4.18.4 | 4.18.4 | U | Default | 2023-04-10
@@ -173,7 +173,7 @@
 * xfce4-pulseaudio-plugin 0.4.8 0.5.1 Not updated
     - xfce4-pulseaudio-plugin: upgrade 0.4.3 -> 0.4.8 | 0.4.8 | U | Default | 2023-11-06
     - Initial import at master release start. | 0.4.3 | U | Default | 2021-09-24
-* xfce4-screensaver 4.18.1 4.18.4 Not updated
+* xfce4-screensaver 4.18.1 4.20.0 Not updated
     - xfce4-screensaver: 4.16.0 -> 4.18.1 | 4.18.1 | U | Default | 2023-04-17
     - Initial import at master release start. | 4.16.0 | U | Default | 2021-09-24
 * xfce4-screenshooter 1.10.4 1.11.2 Not updated

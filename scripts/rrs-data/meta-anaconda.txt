@@ -18,7 +18,7 @@
     - python3-iso639: add version 0.1.4 | 0.1.4 | U | Default | 2025-04-09
 * python3-pam 2.0.2 2.0.2 Up-to-date
     - python3-pam: add version 2.0.2 | 2.0.2 | U | Default | 2025-04-21
-* python3-productmd 1.45 1.45 Up-to-date
+* python3-productmd 1.45 1.48 Not updated
     - python3-productmd: 1.21 -> 1.45 | 1.45 | U | Default | 2025-04-21
     - Initial import at master release start. | 1.21 | U | Default | 2021-11-24
 * python3-simpleline 1.9.0 1.9.0 Up-to-date

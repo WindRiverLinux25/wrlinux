@@ -1,4 +1,4 @@
-* checkpolicy 3.8.1 3.8.1 Up-to-date
+* checkpolicy 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
@@ -7,7 +7,7 @@
     - checkpolicy: upgrade 3.3 -> 3.4 | 3.4 | U | Default | 2022-08-28
     - selinux: upgrade 3.2 -> 3.3 | 3.3 | U | Default | 2021-12-08
     - Initial import at master release start. | 3.2 | U | Default | 2021-09-30
-* libselinux 3.8.1 3.8.1 Up-to-date
+* libselinux 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
@@ -16,7 +16,7 @@
     - libselinux: upgrade 3.3 -> 3.4 | 3.4 | U | Default | 2022-08-28
     - selinux: upgrade 3.2 -> 3.3 | 3.3 | U | Default | 2021-12-08
     - Initial import at master release start. | 3.2 | U | Default | 2021-09-30
-* libselinux-python 3.8.1 3.8.1 Up-to-date
+* libselinux-python 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
@@ -26,7 +26,7 @@
     - libselinux-python: upgrade 3.3 -> 3.4 | 3.4 | U | Default | 2022-08-28
     - selinux: upgrade 3.2 -> 3.3 | 3.3 | U | Default | 2021-12-08
     - Initial import at master release start. | 3.2 | U | Default | 2021-09-30
-* libsemanage 3.8.1 3.8.1 Up-to-date
+* libsemanage 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
@@ -35,7 +35,7 @@
     - libsemanage: upgrade 3.3 -> 3.4 | 3.4 | U | Default | 2022-08-28
     - selinux: upgrade 3.2 -> 3.3 | 3.3 | U | Default | 2021-12-08
     - Initial import at master release start. | 3.2 | U | Default | 2021-09-30
-* libsepol 3.8.1 3.8.1 Up-to-date
+* libsepol 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
@@ -44,7 +44,7 @@
     - libsepol: upgrade 3.3 -> 3.4 | 3.4 | U | Default | 2022-08-28
     - selinux: upgrade 3.2 -> 3.3 | 3.3 | U | Default | 2021-12-08
     - Initial import at master release start. | 3.2 | U | Default | 2021-09-30
-* mcstrans 3.8.1 3.8.1 Up-to-date
+* mcstrans 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
@@ -57,7 +57,7 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-30
 * packagegroup-selinux-policycoreutils 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-30
-* policycoreutils 3.8.1 3.8.1 Up-to-date
+* policycoreutils 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
@@ -66,7 +66,7 @@
     - policycoreutils: upgrade 3.3 -> 3.4 | 3.4 | U | Default | 2022-08-28
     - selinux: upgrade 3.2 -> 3.3 | 3.3 | U | Default | 2021-12-08
     - Initial import at master release start. | 3.2 | U | Default | 2021-09-30
-* refpolicy-mcs 2.20250213+git 2.20250213 Up-to-date
+* refpolicy-mcs 2.20250213+git 2.20250618 Not updated
     - refpolicy: update to 20250213+git | 2.20250213+git | U | Default | 2025-03-07
     - refpolicy: upgrade 20240226+git -> 20240916+git | 2.20240916+git | U | Default | 2024-10-09
     - refpolicy: upgrade 20231002+git -> 20240226+git | 2.20240226+git | U | Default | 2024-03-12
@@ -74,7 +74,7 @@
     - refpolicy: update to latest git rev | 2.20221101+gitAUTOINC+8e8f5e3ca3 | U | Default | 2023-03-27
     - refpolicy: upgrade 20210203+git -> 20210908+git | 2.20210908+gitAUTOINC+23a8d103f3 | U | Default | 2022-01-18
     - Initial import at master release start. | 2.20210203+gitAUTOINC+1167739da1 | U | Default | 2021-09-30
-* refpolicy-minimum 2.20250213+git 2.20250213 Up-to-date
+* refpolicy-minimum 2.20250213+git 2.20250618 Not updated
     - refpolicy: update to 20250213+git | 2.20250213+git | U | Default | 2025-03-07
     - refpolicy: upgrade 20240226+git -> 20240916+git | 2.20240916+git | U | Default | 2024-10-09
     - refpolicy: upgrade 20231002+git -> 20240226+git | 2.20240226+git | U | Default | 2024-03-12
@@ -82,7 +82,7 @@
     - refpolicy: update to latest git rev | 2.20221101+gitAUTOINC+8e8f5e3ca3 | U | Default | 2023-03-27
     - refpolicy: upgrade 20210203+git -> 20210908+git | 2.20210908+gitAUTOINC+23a8d103f3 | U | Default | 2022-01-18
     - Initial import at master release start. | 2.20210203+gitAUTOINC+1167739da1 | U | Default | 2021-09-30
-* refpolicy-mls 2.20250213+git 2.20250213 Up-to-date
+* refpolicy-mls 2.20250213+git 2.20250618 Not updated
     - refpolicy: update to 20250213+git | 2.20250213+git | U | Default | 2025-03-07
     - refpolicy: upgrade 20240226+git -> 20240916+git | 2.20240916+git | U | Default | 2024-10-09
     - refpolicy: upgrade 20231002+git -> 20240226+git | 2.20240226+git | U | Default | 2024-03-12
@@ -90,7 +90,7 @@
     - refpolicy: update to latest git rev | 2.20221101+gitAUTOINC+8e8f5e3ca3 | U | Default | 2023-03-27
     - refpolicy: upgrade 20210203+git -> 20210908+git | 2.20210908+gitAUTOINC+23a8d103f3 | U | Default | 2022-01-18
     - Initial import at master release start. | 2.20210203+gitAUTOINC+1167739da1 | U | Default | 2021-09-30
-* refpolicy-standard 2.20250213+git 2.20250213 Up-to-date
+* refpolicy-standard 2.20250213+git 2.20250618 Not updated
     - refpolicy: update to 20250213+git | 2.20250213+git | U | Default | 2025-03-07
     - refpolicy: upgrade 20240226+git -> 20240916+git | 2.20240916+git | U | Default | 2024-10-09
     - refpolicy: upgrade 20231002+git -> 20240226+git | 2.20240226+git | U | Default | 2024-03-12
@@ -98,7 +98,7 @@
     - refpolicy: update to latest git rev | 2.20221101+gitAUTOINC+8e8f5e3ca3 | U | Default | 2023-03-27
     - refpolicy: upgrade 20210203+git -> 20210908+git | 2.20210908+gitAUTOINC+23a8d103f3 | U | Default | 2022-01-18
     - Initial import at master release start. | 2.20210203+gitAUTOINC+1167739da1 | U | Default | 2021-09-30
-* refpolicy-targeted 2.20250213+git 2.20250213 Up-to-date
+* refpolicy-targeted 2.20250213+git 2.20250618 Not updated
     - refpolicy: update to 20250213+git | 2.20250213+git | U | Default | 2025-03-07
     - refpolicy: upgrade 20240226+git -> 20240916+git | 2.20240916+git | U | Default | 2024-10-09
     - refpolicy: upgrade 20231002+git -> 20240226+git | 2.20240226+git | U | Default | 2024-03-12
@@ -108,7 +108,7 @@
     - Initial import at master release start. | 2.20210203+gitAUTOINC+1167739da1 | U | Default | 2021-09-30
 * selinux-autorelabel 0.1 0.1 Up-to-date
     - Initial import at master release start. | 0.1 | U | Default | 2021-09-30
-* selinux-dbus 3.8.1 3.8.1 Up-to-date
+* selinux-dbus 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
@@ -117,7 +117,7 @@
     - selinux-dbus: upgrade 3.3 -> 3.4 | 3.4 | U | Default | 2022-08-28
     - selinux: upgrade 3.2 -> 3.3 | 3.3 | U | Default | 2021-12-08
     - Initial import at master release start. | 3.2 | U | Default | 2021-09-30
-* selinux-gui 3.8.1 3.8.1 Up-to-date
+* selinux-gui 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
@@ -130,7 +130,7 @@
     - Initial import at master release start. | 0.1 | U | Default | 2021-09-30
 * selinux-labeldev 0.1 0.1 Up-to-date
     - Initial import at master release start. | 0.1 | U | Default | 2021-09-30
-* selinux-python 3.8.1 3.8.1 Up-to-date
+* selinux-python 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
@@ -139,7 +139,7 @@
     - selinux-python: upgrade 3.3 -> 3.4 | 3.4 | U | Default | 2022-08-28
     - selinux: upgrade 3.2 -> 3.3 | 3.3 | U | Default | 2021-12-08
     - Initial import at master release start. | 3.2 | U | Default | 2021-09-30
-* selinux-sandbox 3.8.1 3.8.1 Up-to-date
+* selinux-sandbox 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
@@ -148,7 +148,7 @@
     - selinux-sandbox: upgrade 3.3 -> 3.4 | 3.4 | U | Default | 2022-08-28
     - selinux: upgrade 3.2 -> 3.3 | 3.3 | U | Default | 2021-12-08
     - Initial import at master release start. | 3.2 | U | Default | 2021-09-30
-* semodule-utils 3.8.1 3.8.1 Up-to-date
+* semodule-utils 3.8.1 3.9 Not updated
     - selinux: upgrade 3.8 -> 3.8.1 | 3.8.1 | U | Default | 2025-03-10
     - selinux: upgrade 3.7 -> 3.8 | 3.8 | U | Default | 2025-03-07
     - selinux: upgrade 3.6 -> 3.7 | 3.7 | U | Default | 2024-06-30
