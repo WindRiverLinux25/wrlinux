@@ -1,4 +1,4 @@
-* apache2 2.4.65  Unknown
+* apache2 2.4.65 2.4.65 Up-to-date
     - apache2: upgrade 2.4.64 -> 2.4.65 | 2.4.65 | U | Default | 2025-08-14
     - apache2: upgrade 2.4.63 -> 2.4.64 | 2.4.64 | U | Default | 2025-08-04
     - apache2: upgrade 2.4.62 -> 2.4.63 | 2.4.63 | U | Default | 2025-02-10

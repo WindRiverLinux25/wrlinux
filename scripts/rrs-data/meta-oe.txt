@@ -106,7 +106,7 @@
     - can-utils: Upgrade 2023.03 -> 2025.01 | 2025.01 | U | Default | 2025-02-13
     - can-utils: upgrade 2021.08.0 -> 2023.03 | 2023.03 | U | Default | 2023-03-24
     - Initial import at master release start. | 2021.08.0 | U | Default | 2021-09-24
-* catch2 3.8.1  Unknown
+* catch2 3.8.1 3.9.1 Not updated
     - catch2: upgrade 3.8.0 -> 3.8.1 | 3.8.1 | U | Default | 2025-05-17
     - catch2: upgrade 3.7.1 -> 3.8.0 | 3.8.0 | U | Default | 2025-03-11
     - catch2: upgrade 3.7.0 -> 3.7.1 | 3.7.1 | U | Default | 2024-09-29
@@ -149,7 +149,7 @@
     - replace libdbd-mysql-perl with dbd-mariadb | 1.23 | U | Default | 2024-06-10
 * dbus-daemon-proxy 0.0.0+gitrAUTOINC+1226a0a137 0.0.0 Up-to-date
     - Initial import at master release start. | 0.0.0+gitrAUTOINC+1226a0a137 | U | Default | 2021-09-24
-* debootstrap 1.0.140 1.0.141 Not updated
+* debootstrap 1.0.140 1.0.140 Up-to-date
     - debootstrap: upgrade 1.0.138 -> 1.0.140 | 1.0.140 | U | Default | 2025-03-31
     - debootstrap: upgrade 1.0.137 -> 1.0.138 | 1.0.138 | U | Default | 2024-12-03
     - debootstrap: upgrade 1.0.132 -> 1.0.137 | 1.0.137 | U | Default | 2024-09-15
@@ -238,7 +238,7 @@
     - Initial import at master release start. | 2.5.7 | U | Default | 2021-09-24
 * gflags 2.2.2 2.2.2 Up-to-date
     - Initial import at master release start. | 2.2.2 | U | Default | 2021-09-24
-* glade 3.36.0  Unknown
+* glade 3.36.0 3.40.0 Not updated
     - glade: update 3.22.2 -> 3.36.0 | 3.36.0 | U | Default | 2025-07-06
     - Initial import at master release start. | 3.22.2 | U | Default | 2021-09-24
 * glibmm 2.66.7 2.84.0 Not updated
@@ -404,7 +404,7 @@
     - jemalloc: add +git to version | 5.3.0+git | U | Default | 2024-05-23
     - jemalloc: upgrade 5.2.1 -> 5.3.0 | 5.3.0 | U | Default | 2022-05-09
     - Initial import at master release start. | 5.2.1 | U | Default | 2021-09-24
-* jq 1.8.0  Unknown
+* jq 1.8.0 1.8.1 Not updated
     - jq: upgrade 1.7.1 -> 1.8.0 | 1.8.0 | U | Default | 2025-06-20
     - jq: upgrade 1.7 -> 1.7.1 | 1.7.1 | U | Default | 2023-12-29
     - jq: Upgrade 1.6+git -> 1.7 | 1.7 | U | Default | 2023-09-29
@@ -572,7 +572,7 @@
 * libnewt 0.52.25 0.52.25 Up-to-date
     - libnewt: upgrade 0.52.24 -> 0.52.25 | 0.52.25 | U | Default | 2025-03-25
     - libnewt: add from oe-core | 0.52.24 | U | Default | 2024-06-19
-* libnvme 1.12  Unknown
+* libnvme 1.12 1.15 Not updated
     - libnvme: upgrade 1.11.1 -> 1.12 | 1.12 | U | Default | 2025-04-07
     - libnvme: upgrade 1.11 -> 1.11.1 | 1.11.1 | U | Default | 2024-12-03
     - libnvme: upgrade 1.10 -> 1.11 | 1.11 | U | Default | 2024-11-06
@@ -616,13 +616,13 @@
 * libsigc++-2.0 2.12.1 2.12.1 Up-to-date
     - libsigc++-2.0: upgrade 2.10.7 -> 2.12.1 | 2.12.1 | U | Default | 2023-11-17
     - Initial import at master release start. | 2.10.7 | U | Default | 2021-09-24
-* libsocketcan 0.0.12  Unknown
+* libsocketcan 0.0.12 0.0.12 Up-to-date
     - Initial import at master release start. | 0.0.12 | U | Default | 2021-09-24
 * libsodium 1.0.20 1.0.20 Up-to-date
     - libsodium: upgrade 1.0.19 -> 1.0.20 | 1.0.20 | U | Default | 2024-06-07
     - libsodium: upgrade 1.0.18 -> 1.0.19 | 1.0.19 | U | Default | 2023-11-06
     - Initial import at master release start. | 1.0.18 | U | Default | 2021-09-24
-* libssh 0.11.2  Unknown
+* libssh 0.11.2 0.11.2 Up-to-date
     - libssh: upgrade 0.11.1 -> 0.11.2 | 0.11.2 | U | Default | 2025-08-14
     - libssh: upgrade 0.10.6 -> 0.11.1 | 0.11.1 | U | Default | 2024-09-15
     - libssh: upgrade 0.10.5 -> 0.10.6 | 0.10.6 | U | Default | 2024-01-02
@@ -671,7 +671,7 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
 * lockfile-progs 0.1.19 0.2.0 Not updated
     - Initial import at master release start. | 0.1.19 | U | Default | 2021-09-24
-* lsscsi 0.32  Unknown
+* lsscsi 0.32 0.32 Up-to-date
     - lsscsi: revert to version 0.32 | 0.32 | D | Default | 2025-06-30
     - lsscsi: upgrade 0.32 -> 030 | 030 | U | Default | 2023-11-06
     - lsscsi: upgrade 0.31 -> 0.32 | 0.32 | U | Default | 2022-04-25
@@ -694,7 +694,7 @@
     - Initial import at master release start. | 2.03.11 | U | Default | 2021-09-24
 * lxdm 0.5.3  Unknown
     - Initial import at master release start. | 0.5.3 | U | Default | 2021-09-24
-* mariadb 11.4.6  Unknown
+* mariadb 11.4.6 12.1.1 Not updated
     - mariadb: upgrade 11.4.5 -> 11.4.6 | 11.4.6 | U | Default | 2025-08-14
     - mariadb: upgrade 11.4.4 -> 11.4.5 | 11.4.5 | U | Default | 2025-04-07
     - mariadb: Upgrade to 11.4.4 | 11.4.4 | U | Default | 2025-01-15
@@ -780,12 +780,12 @@
     - nlohmann-json: upgrade 3.10.4 -> 3.10.5 | 3.10.5 | U | Default | 2022-01-18
     - nlohmann-json: upgrade 3.10.2 -> 3.10.4 | 3.10.4 | U | Default | 2021-10-19
     - Initial import at master release start. | 3.10.2 | U | Default | 2021-09-24
-* nmap 7.95 7.98-1 Not updated
+* nmap 7.95 7.98 Not updated
     - nmap: disable build 7.95 | 7.95 | U | Default | 2025-05-15
     - nmap: add recipe for 7.92 | 7.92 | D | Default | 2025-05-15
     - nmap: Upgrade to 7.95 | 7.95 | U | Default | 2024-09-04
     - Initial import at master release start. | 7.80 | U | Default | 2021-09-24
-* nodejs 22.14.0 24.5.0 Not updated
+* nodejs 22.14.0 24.6.0 Not updated
     - nodejs: upgrade 22.13.0 -> 22.14.0 | 22.14.0 | U | Default | 2025-03-18
     - nodejs: upgrade 22.12.0 -> 22.13.1 | 22.13.1 | U | Default | 2025-01-25
     - nodejs: upgrade 22.11.0 -> 22.12.0 | 22.12.0 | U | Default | 2024-12-04
@@ -927,7 +927,7 @@
     - parallel: upgrade 20241122 -> 20241222 | 20241222 | U | Default | 2024-12-30
     - parallel: upgrade 20241022 -> 20241122 | 20241122 | U | Default | 2024-12-03
     - parallel: Add recipe for GNU Parallel | 20241022 | U | Default | 2024-11-06
-* passwdqc 2.0.3  Unknown
+* passwdqc 2.0.3 2.0.3 Up-to-date
     - passwdqc: upgrade 2.0.2 -> 2.0.3 | 2.0.3 | U | Default | 2023-07-07
     - passwdqc: Upgrade to 2.0.2 | 2.0.2 | U | Default | 2022-09-07
     - Initial import at master release start. | 1.3.1 | U | Default | 2021-09-24
@@ -999,7 +999,7 @@
     - polkit: add recipe for v122 | 122 | U | Default | 2022-11-28
     - polkit: update 0.116 -> 0.119 | 0.119 | U | Default | 2021-10-14
     - Initial import at master release start. | 0.116 | U | Default | 2021-09-24
-* poppler 25.08.0  Unknown
+* poppler 25.08.0 25.08.0 Up-to-date
     - poppler: upgrade 25.06.0 -> 25.08.0 | 25.08.0 | U | Default | 2025-08-08
     - poppler: upgrade 25.04.0 -> 25.06.0 | 25.06.0 | U | Default | 2025-08-08
     - poppler: upgrade 25.01.0 -> 25.04.0 | 25.04.0 | U | Default | 2025-05-17
@@ -1030,7 +1030,7 @@
 * poppler-data 0.4.12 0.4.12 Up-to-date
     - poppler-data: upgrade 0.4.11 -> 0.4.12 | 0.4.12 | U | Default | 2023-02-20
     - Initial import at master release start. | 0.4.11 | U | Default | 2021-09-24
-* postgresql 17.5  Unknown
+* postgresql 17.5 17.6 Not updated
     - postgresql: upgrade 17.4 -> 17.5 | 17.5 | U | Default | 2025-06-20
     - postgresql: upgrade 16.8 -> 17.4 | 17.4 | U | Default | 2025-02-27
     - postgresql: upgrade 16.5 -> 16.8 | 16.8 | U | Default | 2025-02-25
@@ -1173,7 +1173,7 @@
 * snappy 1.1.10 1.2.2 Not updated
     - snappy: upgrade 1.1.9 -> 1.1.10 | 1.1.10 | U | Default | 2023-12-08
     - Initial import at master release start. | 1.1.9 | U | Default | 2021-09-24
-* softhsm 2.6.1  Unknown
+* softhsm 2.6.1 2.6.1 Up-to-date
     - Initial import at master release start. | 2.6.1 | U | Default | 2021-09-24
 * sound-theme-freedesktop 0.8 0.8 Up-to-date
     - Initial import at master release start. | 0.8 | U | Default | 2021-09-24
@@ -1243,7 +1243,7 @@
     - tree: upgrade 2.0.0 -> 2.0.1 | 2.0.1 | U | Default | 2022-01-18
     - tree: upgrade 1.8.0 -> 2.0.0 | 2.0.0 | U | Default | 2021-12-27
     - Initial import at master release start. | 1.8.0 | U | Default | 2021-09-24
-* turbostat 1.0  Unknown
+* turbostat 1.0 1.0 Up-to-date
     - turbostat: make turbostat's version align with kernel version | 1.0 | D | Default | 2025-04-24
     - Initial import at master release start. | 3.4 | U | Default | 2021-09-24
 * udisks2 2.10.1 2.10.90 Not updated
@@ -1275,7 +1275,7 @@
     - v4l-utils: Update 1.22.1 -> 1.23.0+fd544473 | 1.23.0 | U | Default | 2022-10-02
     - v4l-utils: Update 1.20.0 -> 1.22.1 | 1.22.1 | U | Default | 2022-03-14
     - Initial import at master release start. | 1.20.0 | U | Default | 2021-09-24
-* valkey 8.1.1  Unknown
+* valkey 8.1.1 8.1.3 Not updated
     - valkey: upgrade 8.1.0 -> 8.1.1 | 8.1.1 | U | Default | 2025-06-20
     - valkey: update from 8.0.2 -> 8.1.0 | 8.1.0 | U | Default | 2025-04-02
     - valkey: Upgrade 8.0.1 -> 8.0.2 | 8.0.2 | U | Default | 2025-02-07

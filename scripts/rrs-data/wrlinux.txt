@@ -1,6 +1,6 @@
 * anspass 1.0+gitAUTOINC+726c141fe5  Unknown
     - Initial import at master release start. | 1.0+gitAUTOINC+726c141fe5 | U | Default | 2021-09-22
-* boost 1.86.0 1.88.0 Not updated
+* boost 1.86.0 1.89.0 Not updated
     - boost: add recipe for 1.86.0 | 1.86.0 | U | Default | 2025-04-25
     - Revert "boost: add boost 1.75.0" | 1.75.0 | R | Default | 2022-11-11
     - boost: add boost 1.75.0 | 1.75.0 | U | Default | 2022-03-17
