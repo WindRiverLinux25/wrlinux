@@ -211,6 +211,7 @@
     - bind: upgrade 9.20.9 -> 9.20.11 | 9.20.11 | U |  | 2025-08-04
     - bind: upgrade 9.20.8 -> 9.20.9 | 9.20.9 | U |  | 2025-06-20
     - bind: upgrade 9.20.7 -> 9.20.8 | 9.20.8 | U |  | 2025-06-20
+    - bind: upgrade 9.20.6 -> 9.20.7 | 9.20.7 | U |  | 2025-06-20
     - bind: upgrade 9.20.5 -> 9.20.6 | 9.20.6 | U |  | 2025-03-06
     - bind: upgrade 9.20.4 -> 9.20.5 | 9.20.5 | U |  | 2025-02-03
     - bind: upgrade 9.20.3 -> 9.20.4 | 9.20.4 | U |  | 2024-12-20
@@ -260,7 +261,7 @@
     - binutils: Upgrade to 2.39 release | 2.39 | U |  | 2022-08-21
     - binutils: Upgrade to 2.38 release | 2.38 | U |  | 2022-02-16
     - Initial import at master release start. | 2.37 | U |  | 2021-09-21
-* binutils-cross-canadian-i686 2.44 2.45 Not updated
+* binutils-cross-canadian-x86-64 2.44 2.45 Not updated
     - binutils: Upgrade to 2.44 release | 2.44 | U |  | 2025-02-05
     - binutils: upgrade 2.43 -> 2.43.1 | 2.43.1 | U |  | 2024-08-21
     - binutils: Upgrade to 2.43 release | 2.43 | U |  | 2024-08-06
@@ -270,7 +271,7 @@
     - binutils: Upgrade to 2.39 release | 2.39 | U |  | 2022-08-21
     - binutils: Upgrade to 2.38 release | 2.38 | U |  | 2022-02-16
     - Initial import at master release start. | 2.37 | U |  | 2021-09-21
-* binutils-cross-i686 2.44 2.45 Not updated
+* binutils-cross-x86_64 2.44 2.45 Not updated
     - binutils: Upgrade to 2.44 release | 2.44 | U |  | 2025-02-05
     - binutils: upgrade 2.43 -> 2.43.1 | 2.43.1 | U |  | 2024-08-21
     - binutils: Upgrade to 2.43 release | 2.43 | U |  | 2024-08-06
@@ -999,7 +1000,6 @@
     - Initial import at master release start. | 1.0.5 | U |  | 2021-09-21
 * epiphany 48.3 48.5 Not updated
     - epiphany: upgrade 48.0 -> 48.3 | 48.3 | U |  | 2025-05-27
-    - epiphany: upgrade 48.0 -> 48.3 | 48.3 | U |  | 2025-05-27
     - epiphany: upgrade 47.3.1 -> 48.0 | 48.0 | U |  | 2025-03-17
     - epiphany: upgrade 47.2 -> 47.3.1 | 47.3.1 | U |  | 2025-02-03
     - epiphany: upgrade 47.1 -> 47.2 | 47.2 | U |  | 2024-11-18
@@ -1160,17 +1160,6 @@
     - Initial import at master release start. | 5.1.0 | U |  | 2021-09-21
 * gcc 14.3.0 14.3.0 Up-to-date
     - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - gcc: fix incorrect preprocessor line numbers in large files | 14.2.0 | D |  | 2025-05-27
-    - gcc: Fix LDRD register overlap in register-indexed mode | 14.2.0 | D |  | 2025-05-21
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
     - gcc: Upgrade to GCC 14.2 | 14.2.0 | U |  | 2024-08-08
     - gcc: Upgrade to GCC 14.1 release | 14.1.0 | U |  | 2024-05-21
     - gcc: Upgrade to 13.2 release | 13.2.0 | U |  | 2023-07-30
@@ -1180,19 +1169,8 @@
     - gcc: upgrade 11.3 -> 12.1 | 12.1.0 | U |  | 2022-05-10
     - gcc: Upgrade to 11.3 release | 11.3.0 | U |  | 2022-04-22
     - Initial import at master release start. | 11.2.0 | U |  | 2021-09-21
-* gcc-cross-canadian-i686 14.3.0 14.3.0 Up-to-date
+* gcc-cross-canadian-x86-64 14.3.0 14.3.0 Up-to-date
     - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - gcc: fix incorrect preprocessor line numbers in large files | 14.2.0 | D |  | 2025-05-27
-    - gcc: Fix LDRD register overlap in register-indexed mode | 14.2.0 | D |  | 2025-05-21
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
     - gcc: Upgrade to GCC 14.2 | 14.2.0 | U |  | 2024-08-08
     - gcc: Upgrade to GCC 14.1 release | 14.1.0 | U |  | 2024-05-21
     - gcc: Upgrade to 13.2 release | 13.2.0 | U |  | 2023-07-30
@@ -1202,19 +1180,8 @@
     - gcc: upgrade 11.3 -> 12.1 | 12.1.0 | U |  | 2022-05-10
     - gcc: Upgrade to 11.3 release | 11.3.0 | U |  | 2022-04-22
     - Initial import at master release start. | 11.2.0 | U |  | 2021-09-21
-* gcc-cross-i686 14.3.0 14.3.0 Up-to-date
+* gcc-cross-x86_64 14.3.0 14.3.0 Up-to-date
     - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - gcc: fix incorrect preprocessor line numbers in large files | 14.2.0 | D |  | 2025-05-27
-    - gcc: Fix LDRD register overlap in register-indexed mode | 14.2.0 | D |  | 2025-05-21
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
     - gcc: Upgrade to GCC 14.2 | 14.2.0 | U |  | 2024-08-08
     - gcc: Upgrade to GCC 14.1 release | 14.1.0 | U |  | 2024-05-21
     - gcc: Upgrade to 13.2 release | 13.2.0 | U |  | 2023-07-30
@@ -1226,17 +1193,6 @@
     - Initial import at master release start. | 11.2.0 | U |  | 2021-09-21
 * gcc-crosssdk-x86_64-oesdk-linux 14.3.0 14.3.0 Up-to-date
     - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - gcc: fix incorrect preprocessor line numbers in large files | 14.2.0 | D |  | 2025-05-27
-    - gcc: Fix LDRD register overlap in register-indexed mode | 14.2.0 | D |  | 2025-05-21
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
     - gcc: Upgrade to GCC 14.2 | 14.2.0 | U |  | 2024-08-08
     - gcc: Upgrade to GCC 14.1 release | 14.1.0 | U |  | 2024-05-21
     - gcc: Upgrade to 13.2 release | 13.2.0 | U |  | 2023-07-30
@@ -1248,17 +1204,6 @@
     - Initial import at master release start. | 11.2.0 | U |  | 2021-09-21
 * gcc-runtime 14.3.0 14.3.0 Up-to-date
     - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - gcc: fix incorrect preprocessor line numbers in large files | 14.2.0 | D |  | 2025-05-27
-    - gcc: Fix LDRD register overlap in register-indexed mode | 14.2.0 | D |  | 2025-05-21
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
     - gcc: Upgrade to GCC 14.2 | 14.2.0 | U |  | 2024-08-08
     - gcc: Upgrade to GCC 14.1 release | 14.1.0 | U |  | 2024-05-21
     - gcc: Upgrade to 13.2 release | 13.2.0 | U |  | 2023-07-30
@@ -1270,17 +1215,6 @@
     - Initial import at master release start. | 11.2.0 | U |  | 2021-09-21
 * gcc-sanitizers 14.3.0 14.3.0 Up-to-date
     - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - gcc: fix incorrect preprocessor line numbers in large files | 14.2.0 | D |  | 2025-05-27
-    - gcc: Fix LDRD register overlap in register-indexed mode | 14.2.0 | D |  | 2025-05-21
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
     - gcc: Upgrade to GCC 14.2 | 14.2.0 | U |  | 2024-08-08
     - gcc: Upgrade to GCC 14.1 release | 14.1.0 | U |  | 2024-05-21
     - gcc: Upgrade to 13.2 release | 13.2.0 | U |  | 2023-07-30
@@ -1291,7 +1225,6 @@
     - gcc: Upgrade to 11.3 release | 11.3.0 | U |  | 2022-04-22
     - Initial import at master release start. | 11.2.0 | U |  | 2021-09-21
 * gcc-source-14.3.0 14.3.0  Unknown
-    - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
     - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
 * gcompat 1.1.0 1.1.0-new-commits-available Not updated
     - gcompat: Upgrade to 1.1.0 release | 1.1.0 | U |  | 2023-10-16
@@ -1321,7 +1254,7 @@
     - gdb: update 11.1 -> 11.2 | 11.2 | U |  | 2022-02-18
     - gdb: Upgrade to 11.1 | 11.1 | U |  | 2021-11-07
     - Initial import at master release start. | 10.2 | U |  | 2021-09-21
-* gdb-cross-canadian-i686 16.2  Unknown
+* gdb-cross-canadian-x86-64 16.2  Unknown
     - gdb: Upgrade to 16.2 relese | 16.2 | U |  | 2025-02-05
     - gdb: Upgrade 15.2 -> 16.1 | 16.1 | U |  | 2025-01-27
     - gdb: Upgrade 15.1 -> 15.2 | 15.2 | U |  | 2024-10-08
@@ -1334,7 +1267,7 @@
     - gdb: update 11.1 -> 11.2 | 11.2 | U |  | 2022-02-18
     - gdb: Upgrade to 11.1 | 11.1 | U |  | 2021-11-07
     - Initial import at master release start. | 10.2 | U |  | 2021-09-21
-* gdb-cross-i686 16.2  Unknown
+* gdb-cross-x86_64 16.2  Unknown
     - gdb: Upgrade to 16.2 relese | 16.2 | U |  | 2025-02-05
     - gdb: Upgrade 15.2 -> 16.1 | 16.1 | U |  | 2025-01-27
     - gdb: Upgrade 15.1 -> 15.2 | 15.2 | U |  | 2024-10-08
@@ -1558,7 +1491,7 @@
     - glslang: upgrade 11.6.0 -> 11.7.0 | 11.7.0 | U |  | 2021-11-15
     - glslang: update 11.5.0 -> 11.6.0 | 11.6.0 | U |  | 2021-10-11
     - Initial import at master release start. | 11.5.0 | U |  | 2021-09-21
-* gmp 6.3.0 6.3.0 Up-to-date
+* gmp 6.3.0  Unknown
     - gmp: upgrade 6.2.1 -> 6.3.0 | 6.3.0 | U |  | 2023-08-14
     - Initial import at master release start. | 6.2.1 | U |  | 2021-09-21
 * gnome-desktop-testing 2021.1 2021.1 Up-to-date
@@ -1623,13 +1556,6 @@
     - go: upgrade 1.24.5 -> 1.24.6 | 1.24.6 | U |  | 2025-08-14
     - go: upgrade 1.24.4 -> 1.24.5 | 1.24.5 | U |  | 2025-08-14
     - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | D |  | 2025-05-13
-    - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | D |  | 2025-05-13
     - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | U |  | 2025-05-13
     - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | U |  | 2025-05-13
     - go: upgrade 1.24.0 -> 1.24.1 | 1.24.1 | U |  | 2025-03-13
@@ -1685,13 +1611,6 @@
     - go: upgrade 1.24.5 -> 1.24.6 | 1.24.6 | U |  | 2025-08-14
     - go: upgrade 1.24.4 -> 1.24.5 | 1.24.5 | U |  | 2025-08-14
     - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | D |  | 2025-05-13
-    - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | D |  | 2025-05-13
     - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | U |  | 2025-05-13
     - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | U |  | 2025-05-13
     - go: upgrade 1.24.0 -> 1.24.1 | 1.24.1 | U |  | 2025-03-13
@@ -1743,17 +1662,10 @@
     - go: upgrade 1.16.8 -> 1.16.10 | 1.16.10 | U |  | 2021-11-24
     - go: upgrade 1.16.7 -> 1.16.8 | 1.16.8 | U |  | 2021-10-11
     - Initial import at master release start. | 1.16.7 | U |  | 2021-09-21
-* go-cross-canadian-i686 1.24.6 1.25.0 Not updated
+* go-cross-canadian-x86-64 1.24.6 1.25.0 Not updated
     - go: upgrade 1.24.5 -> 1.24.6 | 1.24.6 | U |  | 2025-08-14
     - go: upgrade 1.24.4 -> 1.24.5 | 1.24.5 | U |  | 2025-08-14
     - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | D |  | 2025-05-13
-    - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | D |  | 2025-05-13
     - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | U |  | 2025-05-13
     - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | U |  | 2025-05-13
     - go: upgrade 1.24.0 -> 1.24.1 | 1.24.1 | U |  | 2025-03-13
@@ -1805,17 +1717,10 @@
     - go: upgrade 1.16.8 -> 1.16.10 | 1.16.10 | U |  | 2021-11-24
     - go: upgrade 1.16.7 -> 1.16.8 | 1.16.8 | U |  | 2021-10-11
     - Initial import at master release start. | 1.16.7 | U |  | 2021-09-21
-* go-cross-core2-32 1.24.6 1.25.0 Not updated
+* go-cross-core2-64 1.24.6 1.25.0 Not updated
     - go: upgrade 1.24.5 -> 1.24.6 | 1.24.6 | U |  | 2025-08-14
     - go: upgrade 1.24.4 -> 1.24.5 | 1.24.5 | U |  | 2025-08-14
     - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | D |  | 2025-05-13
-    - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | D |  | 2025-05-13
     - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | U |  | 2025-05-13
     - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | U |  | 2025-05-13
     - go: upgrade 1.24.0 -> 1.24.1 | 1.24.1 | U |  | 2025-03-13
@@ -1871,13 +1776,6 @@
     - go: upgrade 1.24.5 -> 1.24.6 | 1.24.6 | U |  | 2025-08-14
     - go: upgrade 1.24.4 -> 1.24.5 | 1.24.5 | U |  | 2025-08-14
     - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | D |  | 2025-05-13
-    - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | D |  | 2025-05-13
     - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | U |  | 2025-05-13
     - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | U |  | 2025-05-13
     - go: upgrade 1.24.0 -> 1.24.1 | 1.24.1 | U |  | 2025-03-13
@@ -1935,13 +1833,6 @@
     - go: upgrade 1.24.5 -> 1.24.6 | 1.24.6 | U |  | 2025-08-14
     - go: upgrade 1.24.4 -> 1.24.5 | 1.24.5 | U |  | 2025-08-14
     - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - go: upgrade 1.24.3 -> 1.24.4 | 1.24.4 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 1.24.3 | D |  | 2025-06-03
-    - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | D |  | 2025-05-13
-    - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | D |  | 2025-05-13
     - go: upgrade 1.24.2 -> 1.24.3 | 1.24.3 | U |  | 2025-05-13
     - go: upgrade 1.24.1 -> 1.24.2 | 1.24.2 | U |  | 2025-05-13
     - go: upgrade 1.24.0 -> 1.24.1 | 1.24.1 | U |  | 2025-03-13
@@ -2478,7 +2369,7 @@
     - Initial import at master release start. | 2.1 | U |  | 2021-09-21
 * init-ifupdown 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
-* init-system-helpers 1.68 1.68 Up-to-date
+* init-system-helpers 1.68 1.69 Not updated
     - init-system-helpers: upgrade 1.67 -> 1.68 | 1.68 | U |  | 2025-01-02
     - init-system-helpers: upgrade 1.66 -> 1.67 | 1.67 | U |  | 2024-09-30
     - init-system-helpers: upgrade 1.65.2 -> 1.66 | 1.66 | U |  | 2023-12-02
@@ -2599,7 +2490,6 @@
     - Initial import at master release start. | 2.4.0 | U |  | 2021-09-21
 * kea 2.6.3 3.0.0 Not updated
     - kea: upgrade 2.6.1 -> 2.6.3 | 2.6.3 | U |  | 2025-06-16
-    - kea: upgrade 2.6.1 -> 2.6.3 | 2.6.3 | U |  | 2025-06-16
     - kea: upgrade 2.4.1 -> 2.6.1 | 2.6.1 | U |  | 2024-08-07
     - kea: upgrade 2.4.0 -> 2.4.1 | 2.4.1 | U |  | 2023-12-23
     - kea: upgrade to v2.4.0 | 2.4.0 | U |  | 2023-08-14
@@ -2682,7 +2572,6 @@
     - Initial import at master release start. | 0.3.112 | U |  | 2021-09-21
 * libarchive 3.7.9 3.8.1 Not updated
     - libarchive: upgrade 3.7.8 -> 3.7.9 | 3.7.9 | U |  | 2025-05-27
-    - libarchive: upgrade 3.7.8 -> 3.7.9 | 3.7.9 | U |  | 2025-05-27
     - libarchive: upgrade 3.7.7 -> 3.7.8 | 3.7.8 | U |  | 2025-03-25
     - libarchive: upgrade 3.7.6 -> 3.7.7 | 3.7.7 | U |  | 2024-10-29
     - libarchive: upgrade 3.7.4 -> 3.7.6 | 3.7.6 | U |  | 2024-10-01
@@ -2755,7 +2644,7 @@
     - Initial import at master release start. | 2.0 | U |  | 2021-09-21
 * libcheck 0.15.2 0.15.2 Up-to-date
     - Initial import at master release start. | 0.15.2 | U |  | 2021-09-21
-* libcomps 0.1.21 0.1.21 Up-to-date
+* libcomps 0.1.21 0.1.22 Not updated
     - libcomps: upgrade 0.1.20 -> 0.1.21 | 0.1.21 | U |  | 2024-04-16
     - libcomps: upgrade 0.1.19 -> 0.1.20 | 0.1.20 | U |  | 2023-10-19
     - libcomps: upgrade 0.1.18 -> 0.1.19 | 0.1.19 | U |  | 2022-09-17
@@ -2856,17 +2745,6 @@
     - Initial import at master release start. | 1.1.4 | U |  | 2021-09-21
 * libgcc 14.3.0 14.3.0 Up-to-date
     - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - gcc: fix incorrect preprocessor line numbers in large files | 14.2.0 | D |  | 2025-05-27
-    - gcc: Fix LDRD register overlap in register-indexed mode | 14.2.0 | D |  | 2025-05-21
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
     - gcc: Upgrade to GCC 14.2 | 14.2.0 | U |  | 2024-08-08
     - gcc: Upgrade to GCC 14.1 release | 14.1.0 | U |  | 2024-05-21
     - gcc: Upgrade to 13.2 release | 13.2.0 | U |  | 2023-07-30
@@ -2878,17 +2756,6 @@
     - Initial import at master release start. | 11.2.0 | U |  | 2021-09-21
 * libgcc-initial 14.3.0 14.3.0 Up-to-date
     - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - gcc: fix incorrect preprocessor line numbers in large files | 14.2.0 | D |  | 2025-05-27
-    - gcc: Fix LDRD register overlap in register-indexed mode | 14.2.0 | D |  | 2025-05-21
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
     - gcc: Upgrade to GCC 14.2 | 14.2.0 | U |  | 2024-08-08
     - gcc: Upgrade to GCC 14.1 release | 14.1.0 | U |  | 2024-05-21
     - gcc: Upgrade to 13.2 release | 13.2.0 | U |  | 2023-07-30
@@ -2907,17 +2774,6 @@
     - Initial import at master release start. | 1.9.3 | U |  | 2021-09-21
 * libgfortran 14.3.0 14.3.0 Up-to-date
     - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - gcc: Upgrade to GCC 14.3 | 14.3.0 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 14.2.0 | D |  | 2025-06-03
-    - gcc: fix incorrect preprocessor line numbers in large files | 14.2.0 | D |  | 2025-05-27
-    - gcc: Fix LDRD register overlap in register-indexed mode | 14.2.0 | D |  | 2025-05-21
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
-    - gcc-configure-common.inc: add multlib support for i686/i586/x86_64 nativesdk gcc | 14.2.0 | D |  | 2025-04-14
     - gcc: Upgrade to GCC 14.2 | 14.2.0 | U |  | 2024-08-08
     - gcc: Upgrade to GCC 14.1 release | 14.1.0 | U |  | 2024-05-21
     - gcc: Upgrade to 13.2 release | 13.2.0 | U |  | 2023-07-30
@@ -3043,12 +2899,11 @@
     - libksba: update 1.6.2 -> 1.6.3 | 1.6.3 | U |  | 2023-01-06
     - libksba: upgrade 1.6.0 -> 1.6.2 | 1.6.2 | U |  | 2022-10-26
     - Initial import at master release start. | 1.6.0 | U |  | 2021-09-21
-* libmatchbox 1.14 1.14 Up-to-date
-    - libmatchbox: upgrade 1.13 -> 1.14 | 1.14 | U |  | 2025-05-27
+* libmatchbox 1.14  Unknown
     - libmatchbox: upgrade 1.13 -> 1.14 | 1.14 | U |  | 2025-05-27
     - libmatchbox: Upgrade 1.12 -> 1.13 | 1.13 | U |  | 2025-03-20
     - Initial import at master release start. | 1.12 | U |  | 2021-09-21
-* libmd 1.1.0  Unknown
+* libmd 1.1.0 1.1.0 Up-to-date
     - libmd: upgrade 1.0.4 -> 1.1.0 | 1.1.0 | U |  | 2023-06-28
     - libmd: upgrade 1.0.3 -> 1.0.4 | 1.0.4 | U |  | 2021-10-23
     - Initial import at master release start. | 1.0.3 | U |  | 2021-09-21
@@ -3288,7 +3143,6 @@
     - libsolv: upgrade 0.7.19 -> 0.7.20 | 0.7.20 | U |  | 2021-10-16
     - Initial import at master release start. | 0.7.19 | U |  | 2021-09-21
 * libsoup 3.6.5 3.6.5 Up-to-date
-    - libsoup: upgrade 3.6.4 -> 3.6.5 | 3.6.5 | U |  | 2025-06-09
     - libsoup: upgrade 3.6.4 -> 3.6.5 | 3.6.5 | U |  | 2025-06-09
     - libsoup: upgrade 3.6.1 -> 3.6.4 | 3.6.4 | U |  | 2025-02-03
     - libsoup: upgrade 3.6.0 -> 3.6.1 | 3.6.1 | U |  | 2024-11-27
@@ -3648,7 +3502,6 @@
     - Initial import at master release start. | 2.25 | U |  | 2021-09-21
 * libxml2 2.13.8 2.14.5 Not updated
     - libxml2: upgrade 2.13.6 -> 2.13.8 | 2.13.8 | U |  | 2025-05-21
-    - libxml2: upgrade 2.13.6 -> 2.13.8 | 2.13.8 | U |  | 2025-05-21
     - libxml2: upgrade 2.13.5 -> 2.13.6 | 2.13.6 | U |  | 2025-02-20
     - libxml2: upgrade 2.13.4 -> 2.13.5 | 2.13.5 | U |  | 2024-11-19
     - libxml2: upgrade 2.13.3 -> 2.13.4 | 2.13.4 | U |  | 2024-10-18
@@ -3732,7 +3585,7 @@
     - Initial import at master release start. | 1.1.4 | U |  | 2021-09-21
 * libyaml 0.2.5 0.2.5 Up-to-date
     - Initial import at master release start. | 0.2.5 | U |  | 2021-09-21
-* lighttpd 1.4.77 1.4.80 Not updated
+* lighttpd 1.4.77 1.4.81 Not updated
     - lighttpd: upgrade 1.4.76 -> 1.4.77 | 1.4.77 | U |  | 2025-02-03
     - lighttpd: upgrade 1.4.75 -> 1.4.76 | 1.4.76 | U |  | 2024-04-25
     - lighttpd: upgrade 1.4.74 -> 1.4.75 | 1.4.75 | U |  | 2024-04-16
@@ -3785,7 +3638,7 @@
     - linux-firmware: upgrade 20210919 -> 20211027 | 20211027 | U |  | 2021-11-03
     - linux-firmware: upgrade 20210818 -> 20210919 | 20210919 | U |  | 2021-10-23
     - Initial import at master release start. | 20210818 | U |  | 2021-09-21
-* linux-libc-headers 6.12 6.16 Can't be updated
+* linux-libc-headers 6.12 6.16.1 Can't be updated
     - linux-libc-headers: update to v6.12 | 6.12 | U |  | 2024-11-22
     - linux-libc-headers: update to v6.10 | 6.10 | U |  | 2024-08-03
     - linux-libc-headers: bump to v6.9 | 6.9 | U |  | 2024-05-31
@@ -3803,30 +3656,14 @@
     - linux/cve-exclusion: Execute the script after changing to the new data source | 6.12.30+git | U |  | 2025-07-01
     - Revert "Revert "kernel: drop 6.6 reference kernels"" | 6.6.74+git | N |  | 2025-06-30
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - linux-yocto/6.12: update to v6.12.30 | 6.12.30+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.29 | 6.12.29+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.28 | 6.12.28+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.27 | 6.12.27+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.25 | 6.12.25+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.24 | 6.12.24+git | D |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.30 | 6.12.30+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.29 | 6.12.29+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.28 | 6.12.28+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.27 | 6.12.27+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.25 | 6.12.25+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.24 | 6.12.24+git | U |  | 2025-05-29
-    - linux-yocto/6.12: cfg: fix iommu configuration for -tiny kernel | 6.12.23+git | D |  | 2025-04-23
-    - linux-yocto/6.12: cfg: Include iommu.scc for Arrowlake boot support | 6.12.23+git | D |  | 2025-04-23
-    - linux-yocto/6.12: update to v6.12.23 | 6.12.23+git | D |  | 2025-04-23
     - linux-yocto/6.12: update to v6.12.23 | 6.12.23+git | U |  | 2025-04-23
-    - linux-yocto/6.12: update to v6.12.22 | 6.12.22+git | D |  | 2025-04-23
-    - linux-yocto/6.12: config: add pmem to genericarm64 | 6.12.19+git | D |  | 2025-04-23
     - linux-yocto/6.12: update to v6.12.22 | 6.12.22+git | U |  | 2025-04-23
-    - mips: Add '-std=gnu11' to vdso CFLAGS | 6.12.19+git | D |  | 2025-04-23
-    - Revert "kernel: drop 6.6 reference kernels" | 6.12.19+git | D |  | 2025-04-14
     - linux-yocto/6.12: update to v6.12.19 | 6.12.19+git | U |  | 2025-03-20
     - linux-yocto/6.12: update to v6.12.18 | 6.12.18+git | U |  | 2025-03-20
     - linux-yocto/6.12: update to v6.12.17 | 6.12.17+git | U |  | 2025-03-20
@@ -4178,30 +4015,14 @@
     - linux/cve-exclusion: Execute the script after changing to the new data source | 6.12.30+git | U |  | 2025-07-01
     - Revert "Revert "kernel: drop 6.6 reference kernels"" | 6.6.74+git | N |  | 2025-06-30
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - linux-yocto/6.12: update to v6.12.30 | 6.12.30+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.29 | 6.12.29+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.28 | 6.12.28+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.27 | 6.12.27+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.25 | 6.12.25+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.24 | 6.12.24+git | D |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.30 | 6.12.30+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.29 | 6.12.29+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.28 | 6.12.28+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.27 | 6.12.27+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.25 | 6.12.25+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.24 | 6.12.24+git | U |  | 2025-05-29
-    - linux-yocto/6.12: cfg: fix iommu configuration for -tiny kernel | 6.12.23+git | D |  | 2025-04-23
-    - linux-yocto/6.12: cfg: Include iommu.scc for Arrowlake boot support | 6.12.23+git | D |  | 2025-04-23
-    - linux-yocto/6.12: update to v6.12.23 | 6.12.23+git | D |  | 2025-04-23
     - linux-yocto/6.12: update to v6.12.23 | 6.12.23+git | U |  | 2025-04-23
-    - linux-yocto/6.12: update to v6.12.22 | 6.12.22+git | D |  | 2025-04-23
-    - linux-yocto/6.12: config: add pmem to genericarm64 | 6.12.19+git | D |  | 2025-04-23
     - linux-yocto/6.12: update to v6.12.22 | 6.12.22+git | U |  | 2025-04-23
-    - mips: Add '-std=gnu11' to vdso CFLAGS | 6.12.19+git | D |  | 2025-04-23
-    - Revert "kernel: drop 6.6 reference kernels" | 6.12.19+git | D |  | 2025-04-14
     - linux-yocto/6.12: update to v6.12.19 | 6.12.19+git | U |  | 2025-03-20
     - linux-yocto/6.12: update to v6.12.18 | 6.12.18+git | U |  | 2025-03-20
     - linux-yocto/6.12: update to v6.12.17 | 6.12.17+git | U |  | 2025-03-20
@@ -4535,30 +4356,14 @@
     - linux/cve-exclusion: Execute the script after changing to the new data source | 6.12.30+git | U |  | 2025-07-01
     - Revert "Revert "kernel: drop 6.6 reference kernels"" | 6.6.74+git | N |  | 2025-06-30
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 6.12.23+git | D |  | 2025-06-03
-    - linux-yocto/6.12: update to v6.12.30 | 6.12.30+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.29 | 6.12.29+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.28 | 6.12.28+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.27 | 6.12.27+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.25 | 6.12.25+git | U |  | 2025-05-29
-    - linux-yocto/6.12: update to v6.12.24 | 6.12.24+git | D |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.30 | 6.12.30+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.29 | 6.12.29+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.28 | 6.12.28+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.27 | 6.12.27+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.25 | 6.12.25+git | U |  | 2025-05-29
     - linux-yocto/6.12: update to v6.12.24 | 6.12.24+git | U |  | 2025-05-29
-    - linux-yocto/6.12: cfg: fix iommu configuration for -tiny kernel | 6.12.23+git | D |  | 2025-04-23
-    - linux-yocto/6.12: cfg: Include iommu.scc for Arrowlake boot support | 6.12.23+git | D |  | 2025-04-23
-    - linux-yocto/6.12: update to v6.12.23 | 6.12.23+git | D |  | 2025-04-23
     - linux-yocto/6.12: update to v6.12.23 | 6.12.23+git | U |  | 2025-04-23
-    - linux-yocto/6.12: update to v6.12.22 | 6.12.22+git | D |  | 2025-04-23
-    - linux-yocto/6.12: config: add pmem to genericarm64 | 6.12.19+git | D |  | 2025-04-23
     - linux-yocto/6.12: update to v6.12.22 | 6.12.22+git | U |  | 2025-04-23
-    - mips: Add '-std=gnu11' to vdso CFLAGS | 6.12.19+git | D |  | 2025-04-23
-    - Revert "kernel: drop 6.6 reference kernels" | 6.12.19+git | D |  | 2025-04-14
     - linux-yocto/6.12: update to v6.12.19 | 6.12.19+git | U |  | 2025-03-20
     - linux-yocto/6.12: update to v6.12.18 | 6.12.18+git | U |  | 2025-03-20
     - linux-yocto/6.12: update to v6.12.17 | 6.12.17+git | U |  | 2025-03-20
@@ -4961,10 +4766,6 @@
     - Initial import at master release start. | 20210524 | U |  | 2021-09-21
 * lttng-modules 2.13.0+git 2.14.0 Not updated
     - lttng: local fix which is squashed from previous commits | 2.13.0+git | D |  | 2025-04-14
-    - lttng: local fix which is squashed from previous commits | 2.13.0+git | D |  | 2025-04-14
-    - lttng: local fix which is squashed from previous commits | 2.13.0+git | D |  | 2025-04-14
-    - lttng: local fix which is squashed from previous commits | 2.13.0+git | D |  | 2025-04-14
-    - lttng: local fix which is squashed from previous commits | 2.13.0+git | D |  | 2025-04-14
     - lttng-modules: Upgrade 2.13.16 -> 2.13.17 | 2.13.17 | U |  | 2025-03-17
     - lttng-modules: Upgrade 2.13.15 -> 2.13.16 | 2.13.16 | U |  | 2024-12-17
     - lttng-modules: Upgrade 2.13.14 -> 2.13.15 | 2.13.15 | U |  | 2024-10-22
@@ -5043,7 +4844,6 @@
 * makedevs 1.0.1 1.0.1 Up-to-date
     - Initial import at master release start. | 1.0.1 | U |  | 2021-09-21
 * makedumpfile 1.7.7 1.7.7 Up-to-date
-    - makedumpfile: upgrade 1.7.6 -> 1.7.7 | 1.7.7 | U |  | 2025-05-21
     - makedumpfile: upgrade 1.7.6 -> 1.7.7 | 1.7.7 | U |  | 2025-05-21
     - makedumpfile: upgrade 1.7.5 -> 1.7.6 | 1.7.6 | U |  | 2024-11-18
     - makedumpfile: import 1.7.5 from meta-openembedded | 1.7.5 | U |  | 2024-10-15
@@ -5228,9 +5028,9 @@
     - meson: update 0.59.1 -> 0.59.2 | 0.59.2 | U |  | 2021-10-23
     - meson: update 0.58.1 -> 0.59.1 | 0.59.1 | U |  | 2021-10-11
     - Initial import at master release start. | 0.58.1 | U |  | 2021-09-21
-* meta-environment-extsdk-qemux86 1.0 1.0 Up-to-date
+* meta-environment-extsdk-qemux86-64 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
-* meta-environment-qemux86 1.0 1.0 Up-to-date
+* meta-environment-qemux86-64 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
 * meta-extsdk-toolchain 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
@@ -5636,13 +5436,13 @@
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
 * packagegroup-core-x11-xserver 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
-* packagegroup-cross-canadian-qemux86 1.0 1.0 Up-to-date
+* packagegroup-cross-canadian-qemux86-64 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
-* packagegroup-go-cross-canadian-qemux86 1.0 1.0 Up-to-date
+* packagegroup-go-cross-canadian-qemux86-64 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
 * packagegroup-go-sdk-target 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
-* packagegroup-rust-cross-canadian-qemux86 1.0 1.0 Up-to-date
+* packagegroup-rust-cross-canadian-qemux86-64 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
 * packagegroup-rust-sdk-target 1.0 1.0 Up-to-date
     - packagegroup-rust-sdk-target: Add Rust SDK target packagegroup | 1.0 | U |  | 2022-12-28
@@ -5703,7 +5503,6 @@
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
 * perl 5.40.2 5.42.0 Not updated
     - perl: upgrade 5.40.0 -> 5.40.2 | 5.40.2 | U |  | 2025-05-13
-    - perl: upgrade 5.40.0 -> 5.40.2 | 5.40.2 | U |  | 2025-05-13
     - perl: update 5.38.2 -> 5.40.0 | 5.40.0 | U |  | 2024-08-27
     - perl: 5.38.0 -> 5.38.2 | 5.38.2 | U |  | 2023-12-20
     - perl: update 5.36.1 -> 5.38.0 | 5.38.0 | U |  | 2023-09-07
@@ -5712,7 +5511,6 @@
     - perl: update 5.34.0 -> 5.34.1 | 5.34.1 | U |  | 2022-03-20
     - Initial import at master release start. | 5.34.0 | U |  | 2021-09-21
 * perlcross 1.6.2 1.6.2 Up-to-date
-    - perlcross: 1.6 -> 1.6.2 | 1.6.2 | U |  | 2025-05-13
     - perlcross: 1.6 -> 1.6.2 | 1.6.2 | U |  | 2025-05-13
     - perlcross: update 1.5.2 -> 1.6 | 1.6 | U |  | 2024-08-27
     - perlcross: update to 1.5.2 | 1.5.2 | U |  | 2023-12-20
@@ -5804,7 +5602,7 @@
     - Initial import at master release start. | 2.4.9 | U |  | 2021-09-21
 * ppp-dialin 0.1 0.1 Up-to-date
     - Initial import at master release start. | 0.1 | U |  | 2021-09-21
-* procps 4.0.5 4.0.5 Up-to-date
+* procps 4.0.5  Unknown
     - procps: update 4.0.4 -> 4.0.5 | 4.0.5 | U |  | 2025-01-14
     - procps: update 4.0.3 -> 4.0.4 | 4.0.4 | U |  | 2023-09-18
     - procps: update 3.3.17 -> 4.0.3 | 4.0.3 | U |  | 2023-03-11
@@ -5820,7 +5618,7 @@
     - pseudo: Add fcntl64 wrapper | 1.9.0+gitAUTOINC+d34f2f6ced | U |  | 2021-10-30
     - pseudo: Add in ability to flush database with shutdown request | 1.9.0+gitAUTOINC+0cda3ba5f9 | U |  | 2021-09-26
     - Initial import at master release start. | 1.9.0+gitAUTOINC+21ff2fb690 | U |  | 2021-09-21
-* psmisc 23.7 23.7 Up-to-date
+* psmisc 23.7  Unknown
     - psmisc: upgrade 23.6 -> 23.7 | 23.7 | U |  | 2024-04-16
     - psmisc: upgrade 23.5 -> 23.6 | 23.6 | U |  | 2022-12-22
     - psmisc: upgrade 23.4 -> 23.5 | 23.5 | U |  | 2022-05-20
@@ -5867,9 +5665,6 @@
     - puzzles: upgrade to latest revision | 0.0+gitAUTOINC+42cbd7688a | U |  | 2021-10-23
     - Initial import at master release start. | 0.0+gitAUTOINC+8f3413c31f | U |  | 2021-09-21
 * python3 3.13.4 3.13.7 Not updated
-    - python3: upgrade 3.13.3 -> 3.13.4 | 3.13.4 | U |  | 2025-06-09
-    - python3: upgrade 3.13.2 -> 3.13.3 | 3.13.3 | U |  | 2025-06-09
-    - python3: remove obsolete deletion of non-deterministic .pyc files | 3.13.2 | D |  | 2025-06-09
     - python3: upgrade 3.13.3 -> 3.13.4 | 3.13.4 | U |  | 2025-06-09
     - python3: upgrade 3.13.2 -> 3.13.3 | 3.13.3 | U |  | 2025-06-09
     - python3: upgrade 3.13.1 -> 3.13.2 | 3.13.2 | U |  | 2025-02-11
@@ -6198,7 +5993,7 @@
     - python3-hatchling: upgrade 1.3.1 -> 1.5.0 | 1.5.0 | U |  | 2022-07-12
     - python3-hatchling: upgrade 1.3.0 -> 1.3.1 | 1.3.1 | U |  | 2022-07-07
     - Add python3-hatchling (from meta-oe) | 1.3.0 | U |  | 2022-06-22
-* python3-hypothesis 6.129.2 6.138.0 Not updated
+* python3-hypothesis 6.129.2 6.138.2 Not updated
     - python3-hypothesis: upgrade 6.127.4 -> 6.129.2 | 6.129.2 | U |  | 2025-03-17
     - python3-hypothesis: upgrade 6.125.3 -> 6.127.4 | 6.127.4 | U |  | 2025-03-06
     - python3-hypothesis: upgrade 6.124.7 -> 6.125.3 | 6.125.3 | U |  | 2025-02-18
@@ -6755,12 +6550,6 @@
     - python3-jsonschema: upgrade 4.17.3 -> 4.21.1 and add new dependencies | 0.33.0 | U |  | 2024-03-06
 * python3-requests 2.32.4 2.32.4 Up-to-date
     - python3-requests: upgrade 2.32.3 -> 2.32.4 | 2.32.4 | U |  | 2025-06-16
-    - python3-requests: upgrade 2.32.3 -> 2.32.4 | 2.32.4 | U |  | 2025-06-16
-    - buildtools-tarball: move setting of envvars to respective envfile | 2.32.3 | D |  | 2025-05-23
-    - buildtools-tarball: move setting of envvars to respective envfile | 2.32.3 | D |  | 2025-05-23
-    - buildtools-tarball: move setting of envvars to respective envfile | 2.32.3 | D |  | 2025-05-23
-    - buildtools-tarball: move setting of envvars to respective envfile | 2.32.3 | D |  | 2025-05-23
-    - buildtools-tarball: move setting of envvars to respective envfile | 2.32.3 | D |  | 2025-05-08
     - python3-requests: upgrade 2.32.1 -> 2.32.3 | 2.32.3 | U |  | 2024-06-12
     - python3-requests: upgrade 2.31.0 -> 2.32.1 | 2.32.1 | U |  | 2024-05-23
     - python3-requests: upgrade 2.30.0 -> 2.31.0 | 2.31.0 | U |  | 2023-06-02
@@ -6866,7 +6655,7 @@
     - python3-setuptools-rust: update 1.4.1 -> 1.5.1 | 1.5.1 | U |  | 2022-08-21
     - python3-setuptools-rust: upgrade 1.3.0 -> 1.4.1 | 1.4.1 | U |  | 2022-07-23
     - python3-setuptools-rust: update 1.1.2 -> 1.3.0 | 1.3.0 | U |  | 2022-05-20
-* python3-setuptools-scm 8.2.0 9.1.1 Not updated
+* python3-setuptools-scm 8.2.0 9.2.0 Not updated
     - python3-setuptools-scm: upgrade 8.1.0 -> 8.2.0 | 8.2.0 | U |  | 2025-02-27
     - python3-setuptools-scm: upgrade 8.0.4 -> 8.1.0 | 8.1.0 | U |  | 2024-05-23
     - python3-setuptools-scm: upgrade 7.1.0 -> 8.0.4 | 8.0.4 | U |  | 2023-11-20
@@ -7281,7 +7070,6 @@
 * ruby 3.4.4 3.4.5 Not updated
     - ruby: upgrade 3.4.3 -> 3.4.4 | 3.4.4 | U |  | 2025-08-04
     - ruby: upgrade 3.4.2 -> 3.4.3 | 3.4.3 | U |  | 2025-05-21
-    - ruby: upgrade 3.4.2 -> 3.4.3 | 3.4.3 | U |  | 2025-05-21
     - ruby: upgrade 3.4.1 -> 3.4.2 | 3.4.2 | U |  | 2025-02-18
     - ruby: update 3.3.6 -> 3.4.1 | 3.4.1 | U |  | 2025-01-10
     - ruby: upgrade 3.3.5 -> 3.3.6 | 3.3.6 | U |  | 2024-11-18
@@ -7342,7 +7130,7 @@
     - rust: Upgrade to 1.56.0 | 1.56.0 | U |  | 2021-10-23
     - rust: update 1.54.0 -> 1.55.0 | 1.55.0 | U |  | 2021-10-14
     - Initial import at master release start. | 1.54.0 | U |  | 2021-09-21
-* rust-cross-canadian-i686 1.84.1 1.84.1 Up-to-date
+* rust-cross-canadian-x86-64 1.84.1 1.84.1 Up-to-date
     - rust: Upgrade 1.83.0->1.84.1 | 1.84.1 | U |  | 2025-03-27
     - rust: Upgrade 1.82.0->1.83.0 | 1.83.0 | U |  | 2025-03-05
     - rust: Upgrade 1.81.0->1.82.0 | 1.82.0 | U |  | 2025-02-20
@@ -7741,21 +7529,9 @@
     - sysstat: upgrade 12.4.4 -> 12.4.5 | 12.4.5 | U |  | 2022-03-02
     - sysstat: upgrade 12.4.3 -> 12.4.4 | 12.4.4 | U |  | 2021-12-08
     - Initial import at master release start. | 12.4.3 | U |  | 2021-09-21
-* systemd 257.6 257.8 Not updated
-    - systemd: upgrade 257.5 -> 257.6 | 257.6 | U |  | 2025-06-16
-    - systemd: upgrade 257.4 -> 257.5 | 257.5 | D |  | 2025-06-16
+* systemd 257.6  Unknown
     - systemd: upgrade 257.5 -> 257.6 | 257.6 | U |  | 2025-06-16
     - systemd: upgrade 257.4 -> 257.5 | 257.5 | U |  | 2025-06-16
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 257.4 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 257.4 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 257.4 | D |  | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 257.4 | D |  | 2025-06-03
-    - systemd: always depend on the explicit serial console units | 257.4 | D |  | 2025-04-23
-    - systemd: enable getty generator by default | 257.4 | D |  | 2025-04-23
-    - systemd: check SERIAL_CONSOLES for serial-getty-generator PACKAGECONFIG | 257.4 | D |  | 2025-04-14
-    - systemd: check SERIAL_CONSOLES for serial-getty-generator PACKAGECONFIG | 257.4 | D |  | 2025-04-14
-    - systemd: check SERIAL_CONSOLES for serial-getty-generator PACKAGECONFIG | 257.4 | D |  | 2025-04-14
-    - systemd: check SERIAL_CONSOLES for serial-getty-generator PACKAGECONFIG | 257.4 | D |  | 2025-04-14
     - systemd: upgrade 257.3 -> 257.4 | 257.4 | U |  | 2025-03-19
     - systemd/systemd-boot: upgrade from 257.1 to 257.3 | 257.3 | U |  | 2025-02-17
     - systemd: upgrade 257 -> 257.1 | 257.1 | U |  | 2025-01-03
@@ -7790,9 +7566,7 @@
     - systemd: update 249.4 -> 249.5 | 249.5 | U |  | 2021-10-23
     - systemd: update 249.3 -> 249.4 | 249.4 | U |  | 2021-10-11
     - Initial import at master release start. | 249.3 | U |  | 2021-09-21
-* systemd-boot 257.6 257.8 Not updated
-    - systemd: upgrade 257.5 -> 257.6 | 257.6 | U |  | 2025-06-16
-    - systemd: upgrade 257.4 -> 257.5 | 257.5 | D |  | 2025-06-16
+* systemd-boot 257.6  Unknown
     - systemd: upgrade 257.5 -> 257.6 | 257.6 | U |  | 2025-06-16
     - systemd: upgrade 257.4 -> 257.5 | 257.5 | U |  | 2025-06-16
     - systemd: upgrade 257.3 -> 257.4 | 257.4 | U |  | 2025-03-19
@@ -7829,9 +7603,7 @@
     - systemd: update 249.4 -> 249.5 | 249.5 | U |  | 2021-10-23
     - systemd: update 249.3 -> 249.4 | 249.4 | U |  | 2021-10-11
     - Initial import at master release start. | 249.3 | U |  | 2021-09-21
-* systemd-boot-native 257.6 257.8 Not updated
-    - systemd: upgrade 257.5 -> 257.6 | 257.6 | U |  | 2025-06-16
-    - systemd: upgrade 257.4 -> 257.5 | 257.5 | D |  | 2025-06-16
+* systemd-boot-native 257.6  Unknown
     - systemd: upgrade 257.5 -> 257.6 | 257.6 | U |  | 2025-06-16
     - systemd: upgrade 257.4 -> 257.5 | 257.5 | U |  | 2025-06-16
     - systemd: upgrade 257.3 -> 257.4 | 257.4 | U |  | 2025-03-19
@@ -7861,9 +7633,7 @@
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
 * systemd-serialgetty 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U |  | 2021-09-21
-* systemd-systemctl-native 257.6 257.8 Not updated
-    - systemd: upgrade 257.5 -> 257.6 | 257.6 | U |  | 2025-06-16
-    - systemd: upgrade 257.4 -> 257.5 | 257.5 | D |  | 2025-06-16
+* systemd-systemctl-native 257.6  Unknown
     - systemd: upgrade 257.5 -> 257.6 | 257.6 | U |  | 2025-06-16
     - systemd: upgrade 257.4 -> 257.5 | 257.5 | U |  | 2025-06-16
     - systemd: upgrade 257.3 -> 257.4 | 257.4 | U |  | 2025-03-19
@@ -7921,7 +7691,7 @@
     - tcl: update 8.6.13 -> 8.6.14 | 8.6.14 | U |  | 2024-04-16
     - tcl: update 8.6.12 -> 8.6.13 | 8.6.13 | U |  | 2022-12-18
     - Initial import at master release start. | 8.6.11 | U |  | 2021-09-21
-* tcl8 8.6.16 8.6.16 Up-to-date
+* tcl8 8.6.16 8.6.17 Not updated
     - tcl8: upgrade 8.6.15 -> 8.6.16 | 8.6.16 | U |  | 2025-01-10
     - tcl8: re-add tcl 8 to support building expect | 8.6.15 | U |  | 2024-11-12
 * tcp-wrappers 7.6 7.6 Up-to-date
@@ -7961,7 +7731,6 @@
     - ttyrun: add new recipe | 2.29.0 | U |  | 2023-10-09
 * tzcode-native 2025b 2025b Up-to-date
     - tzdata/tzcode-native: upgrade 2025a -> 2025b | 2025b | U |  | 2025-05-08
-    - tzdata/tzcode-native: upgrade 2025a -> 2025b | 2025b | U |  | 2025-05-08
     - tzdata/tzcode-native: upgrade 2024b -> 2025a | 2025a | U |  | 2025-01-29
     - tzdata/tzcode-native: upgrade 2024a -> 2024b | 2024b | U |  | 2024-11-05
     - tzdata : Upgrade to 2024a | 2024a | U |  | 2024-02-15
@@ -7976,7 +7745,6 @@
     - tzdata: upgrade 2021a -> 2021d | 2021d | U |  | 2021-10-23
     - Initial import at master release start. | 2021a | U |  | 2021-09-21
 * tzdata 2025b 2025b Up-to-date
-    - tzdata/tzcode-native: upgrade 2025a -> 2025b | 2025b | U |  | 2025-05-08
     - tzdata/tzcode-native: upgrade 2025a -> 2025b | 2025b | U |  | 2025-05-08
     - tzdata/tzcode-native: upgrade 2024b -> 2025a | 2025a | U |  | 2025-01-29
     - tzdata/tzcode-native: upgrade 2024a -> 2024b | 2024b | U |  | 2024-11-05
@@ -8357,8 +8125,6 @@
 * webkitgtk 2.48.2 2.48.5 Not updated
     - webkitgtk: upgrade 2.48.1 -> 2.48.2 | 2.48.2 | U |  | 2025-08-04
     - webkitgtk: upgrade 2.48.0 -> 2.48.1 | 2.48.1 | U |  | 2025-05-13
-    - webkitgtk: upgrade 2.48.0 -> 2.48.1 | 2.48.1 | U |  | 2025-05-13
-    - webkitgtk: Use WTF_CPU_UNKNOWN when building for riscv64 | 2.48.0 | D |  | 2025-05-08
     - webkitgtk: 2.46.6 -> 2.48.0 | 2.48.0 | U |  | 2025-03-19
     - webkitgtk: upgrade 2.46.5 -> 2.46.6 | 2.46.6 | U |  | 2025-02-17
     - webkitgtk: upgrade 2.46.4 -> 2.46.5 | 2.46.5 | U |  | 2024-12-24

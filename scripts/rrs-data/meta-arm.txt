@@ -1,9 +1,72 @@
+* opencsd 1.5.6 1.6.1 Not updated
+    - arm/opencsd: update to v1.5.6 | 1.5.6 | U | Default | 2025-03-20
+    - arm/opencsd: update to 1.5.5 | 1.5.5 | U | Default | 2025-02-25
+    - arm/opencsd: update to 1.5.4 | 1.5.4 | U | Default | 2024-10-01
+    - arm/opencsd: update to 1.5.3 | 1.5.3 | U | Default | 2024-07-12
+    - arm/opencsd: update to 1.5.2 | 1.5.2 | U | Default | 2024-04-11
+    - arm/opencsd: update to v1.5.1 | 1.5.1 | U | Default | 2024-01-26
+    - arm/opencsd: update to 1.4.2 | 1.4.2 | U | Default | 2024-01-18
+    - arm/opencsd: update to v1.4.1 | 1.4.1 | U | Default | 2023-09-19
+    - arm/opencsd: update to v1.4.0 | 1.4.0 | U | Default | 2023-02-24
+    - arm/opencsd: update to version 1.3.1 | 1.3.1 | U | Default | 2022-11-02
+    - arm/opencsd: upgrade to 1.2.0 | 1.2.0 | U | Default | 2022-01-11
+    - Initial import at master release start. | 1.1.0 | U | Default | 2021-09-27
 * optee-client 4.3.0 4.7.0 Not updated
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
-* optee-examples 4.4.0 4.7.0 Not updated
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
+    - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
+    - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
+    - arm/optee: update to 4.3.0 | 4.3.0 | U | Default | 2024-10-01
+    - arm/optee: update to 4.2.0 | 4.2.0 | U | Default | 2024-05-07
+    - arm/optee: update to 4.1 | 4.1.0 | U | Default | 2024-01-26
+    - arm/optee: update to 4.0.0 | 4.0.0 | U | Default | 2023-10-30
+    - arm/optee: update to 3.22.0 | 3.22.0 | U | Default | 2023-07-17
+    - optee-os: deploy ta elf files | 3.18.0 | D | Default | 2023-07-02
+    - optee-os: add optional optee-os-ta package | 3.20.0 | U | Default | 2023-07-02
+    - optee-os: enable SPMC test | 3.18.0 | D | Default | 2023-06-06
+    - optee-client: add 3.20.0 version | 3.20.0 | U | Default | 2023-04-06
+    - optee-os-ts: avoid using escape chars in EXTRA_OEMAKE | 3.18.0 | U | Default | 2022-10-27
+    - arm/optee-client: move the 3.14 recipe to meta-arm-bsp | 3.14.0 | N | Default | 2022-09-21
+    - Include Trusted Services SPs into optee-os image | 3.18.0 | U | Default | 2022-08-31
+    - arm/optee-os: backport RWX permission error patch | 3.14.0 | D | Default | 2022-08-22
+    - arm/optee: update optee-client to v3.18 | 3.18.0 | U | Default | 2022-08-19
+    - arm-bsp/optee: add optee-os support for N1SDP target | 3.14.0 | D | Default | 2022-08-16
+    - arm/optee: Update to 3.18 | 3.17.0 | U | Default | 2022-08-15
+    - optee-os.inc: support multilib | 3.14.0 | D | Default | 2022-08-02
+    - arm/optee: support optee-os v3.18.0 | 3.17.0 | U | Default | 2022-07-29
+    - arm/optee: ignore buildpath warnings | 3.14.0 | D | Default | 2022-07-19
+    - arm/optee: update to v3.17 | 3.17.0 | U | Default | 2022-06-14
+    - optee: Pass HOST_CC_ARCH for locating compiler runtime | 3.14.0 | D | Default | 2022-05-10
+    - Add new target: "qemuarm-secureboot" | 3.16.0 | U | Default | 2022-05-06
+    - arm/optee: remove redundant ${S} in LIC_FILES_CHKSUM | 3.14.0 | D | Default | 2022-05-06
+    - arm/optee: Upgrade from 3.14 to 3.16 | 3.16.0 | U | Default | 2022-03-16
+    - Initial import at master release start. | 3.14.0 | U | Default | 2021-09-27
+* optee-examples 4.3.0 4.7.0 Not updated
+    - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
+    - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
+    - arm/optee: update to 4.3.0 | 4.3.0 | U | Default | 2024-10-01
+    - arm/optee: update to 4.2.0 | 4.2.0 | U | Default | 2024-05-07
+    - arm/optee: update to 4.1 | 4.1.0 | U | Default | 2024-01-26
+    - arm/optee: update to 4.0.0 | 4.0.0 | U | Default | 2023-10-30
+    - arm/optee: update to 3.22.0 | 3.22.0 | U | Default | 2023-07-17
+    - optee-os: deploy ta elf files | 3.18.0 | D | Default | 2023-07-02
+    - optee-os: add optional optee-os-ta package | 3.20.0 | U | Default | 2023-07-02
+    - optee-os: enable SPMC test | 3.18.0 | D | Default | 2023-06-06
+    - optee-examples: add 3.20.0 version | 3.20.0 | U | Default | 2023-04-06
+    - optee-os-ts: avoid using escape chars in EXTRA_OEMAKE | 3.18.0 | U | Default | 2022-10-27
+    - arm/optee: remove old versions | 3.14.0 | R | Default | 2022-09-21
+    - Include Trusted Services SPs into optee-os image | 3.14.0 | D | Default | 2022-08-31
+    - arm/optee-os: backport RWX permission error patch | 3.18.0 | U | Default | 2022-08-22
+    - arm-bsp/optee: add optee-os support for N1SDP target | 3.14.0 | D | Default | 2022-08-16
+    - arm/optee: Update to 3.18 | 3.18.0 | U | Default | 2022-08-15
+    - optee-os.inc: support multilib | 3.14.0 | D | Default | 2022-08-02
+    - arm/optee: support optee-os v3.18.0 | 3.17.0 | U | Default | 2022-07-29
+    - arm/optee: ignore buildpath warnings | 3.14.0 | D | Default | 2022-07-19
+    - arm/optee: update to v3.17 | 3.17.0 | U | Default | 2022-06-14
+    - optee: Pass HOST_CC_ARCH for locating compiler runtime | 3.16.0 | U | Default | 2022-05-10
+    - Add new target: "qemuarm-secureboot" | 3.14.0 | D | Default | 2022-05-06
+    - arm/optee: remove redundant ${S} in LIC_FILES_CHKSUM | 3.16.0 | U | Default | 2022-05-06
+    - arm/optee: Add optee 3.14 recipes | 3.14.0 | D | Default | 2022-05-04
+    - arm/optee: Upgrade from 3.14 to 3.16 | 3.16.0 | U | Default | 2022-03-16
+    - Initial import at master release start. | 3.14.0 | U | Default | 2021-09-27
 * optee-os 4.3.0 4.7.0 Not updated
     - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
     - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
@@ -34,12 +97,63 @@
     - arm/optee: remove redundant ${S} in LIC_FILES_CHKSUM | 3.14.0 | D | Default | 2022-05-06
     - arm/optee: Upgrade from 3.14 to 3.16 | 3.16.0 | U | Default | 2022-03-16
     - Initial import at master release start. | 3.14.0 | U | Default | 2021-09-27
-* optee-os-tadevkit 4.4.0 4.7.0 Not updated
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
+* optee-os-tadevkit 4.3.0 4.7.0 Not updated
+    - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
+    - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
+    - arm/optee: update to 4.3.0 | 4.3.0 | U | Default | 2024-10-01
+    - arm/optee: update to 4.2.0 | 4.2.0 | U | Default | 2024-05-07
+    - arm/optee: update to 4.1 | 4.1.0 | U | Default | 2024-01-26
+    - arm/optee: update to 4.0.0 | 4.0.0 | U | Default | 2023-10-30
+    - arm/optee: update to 3.22.0 | 3.22.0 | U | Default | 2023-07-17
+    - optee-os: deploy ta elf files | 3.18.0 | D | Default | 2023-07-02
+    - optee-os: add optional optee-os-ta package | 3.20.0 | U | Default | 2023-07-02
+    - optee-os: enable SPMC test | 3.18.0 | D | Default | 2023-06-06
+    - arm-bsp/optee: Update OP-TEE TA devkit to 3.20 for N1SDP | 3.20.0 | U | Default | 2023-04-03
+    - optee-os-ts: avoid using escape chars in EXTRA_OEMAKE | 3.18.0 | U | Default | 2022-10-27
+    - arm/optee: remove old versions | 3.14.0 | R | Default | 2022-09-21
+    - Include Trusted Services SPs into optee-os image | 3.14.0 | D | Default | 2022-08-31
+    - arm/optee-os: backport RWX permission error patch | 3.18.0 | U | Default | 2022-08-22
+    - arm-bsp/optee: add optee-os support for N1SDP target | 3.14.0 | D | Default | 2022-08-16
+    - arm/optee: Update to 3.18 | 3.18.0 | U | Default | 2022-08-15
+    - optee-os.inc: support multilib | 3.14.0 | D | Default | 2022-08-02
+    - arm/optee: support optee-os v3.18.0 | 3.17.0 | U | Default | 2022-07-29
+    - arm/optee: ignore buildpath warnings | 3.14.0 | D | Default | 2022-07-19
+    - arm/optee: update to v3.17 | 3.17.0 | U | Default | 2022-06-14
+    - optee: Pass HOST_CC_ARCH for locating compiler runtime | 3.16.0 | U | Default | 2022-05-10
+    - Add new target: "qemuarm-secureboot" | 3.14.0 | D | Default | 2022-05-06
+    - arm/optee: remove redundant ${S} in LIC_FILES_CHKSUM | 3.16.0 | U | Default | 2022-05-06
+    - arm/optee: Add optee 3.14 recipes | 3.14.0 | D | Default | 2022-05-04
+    - arm/optee: Upgrade from 3.14 to 3.16 | 3.16.0 | U | Default | 2022-03-16
+    - optee: update optee-os.inc to support external TAs | 3.14.0 | U | Default | 2021-11-19
 * optee-test 4.3.0 4.7.0 Not updated
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.3.0 | U | Default | 2025-06-03
-    - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | 4.4.0 | U | Default | 2025-06-03
+    - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
+    - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
+    - arm/optee: update to 4.3.0 | 4.3.0 | U | Default | 2024-10-01
+    - arm/optee: update to 4.2.0 | 4.2.0 | U | Default | 2024-05-07
+    - arm/optee: update to 4.1 | 4.1.0 | U | Default | 2024-01-26
+    - arm/optee: cleanups from code review | 4.0.0 | U | Default | 2023-11-01
+    - arm/optee: update to 4.0.0 | 3.22.0 | R | Default | 2023-10-30
+    - arm/optee: update to 3.22.0 | 3.22.0 | U | Default | 2023-07-17
+    - optee-os: deploy ta elf files | 3.18.0 | D | Default | 2023-07-02
+    - optee-os: add optional optee-os-ta package | 3.20.0 | U | Default | 2023-07-02
+    - optee-os: enable SPMC test | 3.18.0 | D | Default | 2023-06-06
+    - optee-test: add 3.20.0 version | 3.20.0 | U | Default | 2023-04-06
+    - optee-os-ts: avoid using escape chars in EXTRA_OEMAKE | 3.18.0 | U | Default | 2022-10-27
+    - arm/optee: remove old versions | 3.14.0 | R | Default | 2022-09-21
+    - Include Trusted Services SPs into optee-os image | 3.14.0 | D | Default | 2022-08-31
+    - arm/optee-os: backport RWX permission error patch | 3.18.0 | U | Default | 2022-08-22
+    - arm-bsp/optee: add optee-os support for N1SDP target | 3.14.0 | D | Default | 2022-08-16
+    - arm/optee: Update to 3.18 | 3.18.0 | U | Default | 2022-08-15
+    - optee-os.inc: support multilib | 3.14.0 | D | Default | 2022-08-02
+    - arm/optee: support optee-os v3.18.0 | 3.17.0 | U | Default | 2022-07-29
+    - arm/optee: ignore buildpath warnings | 3.14.0 | D | Default | 2022-07-19
+    - arm/optee: update to v3.17 | 3.17.0 | U | Default | 2022-06-14
+    - optee: Pass HOST_CC_ARCH for locating compiler runtime | 3.16.0 | U | Default | 2022-05-10
+    - Add new target: "qemuarm-secureboot" | 3.14.0 | D | Default | 2022-05-06
+    - arm/optee: remove redundant ${S} in LIC_FILES_CHKSUM | 3.16.0 | U | Default | 2022-05-06
+    - arm/optee: Add optee 3.14 recipes | 3.14.0 | D | Default | 2022-05-04
+    - arm/optee: Upgrade from 3.14 to 3.16 | 3.16.0 | U | Default | 2022-03-16
+    - Initial import at master release start. | 3.14.0 | U | Default | 2021-09-27
 * trusted-firmware-a 2.10.12 2.13.0 Not updated
     - metadata: add whitespace around assignments | 2.10.12 | D | Default | 2025-04-04
     - arm/trusted-firmware-a: update 2.12.0 recipe to 2.12.1 | 2.12.1 | U | Default | 2025-03-20

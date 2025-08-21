@@ -1,15 +1,11 @@
 * anspass 1.0+gitAUTOINC+726c141fe5  Unknown
     - Initial import at master release start. | 1.0+gitAUTOINC+726c141fe5 | U | Default | 2021-09-22
-* boost 1.86.0 1.89.0 Not updated
-    - boost: add recipe for 1.86.0 | 1.86.0 | U | Default | 2025-04-25
-    - Revert "boost: add boost 1.75.0" | 1.75.0 | R | Default | 2022-11-11
-    - boost: add boost 1.75.0 | 1.75.0 | U | Default | 2022-03-17
-* boost-build-native 1.86.0 1.89.0 Not updated
-    - boost: add recipe for 1.86.0 | 1.86.0 | U | Default | 2025-04-25
 * boot-tf 1.0 1.0 Up-to-date
     - boot-tf_1.0.bb: Add it to generate boot tracing file | 1.0 | U | Default | 2023-09-18
 * build-compare 2020.05.29+gitAUTOINC+102d844ce0 2020.05.29-new-commits-available Not updated
     - Initial import at master release start. | 2020.05.29+gitAUTOINC+102d844ce0 | U | Default | 2021-09-22
+* chrome-virtual-keyboard 1.11.3+gitAUTOINC+e2b9adf488  Unknown
+    - Initial import at master release start. | 1.11.3+gitAUTOINC+e2b9adf488 | U | Default | 2021-09-22
 * initramfs-module-resizefs 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
 * initramfs-nfs-boot 1.0 1.0 Up-to-date
@@ -56,6 +52,8 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
 * wr-init 1.0  Unknown
     - recipes: WORKDIR -> UNPACKDIR transition | 1.0 | U | Default | 2024-05-27
+* wr-kiosk 1.0  Unknown
+    - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
 * wr-systemd-container 1.0  Unknown
     - wrlinux: Handle the syntax of XXX:append += "YYY" | 1.0 | U | Default | 2021-11-17
 * wr-themes 1.0 1.0 Up-to-date
