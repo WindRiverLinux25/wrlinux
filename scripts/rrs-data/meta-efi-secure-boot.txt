@@ -2,16 +2,16 @@
     - Initial import at master release start. | 1.9.2+gitAUTOINC+392836a46c | U | Default | 2021-10-21
 * efitools-native 1.9.2+gitAUTOINC+392836a46c 1.9.2 Up-to-date
     - Initial import at master release start. | 1.9.2+gitAUTOINC+392836a46c | U | Default | 2021-10-21
-* mokutil 0.7.2  Unknown
+* mokutil 0.7.2 0.7.2 Up-to-date
     - mokutil: upgrade 0.7.0 -> 0.7.2 | 0.7.2 | U | Default | 2024-06-29
     - mokutil: upgrade to 0.7.0 | 0.7.0 | U | Default | 2024-02-26
     - mokutil: update to latest git rev | 0.6.0+gitAUTOINC+ae59d89de7 | U | Default | 2023-06-18
     - Initial import at master release start. | 0.3.0+gitAUTOINC+e19adc575c | U | Default | 2021-10-21
-* packagegroup-efi-secure-boot 1.0  Unknown
+* packagegroup-efi-secure-boot 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-10-21
 * seloader 0.4.6+gitAUTOINC+8b90f76a8d  Unknown
     - Initial import at master release start. | 0.4.6+gitAUTOINC+8b90f76a8d | U | Default | 2021-10-21
-* shim 16.0  Unknown
+* shim 16.0 16.1 Not updated
     - shim: upgrade 15.8 -> 16.0 | 16.0 | U | Default | 2025-04-24
     - shim: upgrade 15.7 -> 15.8 | 15.8 | U | Default | 2024-02-02
     - shim: upgrade 15.2 -> 15.7 | 15.7 | U | Default | 2023-08-21

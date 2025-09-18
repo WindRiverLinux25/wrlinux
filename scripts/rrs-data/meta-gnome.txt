@@ -2,13 +2,13 @@
     - Initial import at master release start. | 0.40.0 | U | Default | 2021-09-24
 * gnome-menus 3.36.0 3.36.0 Up-to-date
     - Rename gnome-menus3 -> gnome-menus | 3.36.0 | U | Default | 2022-01-05
-* gtksourceview3 3.24.11 5.16.0 Not updated
+* gtksourceview3 3.24.11 5.18.0 Not updated
     - Initial import at master release start. | 3.24.11 | U | Default | 2021-09-24
-* gtksourceview4 4.8.4 5.17.0 Not updated
+* gtksourceview4 4.8.4 5.18.0 Not updated
     - gtksourceview4: Upgrade 4.8.2 -> 4.8.4 | 4.8.4 | U | Default | 2023-11-14
     - gtksourceview4: upgrade 4.8.1 -> 4.8.2 | 4.8.2 | U | Default | 2022-01-05
     - Initial import at master release start. | 4.8.1 | U | Default | 2021-09-24
-* gvfs 1.57.2  Unknown
+* gvfs 1.57.2 1.58.0 Not updated
     - gvfs: update 1.56.1 -> 1.57.2 | 1.57.2 | U | Default | 2025-03-18
     - gvfs: update 1.56.0 -> 1.56.1 | 1.56.1 | U | Default | 2024-12-11
     - gvfs: update 1.54.0 -> 1.56.0 | 1.56.0 | U | Default | 2024-10-11
@@ -45,13 +45,13 @@
     - libnma: upgrade 1.8.32 -> 1.8.34 | 1.8.34 | U | Default | 2022-01-25
     - libnma: update to 1.8.32 | 1.8.32 | U | Default | 2021-12-10
     - Initial import at master release start. | 1.8.30 | U | Default | 2021-09-24
-* libtimezonemap 0.4.6 0.4.6 Up-to-date
+* libtimezonemap 0.4.6  Unknown
     - Initial import at master release start. | 0.4.6 | U | Default | 2021-09-24
 * libuser 0.64 0.64 Up-to-date
     - libuser: upgrade v0.63 -> v0.64 | 0.64 | U | Default | 2023-03-17
     - libuser: Upgrade to 0.63 | 0.63 | U | Default | 2022-08-31
     - Initial import at master release start. | 0.62 | U | Default | 2021-09-24
-* libwnck 2.31.0 43.2 Not updated
+* libwnck 2.31.0 43.3 Not updated
     - Initial import at master release start. | 2.31.0 | U | Default | 2021-09-24
 * libxklavier 5.4 5.4 Up-to-date
     - Initial import at master release start. | 5.4 | U | Default | 2021-09-24

@@ -157,7 +157,7 @@
     - semodule-utils: upgrade 3.3 -> 3.4 | 3.4 | U | Default | 2022-08-28
     - selinux: upgrade 3.2 -> 3.3 | 3.3 | U | Default | 2021-12-08
     - Initial import at master release start. | 3.2 | U | Default | 2021-09-30
-* setools 4.5.1 4.5.1 Up-to-date
+* setools 4.5.1 4.6.0 Not updated
     - setools: upgrade 4.4.4 -> 4.5.1 | 4.5.1 | U | Default | 2024-06-30
     - setools: upgrade 4.4.3 -> 4.4.4 | 4.4.4 | U | Default | 2023-12-18
     - setools: upgrade 4.4.2 -> 4.4.3 | 4.4.3 | U | Default | 2023-08-08

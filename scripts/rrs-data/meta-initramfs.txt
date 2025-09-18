@@ -1,4 +1,4 @@
-* dracut 106  Unknown
+* dracut 106 108 Not updated
     - dracut: upgrade 103 -> 106 | 106 | U | Default | 2025-02-25
     - dracut: upgrade 102 -> 103 | 103 | U | Default | 2024-09-11
     - dracut: Switch to dracut-ng and upgrade to version 102 | 102 | U | Default | 2024-06-08
