@@ -57,6 +57,11 @@ in conf/machine/<bsp-name>.conf.
 Users can build the project as normal, the outcomes will include the dpdk
 package in rootfs.
 
+2.3 Marvell BSP Specification
+-----------------------------
+For Marvell BSP, users should follow the same configuration steps as described
+in the "Intel BSP Specification" section to enable this DPDK template.
+
 3. DPDK Linuxapp Setup
 ======================
 A kernel module named vfio_pci.ko that must be inserted on the target prior to
@@ -207,6 +212,26 @@ Take the l2fwd as example:
 	 # export DPRC=dprc.2
   3. Run the layer 2 forwarding application:
 	 # /usr/bin/dpdk-l2fwd -c 0x3 -n 1 --file-prefix=p1 --socket-mem=1024 -- -p 0x3 -q 1
+
+4.2 DPDK verification for Marvell BSP
+-------------------------------------
+For Marvell BSP, the following steps describe how to verify the DPDK feature.
+
+4.2.1 Prepare software
+----------------------
+To use J19–J21 as DPDK interfaces on Marvell-cn106xx platforms, the
+corresponding CPSS ports must be enabled in the system.
+
+4.2.2 DPDK example commands
+---------------------------
+The following examples show how to run sample DPDK applications on Marvell
+platforms. Make sure the specified PCIe devices are bound to DPDK before running.
+
+Marvell-cn106xx platform:
+    1. l2fwd example
+	# dpdk-l2fwd -l 8 -n 4 -a 0002:04:00.0 -a 0002:05:00.0 -- -q 2 -p 0x3
+    2. l3fwd example
+	# dpdk-l3fwd -c 0xc00000 -a 0002:04:00.0 -a 0002:05:00.0 -- -p 0x3 --config="(0,0,23),(1,0,22)" -P -L
 
 5. DPDK compilation with optimization
 =====================================
