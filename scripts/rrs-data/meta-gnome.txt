@@ -1,4 +1,4 @@
-* dconf 0.40.0 0.40.0 Up-to-date
+* dconf 0.40.0 0.49.0 Not updated
     - Initial import at master release start. | 0.40.0 | U | Default | 2021-09-24
 * gnome-menus 3.36.0 3.36.0 Up-to-date
     - Rename gnome-menus3 -> gnome-menus | 3.36.0 | U | Default | 2022-01-05
