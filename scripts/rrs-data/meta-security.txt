@@ -48,6 +48,8 @@
     - samhain: upgrade 4.4.3 -> 4.4.6 | 4.4.6 | U | Default | 2022-01-30
     - Initial import at master release start. | 4.4.3 | U | Default | 2021-09-28
 * scap-security-guide 0.1.76 0.5.0 Not updated
+    - Revert "scap-security-guide: upgrade 0.1.76 -> 0.1.77" | 0.1.76 | D | Default | 2025-09-25
+    - scap-security-guide: upgrade 0.1.76 -> 0.1.77 | 0.1.77 | U | Default | 2025-09-25
     - scap-security-guide: upgrade 0.1.75 -> 0.1.76 | 0.1.76 | U | Default | 2025-04-13
     - scap-security-guide: upgrade 0.1.74 -> 0.1.75 | 0.1.75 | U | Default | 2025-03-12
     - scap-security-guide: upgrade 0.1.73 -> 0.1.74 | 0.1.74 | U | Default | 2024-08-20
