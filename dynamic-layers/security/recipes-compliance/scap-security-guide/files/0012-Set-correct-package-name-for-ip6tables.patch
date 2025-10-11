@@ -1,4 +1,4 @@
-From 7a24ebf9f81f564d57810a2897bf462d8cabf1ff Mon Sep 17 00:00:00 2001
+From cf6c2b58850551a8a5057318f5f65c24df1a6be4 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Wed, 9 Nov 2022 12:49:47 +0800
 Subject: [PATCH] Set correct package name for ip6tables

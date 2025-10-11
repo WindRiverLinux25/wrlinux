@@ -1,4 +1,4 @@
-From 64018c210ea563a91cee00bca17fb3b9e3c2414d Mon Sep 17 00:00:00 2001
+From 54844426c217f4a99a98ee8c8d1c6cdcc8d90e82 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Thu, 10 Jul 2025 19:15:00 +0800
 Subject: [PATCH] Enable require_singleuser_auth rule
@@ -61,10 +61,10 @@ index 6324644e..01da47fd 100644
      comment="Tests that the systemd rescue.service is in the runlevel1.target"
      id="test_require_rescue_service_runlevel1" version="1">
 diff --git a/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/rule.yml b/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/rule.yml
-index bc0beb98..8f0f0fff 100644
+index 11b45505..8157531d 100644
 --- a/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/rule.yml
 +++ b/linux_os/guide/system/accounts/accounts-physical/require_singleuser_auth/rule.yml
-@@ -56,7 +56,7 @@ ocil: |-
+@@ -54,7 +54,7 @@ ocil: |-
      To check if authentication is required for single-user mode, run the following command:
      <pre>$ grep sulogin /usr/lib/systemd/system/rescue.service</pre>
      The output should be similar to the following, and the line must begin with
@@ -73,7 +73,7 @@ index bc0beb98..8f0f0fff 100644
          ExecStart and /usr/lib/systemd/systemd-sulogin-shell.
          <pre>ExecStart=-/usr/lib/systemd/systemd-sulogin-shell rescue</pre>
      {{%- else -%}}
-@@ -68,7 +68,7 @@ ocil: |-
+@@ -66,7 +66,7 @@ ocil: |-
      <pre>grep ExecStart /etc/systemd/system/rescue.service.d/*.conf</pre>
      The output should contain two lines:
      <pre>ExecStart=
@@ -82,7 +82,7 @@ index bc0beb98..8f0f0fff 100644
      ExecStart=-/usr/lib/systemd/systemd-sulogin-shell rescue</pre>
      {{%- else -%}}
      ExecStart=-/bin/sh -c "/sbin/sulogin; /usr/bin/systemctl --fail --no-block default"</pre>
-@@ -98,7 +98,7 @@ fixtext: |-
+@@ -96,7 +96,7 @@ fixtext: |-
  
      Ensure that there are following two lines  in <tt>/etc/systemd/system/rescue.service.d/10-remediation.conf</tt>:
      <pre>ExecStart=

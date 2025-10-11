@@ -1,4 +1,4 @@
-From 0323929ff7d4a9839d1e68d486e4101baf12d674 Mon Sep 17 00:00:00 2001
+From 7435c9a7367eb66dd1f5b3df3d9a71e514836681 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Sun, 28 Apr 2024 14:34:11 +0800
 Subject: [PATCH] Enable systemd service_enable/disable

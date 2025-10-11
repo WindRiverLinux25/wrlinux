@@ -1,4 +1,4 @@
-From 02b5a0898e513f9fc144aea748f4f6ce89167a48 Mon Sep 17 00:00:00 2001
+From b21d53bc04118d16553a7bac691c561dcb2f0099 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Sat, 12 Nov 2022 00:47:50 +0800
 Subject: [PATCH] Fix path of pidof command in chronyd_or_ntpd_set_maxpoll rule

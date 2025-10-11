@@ -1,4 +1,4 @@
-From 08d6e46d9d338e10623d3888bc24820fd431281d Mon Sep 17 00:00:00 2001
+From fdccd5b6a0807688253a64f4f49e540c37ffa54c Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Fri, 24 May 2024 14:51:22 +0800
 Subject: [PATCH] Enable accounts_max_concurrent_login_sessions rule

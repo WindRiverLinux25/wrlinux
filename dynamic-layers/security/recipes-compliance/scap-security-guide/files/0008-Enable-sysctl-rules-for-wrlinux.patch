@@ -1,4 +1,4 @@
-From 30722225286f976e37f1f108590b421910ea137f Mon Sep 17 00:00:00 2001
+From bad09f92b368aa1a84cfb5dc8bcc7b3dd3b4febd Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Tue, 8 Nov 2022 15:56:32 +0800
 Subject: [PATCH] Enable sysctl rules for wrlinux
@@ -11,7 +11,7 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/shared/templates/sysctl/bash.template b/shared/templates/sysctl/bash.template
-index 1f417d31..0ea2b165 100644
+index 7093aae9..46f6ae70 100644
 --- a/shared/templates/sysctl/bash.template
 +++ b/shared/templates/sysctl/bash.template
 @@ -1,4 +1,5 @@

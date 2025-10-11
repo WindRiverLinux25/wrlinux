@@ -1,4 +1,4 @@
-From 0e321efd8e5421d62e4855ad66a598eb130401c1 Mon Sep 17 00:00:00 2001
+From 24d22825971ec6ef0a0379d0fd282878261a85ca Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Wed, 29 May 2024 20:24:10 +0800
 Subject: [PATCH] Enable rpm_verification rules
@@ -7,28 +7,27 @@ Upstream-Status: Inappropriate [WRLinux specific]
 
 Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
 ---
- .../rpm_verification/rpm_verify_hashes/bash/shared.sh          | 2 +-
- .../rpm_verification/rpm_verify_permissions/bash/shared.sh     | 3 ++-
- 2 files changed, 3 insertions(+), 2 deletions(-)
+ .../rpm_verification/rpm_verify_hashes/bash/shared.sh           | 2 +-
+ .../rpm_verification/rpm_verify_permissions/bash/shared.sh      | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/linux_os/guide/system/software/integrity/software-integrity/rpm_verification/rpm_verify_hashes/bash/shared.sh b/linux_os/guide/system/software/integrity/software-integrity/rpm_verification/rpm_verify_hashes/bash/shared.sh
-index a40f350d..db2bb1d2 100644
+index d5d79699..50af4843 100644
 --- a/linux_os/guide/system/software/integrity/software-integrity/rpm_verification/rpm_verify_hashes/bash/shared.sh
 +++ b/linux_os/guide/system/software/integrity/software-integrity/rpm_verification/rpm_verify_hashes/bash/shared.sh
 @@ -1,4 +1,4 @@
--# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_rhv,multi_platform_sle
-+# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_rhv,multi_platform_sle,multi_platform_wrlinux
+-# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_rhv,multi_platform_sle,multi_platform_almalinux
++# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_rhv,multi_platform_sle,multi_platform_almalinux,multi_platform_wrlinux
  
  # Find which files have incorrect hash (not in /etc, because of the system related config files) and then get files names
  files_with_incorrect_hash="$(rpm -Va --noconfig | grep -E '^..5' | awk '{print $NF}' )"
 diff --git a/linux_os/guide/system/software/integrity/software-integrity/rpm_verification/rpm_verify_permissions/bash/shared.sh b/linux_os/guide/system/software/integrity/software-integrity/rpm_verification/rpm_verify_permissions/bash/shared.sh
-index 0f791c95..36de81ca 100644
+index 13059c0b..b7efb4b7 100644
 --- a/linux_os/guide/system/software/integrity/software-integrity/rpm_verification/rpm_verify_permissions/bash/shared.sh
 +++ b/linux_os/guide/system/software/integrity/software-integrity/rpm_verification/rpm_verify_permissions/bash/shared.sh
-@@ -1,4 +1,5 @@
--# platform = multi_platform_rhel,multi_platform_ol,multi_platform_fedora,multi_platform_rhv,multi_platform_sle
-+# platform = multi_platform_rhel,multi_platform_ol,multi_platform_fedora,multi_platform_rhv,multi_platform_sle,multi_platform_wrlinux
-+
+@@ -1,4 +1,4 @@
+-# platform = multi_platform_rhel,multi_platform_ol,multi_platform_fedora,multi_platform_rhv,multi_platform_sle,multi_platform_almalinux
++# platform = multi_platform_rhel,multi_platform_ol,multi_platform_fedora,multi_platform_rhv,multi_platform_sle,multi_platform_almalinux,multi_platform_wrlinux
  # reboot = false
  # strategy = restrict
  # complexity = high

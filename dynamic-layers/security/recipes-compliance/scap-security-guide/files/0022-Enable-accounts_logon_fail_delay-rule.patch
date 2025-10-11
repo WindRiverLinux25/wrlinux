@@ -1,4 +1,4 @@
-From 6ba2b110191230900eb9930b24aa3c106b7b6108 Mon Sep 17 00:00:00 2001
+From 377b12f2af12d358a80eecd01fb136b37341936a Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Fri, 24 May 2024 14:49:01 +0800
 Subject: [PATCH] Enable accounts_logon_fail_delay rule

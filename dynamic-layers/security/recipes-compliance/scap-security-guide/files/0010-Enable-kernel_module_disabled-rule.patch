@@ -1,4 +1,4 @@
-From d39a5ddef547ed24b3ee0d22314b2461bffb7e79 Mon Sep 17 00:00:00 2001
+From c4fd4a84f4652c19aab9d792a4aee16f43222646 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Tue, 8 Nov 2022 16:15:16 +0800
 Subject: [PATCH] Enable kernel_module_disabled rule

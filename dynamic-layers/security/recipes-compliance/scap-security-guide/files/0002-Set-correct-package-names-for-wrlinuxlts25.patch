@@ -1,4 +1,4 @@
-From 78af7d8aab8e049cad72fbd8fd85097fa23f2a58 Mon Sep 17 00:00:00 2001
+From 049929f8daaf611e10a65b2e035fdbe278e858ac Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Thu, 27 Jan 2022 09:47:52 +0800
 Subject: [PATCH] Set correct package names for wrlinuxlts25
@@ -51,7 +51,7 @@ index 8a9b4b46..9ab63e2a 100644
  {{% elif pkg_system == "dpkg" %}}
    <linux:dpkginfo_test check="all" check_existence="all_exist"
 diff --git a/shared/applicability/package.yml b/shared/applicability/package.yml
-index d2e7b75f..f95f931b 100644
+index 8deb36e1..865976c3 100644
 --- a/shared/applicability/package.yml
 +++ b/shared/applicability/package.yml
 @@ -16,14 +16,18 @@ args:
@@ -76,7 +76,7 @@ index d2e7b75f..f95f931b 100644
      pkgname: avahi-daemon
      {{% else %}}
      pkgname: avahi
-@@ -75,7 +79,11 @@ args:
+@@ -81,7 +85,11 @@ args:
      pkgname: openssh
    pam:
      {{% if pkg_system == "rpm" %}}
@@ -88,7 +88,7 @@ index d2e7b75f..f95f931b 100644
      {{% else %}}
        pkgname: libpam-runtime
      {{% endif %}}
-@@ -89,7 +97,7 @@ args:
+@@ -95,7 +103,7 @@ args:
      pkgname: rsh-server
    shadow-utils:
      {{% if pkg_system == "rpm" %}}
@@ -97,12 +97,12 @@ index d2e7b75f..f95f931b 100644
        pkgname: shadow
      {{% else %}}
        pkgname: shadow-utils
-@@ -109,7 +117,7 @@ args:
+@@ -115,7 +123,7 @@ args:
    squid:
      pkgname: squid
    sssd:
--    {{% if product in ["sle12", "sle15"] %}}
-+    {{% if product in ["sle12", "sle15"] or 'wrlinux' in product %}}
+-    {{% if product in ["sle12", "sle15"] or 'ubuntu' in product %}}
++    {{% if product in ["sle12", "sle15"] or 'ubuntu' in product or 'wrlinux' in product %}}
        pkgname: sssd
      {{% else %}}
        pkgname: sssd-common

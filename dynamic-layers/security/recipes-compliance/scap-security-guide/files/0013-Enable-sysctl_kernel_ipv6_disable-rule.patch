@@ -1,4 +1,4 @@
-From 74186d132ffdea08d1945d5e00ae401dbc33a02d Mon Sep 17 00:00:00 2001
+From 8d26afe733d767706c59d1605fb08c570787bf71 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Tue, 21 May 2024 15:58:26 +0800
 Subject: [PATCH] Enable sysctl_kernel_ipv6_disable rule
@@ -11,12 +11,12 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  1 file changed, 1 insertion(+)
 
 diff --git a/shared/checks/oval/sysctl_kernel_ipv6_disable.xml b/shared/checks/oval/sysctl_kernel_ipv6_disable.xml
-index f803e8ff..bc158868 100644
+index 42b866d3..5e32777e 100644
 --- a/shared/checks/oval/sysctl_kernel_ipv6_disable.xml
 +++ b/shared/checks/oval/sysctl_kernel_ipv6_disable.xml
-@@ -20,6 +20,7 @@
- 	<platform>multi_platform_sle</platform>
+@@ -21,6 +21,7 @@
      <platform>multi_platform_slmicro5</platform>
+     <platform>multi_platform_tencentos</platform>
      <platform>multi_platform_ubuntu</platform>
 +    <platform>multi_platform_wrlinux</platform>
        </affected>

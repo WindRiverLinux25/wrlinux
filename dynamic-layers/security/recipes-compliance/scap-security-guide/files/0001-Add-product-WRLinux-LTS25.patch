@@ -1,4 +1,4 @@
-From 2d18afce7de851a00dcc88079f317192275d95c2 Mon Sep 17 00:00:00 2001
+From 7029d906429f24ef58780a56dea10a113fe640c8 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Sun, 27 Apr 2025 11:55:28 +0800
 Subject: [PATCH] Add product WRLinux LTS25
@@ -41,28 +41,28 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  create mode 100644 shared/checks/oval/installed_OS_is_wrlinuxlts25.xml
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 699194b9..e73cdbfe 100644
+index a3101424..e5cb493f 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -121,6 +121,7 @@ option(SSG_PRODUCT_UBUNTU2004 "If enabled, the Ubuntu 20.04 SCAP content will be
+@@ -123,6 +123,7 @@ option(SSG_PRODUCT_UBUNTU1804 "If enabled, the Ubuntu 18.04 SCAP content will be
+ option(SSG_PRODUCT_UBUNTU2004 "If enabled, the Ubuntu 20.04 SCAP content will be built" ${SSG_PRODUCT_DEFAULT})
  option(SSG_PRODUCT_UBUNTU2204 "If enabled, the Ubuntu 22.04 SCAP content will be built" ${SSG_PRODUCT_DEFAULT})
  option(SSG_PRODUCT_UBUNTU2404 "If enabled, the Ubuntu 24.04 SCAP content will be built" ${SSG_PRODUCT_DEFAULT})
- option(SSG_PRODUCT_AL2023 "If enabled, the AL2023 SCAP content will be built" ${SSG_PRODUCT_DEFAULT})
 +option(SSG_PRODUCT_WRLINUXLTS25 "If enabled, the WRLinux LTS25 SCAP content will be built" ${SSG_PRODUCT_DEFAULT})
  # Products derivatives
  option(SSG_CENTOS_DERIVATIVES_ENABLED "If enabled, CentOS derivative content will be built from the RHEL content" TRUE)
  
-@@ -353,6 +354,7 @@ message(STATUS "Ubuntu 22.04: ${SSG_PRODUCT_UBUNTU2204}")
+@@ -361,6 +362,7 @@ message(STATUS "Ubuntu 18.04: ${SSG_PRODUCT_UBUNTU1804}")
+ message(STATUS "Ubuntu 20.04: ${SSG_PRODUCT_UBUNTU2004}")
+ message(STATUS "Ubuntu 22.04: ${SSG_PRODUCT_UBUNTU2204}")
  message(STATUS "Ubuntu 24.04: ${SSG_PRODUCT_UBUNTU2404}")
- message(STATUS "AL 2023: ${SSG_PRODUCT_AL2023}")
- message(STATUS "OpenEmbedded: ${SSG_PRODUCT_OPENEMBEDDED}")
 +message(STATUS "WRLinux LTS25: ${SSG_PRODUCT_WRLINUXLTS25}")
  message(STATUS " ")
  
  # Remove this option when we would like to run ansible-lint and yamllint against our playbooks by
-@@ -486,6 +488,9 @@ endif()
- if(SSG_PRODUCT_OPENEMBEDDED)
-     add_subdirectory("products/openembedded" "openembedded")
+@@ -494,6 +496,9 @@ endif()
+ if(SSG_PRODUCT_UBUNTU2404)
+     add_subdirectory("products/ubuntu2404" "ubuntu2404")
  endif()
 +if (SSG_PRODUCT_WRLINUXLTS25)
 +    add_subdirectory("products/wrlinuxlts25" "wrlinuxlts25")
@@ -71,31 +71,31 @@ index 699194b9..e73cdbfe 100644
  # ZIP only contains source datastreams and kickstarts.
  # People who want sources to build from should get the tarball instead.
 diff --git a/build_product b/build_product
-index 89d96712..e36c75cf 100755
+index 90b25237..a8c5482d 100755
 --- a/build_product
 +++ b/build_product
-@@ -392,6 +392,7 @@ all_cmake_products=(
- 	OPENEMBEDDED
- 	OPENEULER2203
- 	KYLINSERVER10
+@@ -397,6 +397,7 @@ all_cmake_products=(
+ 	UBUNTU2004
+ 	UBUNTU2204
+ 	UBUNTU2404
 +	WRLINUXLTS25
  )
  
  DEFAULT_OVAL_MAJOR_VERSION=5
 diff --git a/linux_os/guide/system/software/integrity/certified-vendor/installed_OS_is_vendor_supported/oval/shared.xml b/linux_os/guide/system/software/integrity/certified-vendor/installed_OS_is_vendor_supported/oval/shared.xml
-index e0b7e6db..a4f7c326 100644
+index 24223598..717c12b3 100644
 --- a/linux_os/guide/system/software/integrity/certified-vendor/installed_OS_is_vendor_supported/oval/shared.xml
 +++ b/linux_os/guide/system/software/integrity/certified-vendor/installed_OS_is_vendor_supported/oval/shared.xml
-@@ -12,6 +12,7 @@
-       <extend_definition comment="Installed OS is SLE12" definition_ref="installed_OS_is_sle12" />
+@@ -15,6 +15,7 @@
        <extend_definition comment="Installed OS is SLE15" definition_ref="installed_OS_is_sle15" />
        <extend_definition comment="Installed OS is SLE Micro 5" definition_ref="installed_OS_is_slmicro5" />
+       <extend_definition comment="Installed OS is Ubuntu 24.04" definition_ref="installed_OS_is_ubuntu2404" />
 +      <extend_definition comment="Installed OS is WRLinux LTS25" definition_ref="installed_OS_is_wrlinuxlts25" />
      </criteria>
    </definition>
  
 diff --git a/linux_os/guide/system/software/integrity/certified-vendor/installed_OS_is_vendor_supported/rule.yml b/linux_os/guide/system/software/integrity/certified-vendor/installed_OS_is_vendor_supported/rule.yml
-index 8b47069e..73c7c234 100644
+index 67c30bb5..0aa7cd03 100644
 --- a/linux_os/guide/system/software/integrity/certified-vendor/installed_OS_is_vendor_supported/rule.yml
 +++ b/linux_os/guide/system/software/integrity/certified-vendor/installed_OS_is_vendor_supported/rule.yml
 @@ -11,6 +11,9 @@ description: |-
@@ -105,13 +105,13 @@ index 8b47069e..73c7c234 100644
 +{{% elif 'wrlinux' in product %}}
 +    Wind River Linux is supported by Wind River Systems, Inc. As the Wind River
 +    Linux vendor, Wind River Systems, Inc. is responsible for providing security patches.
- {{% else %}}
-     Red Hat Enterprise Linux is supported by Red Hat, Inc. As the Red Hat Enterprise
-     Linux vendor, Red Hat, Inc. is responsible for providing security patches.
-@@ -63,6 +66,8 @@ ocil: |-
-     <pre>$ grep -i "oracle" /etc/oracle-release</pre>
- {{% elif product in ["sle12", "sle15", "slmicro5"] %}}
+ {{% elif 'almalinux' in product %}}
+     AlmaLinux OS is supported by AlmaLinux OS Foundation. As the AlmaLinux OS
+     vendor, AlmaLinux OS Foundation is responsible for providing security patches.
+@@ -67,6 +70,8 @@ ocil: |-
      <pre>$ grep -i "suse" /etc/os-release</pre>
+ {{% elif 'ubuntu' in product %}}
+     <pre>$ grep DISTRIB_DESCRIPTION /etc/lsb-release</pre>
 +{{% elif 'wrlinux' in product %}}
 +    <pre>$ grep -i "wind river" /etc/os-release</pre>
  {{% endif %}}
@@ -547,20 +547,20 @@ index 00000000..b7b3923d
 +
 +</def-group>
 diff --git a/ssg/constants.py b/ssg/constants.py
-index cf58db6a..ebb75818 100644
+index a0265a9d..8802b44d 100644
 --- a/ssg/constants.py
 +++ b/ssg/constants.py
 @@ -61,7 +61,8 @@ product_directories = [
-     'rhel8', 'rhel9', 'rhel10',
      'rhv4',
      'sle12', 'sle15', 'slmicro5',
+     'tencentos4',
 -    'ubuntu1604', 'ubuntu1804', 'ubuntu2004', 'ubuntu2204', 'ubuntu2404'
 +    'ubuntu1604', 'ubuntu1804', 'ubuntu2004', 'ubuntu2204', 'ubuntu2404',
 +    'wrlinuxlts25'
  ]
  
  JINJA_MACROS_DIRECTORY = os.path.abspath(os.path.join(os.path.dirname(os.path.dirname(
-@@ -238,6 +239,7 @@ FULL_NAME_TO_PRODUCT_MAPPING = {
+@@ -245,6 +246,7 @@ FULL_NAME_TO_PRODUCT_MAPPING = {
      "Ubuntu 22.04": "ubuntu2204",
      "Ubuntu 24.04": "ubuntu2404",
      "OpenEmbedded": "openembedded",
@@ -568,9 +568,9 @@ index cf58db6a..ebb75818 100644
      "Not Applicable": "example",
  }
  
-@@ -291,7 +293,8 @@ MULTI_PLATFORM_LIST = ["rhel", "fedora", "rhv", "debian", "ubuntu",
+@@ -298,7 +300,8 @@ MULTI_PLATFORM_LIST = ["rhel", "fedora", "rhv", "debian", "ubuntu",
                         "openeuler", "kylinserver",
-                        "opensuse", "sle", "ol", "ocp", "rhcos",
+                        "opensuse", "sle", "tencentos", "ol", "ocp", "rhcos",
                         "example", "eks", "alinux", "anolis", "openembedded", "al",
 -                       "slmicro", "almalinux"]
 +                       "slmicro", "almalinux",
@@ -578,7 +578,7 @@ index cf58db6a..ebb75818 100644
  
  MULTI_PLATFORM_MAPPING = {
      "multi_platform_alinux": ["alinux2", "alinux3"],
-@@ -315,6 +318,7 @@ MULTI_PLATFORM_MAPPING = {
+@@ -323,6 +326,7 @@ MULTI_PLATFORM_MAPPING = {
                                "ubuntu2204", "ubuntu2404"],
      "multi_platform_openembedded": ["openembedded"],
      "multi_platform_al": ["al2023"],
@@ -586,7 +586,7 @@ index cf58db6a..ebb75818 100644
  }
  
  RHEL_CENTOS_CPE_MAPPING = {
-@@ -445,6 +449,7 @@ MAKEFILE_ID_TO_PRODUCT_MAP = {
+@@ -453,6 +457,7 @@ MAKEFILE_ID_TO_PRODUCT_MAP = {
      'eks': 'Amazon Elastic Kubernetes Service',
      'al': 'Amazon Linux',
      'openembedded': 'OpenEmbedded',
@@ -612,7 +612,7 @@ index 75c977bd..245d3c5f 100644
          multi_platforms = ["multi_platform_all", "multi_platform_" + product]
  
 diff --git a/ssg/utils.py b/ssg/utils.py
-index 94eb2fbe..31399d23 100644
+index a3df5cfc..6d1b3022 100644
 --- a/ssg/utils.py
 +++ b/ssg/utils.py
 @@ -318,6 +318,12 @@ def is_applicable_for_product(platform, product):

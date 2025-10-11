@@ -1,4 +1,4 @@
-From 729793ad94bb645f04967294e01430c308cde8ef Mon Sep 17 00:00:00 2001
+From d65e43a1b7385e339feb6e66fae2f37e54887a43 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Wed, 26 Jan 2022 16:00:55 +0800
 Subject: [PATCH] Enable audit-related rules
@@ -18,14 +18,13 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  shared/checks/oval/audit_rules_augenrules.xml                 | 2 +-
  shared/templates/audit_rules_dac_modification/bash.template   | 2 +-
  .../templates/audit_rules_file_deletion_events/bash.template  | 2 +-
- shared/templates/audit_rules_login_events/bash.template       | 2 +-
  .../templates/audit_rules_privileged_commands/bash.template   | 2 +-
  .../templates/audit_rules_privileged_commands/oval.template   | 2 +-
  .../audit_rules_unsuccessful_file_modification/bash.template  | 2 +-
- 15 files changed, 16 insertions(+), 16 deletions(-)
+ 14 files changed, 15 insertions(+), 15 deletions(-)
 
 diff --git a/linux_os/guide/auditing/auditd_configure_rules/audit_rules_sysadmin_actions/bash/shared.sh b/linux_os/guide/auditing/auditd_configure_rules/audit_rules_sysadmin_actions/bash/shared.sh
-index 26cd04ad..0aa00c0b 100644
+index f5095bd2..0809d3ae 100644
 --- a/linux_os/guide/auditing/auditd_configure_rules/audit_rules_sysadmin_actions/bash/shared.sh
 +++ b/linux_os/guide/auditing/auditd_configure_rules/audit_rules_sysadmin_actions/bash/shared.sh
 @@ -1,4 +1,4 @@
@@ -95,7 +94,7 @@ index c0225b9f..a94c4012 100644
  {{{ bash_instantiate_variables("var_auditd_space_left") }}}
  
 diff --git a/shared/checks/oval/audit_rules_auditctl.xml b/shared/checks/oval/audit_rules_auditctl.xml
-index 2521667f..ab0e4923 100644
+index b08adf43..1e65b4a7 100644
 --- a/shared/checks/oval/audit_rules_auditctl.xml
 +++ b/shared/checks/oval/audit_rules_auditctl.xml
 @@ -18,9 +18,9 @@
@@ -111,7 +110,7 @@ index 2521667f..ab0e4923 100644
      <ind:filepath>/usr/lib/systemd/system/auditd.service</ind:filepath>
      <ind:pattern operation="pattern match">^ExecStartPost=\-\/sbin\/auditctl.*$</ind:pattern>
 diff --git a/shared/checks/oval/audit_rules_augenrules.xml b/shared/checks/oval/audit_rules_augenrules.xml
-index 7af771ac..914d7eea 100644
+index 719b2d12..34b6fe3b 100644
 --- a/shared/checks/oval/audit_rules_augenrules.xml
 +++ b/shared/checks/oval/audit_rules_augenrules.xml
 @@ -18,7 +18,7 @@
@@ -124,7 +123,7 @@ index 7af771ac..914d7eea 100644
      <ind:pattern operation="pattern match">^ExecStart=(\/usr|)?\/sbin\/augenrules.*$</ind:pattern>
    {{% else %}}
 diff --git a/shared/templates/audit_rules_dac_modification/bash.template b/shared/templates/audit_rules_dac_modification/bash.template
-index 2260965c..63552a12 100644
+index 089a65d2..77fade62 100644
 --- a/shared/templates/audit_rules_dac_modification/bash.template
 +++ b/shared/templates/audit_rules_dac_modification/bash.template
 @@ -1,4 +1,4 @@
@@ -143,33 +142,23 @@ index 2858e24a..099d18f0 100644
  
  # First perform the remediation of the syscall rule
  # Retrieve hardware architecture of the underlying system
-diff --git a/shared/templates/audit_rules_login_events/bash.template b/shared/templates/audit_rules_login_events/bash.template
-index ee534c3c..d82495a0 100644
---- a/shared/templates/audit_rules_login_events/bash.template
-+++ b/shared/templates/audit_rules_login_events/bash.template
-@@ -1,4 +1,4 @@
--# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_rhv,multi_platform_sle,multi_platform_slmicro,multi_platform_ubuntu,multi_platform_debian,multi_platform_almalinux
-+# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_rhv,multi_platform_sle,multi_platform_slmicro,multi_platform_ubuntu,multi_platform_debian,multi_platform_almalinux,multi_platform_wrlinux
- 
- # Perform the remediation for both possible tools: 'auditctl' and 'augenrules'
- 
 diff --git a/shared/templates/audit_rules_privileged_commands/bash.template b/shared/templates/audit_rules_privileged_commands/bash.template
-index 408a1660..ea11a59a 100644
+index d34f1be7..f3e96eef 100644
 --- a/shared/templates/audit_rules_privileged_commands/bash.template
 +++ b/shared/templates/audit_rules_privileged_commands/bash.template
 @@ -1,4 +1,4 @@
--{{%- if product in ["fedora", "ol7", "ol8", "ol9", "ol10", "rhel8", "rhel9", "rhel10", "sle12", "sle15", "slmicro5", "ubuntu2004", "ubuntu2204", "ubuntu2404", "debian12"] %}}
-+{{%- if product in ["fedora", "ol7", "ol8", "ol9", "ol10", "rhel8", "rhel9", "rhel10", "sle12", "sle15", "slmicro5", "ubuntu2004", "ubuntu2204", "ubuntu2404", "debian12", "wrlinuxlts25"] %}}
+-{{%- if product in ["almalinux9", "debian12", "fedora", "ol7", "ol8", "ol9", "ol10", "rhel8", "rhel9", "rhel10", "sle12", "sle15", "slmicro5", "ubuntu2004", "ubuntu2204", "ubuntu2404"] %}}
++{{%- if product in ["almalinux9", "debian12", "fedora", "ol7", "ol8", "ol9", "ol10", "rhel8", "rhel9", "rhel10", "sle12", "sle15", "slmicro5", "ubuntu2004", "ubuntu2204", "ubuntu2404", "wrlinuxlts25"] %}}
    {{%- set perm_x=" -F perm=x" %}}
  {{%- endif %}}
  # platform = multi_platform_all
 diff --git a/shared/templates/audit_rules_privileged_commands/oval.template b/shared/templates/audit_rules_privileged_commands/oval.template
-index 238762f8..b9ba7129 100644
+index d07cdbd6..0ef58cee 100644
 --- a/shared/templates/audit_rules_privileged_commands/oval.template
 +++ b/shared/templates/audit_rules_privileged_commands/oval.template
 @@ -1,4 +1,4 @@
--{{%- if product in [ "debian12", "fedora", "ol7", "ol8", "ol9", "ol10", "rhel8", "rhel9", "rhel10", "sle12", "sle15", "slmicro5", "ubuntu2004", "ubuntu2204", "ubuntu2404"] %}}
-+{{%- if product in [ "debian12", "fedora", "ol7", "ol8", "ol9", "ol10", "rhel8", "rhel9", "rhel10", "sle12", "sle15", "slmicro5", "ubuntu2004", "ubuntu2204", "ubuntu2404", "wrlinuxlts25"] %}}
+-{{%- if product in ["almalinux9", "debian12", "fedora", "ol7", "ol8", "ol9", "ol10", "rhel8", "rhel9", "rhel10", "sle12", "sle15", "slmicro5", "ubuntu2004", "ubuntu2204", "ubuntu2404"] %}}
++{{%- if product in ["almalinux9", "debian12", "fedora", "ol7", "ol8", "ol9", "ol10", "rhel8", "rhel9", "rhel10", "sle12", "sle15", "slmicro5", "ubuntu2004", "ubuntu2204", "ubuntu2404", "wrlinuxlts25"] %}}
    {{%- set perm_x="(?:[\s]+-F[\s]+perm=x)" %}}
  {{%- endif %}}
  <def-group>

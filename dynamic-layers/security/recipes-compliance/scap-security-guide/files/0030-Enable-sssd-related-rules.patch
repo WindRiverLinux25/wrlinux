@@ -1,4 +1,4 @@
-From f8428b8cf1f72680e36df5f42a4f51c697b8964b Mon Sep 17 00:00:00 2001
+From e3af2c514b3c46e781fd36e7cf15ee7773940468 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Mon, 27 May 2024 21:31:52 +0800
 Subject: [PATCH] Enable sssd-related rules

@@ -1,4 +1,4 @@
-From 3d6f20b3965e4dafc5af665b253853f993c772c3 Mon Sep 17 00:00:00 2001
+From 05c31ba4da1173c347c170ce4b5620bd4e30a5ba Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Thu, 27 Jan 2022 15:23:59 +0800
 Subject: [PATCH] Enable openssh rules for wrlinux
@@ -16,10 +16,10 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  6 files changed, 9 insertions(+), 1 deletion(-)
 
 diff --git a/linux_os/guide/services/ssh/package_openssh-server_installed/rule.yml b/linux_os/guide/services/ssh/package_openssh-server_installed/rule.yml
-index 27e2fe7b..bfaa6b67 100644
+index d4198b6b..725be7af 100644
 --- a/linux_os/guide/services/ssh/package_openssh-server_installed/rule.yml
 +++ b/linux_os/guide/services/ssh/package_openssh-server_installed/rule.yml
-@@ -43,6 +43,7 @@ template:
+@@ -42,6 +42,7 @@ template:
      name: package_installed
      vars:
          pkgname: openssh-server
@@ -49,10 +49,10 @@ index 3253fc49..9282d1cd 100644
          daemonname@ubuntu1604: ssh
          daemonname@ubuntu1804: ssh
 diff --git a/linux_os/guide/services/ssh/service_sshd_enabled/rule.yml b/linux_os/guide/services/ssh/service_sshd_enabled/rule.yml
-index 46d2a459..888fc445 100644
+index 9abc9978..d3467bb9 100644
 --- a/linux_os/guide/services/ssh/service_sshd_enabled/rule.yml
 +++ b/linux_os/guide/services/ssh/service_sshd_enabled/rule.yml
-@@ -64,6 +64,7 @@ template:
+@@ -63,6 +63,7 @@ template:
          packagename@sle12: openssh
          packagename@sle15: openssh
          packagename@slmicro5: openssh
@@ -61,15 +61,15 @@ index 46d2a459..888fc445 100644
  fixtext: |-
      {{{ fixtext_service_enabled("sshd") }}}
 diff --git a/linux_os/guide/services/ssh/ssh_server/sshd_set_idle_timeout/oval/shared.xml b/linux_os/guide/services/ssh/ssh_server/sshd_set_idle_timeout/oval/shared.xml
-index 04b6e082..fcb92d03 100644
+index 023a7663..4ba86340 100644
 --- a/linux_os/guide/services/ssh/ssh_server/sshd_set_idle_timeout/oval/shared.xml
 +++ b/linux_os/guide/services/ssh/ssh_server/sshd_set_idle_timeout/oval/shared.xml
 @@ -34,7 +34,7 @@
            {{%- endif %}}
            <criterion comment="the configuration exists" test_ref="test_clientaliveinterval_present" />
          </criteria>
--        {{%- if product not in ["ol8", "ol9", "rhel8", "rhel9"] %}}
-+        {{%- if product not in ["ol8", "ol9", "rhel8", "rhel9"] and 'wrlinux' not in product %}}
+-        {{%- if product not in ["ol8", "ol9"] and "rhel" not in product %}}
++        {{%- if product not in ["ol8", "ol9"] and "rhel" not in product and 'wrlinux' not in product %}}
          <extend_definition comment="The SSH ClientAliveCountMax is set to zero" definition_ref="sshd_set_keepalive" />
          {{% endif %}}
        </criteria>

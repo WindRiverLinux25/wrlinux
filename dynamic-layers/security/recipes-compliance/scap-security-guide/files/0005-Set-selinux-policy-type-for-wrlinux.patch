@@ -1,4 +1,4 @@
-From 60b2718e4515a010381e7ea8e6f5ab56fa1309c1 Mon Sep 17 00:00:00 2001
+From 4f4ec6d8ecf1586aa43d0ccb4034595c4af8a708 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Fri, 28 Jan 2022 17:14:51 +0800
 Subject: [PATCH] Set selinux policy type for wrlinux
@@ -9,23 +9,9 @@ Upstream-Status: Inappropriate [WRLinux specific]
 
 Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
 ---
- .../guide/system/selinux/selinux_policytype/oval/shared.xml     | 2 +-
- linux_os/guide/system/selinux/var_selinux_policy_name.var       | 2 ++
- 2 files changed, 3 insertions(+), 1 deletion(-)
+ linux_os/guide/system/selinux/var_selinux_policy_name.var | 2 ++
+ 1 file changed, 2 insertions(+)
 
-diff --git a/linux_os/guide/system/selinux/selinux_policytype/oval/shared.xml b/linux_os/guide/system/selinux/selinux_policytype/oval/shared.xml
-index 6a51b5ea..348bdafc 100644
---- a/linux_os/guide/system/selinux/selinux_policytype/oval/shared.xml
-+++ b/linux_os/guide/system/selinux/selinux_policytype/oval/shared.xml
-@@ -23,7 +23,7 @@
- 
-   <ind:textfilecontent54_object id="obj_selinux_policy" version="1">
-     <ind:filepath>/etc/selinux/config</ind:filepath>
--    <ind:pattern operation="pattern match">^SELINUXTYPE=([\w]*)[\s]*$</ind:pattern>
-+    <ind:pattern operation="pattern match">^SELINUXTYPE=([^\s]*)[\s]*$</ind:pattern>
-     <ind:instance datatype="int">1</ind:instance>
-   </ind:textfilecontent54_object>
- </def-group>
 diff --git a/linux_os/guide/system/selinux/var_selinux_policy_name.var b/linux_os/guide/system/selinux/var_selinux_policy_name.var
 index 891c5818..07be5098 100644
 --- a/linux_os/guide/system/selinux/var_selinux_policy_name.var

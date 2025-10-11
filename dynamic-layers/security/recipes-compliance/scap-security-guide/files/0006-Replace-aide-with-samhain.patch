@@ -1,4 +1,4 @@
-From 9bc51523f5edb97f3be455e61546273e751a1e7e Mon Sep 17 00:00:00 2001
+From 20fb1a0febbe7038cd1787a2411de3d9c9265383 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Fri, 11 Nov 2022 20:19:22 +0800
 Subject: [PATCH] Replace aide with samhain

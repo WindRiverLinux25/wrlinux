@@ -1,4 +1,4 @@
-From ed123d404b4aa965a2dfe052b2508ea8b6a60087 Mon Sep 17 00:00:00 2001
+From 7e21067c7a444e715a1dcc5e7bc2ceb6ba8a1a80 Mon Sep 17 00:00:00 2001
 From: Yi Zhao <yi.zhao@windriver.com>
 Date: Sun, 28 Apr 2024 12:40:31 +0800
 Subject: [PATCH] Set grub2 boot path for wrlinux
@@ -11,10 +11,10 @@ Signed-off-by: Yi Zhao <yi.zhao@windriver.com>
  1 file changed, 4 insertions(+)
 
 diff --git a/product_properties/10-grub.yml b/product_properties/10-grub.yml
-index 436c6b49..15a33706 100644
+index b2c17c23..b7985d71 100644
 --- a/product_properties/10-grub.yml
 +++ b/product_properties/10-grub.yml
-@@ -24,4 +24,8 @@ overrides:
+@@ -28,4 +28,8 @@ overrides:
  {{% else %}}
    grub2_uefi_boot_path: "/boot/grub"
  {{% endif %}}
