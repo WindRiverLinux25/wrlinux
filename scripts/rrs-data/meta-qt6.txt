@@ -2,7 +2,7 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
 * packagegroup-qt6-essentials 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
-* qt3d 6.8.3 6.9.3 Not updated
+* qt3d 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -13,7 +13,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qt5compat 6.8.3 6.9.3 Not updated
+* qt5compat 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -24,7 +24,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtapplicationmanager 6.8.3 6.9.3 Not updated
+* qtapplicationmanager 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -35,7 +35,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - QtApplicationManager: Add support | 6.3.0 | U | Default | 2021-10-06
-* qtbase 6.8.3 6.9.3 Not updated
+* qtbase 6.8.3 6.10.0 Not updated
     - qtbase: use correct relative path for scripts | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -46,7 +46,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtcharts 6.8.3 6.9.3 Not updated
+* qtcharts 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -57,7 +57,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtcoap 6.8.3 6.9.3 Not updated
+* qtcoap 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -68,7 +68,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtconnectivity 6.8.3 6.9.3 Not updated
+* qtconnectivity 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -79,7 +79,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtdatavis3d 6.8.3 6.9.3 Not updated
+* qtdatavis3d 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -90,7 +90,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtdeclarative 6.8.3 6.9.3 Not updated
+* qtdeclarative 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -112,14 +112,14 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtgraphs 6.8.3 6.9.3 Not updated
+* qtgraphs 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
     - Add srcrev for QtDoc | 6.8.0 | U | Default | 2023-12-20
     - examples: add runtime dependency to main package | 6.7.0 | U | Default | 2023-08-15
     - Add recipe for Qt Graphs | 6.6.0 | U | Default | 2023-04-19
-* qtgrpc 6.8.3 6.9.3 Not updated
+* qtgrpc 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -128,7 +128,7 @@
     - Bump PV to 6.6.0 | 6.6.0 | U | Default | 2022-12-19
     - Bump PV to 6.5.1 | 6.5.1 | U | Default | 2022-12-15
     - Update submodule refs on 'dev' in yocto/meta-qt6 | 6.5.0 | U | Default | 2022-12-07
-* qthttpserver 6.8.3 6.9.3 Not updated
+* qthttpserver 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -138,7 +138,7 @@
     - Bump PV to 6.5.1 | 6.5.1 | U | Default | 2022-12-15
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - Add support for QtHttpServer | 6.4.0 | U | Default | 2022-05-23
-* qtimageformats 6.8.3 6.9.3 Not updated
+* qtimageformats 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -149,7 +149,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtinterfaceframework 6.8.3 6.9.3 Not updated
+* qtinterfaceframework 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -160,7 +160,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtlanguageserver 6.8.3 6.9.3 Not updated
+* qtlanguageserver 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -171,7 +171,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Add support for qtlanguageserver | 6.3.0 | U | Default | 2022-01-17
-* qtlocation 6.8.3 6.9.3 Not updated
+* qtlocation 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -180,7 +180,7 @@
     - Bump PV to 6.6.0 | 6.6.0 | U | Default | 2022-12-19
     - Bump PV to 6.5.1 | 6.5.1 | U | Default | 2022-12-15
     - Update submodule refs on 'dev' in yocto/meta-qt6 | 6.5.0 | U | Default | 2022-12-07
-* qtlottie 6.8.3 6.9.3 Not updated
+* qtlottie 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - qt6: update licenses | 6.8.2 | U | Default | 2024-11-19
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -191,7 +191,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtmqtt 6.8.3 6.9.3 Not updated
+* qtmqtt 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - qt6: update licenses | 6.8.2 | U | Default | 2024-11-19
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -202,7 +202,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtmultimedia 6.8.3 6.9.3 Not updated
+* qtmultimedia 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -213,7 +213,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtnetworkauth 6.8.3 6.9.3 Not updated
+* qtnetworkauth 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - qt6: update licenses | 6.8.2 | U | Default | 2024-11-19
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -224,7 +224,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtopcua 6.8.3 6.9.3 Not updated
+* qtopcua 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -235,7 +235,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtpositioning 6.8.3 6.9.3 Not updated
+* qtpositioning 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -246,7 +246,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtquick3d 6.8.3 6.9.3 Not updated
+* qtquick3d 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - qt6: update licenses | 6.8.2 | U | Default | 2024-11-19
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -257,7 +257,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtquick3dphysics 6.8.3 6.9.3 Not updated
+* qtquick3dphysics 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -278,7 +278,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtquicktimeline 6.8.3 6.9.3 Not updated
+* qtquicktimeline 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -289,7 +289,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtremoteobjects 6.8.3 6.9.3 Not updated
+* qtremoteobjects 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -300,7 +300,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtscxml 6.8.3 6.9.3 Not updated
+* qtscxml 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -311,7 +311,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtsensors 6.8.3 6.9.3 Not updated
+* qtsensors 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -322,7 +322,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtserialbus 6.8.3 6.9.3 Not updated
+* qtserialbus 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -333,7 +333,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtserialport 6.8.3 6.9.3 Not updated
+* qtserialport 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - qt6: update licenses | 6.8.2 | U | Default | 2024-11-19
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -344,7 +344,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtshadertools 6.8.3 6.9.3 Not updated
+* qtshadertools 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -355,7 +355,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtspeech 6.8.3 6.9.3 Not updated
+* qtspeech 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -367,7 +367,7 @@
     - Add support for QtSpeech | 6.4.0 | U | Default | 2022-05-23
     - qtspeech: remove recipe | 6.3.0 | R | Default | 2021-11-15
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtsvg 6.8.3 6.9.3 Not updated
+* qtsvg 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -378,7 +378,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qttools 6.8.3 6.9.3 Not updated
+* qttools 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -389,7 +389,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qttranslations 6.8.3 6.9.3 Not updated
+* qttranslations 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -400,7 +400,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtvirtualkeyboard 6.8.3 6.9.3 Not updated
+* qtvirtualkeyboard 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -411,7 +411,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtwayland 6.8.3 6.9.3 Not updated
+* qtwayland 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -422,7 +422,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtwebchannel 6.8.3 6.9.3 Not updated
+* qtwebchannel 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - qt6: update licenses | 6.8.2 | U | Default | 2024-11-19
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03
@@ -433,7 +433,7 @@
     - qt6: update version to Qt 6.5.0 | 6.5.0 | U | Default | 2022-06-14
     - qt6: bump version to 6.4.0 | 6.4.0 | U | Default | 2022-02-01
     - Initial import at master release start. | 6.3.0 | U | Default | 2021-09-22
-* qtwebsockets 6.8.3 6.9.3 Not updated
+* qtwebsockets 6.8.3 6.10.0 Not updated
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.3 | U | Default | 2025-01-27
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.2 | U | Default | 2024-11-22
     - Update submodule refs on '6.8' in yocto/meta-qt6 | 6.8.1 | U | Default | 2024-10-03

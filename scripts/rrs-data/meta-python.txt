@@ -23,7 +23,7 @@
     - python3-aiohappyeyeballs: upgrade 2.3.4 -> 2.4.0 | 2.4.0 | U | Default | 2024-08-28
     - python3-aiohappyeyeballs: upgrade 2.3.2 -> 2.3.4 | 2.3.4 | U | Default | 2024-08-09
     - python3-aiohappyeyeballs: add recipe | 2.3.2 | U | Default | 2024-01-29
-* python3-aiohttp 3.11.16 3.12.15 Not updated
+* python3-aiohttp 3.11.16 3.13.0 Not updated
     - python3-aiohttp: upgrade 3.11.14 -> 3.11.16 | 3.11.16 | U | Default | 2025-04-06
     - python3-aiohttp: upgrade 3.11.13 -> 3.11.14 | 3.11.14 | U | Default | 2025-03-25
     - python3-aiohttp: Upgrade 3.11.12 -> 3.11.13 | 3.11.13 | U | Default | 2025-03-06
@@ -98,7 +98,7 @@
     - python3-argh: upgrade 0.28.1 -> 0.29.3 | 0.29.3 | U | Default | 2023-09-07
     - python3-argh: upgrade 0.26.2 -> 0.28.1 | 0.28.1 | U | Default | 2023-07-10
     - Initial import at master release start. | 0.26.2 | U | Default | 2021-09-24
-* python3-asgiref 3.8.1 3.9.2 Not updated
+* python3-asgiref 3.8.1 3.10.0 Not updated
     - python3-asgiref: upgrade 3.7.2 -> 3.8.1 | 3.8.1 | U | Default | 2024-04-02
     - python3-asgiref: upgrade 3.7.1 -> 3.7.2 | 3.7.2 | U | Default | 2023-05-31
     - python3-asgiref: upgrade 3.6.0 -> 3.7.1 | 3.7.1 | U | Default | 2023-05-25
@@ -109,7 +109,7 @@
     - Initial import at master release start. | 1.5.2 | U | Default | 2021-09-24
 * python3-astor 0.8.1 0.8.1 Up-to-date
     - Initial import at master release start. | 0.8.1 | U | Default | 2021-09-24
-* python3-astroid 3.3.9 3.3.11 Not updated
+* python3-astroid 3.3.9 4.0.0 Not updated
     - python3-astroid: Upgrade 3.3.8 -> 3.3.9 | 3.3.9 | U | Default | 2025-03-10
     - python3-astroid: upgrade 3.3.7 -> 3.3.8 | 3.3.8 | U | Default | 2025-01-02
     - python3-astroid: upgrade 3.3.5 -> 3.3.7 | 3.3.7 | U | Default | 2024-12-24
@@ -411,7 +411,7 @@
     - python3-expandvars: add recipe | 0.12.0 | U | Default | 2023-12-19
 * python3-fields 5.0.0 5.0.0 Up-to-date
     - Initial import at master release start. | 5.0.0 | U | Default | 2021-09-24
-* python3-filelock 3.18.0 3.19.1 Not updated
+* python3-filelock 3.18.0 3.20.0 Not updated
     - python3-filelock: Upgrade 3.17.0 -> 3.18.0 | 3.18.0 | U | Default | 2025-03-18
     - python3-filelock: Upgrade 3.16.1 -> 3.17.0 | 3.17.0 | U | Default | 2025-01-25
     - python3-filelock: upgrade 3.16.0 -> 3.16.1 | 3.16.1 | U | Default | 2024-09-19
@@ -424,7 +424,7 @@
     - python3-filelock: upgrade 3.12.4 -> 3.13.1 | 3.13.1 | U | Default | 2023-11-06
     - python3-filelock: Update version 3.12.0 -> 3.12.4 | 3.12.4 | U | Default | 2023-09-21
     - python3-filelock: Add initial recipe 3.12.0 | 3.12.0 | U | Default | 2023-06-26
-* python3-frozenlist 1.5.0 1.7.0 Not updated
+* python3-frozenlist 1.5.0 1.8.0 Not updated
     - python3-frozenlist: Upgrade 1.4.1 -> 1.5.0 | 1.5.0 | U | Default | 2024-11-27
     - python3-frozenlist: upgrade 1.4.0 -> 1.4.1 | 1.4.1 | U | Default | 2023-12-19
     - python3-frozenlist: upgrade 1.3.3 -> 1.4.0 | 1.4.0 | U | Default | 2023-07-21
@@ -592,7 +592,7 @@
     - python3-mock: upgrade 5.0.0 -> 5.0.1 | 5.0.1 | U | Default | 2023-01-17
     - python3-mock: upgrade 4.0.3 -> 5.0.0 | 5.0.0 | U | Default | 2023-01-06
     - Initial import at master release start. | 4.0.3 | U | Default | 2021-09-24
-* python3-multidict 6.3.2+git 6.6.4 Not updated
+* python3-multidict 6.3.2+git 6.7.0 Not updated
     - python3-multidict: upgrade 6.2.0 -> 6.3.2 | 6.3.2+git | U | Default | 2025-04-07
     - python3-multidict: Upgrade 6.1.0 -> 6.2.0 | 6.2.0+git | U | Default | 2025-03-19
     - python3-multidict: Upgrade 6.0.5 -> 6.1.0 | 6.1.0+git | U | Default | 2024-10-09
@@ -745,7 +745,7 @@
     - Initial import at master release start. | 8.3.2 | U | Default | 2021-09-24
 * python3-pkgconfig 1.5.5 1.5.5 Up-to-date
     - Initial import at master release start. | 1.5.5 | U | Default | 2021-09-24
-* python3-platformdirs 4.3.7 4.4.0 Not updated
+* python3-platformdirs 4.3.7 4.5.0 Not updated
     - python3-platformdirs: upgrade 4.3.6 -> 4.3.7 | 4.3.7 | U | Default | 2025-03-25
     - python3-platformdirs: upgrade 4.3.1 -> 4.3.6 | 4.3.6 | U | Default | 2024-09-19
     - python3-platformdirs: upgrade 4.2.2 -> 4.3.1 | 4.3.1 | U | Default | 2024-09-10
@@ -805,7 +805,7 @@
     - python3-prompt-toolkit: Upgrade 3.0.21 -> 3.0.22 | 3.0.22 | U | Default | 2021-11-20
     - python3-prompt-toolkit: Upgrade 3.0.19 -> 3.0.21 | 3.0.21 | U | Default | 2021-10-28
     - Initial import at master release start. | 3.0.19 | U | Default | 2021-09-24
-* python3-propcache 0.3.1 0.3.2 Not updated
+* python3-propcache 0.3.1 0.4.1 Not updated
     - python3-propcache: upgrade 0.3.0 -> 0.3.1 | 0.3.1 | U | Default | 2025-03-31
     - python3-propcache: upgrade 0.2.1 -> 0.3.0 | 0.3.0 | U | Default | 2025-02-26
     - python3-propcache: upgrade 0.2.0 -> 0.2.1 | 0.2.1 | U | Default | 2024-12-22
@@ -925,7 +925,7 @@
     - Initial import at master release start. | 3.32 | U | Default | 2021-09-24
 * python3-pykwalify 1.8.0 1.8.0 Up-to-date
     - Initial import at master release start. | 1.8.0 | U | Default | 2021-09-24
-* python3-pylint 3.3.6 3.3.8 Not updated
+* python3-pylint 3.3.6 3.3.9 Not updated
     - python3-pylint: Upgrade 3.3.4 -> 3.3.6 | 3.3.6 | U | Default | 2025-03-20
     - python3-pylint: Upgrade 3.3.3 -> 3.3.4 | 3.3.4 | U | Default | 2025-02-12
     - python3-pylint: Upgrade 3.3.1 -> 3.3.3 | 3.3.3 | U | Default | 2025-01-25
@@ -958,7 +958,7 @@
 * python3-pyperclip 1.9.0 1.11.0 Not updated
     - python3-pyperclip: Upgrade 1.8.2 -> 1.9.0 | 1.9.0 | U | Default | 2024-06-22
     - Initial import at master release start. | 1.8.2 | U | Default | 2021-09-24
-* python3-pyproject-api 1.8.0 1.9.1 Not updated
+* python3-pyproject-api 1.8.0 1.10.0 Not updated
     - python3-pyproject-api: upgrade 1.7.2 -> 1.8.0 | 1.8.0 | U | Default | 2024-12-24
     - python3-pyproject-api: upgrade 1.7.1 -> 1.7.2 | 1.7.2 | U | Default | 2024-09-19
     - python3-pyproject-api: upgrade 1.6.1 -> 1.7.1 | 1.7.1 | U | Default | 2024-06-27
@@ -988,7 +988,7 @@
     - python3-pytest-benchmark: upgrade 4.0.0 -> 5.1.0 | 5.1.0 | U | Default | 2024-12-24
     - python3-pytest-benchmark: upgrade 3.4.1 -> 4.0.0 | 4.0.0 | U | Default | 2022-11-07
     - Initial import at master release start. | 3.4.1 | U | Default | 2021-09-24
-* python3-pytest-codspeed 3.0.0 4.0.0 Not updated
+* python3-pytest-codspeed 3.0.0 4.1.1 Not updated
     - python3-pytest-codspeed: upgrade 2.2.1 -> 3.0.0 | 3.0.0 | U | Default | 2024-11-06
     - python3-pytest-codspeed: Add recipe | 2.2.1 | U | Default | 2024-10-15
 * python3-pytest-cov 6.0.0 6.0.0 Up-to-date
@@ -1032,7 +1032,7 @@
     - python3-pytest-xdist: add 2.5.0 | 2.5.0 | U | Default | 2022-02-16
 * python3-pytoml 0.1.21 0.1.21 Up-to-date
     - Initial import at master release start. | 0.1.21 | U | Default | 2021-09-24
-* python3-pyudev 0.24.3 0.24.3 Up-to-date
+* python3-pyudev 0.24.3 0.24.4 Not updated
     - python3-pyudev: upgrade 0.24.1 -> 0.24.3 | 0.24.3 | U | Default | 2024-05-19
     - python3-pyudev: upgrade 0.24.0 -> 0.24.1 | 0.24.1 | U | Default | 2023-05-09
     - python3-pyudev: upgrade 0.23.2 -> 0.24.0 | 0.24.0 | U | Default | 2022-09-03
@@ -1104,7 +1104,7 @@
     - Initial import at master release start. | 0.9.1 | U | Default | 2021-09-24
 * python3-requests-unixsocket 0.3.0 0.3.0 Up-to-date
     - Add python-requests-unixsocket recipe | 0.3.0 | U | Default | 2022-08-06
-* python3-rich 14.0.0 14.1.0 Not updated
+* python3-rich 14.0.0 14.2.0 Not updated
     - python3-rich: upgrade 13.9.4 -> 14.0.0 | 14.0.0 | U | Default | 2025-04-07
     - python3-rich: upgrade 13.9.3 -> 13.9.4 | 13.9.4 | U | Default | 2024-11-06
     - python3-rich: Upgrade 13.9.2 -> 13.9.3 | 13.9.3 | U | Default | 2024-10-24
@@ -1190,7 +1190,7 @@
     - Initial import at master release start. | 1.6.4 | U | Default | 2021-09-24
 * python3-toml 0.10.2 0.10.2 Up-to-date
     - python3-toml: add from openembedded-core | 0.10.2 | U | Default | 2024-08-09
-* python3-tomli 2.2.1 2.2.1 Up-to-date
+* python3-tomli 2.2.1 2.3.0 Not updated
     - python3-tomli: upgrade 2.1.0 -> 2.2.1 | 2.2.1 | U | Default | 2024-12-03
     - python3-tomli: upgrade 2.0.2 -> 2.1.0 | 2.1.0 | U | Default | 2024-11-20
     - python3-tomli: upgrade 2.0.1 -> 2.0.2 | 2.0.2 | U | Default | 2024-10-14
@@ -1212,7 +1212,7 @@
     - python3-tornado: upgrade 6.2 -> 6.3 | 6.3 | U | Default | 2023-04-24
     - python3-tornado: Upgrade 6.1 -> 6.2 | 6.2 | U | Default | 2022-07-11
     - Initial import at master release start. | 6.1 | U | Default | 2021-09-24
-* python3-tox 4.25.0 4.30.3 Not updated
+* python3-tox 4.25.0 4.31.0 Not updated
     - python3-tox: upgrade 4.24.2 -> 4.25.0 | 4.25.0 | U | Default | 2025-03-31
     - python3-tox: upgrade 4.24.1 -> 4.24.2 | 4.24.2 | U | Default | 2025-03-12
     - python3-tox: Upgrade 4.23.2 -> 4.24.1 | 4.24.1 | U | Default | 2025-01-25
@@ -1277,7 +1277,7 @@
     - python3-types-setuptools: add 68.0.0.3 | 68.0.0.3 | U | Default | 2023-08-11
 * python3-versioneer 0.29 0.29 Up-to-date
     - python3-versioneer: add recipe | 0.29 | U | Default | 2023-07-25
-* python3-virtualenv 20.30.0 20.34.0 Not updated
+* python3-virtualenv 20.30.0 20.35.3 Not updated
     - python3-virtualenv: upgrade 20.29.3 -> 20.30.0 | 20.30.0 | U | Default | 2025-04-07
     - python3-virtualenv: upgrade 20.29.2 -> 20.29.3 | 20.29.3 | U | Default | 2025-03-12
     - python3-virtualenv: upgrade 20.29.1 -> 20.29.2 | 20.29.2 | U | Default | 2025-02-26
@@ -1367,7 +1367,7 @@
     - python3-wxgtk4: upgrade 4.2.0 -> 4.2.1 | 4.2.1 | U | Default | 2023-11-06
     - python3-wxgtk4: replace deprecated inspect.getargspec | 4.2.0 | U | Default | 2022-12-06
     - python3-wxgtk4: add recipe | 4.1.1 | U | Default | 2022-03-30
-* python3-yarl 1.18.3 1.20.1 Not updated
+* python3-yarl 1.18.3 1.22.0 Not updated
     - python3-yarl: upgrade 1.18.0 -> 1.18.3 | 1.18.3 | U | Default | 2024-12-22
     - python3-yarl: Upgrade 1.17.1 -> 1.18.0 | 1.18.0 | U | Default | 2024-11-29
     - python3-yarl: upgrade 1.15.1 -> 1.17.1 | 1.17.1 | U | Default | 2024-11-20
