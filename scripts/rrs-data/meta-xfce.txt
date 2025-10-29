@@ -58,7 +58,7 @@
     - ristretto: upgrade 0.12.0 -> 0.12.1 | 0.12.1 | U | Default | 2022-01-05
     - ristretto: upgrade 0.11.0 -> 0.12.0 | 0.12.0 | U | Default | 2021-11-20
     - Initial import at master release start. | 0.11.0 | U | Default | 2021-09-24
-* thunar 4.20.0 4.21.2 Not updated
+* thunar 4.20.0 4.21.3 Not updated
     - thunar: 4.19.0 -> 4.20.0 | 4.20.0 | U | Default | 2024-12-19
     - thunar: upgrade 4.18.4 -> 4.19.0 | 4.19.0 | U | Default | 2023-11-06
     - thunar: 4.18.0 -> 4.18.4 | 4.18.4 | U | Default | 2023-04-10

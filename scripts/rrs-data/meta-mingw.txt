@@ -1,6 +1,6 @@
 * core-image-mingw-sdktest 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-11-07
-* libiconv 1.15  Unknown
+* libiconv 1.15 1.18 Not updated
     - Initial import at master release start. | 1.15 | U | Default | 2021-11-07
 * mingw-libgnurx 2.5.1  Unknown
     - Initial import at master release start. | 2.5.1 | U | Default | 2021-11-07

@@ -1,4 +1,5 @@
-* dpdk 22.11.7 24.11.3 Not updated
+* dpdk 23.11.1.marvell 23.11 Unknown
+    - dpdk: add Marvell BSP-specific recipe | 23.11.1.marvell | U | Default | 2025-10-17
     - dpdk: upgrade 22.11.7 -> 22.11.7 | 22.11.7 | U | Default | 2024-12-04
     - dpdk: upgrade 22.11.5 -> 22.11.6 | 22.11.6 | U | Default | 2024-08-22
     - dpdk: upgrade 21.11 -> 22.11 | 22.11.5 | D | Default | 2024-05-27

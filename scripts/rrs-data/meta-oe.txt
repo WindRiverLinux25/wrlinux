@@ -182,7 +182,7 @@
     - dlt-daemon: Bump to latest revision on master | 2.18.8+2.18.9gitAUTOINC+0138c00811 | U | Default | 2022-01-26
     - dlt-daemon: upgrade 2.18.7 -> 2.18.8 | 2.18.8 | U | Default | 2022-01-25
     - Initial import at master release start. | 2.18.7 | U | Default | 2021-09-24
-* doxygen 1.13.2 1.14.0 Not updated
+* doxygen 1.13.2 1.15.0 Not updated
     - doxygen: upgrade 1.13.1 -> 1.13.2 | 1.13.2 | U | Default | 2025-01-14
     - doxygen: upgrade 1.13.0 -> 1.13.1 | 1.13.1 | U | Default | 2025-01-07
     - doxygen: upgrade 1.12.0 -> 1.13.0 | 1.13.0 | U | Default | 2024-12-30
@@ -290,7 +290,7 @@
     - gperftools: 2.10 -> 2.15 | 2.15 | U | Default | 2024-03-21
     - gperftools: upgrade 2.9.1 -> 2.10 | 2.10 | U | Default | 2022-07-02
     - Initial import at master release start. | 2.9.1 | U | Default | 2021-09-24
-* graphviz 12.2.1 14.0.1 Not updated
+* graphviz 12.2.1 14.0.2 Not updated
     - graphviz: upgrade 12.2.0 -> 12.2.1 | 12.2.1 | U | Default | 2024-12-19
     - graphviz: upgrade 12.1.2 -> 12.2.0 | 12.2.0 | U | Default | 2024-11-20
     - graphviz: upgrade 8.1.0 -> 12.1.2 | 12.1.2 | U | Default | 2024-10-14
@@ -445,7 +445,7 @@
     - lcms: upgrade 2.13.1 -> 2.14 | 2.14 | U | Default | 2022-11-07
     - lcms: upgrade 2.12 -> 2.13.1 | 2.13.1 | U | Default | 2022-02-08
     - Initial import at master release start. | 2.12 | U | Default | 2021-09-24
-* libatasmart 0.19  Unknown
+* libatasmart 0.19 0.19 Up-to-date
     - Initial import at master release start. | 0.19 | U | Default | 2021-09-24
 * libblockdev 3.2.1 3.4.0 Not updated
     - libblockdev: upgrade 3.2.0 -> 3.2.1 | 3.2.1 | U | Default | 2024-11-20
@@ -480,7 +480,7 @@
     - libbytesize: upgrade 2.7 -> 2.8 | 2.8 | U | Default | 2023-04-04
     - libbytesize: upgrade 2.6 -> 2.7 | 2.7 | U | Default | 2022-05-31
     - Initial import at master release start. | 2.6 | U | Default | 2021-09-24
-* libcanberra 0.30  Unknown
+* libcanberra 0.30 0.30 Up-to-date
     - Initial import at master release start. | 0.30 | U | Default | 2021-09-24
 * libcereal 1.3.2+gitAUTOINC+ebef1e9298 1.3.2 Up-to-date
     - libcereal: upgrade 1.3.1 -> 1.3.2 | 1.3.2+gitAUTOINC+ebef1e9298 | U | Default | 2022-03-07
@@ -492,7 +492,7 @@
     - libdbi-perl: upgrade 1.644 -> 1.646 | 1.646 | U | Default | 2025-01-14
     - libdbi-perl: upgrade 1.643 -> 1.644 | 1.644 | U | Default | 2024-09-03
     - Initial import at master release start. | 1.643 | U | Default | 2021-09-24
-* libdecor 0.2.2 0.2.3 Not updated
+* libdecor 0.2.2 0.2.4 Not updated
     - libdecor: upgrade 0.2.1 -> 0.2.2 | 0.2.2 | U | Default | 2024-01-23
     - libdecor: update 0.2.0 -> 0.2.1 | 0.2.1 | U | Default | 2023-12-02
     - libdecor: Upgrade 0.1.99 -> 0.2.0 | 0.2.0 | U | Default | 2023-10-12
@@ -501,7 +501,7 @@
 * libdev-checklib-perl 1.16 1.16 Up-to-date
     - libdev-checklib-perl: upgrade 1.14 -> 1.16 | 1.16 | U | Default | 2022-09-06
     - Initial import at master release start. | 1.14 | U | Default | 2021-09-24
-* libdevmapper 2.03.31 2.03.35 Not updated
+* libdevmapper 2.03.31 2.03.36 Not updated
     - lvm2: upgrade 2.03.30 -> 2.03.31 | 2.03.31 | U | Default | 2025-03-02
     - lvm2: update 2.03.29 -> 2.03.30 | 2.03.30 | U | Default | 2025-01-25
     - lvm2: update 2.03.28 -> 2.03.29 | 2.03.29 | U | Default | 2024-12-19
@@ -546,7 +546,7 @@
     - Initial import at master release start. | 2.23 | U | Default | 2021-09-24
 * libid3tag 0.15.1b 0.15.1b Up-to-date
     - libid3tag: add from oe-core | 0.15.1b | U | Default | 2021-12-03
-* libidn 1.43  Unknown
+* libidn 1.43 1.43 Up-to-date
     - libidn: upgrade 1.42 -> 1.43 | 1.43 | U | Default | 2025-03-31
     - libidn: upgrade 1.41 -> 1.42 | 1.42 | U | Default | 2024-09-29
     - libidn: update to 1.41 | 1.41 | U | Default | 2023-03-10
@@ -695,7 +695,7 @@
     - luajit: upgrade 2.1beta -> 2.1 | 2.1 | D | Default | 2024-01-09
     - luajit: Update to latest on v2.1 branch | 2.1.0~beta3-220721 | U | Default | 2023-01-08
     - Initial import at master release start. | 2.1.0~beta3-210112 | U | Default | 2021-09-24
-* lvm2 2.03.31 2.03.35 Not updated
+* lvm2 2.03.31 2.03.36 Not updated
     - lvm2: upgrade 2.03.30 -> 2.03.31 | 2.03.31 | U | Default | 2025-03-02
     - lvm2: update 2.03.29 -> 2.03.30 | 2.03.30 | U | Default | 2025-01-25
     - lvm2: update 2.03.28 -> 2.03.29 | 2.03.29 | U | Default | 2024-12-19
@@ -798,7 +798,7 @@
     - nmap: add recipe for 7.92 | 7.92 | D | Default | 2025-05-15
     - nmap: Upgrade to 7.95 | 7.95 | U | Default | 2024-09-04
     - Initial import at master release start. | 7.80 | U | Default | 2021-09-24
-* nodejs 22.14.0 24.10.0 Not updated
+* nodejs 22.14.0 25.0.0 Not updated
     - nodejs: upgrade 22.13.0 -> 22.14.0 | 22.14.0 | U | Default | 2025-03-18
     - nodejs: upgrade 22.12.0 -> 22.13.1 | 22.13.1 | U | Default | 2025-01-25
     - nodejs: upgrade 22.11.0 -> 22.12.0 | 22.12.0 | U | Default | 2024-12-04
@@ -878,7 +878,7 @@
     - openjpeg: upgrade 2.5.0 -> 2.5.2 | 2.5.2 | U | Default | 2024-09-15
     - openjpeg: upgrade 2.4.0 -> 2.5.0 | 2.5.0 | U | Default | 2022-05-16
     - Initial import at master release start. | 2.4.0 | U | Default | 2021-09-24
-* openldap 2.6.9 2.6.10 Not updated
+* openldap 2.6.9  Unknown
     - openldap: upgrade 2.6.8 -> 2.6.9 | 2.6.9 | U | Default | 2025-01-02
     - openldap: upgrade 2.6.7 -> 2.6.8 | 2.6.8 | U | Default | 2024-06-27
     - openldap: upgrade 2.5.16 -> 2.6.7 | 2.6.7 | U | Default | 2024-03-02
@@ -933,7 +933,7 @@
     - pangomm: upgrade 2.46.2 -> 2.46.4 | 2.46.4 | U | Default | 2025-03-12
     - pangomm: Add recipe for pangomm-2.48 | 2.46.2 | U | Default | 2022-02-22
     - Initial import at master release start. | 2.46.1 | U | Default | 2021-09-24
-* parallel 20250322  Unknown
+* parallel 20250322 20250922 Not updated
     - parallel: upgrade 20250222 -> 20250322 | 20250322 | U | Default | 2025-03-31
     - parallel: upgrade 20250122 -> 20250222 | 20250222 | U | Default | 2025-02-26
     - parallel: upgrade 20241222 -> 20250122 | 20250122 | U | Default | 2025-02-12
@@ -1098,7 +1098,7 @@
     - pugixml: upgrade 1.11.4 -> 1.12 | 1.12 | U | Default | 2022-02-23
     - pugixml: upgrade 1.11.2 -> 1.11.4 | 1.11.4 | U | Default | 2022-01-05
     - Initial import at master release start. | 1.11.2 | U | Default | 2021-09-24
-* pv 1.9.31 1.9.34 Not updated
+* pv 1.9.31 1.9.44 Not updated
     - pv: upgrade 1.6.20 -> 1.9.31 | 1.9.31 | U | Default | 2025-03-28
     - pv: update from 1.6.6 to 1.6.20 | 1.6.20 | U | Default | 2022-03-24
     - Initial import at master release start. | 1.6.6 | U | Default | 2021-09-24
@@ -1138,7 +1138,7 @@
     - Initial import at master release start. | 2020.11.01 | U | Default | 2021-09-24
 * rfkill 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
-* rocksdb 9.10.0 10.5.1 Not updated
+* rocksdb 9.10.0 10.7.5 Not updated
     - rocksdb: upgrade 9.0.0 -> 9.10.0 | 9.10.0 | U | Default | 2025-03-12
     - rocksdb: upgrade 7.9.2 -> 9.0.0 | 9.0.0 | U | Default | 2024-03-21
     - rocksdb: Upgrade to 7.9.2 | 7.9.2 | U | Default | 2023-01-26
@@ -1148,7 +1148,7 @@
     - rrdtool: upgrade 1.8.0 -> 1.9.0 | 1.9.0 | U | Default | 2025-03-12
     - rrdtool: upgrade 1.7.2 -> 1.8.0 | 1.8.0 | U | Default | 2022-03-24
     - Initial import at master release start. | 1.7.2 | U | Default | 2021-09-24
-* rsyslog 8.2502.0 8.2508.0 Not updated
+* rsyslog 8.2502.0 8.2510.0 Not updated
     - rsyslog: update from 8.2408.0 to 8.2502.0 | 8.2502.0 | U | Default | 2025-02-25
     - rsyslog: upgrade 8.2406.0 -> 8.2408.0 | 8.2408.0 | U | Default | 2024-08-28
     - rsyslog: upgrade 8.2404.0 -> 8.2406.0 | 8.2406.0 | U | Default | 2024-08-09
@@ -1217,7 +1217,7 @@
     - Initial import at master release start. | 2021.2.0 | U | Default | 2021-09-24
 * tclap 1.4.0 1.2.5 Unknown
     - Initial import at master release start. | 1.4.0 | U | Default | 2021-09-24
-* thin-provisioning-tools 1.1.0 1.2.2 Not updated
+* thin-provisioning-tools 1.1.0 1.3.0 Not updated
     - thin-provisioning-tools: Upgrade to 1.1.0 | 1.1.0 | U | Default | 2025-02-27
     - thin-provisioning-tools: 1.0.13 -> 1.0.14 | 1.0.14 | U | Default | 2025-02-25
     - thin-provisioning-tools: upgrade 1.0.12 -> 1.0.13 | 1.0.13 | U | Default | 2024-07-15
@@ -1292,14 +1292,14 @@
     - v4l-utils: Update 1.22.1 -> 1.23.0+fd544473 | 1.23.0 | U | Default | 2022-10-02
     - v4l-utils: Update 1.20.0 -> 1.22.1 | 1.22.1 | U | Default | 2022-03-14
     - Initial import at master release start. | 1.20.0 | U | Default | 2021-09-24
-* valkey 8.1.3 8.1.4 Not updated
+* valkey 8.1.3 9.0.0 Not updated
     - valkey: upgrade 8.1.1 -> 8.1.3 | 8.1.3 | U | Default | 2025-09-06
     - valkey: upgrade 8.1.0 -> 8.1.1 | 8.1.1 | U | Default | 2025-06-20
     - valkey: update from 8.0.2 -> 8.1.0 | 8.1.0 | U | Default | 2025-04-02
     - valkey: Upgrade 8.0.1 -> 8.0.2 | 8.0.2 | U | Default | 2025-02-07
     - valkey: Upgrade 8.0.0 -> 8.0.1 | 8.0.1 | U | Default | 2024-10-11
     - valkey: Add recipe | 8.0.0 | U | Default | 2024-09-26
-* vboxguestdrivers 7.1.4 7.2.2 Not updated
+* vboxguestdrivers 7.1.4 7.2.4 Not updated
     - vbxguestdrivers: upgrade 7.0.22 -> 7.1.4 | 7.1.4 | U | Default | 2024-12-13
     - vboxguestdrivers: update to 7.0.22 | 7.0.22 | U | Default | 2024-12-11
     - vbxguestdrivers: upgrade 7.0.18 -> 7.0.20 | 7.0.20 | U | Default | 2024-07-18
