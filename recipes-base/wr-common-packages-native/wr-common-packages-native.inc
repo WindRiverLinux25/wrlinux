@@ -9,19 +9,21 @@ DEPENDS = "\
     autoconf-native \
     automake-native \
     bc-native \
+    binutils-native \
     bison-native \
     bmaptool-native \
     btrfs-tools-native \
     bzip2-native \
     ca-certificates-native \
     cairo-native \
+    cargo-c-native \
     cargo-native \
     cdrtools-native \
     chrpath-native \
+    clang-native \
     cmake-native \
     coreutils-native \
     cpio-native \
-    cracklib-native \
     createrepo-c-native \
     cross-localedef-native \
     curl-native \
@@ -31,6 +33,7 @@ DEPENDS = "\
     dbus-native \
     debianutils-native \
     desktop-file-utils-native \
+    diffutils-native \
     dnf-native \
     docbook-xml-dtd4-native \
     docbook-xsl-stylesheets-native \
@@ -70,7 +73,6 @@ DEPENDS = "\
     icon-naming-utils-native \
     icu-native \
     intltool-native \
-    itstool-native \
     iucode-tool-native \
     json-c-native \
     kern-tools-native \
@@ -138,7 +140,6 @@ DEPENDS = "\
     libxtst-native \
     libxxf86vm-native \
     libyaml-native \
-    llvm-native \
     lua-native \
     lz4-native \
     lzip-native \
@@ -162,6 +163,7 @@ DEPENDS = "\
     opkg-utils-native \
     orc-native \
     ovmf-native \
+    p11-kit-native \
     pango-native \
     parted-native \
     patch-native \
@@ -174,32 +176,56 @@ DEPENDS = "\
     popt-native \
     postfix-native \
     pseudo-native \
+    python3-attrs-native \
     python3-build-native \
     python3-calver-native \
+    python3-cffi-native \
+    python3-cryptography-native \
+    python3-cython-native \
     python3-docutils-native \
     python3-editables-native \
     python3-flit-core-native \
+    python3-hatch-fancy-pypi-readme-native \
+    python3-hatch-vcs-native \
     python3-hatchling-native \
-    python3-iniparse-native \
+    python3-idna-native \
     python3-installer-native \
     python3-jinja2-native \
+    python3-jsonpointer-native \
+    python3-jsonschema-native \
+    python3-jsonschema-specifications-native \
     python3-mako-native \
     python3-markupsafe-native \
+    python3-maturin-native \
     python3-native \
     python3-packaging-native \
     python3-pathspec-native \
     python3-pip-native \
     python3-pluggy-native \
+    python3-ply-native \
+    python3-pycparser-native \
+    python3-pycryptodome-native \
     python3-pyelftools-native \
     python3-pygments-native \
     python3-pyparsing-native \
     python3-pyproject-hooks-native \
+    python3-pyrsistent-native \
+    python3-pyyaml-native \
+    python3-referencing-native \
+    python3-rfc3339-validator-native \
+    python3-rfc3987-native \
+    python3-rpds-py-native \
+    python3-semantic-version-native \
     python3-setuptools-native \
+    python3-setuptools-rust-native \
     python3-setuptools-scm-native \
     python3-six-native \
     python3-trove-classifiers-native \
     python3-typing-extensions-native \
+    python3-webcolors-native \
     python3-wheel-native \
+    python3-yamllint-native \
+    python3-zipp-native \
     qemu-helper-native \
     qemu-native \
     qemu-system-native \
@@ -223,6 +249,7 @@ DEPENDS = "\
     tar-native \
     tcl-native \
     texinfo-dummy-native \
+    ti-k3-secdev-native \
     tzcode-native \
     u-boot-tools-native \
     unfs3-native \
@@ -233,6 +260,7 @@ DEPENDS = "\
     util-linux-native \
     util-macros-native \
     vala-native \
+    vim-native \
     virglrenderer-native \
     wayland-native \
     wayland-protocols-native \
@@ -242,7 +270,7 @@ DEPENDS = "\
     xrandr-native \
     xtrans-native \
     xz-native \
-    yocto-cfg-fragments-6.6-native \
+    yocto-cfg-fragments-6.12-native \
     zlib-native \
     zstd-native \
     "
