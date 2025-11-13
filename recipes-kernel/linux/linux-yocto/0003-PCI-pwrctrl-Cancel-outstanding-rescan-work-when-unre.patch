@@ -1,0 +1,56 @@
+From fb2590935944aa70d4bebbb33c7d28f86ee27655 Mon Sep 17 00:00:00 2001
+From: Brian Norris <briannorris@google.com>
+Date: Mon, 20 Oct 2025 14:28:22 +0800
+Subject: [PATCH 03/17] PCI/pwrctrl: Cancel outstanding rescan work when
+ unregistering
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+[ Upstream commit 8b926f237743f020518162c62b93cb7107a2b5eb ]
+
+It's possible to trigger use-after-free here by:
+
+  (a) forcing rescan_work_func() to take a long time and
+  (b) utilizing a pwrctrl driver that may be unloaded for some reason
+
+Cancel outstanding work to ensure it is finished before we allow our data
+structures to be cleaned up.
+
+Upstream-Status: Pending
+
+[bhelgaas: tidy commit log]
+Fixes: 8f62819aaace ("PCI/pwrctl: Rescan bus on a separate thread")
+Signed-off-by: Brian Norris <briannorris@google.com>
+Signed-off-by: Brian Norris <briannorris@chromium.org>
+Signed-off-by: Krzysztof Wilczyński <kwilczynski@kernel.org>
+Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+Reviewed-by: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
+Acked-by: Bartosz Golaszewski <bartosz.golaszewski@linaro.org>
+Cc: Konrad Dybcio <konradybcio@kernel.org>
+Link: https://patch.msgid.link/20250409115313.1.Ia319526ed4ef06bec3180378c9a008340cec9658@changeid
+[drivers/pci/pwrctl/core.c is renamed to drivers/pci/pwrctrl/core.c
+by commit b88cbaaa6fa1 ("PCI/pwrctrl: Rename pwrctl files to pwrctrl") after 6.13.
+So I backport the fix in drivers/pci/pwrctl/core.c for 6.12.]
+Signed-off-by: Jianqi Ren <jianqi.ren.cn@windriver.com>
+Signed-off-by: He Zhe <zhe.he@windriver.com>
+---
+ drivers/pci/pwrctl/core.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/drivers/pci/pwrctl/core.c b/drivers/pci/pwrctl/core.c
+index 01d913b60316..316c1bc05d4d 100644
+--- a/drivers/pci/pwrctl/core.c
++++ b/drivers/pci/pwrctl/core.c
+@@ -110,6 +110,8 @@ EXPORT_SYMBOL_GPL(pci_pwrctl_device_set_ready);
+  */
+ void pci_pwrctl_device_unset_ready(struct pci_pwrctl *pwrctl)
+ {
++	cancel_work_sync(&pwrctl->work);
++
+ 	/*
+ 	 * We don't have to delete the link here. Typically, this function
+ 	 * is only called when the power control device is being detached. If
+-- 
+2.34.1
+

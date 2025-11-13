@@ -1,0 +1,41 @@
+From 4fe45eefca901ecaebaba994726b0bfe65929fb6 Mon Sep 17 00:00:00 2001
+From: Namjae Jeon <linkinjeon@kernel.org>
+Date: Tue, 21 Oct 2025 14:34:25 +0800
+Subject: [PATCH 17/17] exfat: fix double free in delayed_free
+
+[ Upstream commit 1f3d9724e16d62c7d42c67d6613b8512f2887c22 ]
+
+The double free could happen in the following path.
+
+exfat_create_upcase_table()
+        exfat_create_upcase_table() : return error
+        exfat_free_upcase_table() : free ->vol_utbl
+        exfat_load_default_upcase_table : return error
+     exfat_kill_sb()
+           delayed_free()
+                  exfat_free_upcase_table() <--------- double free
+This patch set ->vol_util as NULL after freeing it.
+
+Upstream-Status: Pending
+
+Reported-by: Jianzhou Zhao <xnxc22xnxc22@qq.com>
+Signed-off-by: Namjae Jeon <linkinjeon@kernel.org>
+Signed-off-by: Jianqi Ren <jianqi.ren.cn@windriver.com>
+Signed-off-by: He Zhe <zhe.he@windriver.com>
+---
+ fs/exfat/nls.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/fs/exfat/nls.c b/fs/exfat/nls.c
+index d47896a89596..1729bf42eb51 100644
+--- a/fs/exfat/nls.c
++++ b/fs/exfat/nls.c
+@@ -801,4 +801,5 @@ int exfat_create_upcase_table(struct super_block *sb)
+ void exfat_free_upcase_table(struct exfat_sb_info *sbi)
+ {
+ 	kvfree(sbi->vol_utbl);
++	sbi->vol_utbl = NULL;
+ }
+-- 
+2.34.1
+
