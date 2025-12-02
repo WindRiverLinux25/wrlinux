@@ -38,7 +38,7 @@
     - dnsmasq: upgrade 2.87 -> 2.88 | 2.88 | U | Default | 2022-12-12
     - dnsmasq: upgrade 2.86 -> 2.87 | 2.87 | U | Default | 2022-09-27
     - Initial import at master release start. | 2.86 | U | Default | 2021-09-24
-* drbd-utils 9.30.0 9.32.0 Not updated
+* drbd-utils 9.30.0 9.33.0 Not updated
     - drbd-utils: upgrade 9.28.0 -> 9.30.0 | 9.30.0 | U | Default | 2025-03-21
     - drbd-utils: upgrade 9.27.0 -> 9.28.0 | 9.28.0 | U | Default | 2024-09-11
     - drbd-utils: upgrade 9.22.0 -> 9.27.0 | 9.27.0 | U | Default | 2024-03-03
@@ -47,13 +47,14 @@
     - Initial import at master release start. | 9.13.1 | U | Default | 2021-09-24
 * ebtables 2.0.11 2.0.11 Up-to-date
     - Initial import at master release start. | 2.0.11 | U | Default | 2021-09-24
-* freeradius 3.2.7 3.2.8 Not updated
+* freeradius 3.2.8+git  Unknown
+    - freeradius: 3.2.7 -> 3.2.8+git | 3.2.8+git | U | Default | 2025-11-04
     - freeradius: 3.2.5 -> 3.2.7 | 3.2.7 | U | Default | 2025-03-21
     - freeradius: upgrade 3.2.3 -> 3.2.5 | 3.2.5 | U | Default | 2024-09-11
     - freeradius: 3.0.26 -> 3.2.3 | 3.2.3 | U | Default | 2024-04-02
     - freeradius: upgrade 3.0.21 -> 3.0.26 | 3.0.26 | U | Default | 2023-01-09
     - Initial import at master release start. | 3.0.21 | U | Default | 2021-09-24
-* frr 10.3 10.4.1 Not updated
+* frr 10.3 10.5.0 Not updated
     - frr: upgrade 10.2.1 -> 10.3 | 10.3 | U | Default | 2025-03-31
     - frr: upgrade 10.2 -> 10.2.1 | 10.2.1 | U | Default | 2025-01-02
     - frr: upgrade 10.1.1 -> 10.2 | 10.2 | U | Default | 2024-12-26
@@ -76,7 +77,7 @@
     - ipcalc: upgrade 1.0.2 -> 1.0.3 | 1.0.3 | U | Default | 2023-06-14
     - ipcalc: update to 1.0.2 | 1.0.2 | U | Default | 2023-02-18
     - Initial import at master release start. | 0.2.3 | U | Default | 2021-09-24
-* ipset 7.22 7.22 Up-to-date
+* ipset 7.22 7.24 Not updated
     - ipset: upgrade 7.21 -> 7.22 | 7.22 | U | Default | 2024-07-15
     - ipset: Update to 7.21 | 7.21 | U | Default | 2024-03-25
     - ipset: upgrade 7.15 -> 7.19 | 7.19 | U | Default | 2023-11-06
@@ -234,7 +235,8 @@
     - ntp: upgrade 4.2.8p16 -> 4.2.8p17 | 4.2.8p17 | U | Default | 2023-06-14
     - ntp: upgrade 4.2.8p15 -> 4.2.8p16 | 4.2.8p16 | U | Default | 2023-06-05
     - Initial import at master release start. | 4.2.8p15 | U | Default | 2021-09-24
-* open-vm-tools 12.5.0 13.0.5 Not updated
+* open-vm-tools 12.5.4  Unknown
+    - open-vm-tools: upgrade 12.5.0 -> 12.5.4 | 12.5.4 | U | Default | 2025-10-13
     - open-vm-tools: upgrade 12.4.5 -> 12.5.0 | 12.5.0 | U | Default | 2024-10-13
     - open-vm-tools: upgrade 12.3.5 -> 12.4.5 | 12.4.5 | U | Default | 2024-09-16
     - open-vm-tools: upgrade 12.1.5 -> 12.3.5 | 12.3.5 | U | Default | 2023-12-27
@@ -248,7 +250,7 @@
     - openipmi: update 2.0.32 -> 2.0.34 | 2.0.34 | U | Default | 2023-12-31
     - openipmi: upgrade 2.0.31 -> 2.0.32 | 2.0.32 | U | Default | 2021-12-22
     - Initial import at master release start. | 2.0.31 | U | Default | 2021-09-24
-* openvpn 2.6.14 2.6.15 Not updated
+* openvpn 2.6.14  Unknown
     - openvpn: upgrade 2.6.13 -> 2.6.14 | 2.6.14 | U | Default | 2025-04-07
     - openvpn: upgrade 2.6.12 -> 2.6.13 | 2.6.13 | U | Default | 2025-01-25
     - openvpn: upgrade 2.6.11 -> 2.6.12 | 2.6.12 | U | Default | 2024-08-09
@@ -289,7 +291,7 @@
     - snort: upgrade 2.9.18.1 -> 2.9.19 | 2.9.19 | U | Default | 2021-12-14
     - snort: upgrade 2.9.18 -> 2.9.18.1 | 2.9.18.1 | U | Default | 2021-09-27
     - Initial import at master release start. | 2.9.18 | U | Default | 2021-09-24
-* strongswan 6.0.1 6.0.2 Not updated
+* strongswan 6.0.1 6.0.3 Not updated
     - strongswan: upgrade 6.0.0 -> 6.0.1 | 6.0.1 | U | Default | 2025-03-21
     - strongswan: upgrade 5.9.14 -> 6.0.0 | 6.0.0 | U | Default | 2024-12-26
     - strongswan: upgrade 5.9.13 -> 5.9.14 | 5.9.14 | U | Default | 2024-03-26
@@ -311,7 +313,8 @@
     - tcpdump: upgrade 4.99.1 -> 4.99.2 | 4.99.2 | U | Default | 2023-01-06
     - tcpdump: upgrade 4.99.0 -> 4.99.1 | 4.99.1 | U | Default | 2022-02-03
     - Initial import at master release start. | 4.99.0 | U | Default | 2021-09-24
-* tcpreplay 4.5.1  Unknown
+* tcpreplay 4.5.2  Unknown
+    - tcpreplay: upgrade 4.5.1 -> 4.5.2 | 4.5.2 | U | Default | 2025-10-01
     - tcpreplay: upgrade 4.4.4 -> 4.5.1 | 4.5.1 | U | Default | 2024-08-02
     - tcpreplay: upgrade 4.4.3 -> 4.4.4 | 4.4.4 | U | Default | 2023-06-26
     - tcpreplay: 4.4.2 -> 4.4.3 | 4.4.3 | U | Default | 2023-03-23
@@ -340,7 +343,7 @@
     - Initial import at master release start. | 1.5 | U | Default | 2021-09-24
 * vsftpd 3.0.5 3.0.5 Up-to-date
     - Initial import at master release start. | 3.0.5 | U | Default | 2021-09-24
-* vsomeip 3.5.5  Unknown
+* vsomeip 3.5.5 3.5.11 Not updated
     - vsomeip: upgrade 3.5.3 -> 3.5.5 | 3.5.5 | U | Default | 2025-04-25
     - vsomeip: Upgrade to 3.5.3 | 3.5.3 | U | Default | 2025-01-13
     - vsomeip: upgrade 3.3.8 -> 3.4.10 | 3.4.10 | U | Default | 2024-01-02

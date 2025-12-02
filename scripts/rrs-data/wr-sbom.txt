@@ -61,7 +61,7 @@
     - add recipe python3-scancode-native and its depends | 20231228 | U | Default | 2024-09-30
 * python3-pip-requirements-parser-native 32.0.1 32.0.1 Up-to-date
     - add recipe python3-scancode-native and its depends | 32.0.1 | U | Default | 2024-09-30
-* python3-pkginfo-native 30.0.0 30.0.0 Up-to-date
+* python3-pkginfo-native 30.0.0 30.1.0 Not updated
     - add recipe python3-scancode-native and its depends | 30.0.0 | U | Default | 2024-09-30
 * python3-plugincode-native 32.0.0 32.0.0 Up-to-date
     - add recipe python3-scancode-native and its depends | 32.0.0 | U | Default | 2024-09-30
