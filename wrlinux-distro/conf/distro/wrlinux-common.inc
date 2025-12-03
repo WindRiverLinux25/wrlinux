@@ -127,6 +127,7 @@ SANITY_TESTED_DISTROS ?= " \
             ubuntu-24.04 \n \
             fedora-41 \n \
             fedora-42 \n \
+            fedora-43 \n \
             opensuseleap-15.6 \n \
             opensuseleap-16.0 \n \
             rhel-8.10 \n \
