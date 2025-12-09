@@ -32,6 +32,27 @@ set_logger(logger)
 def correct_project_path(file, project_path):
     run_cmd(['sed', '-i', '-e', 's#/PROJECT_TOPDIR#%s#g' % project_path, file], logger=logger)
 
+def remove_user_password(cmd):
+    args = shlex.split(cmd)
+    result = []
+
+    skip_next = False
+    for value in args:
+        if skip_next:
+            skip_next = False
+            continue
+
+        if value.startswith("--user=") or value.startswith("--password="):
+            continue
+
+        if value == "--user" or value == "--password":
+            skip_next = True
+            continue
+
+        result.append(value)
+
+    return " ".join(shlex.quote(x) for x in result)
+
 class ApplyProjectinfo(object):
     """
     * Apply project with input projectinfo tarball
@@ -45,6 +66,11 @@ class ApplyProjectinfo(object):
             action="store_const", const=logging.DEBUG, dest="loglevel", default=logging.INFO)
         parser.add_argument('-p', '--apply-path', default = os.getcwd(), help='Specify project apply path (Default: current directory)')
         parser.add_argument('-t', '--tarball', required = True, help='Specify path of the projectinfo tarball')
+        parser.add_argument('--base-url', metavar="URL", help='Specify URL to fetch from')
+        parser.add_argument('--base-branch', metavar="BRANCH", help='Specify Base branch identifier')
+        parser.add_argument('--user', help='Specify default user for download')
+        parser.add_argument('--password', help='Specify default password for download')
+
         self.args = parser.parse_args()
         logger.setLevel(self.args.loglevel)
 
@@ -70,6 +96,21 @@ class ApplyProjectinfo(object):
         self.extracted_folder = ""
         self.target = "N/A"
 
+    def update_setup_config(self):
+        if self.args.base_url:
+            self.setup['url'] = self.args.base_url
+
+        if self.args.base_branch:
+            self.setup['branch'] = self.args.base_branch
+
+        new_cmd = remove_user_password(self.setup['command'])
+        if self.args.user:
+            new_cmd = new_cmd + " --user=%s" % self.args.user
+        if self.args.password:
+            new_cmd = new_cmd + " --password=%s" % self.args.password
+
+        self.setup['command'] = new_cmd
+
     def extract_tarball(self):
         output = run_cmd(['tar', '-t', '-f', self.tarball], logger=logger, cwd=self.apply_path)
         self.extracted_folder = output.splitlines()[0].split('/')[0].strip()
@@ -83,7 +124,7 @@ class ApplyProjectinfo(object):
         except Exception as e:
             logger.error("Failed to extract projectinfo tarball: %s" % str(e))
             sys.exit(1)
-        
+
         summary_file = os.path.join(self.apply_path, self.extracted_folder, 'collection-summary.json')
         if os.path.exists(summary_file):
             with open(summary_file, "r") as f:
@@ -112,7 +153,7 @@ class ApplyProjectinfo(object):
            if os.path.exists(wrlinux_x_path):
                logger.warning("wrlinux-x exists, removing it")
                shutil.rmtree(wrlinux_x_path)
-       
+
            clone_cmd = 'git clone --branch=%s %s' % (self.setup['branch'], self.setup['url']) 
            logger.info("Running: %s" % clone_cmd) 
            subprocess.run(shlex.split(clone_cmd), cwd=self.apply_path, check=True)
@@ -120,19 +161,19 @@ class ApplyProjectinfo(object):
 
            if topcommit != target_topcomit:
                run_cmd(['git', 'reset', '--hard', target_topcomit], cwd=wrlinux_x_path, logger=logger)
-           
+
            setup_cmd = './wrlinux-x/setup.sh ' + self.setup['command']
            logger.info("Running: %s" % setup_cmd)
            subprocess.run(shlex.split(setup_cmd + ' --accept-eula=yes'), cwd=self.apply_path, check=True)
 
            run_cmd('bash -c ". %s"' % os.path.join(self.apply_path, 'oe-init-build-env'), logger=logger, cwd=self.apply_path)
            conf_dir = os.path.join(self.apply_path, 'build/conf')
-           
+
            os.rename(os.path.join(conf_dir, 'local.conf'), os.path.join(conf_dir, 'local.conf.default'))
            os.rename(os.path.join(conf_dir, 'bblayers.conf'), os.path.join(conf_dir, 'bblayers.conf.default'))
-           
+
            shutil.copytree(os.path.join(self.apply_path, self.extracted_folder, 'conf'), conf_dir, dirs_exist_ok=True)     
-            
+
            for file in os.listdir(conf_dir):
                correct_project_path(os.path.join(conf_dir, file), self.apply_path)
 
@@ -165,11 +206,12 @@ class ApplyProjectinfo(object):
                     logger.warning("Failed to build %s, the failure may related to customer specific configuration, please check and correct" % self.target)
         else:
             logger.info("No building since target not configured")
-        
+
 def main():
     applyer = ApplyProjectinfo()
     logger.info("Applying projectinfo tarball")
     applyer.extract_tarball()
+    applyer.update_setup_config()
     applyer.setup_project()
     applyer.build_target()
     logger.info("Applying Done")
