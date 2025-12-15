@@ -122,7 +122,7 @@
     - cjson: upgrade 1.7.16 -> 1.7.17 | 1.7.17 | U | Default | 2023-12-29
     - cjson: upgrade 1.7.15 -> 1.7.16 | 1.7.16 | U | Default | 2023-11-06
     - Initial import at master release start. | 1.7.15 | U | Default | 2021-09-24
-* cmocka 1.1.7+gitAUTOINC+a01cc69ee9 1.1.8 Not updated
+* cmocka 1.1.7+gitAUTOINC+a01cc69ee9 2.0.0 Not updated
     - cmocka: update from 1.1.5+ to 1.1.7 | 1.1.7+gitAUTOINC+a01cc69ee9 | U | Default | 2023-03-22
     - Initial import at master release start. | 1.1.5+gitAUTOINC+a4fc3dd770 | U | Default | 2021-09-24
 * cpupower 1.0 1.0 Up-to-date
@@ -242,7 +242,7 @@
     - geoclue: upgrade 2.6.0 -> 2.7.0 | 2.7.0 | U | Default | 2023-02-17
     - geoclue: update to latest commit to allow to build with libsoup-3.0 | 2.6.0 | U | Default | 2022-12-11
     - Initial import at master release start. | 2.5.7 | U | Default | 2021-09-24
-* gflags 2.2.2 2.2.2 Up-to-date
+* gflags 2.2.2 2.3.0 Not updated
     - Initial import at master release start. | 2.2.2 | U | Default | 2021-09-24
 * glade 3.36.0 3.40.0 Not updated
     - glade: update 3.22.2 -> 3.36.0 | 3.36.0 | U | Default | 2025-07-06
@@ -291,7 +291,7 @@
     - gperftools: 2.10 -> 2.15 | 2.15 | U | Default | 2024-03-21
     - gperftools: upgrade 2.9.1 -> 2.10 | 2.10 | U | Default | 2022-07-02
     - Initial import at master release start. | 2.9.1 | U | Default | 2021-09-24
-* graphviz 12.2.1 14.0.4 Not updated
+* graphviz 12.2.1 14.1.0 Not updated
     - graphviz: upgrade 12.2.0 -> 12.2.1 | 12.2.1 | U | Default | 2024-12-19
     - graphviz: upgrade 12.1.2 -> 12.2.0 | 12.2.0 | U | Default | 2024-11-20
     - graphviz: upgrade 8.1.0 -> 12.1.2 | 12.1.2 | U | Default | 2024-10-14
@@ -474,7 +474,7 @@
     - libbpf: upgrade 0.5.0 -> 0.7.0 | 0.7.0 | U | Default | 2022-04-12
     - libbpf: fix PV | 0.5.0 | U | Default | 2021-10-16
     - Initial import at master release start. | 0.5 | U | Default | 2021-09-24
-* libbytesize 2.11 2.11 Up-to-date
+* libbytesize 2.11 2.12 Not updated
     - libbytesize: upgrade 2.10 -> 2.11 | 2.11 | U | Default | 2024-08-28
     - libbytesize: upgrade 2.9 -> 2.10 | 2.10 | U | Default | 2023-10-23
     - libbytesize: upgrade 2.8 -> 2.9 | 2.9 | U | Default | 2023-07-21
@@ -664,7 +664,7 @@
 * libxpresent 1.0.1 1.0.2 Not updated
     - libxpresent: upgrade 1.0.0 -> 1.0.1 | 1.0.1 | U | Default | 2022-11-07
     - Initial import at master release start. | 1.0.0 | U | Default | 2021-09-24
-* libyang 3.7.8 3.13.6 Not updated
+* libyang 3.7.8 4.2.2 Not updated
     - libyang: update from 2.1.148 to 3.7.8 | 3.7.8 | U | Default | 2025-02-26
     - libyang: upgrade 2.1.128 -> 2.1.148 | 2.1.148 | U | Default | 2024-01-23
     - libyang: upgrade 2.1.111 -> 2.1.128 | 2.1.128 | U | Default | 2023-10-23
@@ -830,7 +830,7 @@
     - nspr: upgrade 4.35 -> 4.36 | 4.36 | U | Default | 2025-01-02
     - nspr: Upgrade to 4.35 | 4.35 | U | Default | 2022-12-18
     - Initial import at master release start. | 4.29 | U | Default | 2021-09-24
-* nss 3.110 3.118.1 Not updated
+* nss 3.110 3.119.1 Not updated
     - nss: upgrade 3.109 -> 3.110 | 3.110 | U | Default | 2025-03-31
     - nss: upgrade 3.108 -> 3.109 | 3.109 | U | Default | 2025-03-12
     - nss: upgrade 3.107 -> 3.108 | 3.108 | U | Default | 2025-02-12
@@ -882,7 +882,7 @@
     - openjpeg: upgrade 2.5.0 -> 2.5.2 | 2.5.2 | U | Default | 2024-09-15
     - openjpeg: upgrade 2.4.0 -> 2.5.0 | 2.5.0 | U | Default | 2022-05-16
     - Initial import at master release start. | 2.4.0 | U | Default | 2021-09-24
-* openldap 2.6.9 2.6.10 Not updated
+* openldap 2.6.9  Unknown
     - openldap: upgrade 2.6.8 -> 2.6.9 | 2.6.9 | U | Default | 2025-01-02
     - openldap: upgrade 2.6.7 -> 2.6.8 | 2.6.8 | U | Default | 2024-06-27
     - openldap: upgrade 2.5.16 -> 2.6.7 | 2.6.7 | U | Default | 2024-03-02
@@ -892,7 +892,7 @@
     - openldap: upgrade 2.5.8 -> 2.5.9 | 2.5.9 | U | Default | 2021-12-09
     - openldap: upgrade 2.4.58 -> 2.5.8 | 2.5.8 | U | Default | 2021-11-23
     - Initial import at master release start. | 2.4.58 | U | Default | 2021-09-24
-* osinfo-db 20250124 20250606 Not updated
+* osinfo-db 20250124 20251212 Not updated
     - osinfo-db: upgrade 20240701 -> 20250124 | 20250124 | U | Default | 2025-02-12
     - libosinfo: add runtime dependency osinfo-db | 20240701 | U | Default | 2024-08-14
 * osinfo-db-tools 1.12.0 1.12.0 Up-to-date

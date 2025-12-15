@@ -8,7 +8,7 @@
     - bcc: Upgrade to 0.25.0 | 0.25.0+gitAUTOINC+711f03024d | U | Default | 2022-08-14
     - bcc: Upgrade to 0.24.0 | 0.24.0+gitAUTOINC+8f40d6f57a | U | Default | 2022-02-16
     - Initial import at master release start. | 0.20.0+gitAUTOINC+b2a76fa63f | U | Default | 2021-09-25
-* bpftrace 0.23.0+git 0.24.1 Not updated
+* bpftrace 0.23.0+git 0.24.2 Not updated
     - bpftrace: Upgrade to 0.23.x branch | 0.23.0+git | U | Default | 2025-03-22
     - bpftrace: Upgrade to 0.21.2+ | 0.21.2+git | U | Default | 2024-09-03
     - bpftrace: Upgrade to 0.20+ and fix with llvm 18 | 0.20.1+git | U | Default | 2024-03-07
@@ -21,7 +21,8 @@
     - bpftrace: Upgrade to latest master | 0.14.1+git0a318e53343aa51f811183534916a4be65a1871e | U | Default | 2022-02-22
     - bpftrace: Upgrade to 0.14.1 | 0.14.1 | U | Default | 2022-02-14
     - Initial import at master release start. | 0.13.0+git9b929db174be11888f60d16b1b090e4603bc3a51 | U | Default | 2021-09-25
-* clang 20.1.2 20.1.2 Up-to-date
+* clang 20.1.8 20.1.8 Up-to-date
+    - clang: Upgrade 20.1.2 -> 20.1.8 | 20.1.8 | U | Default | 2025-12-03
     - clang: Upgrade to 20.1.2 release | 20.1.2 | U | Default | 2025-04-07
     - clang: Upgrade to 20.1.1 | 20.1.1 | U | Default | 2025-03-24
     - clang: Upgrade to 20.x release | 20.1.0 | U | Default | 2025-03-22
@@ -65,7 +66,8 @@
     - clang: Upgrade to upcoming clang14 release branch | 14.0.0 | U | Default | 2022-02-16
     - clang: Update to latest on 13.x release | 13.0.1 | U | Default | 2021-11-01
     - Initial import at master release start. | 13.0.0 | U | Default | 2021-09-25
-* clang-cross-canadian-x86-64 20.1.2 20.1.2 Up-to-date
+* clang-cross-canadian-x86-64 20.1.8 20.1.8 Up-to-date
+    - clang: Upgrade 20.1.2 -> 20.1.8 | 20.1.8 | U | Default | 2025-12-03
     - clang: Upgrade to 20.1.2 release | 20.1.2 | U | Default | 2025-04-07
     - clang: Upgrade to 20.1.1 | 20.1.1 | U | Default | 2025-03-24
     - clang: Upgrade to 20.x release | 20.1.0 | U | Default | 2025-03-22
@@ -109,7 +111,8 @@
     - clang: Upgrade to upcoming clang14 release branch | 14.0.0 | U | Default | 2022-02-16
     - clang: Update to latest on 13.x release | 13.0.1 | U | Default | 2021-11-01
     - Initial import at master release start. | 13.0.0 | U | Default | 2021-09-25
-* clang-cross-x86_64 20.1.2 20.1.2 Up-to-date
+* clang-cross-x86_64 20.1.8 20.1.8 Up-to-date
+    - clang: Upgrade 20.1.2 -> 20.1.8 | 20.1.8 | U | Default | 2025-12-03
     - clang: Upgrade to 20.1.2 release | 20.1.2 | U | Default | 2025-04-07
     - clang: Upgrade to 20.1.1 | 20.1.1 | U | Default | 2025-03-24
     - clang: Upgrade to 20.x release | 20.1.0 | U | Default | 2025-03-22
@@ -153,7 +156,8 @@
     - clang: Upgrade to upcoming clang14 release branch | 14.0.0 | U | Default | 2022-02-16
     - clang: Update to latest on 13.x release | 13.0.1 | U | Default | 2021-11-01
     - Initial import at master release start. | 13.0.0 | U | Default | 2021-09-25
-* clang-crosssdk-x86_64-oesdk-linux 20.1.2 20.1.2 Up-to-date
+* clang-crosssdk-x86_64-oesdk-linux 20.1.8 20.1.8 Up-to-date
+    - clang: Upgrade 20.1.2 -> 20.1.8 | 20.1.8 | U | Default | 2025-12-03
     - clang: Upgrade to 20.1.2 release | 20.1.2 | U | Default | 2025-04-07
     - clang: Upgrade to 20.1.1 | 20.1.1 | U | Default | 2025-03-24
     - clang: Upgrade to 20.x release | 20.1.0 | U | Default | 2025-03-22
@@ -161,7 +165,8 @@
     - clang: Upgrade to 19.1.6 | 19.1.6 | U | Default | 2024-12-25
     - clang: Upgrade to 19.1.5 release | 19.1.5 | U | Default | 2024-12-17
     - clang: Upgrade to 19.1.4 | 19.1.4 | U | Default | 2024-11-29
-* compiler-rt 20.1.2 20.1.2 Up-to-date
+* compiler-rt 20.1.8 20.1.8 Up-to-date
+    - clang: Upgrade 20.1.2 -> 20.1.8 | 20.1.8 | U | Default | 2025-12-03
     - clang: Upgrade to 20.1.2 release | 20.1.2 | U | Default | 2025-04-07
     - clang: Upgrade to 20.1.1 | 20.1.1 | U | Default | 2025-03-24
     - clang: Upgrade to 20.x release | 20.1.0 | U | Default | 2025-03-22
@@ -205,7 +210,8 @@
     - clang: Upgrade to upcoming clang14 release branch | 14.0.0 | U | Default | 2022-02-16
     - clang: Update to latest on 13.x release | 13.0.1 | U | Default | 2021-11-01
     - Initial import at master release start. | 13.0.0 | U | Default | 2021-09-25
-* libcxx 20.1.2 20.1.2 Up-to-date
+* libcxx 20.1.8 20.1.8 Up-to-date
+    - clang: Upgrade 20.1.2 -> 20.1.8 | 20.1.8 | U | Default | 2025-12-03
     - clang: Upgrade to 20.1.2 release | 20.1.2 | U | Default | 2025-04-07
     - clang: Upgrade to 20.1.1 | 20.1.1 | U | Default | 2025-03-24
     - clang: Upgrade to 20.x release | 20.1.0 | U | Default | 2025-03-22

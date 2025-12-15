@@ -23,7 +23,7 @@
     - dpdk/21.11: add recipe | 21.11.0 | U | Default | 2021-12-10
     - Initial import at master release start. | 20.11.1 | U | Default | 2021-12-08
     - Initial import at master release start. | 19.11.9 | U | Default | 2021-12-08
-* dpdk-module 22.11.7 24.11.3 Not updated
+* dpdk-module 22.11.7 25.11 Not updated
     - dpdk: upgrade 22.11.7 -> 22.11.7 | 22.11.7 | U | Default | 2024-12-04
     - dpdk-module/22.11: upgrade 22.11.5 -> 22.11.6 | 22.11.6 | U | Default | 2024-08-22
     - dpdk: upgrade 21.11 -> 22.11 | 22.11.5 | D | Default | 2024-05-27
