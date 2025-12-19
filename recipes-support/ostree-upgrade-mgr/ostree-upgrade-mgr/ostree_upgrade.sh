@@ -40,6 +40,7 @@ MERGE_DIR=/etc
 RESET_VAR=0
 UPGRADE_REV=""
 NO_FATWRITE=""
+STATIC_DELTA_FILE=""
 
 cleanup() {
 	for d in $CLEANUP_MOUNTS ; do
@@ -208,7 +209,16 @@ prepare_upgrade() {
 	get_upgrade_part_label
 
 	prepare_mount $UPGRADE_ROOT_LABEL $UPGRADE_BOOT_LABEL $UPGRADE_ESP_DEV
-	check_repo_url
+	if [ -n "$STATIC_DELTA_FILE" ]; then
+		if [ ! -e "$STATIC_DELTA_FILE" ]; then
+			fatal "Ostree static delta $STATIC_DELTA_FILE is not found"
+		fi
+		if [ -z "$UPGRADE_REV" ]; then
+			fatal "Ostree static delta requires option -c <upgrade-commit>"
+		fi
+	else
+		check_repo_url
+	fi
 }
 
 fatal() {
@@ -293,6 +303,8 @@ ostree_upgrade() {
 
 	if [ $DO_PULL = 1 ] ; then
 		ostree_pull
+	elif [ -n "$STATIC_DELTA_FILE" ]; then
+		ostree --repo=$UPGRADE_ROOTFS_DIR/ostree/repo static-delta apply-offline $STATIC_DELTA_FILE
 	else
 		if [ "${NO_AB}" != "1" ] ; then
 			echo "INFO: Syncing partition repositories"
@@ -417,6 +429,7 @@ usage: $0 [args]
   Optional commands:
 
   -b   reboot after completion
+  -d   Ostree static delta file, requires option -c <upgrade-commit>
   -e   Erase the /var volume on the next reboot
   -E   FORMAT the /var volume when on a separate partition on the next reboot
   -f   Force /etc to be entirely reset to the initial deploy state
@@ -431,7 +444,7 @@ EOF
 	exit 0
 }
 
-while getopts "beEfhFrsUc:" opt; do
+while getopts "beEfhFrsUc:d:" opt; do
 	case ${opt} in
 		b)
 			DO_REBOOT=1
@@ -453,6 +466,10 @@ while getopts "beEfhFrsUc:" opt; do
 			;;
 		c)
 			UPGRADE_REV=$OPTARG
+			;;
+		d)
+			STATIC_DELTA_FILE=$OPTARG
+			DO_PULL=0
 			;;
 		F)
 			DO_REBOOT=1
