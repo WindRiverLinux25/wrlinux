@@ -211,7 +211,7 @@
 * python3-cached-property 2.0.1 1.5.2 Unknown
     - python3-cached-property: Upgrade 1.5.2 -> 2.0.1 | 2.0.1 | U | Default | 2025-01-10
     - Initial import at master release start. | 1.5.2 | U | Default | 2021-09-24
-* python3-cachetools 5.5.2 6.2.3 Not updated
+* python3-cachetools 5.5.2 6.2.4 Not updated
     - python3-cachetools: upgrade 5.5.1 -> 5.5.2 | 5.5.2 | U | Default | 2025-02-26
     - python3-cachetools: Upgrade 5.5.0 -> 5.5.1 | 5.5.1 | U | Default | 2025-01-25
     - python3-cachetools: upgrade 5.4.0 -> 5.5.0 | 5.5.0 | U | Default | 2024-08-28
@@ -411,7 +411,7 @@
     - python3-expandvars: add recipe | 0.12.0 | U | Default | 2023-12-19
 * python3-fields 5.0.0 5.0.0 Up-to-date
     - Initial import at master release start. | 5.0.0 | U | Default | 2021-09-24
-* python3-filelock 3.18.0 3.20.0 Not updated
+* python3-filelock 3.18.0 3.20.1 Not updated
     - python3-filelock: Upgrade 3.17.0 -> 3.18.0 | 3.18.0 | U | Default | 2025-03-18
     - python3-filelock: Upgrade 3.16.1 -> 3.17.0 | 3.17.0 | U | Default | 2025-01-25
     - python3-filelock: upgrade 3.16.0 -> 3.16.1 | 3.16.1 | U | Default | 2024-09-19
@@ -603,7 +603,7 @@
     - python3-multidict: upgrade 5.2.0 -> 6.0.2 | 6.0.2 | U | Default | 2022-01-31
     - python3-multidict: upgrade 5.1.0 -> 5.2.0 | 5.2.0 | U | Default | 2021-10-14
     - Initial import at master release start. | 5.1.0 | U | Default | 2021-09-24
-* python3-mypy 1.15.0 1.19.0 Not updated
+* python3-mypy 1.15.0 1.19.1 Not updated
     - python3-mypy: Upgrade 1.10.0 -> 1.15.0 | 1.15.0 | U | Default | 2025-02-15
     - python3-mypy: upgrade 1.9.0 -> 1.10.0 | 1.10.0 | U | Default | 2024-05-02
     - python3-mypy: upgrade 1.8.0 -> 1.9.0 | 1.9.0 | U | Default | 2024-03-20
@@ -1161,7 +1161,7 @@
 * python3-spidev 3.6 3.8 Not updated
     - python3-spidev: upgrade 3.5 -> 3.6 | 3.6 | U | Default | 2022-11-09
     - Initial import at master release start. | 3.5 | U | Default | 2021-09-24
-* python3-sqlparse 0.5.3 0.5.4 Not updated
+* python3-sqlparse 0.5.3 0.5.5 Not updated
     - python3-sqlparse: upgrade 0.5.2 -> 0.5.3 | 0.5.3 | U | Default | 2024-12-24
     - python3-sqlparse: upgrade 0.5.1 -> 0.5.2 | 0.5.2 | U | Default | 2024-11-20
     - python3-sqlparse: upgrade 0.5.0 -> 0.5.1 | 0.5.1 | U | Default | 2024-08-09
@@ -1204,7 +1204,7 @@
     - python3-tomlkit: upgrade 0.12.1 -> 0.12.2 | 0.12.2 | U | Default | 2023-11-06
     - python3-tomlkit: upgrade 0.11.8 -> 0.12.1 | 0.12.1 | U | Default | 2023-08-01
     - python3-tomlkit: Add recipe | 0.11.8 | U | Default | 2023-05-09
-* python3-tornado 6.5 6.5.3 Not updated
+* python3-tornado 6.5 6.5.4 Not updated
     - python3-tornado: upgrade 6.4.2 -> 6.5 | 6.5 | U | Default | 2025-08-04
     - python3-tornado: Upgrade 6.4.1 -> 6.4.2 | 6.4.2 | U | Default | 2024-11-25
     - python3-tornado: Upgrade 6.4 -> 6.4.1 | 6.4.1 | U | Default | 2024-06-21
