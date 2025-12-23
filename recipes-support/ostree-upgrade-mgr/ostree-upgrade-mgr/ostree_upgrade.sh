@@ -211,10 +211,10 @@ prepare_upgrade() {
 	prepare_mount $UPGRADE_ROOT_LABEL $UPGRADE_BOOT_LABEL $UPGRADE_ESP_DEV
 	if [ -n "$STATIC_DELTA_FILE" ]; then
 		if [ ! -e "$STATIC_DELTA_FILE" ]; then
-			fatal "Ostree static delta $STATIC_DELTA_FILE is not found"
+			fatal "OSTree static delta $STATIC_DELTA_FILE is not found"
 		fi
 		if [ -z "$UPGRADE_REV" ]; then
-			fatal "Ostree static delta requires option -c <upgrade-commit>"
+			fatal "OSTree static delta requires option -c <upgrade-commit>"
 		fi
 	else
 		check_repo_url
@@ -231,7 +231,7 @@ ostree_pull() {
 	if [ -n "$UPGRADE_REV" ]; then
 		ostree pull --repo=$UPGRADE_ROOTFS_DIR/ostree/repo ${remote} $UPGRADE_REV
 		if [ $? -ne 0 ]; then
-			fatal "Ostree pull failed"
+			fatal "OSTree pull failed"
 		fi
 		return
 	fi
@@ -258,7 +258,7 @@ ostree_pull() {
 		ostree pull --repo=$UPGRADE_ROOTFS_DIR/ostree/repo ${remote}:${branch}
 	fi
 	if [ $? -ne 0 ]; then
-		fatal "Ostree pull failed"
+		fatal "OSTree pull failed"
 	fi
 	if [ $repair = 1 ] ; then
 		# Repair any other remote references if the original was damaged and re-run fsck
@@ -266,7 +266,7 @@ ostree_pull() {
 			if [ "${remote}:${branch}" != "$b" ] ; then
 				ostree pull $lcache --repo=$UPGRADE_ROOTFS_DIR/ostree/repo $b
 				if [ $? -ne 0 ]; then
-					fatal "Ostree pull failed"
+					fatal "OSTree pull failed"
 				fi
 			fi
 		done
@@ -327,7 +327,7 @@ ostree_upgrade() {
 	fi 
 
 	if [ $? -ne 0 ]; then
-		fatal "Ostree deploy failed"
+		fatal "OSTree deploy failed"
 	fi
 	check=`ostree config get upgrade.noflux 2>/dev/null`
 	if [ "$check" = 1 ] ; then
@@ -429,7 +429,7 @@ usage: $0 [args]
   Optional commands:
 
   -b   reboot after completion
-  -d   Ostree static delta file, requires option -c <upgrade-commit>
+  -d   OSTree static delta file, requires option -c <upgrade-commit>
   -e   Erase the /var volume on the next reboot
   -E   FORMAT the /var volume when on a separate partition on the next reboot
   -f   Force /etc to be entirely reset to the initial deploy state
