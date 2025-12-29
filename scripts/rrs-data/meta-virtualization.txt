@@ -56,7 +56,7 @@
     - containerd: update to v2.0.0-rc.2 | v2.0.0-rc.2+git | U | Default | 2024-05-29
     - containerd: update to v2.0.0-rc.1 | v2.0.0-rc.1+git | U | Default | 2024-05-14
     - containerd: consolidate to "containerd" | v2.0.0-beta.0+git | U | Default | 2024-05-14
-* cri-o 1.32.2+git318db72eb0b3d18c22c995aa7614a13142287296 1.34.3 Not updated
+* cri-o 1.32.2+git318db72eb0b3d18c22c995aa7614a13142287296 1.35.0 Not updated
     - cri-o: update to v1.32.2 | 1.32.2+git318db72eb0b3d18c22c995aa7614a13142287296 | U | Default | 2025-03-11
     - cri-o: update to v1.31.4-tip | 1.31.4+git33d75981bee230f791709975125d7386fe2c530a | U | Default | 2025-01-17
     - cri-o: update to v1.31.0 | 1.31.0+git04500243ec0cd775e76bcec1c822aaa3faa11177 | U | Default | 2024-07-11
@@ -163,7 +163,7 @@
     - lxc: update to 4.0.12 | 4.0.12+gitAUTOINC+5ba5725cb4 | U | Default | 2022-03-21
     - lxc: update to 4.0.11 | 4.0.11+gitAUTOINC+48e079bf31 | U | Default | 2021-11-02
     - Initial import at master release start. | 4.0.10+gitAUTOINC+cec7cb14b2 | U | Default | 2021-09-22
-* nerdctl v2.0.3 2.2.0 Not updated
+* nerdctl v2.0.3 2.2.1 Not updated
     - nerdctl: update to v2.0.3 | v2.0.3 | U | Default | 2025-03-24
     - nerdctl: update to v2.0.2 | v2.0.2 | U | Default | 2025-01-17
     - nerdctl: update to v2.0.0-beta | v2.0.0-beta.1 | U | Default | 2024-03-15
