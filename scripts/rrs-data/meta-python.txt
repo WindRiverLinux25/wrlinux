@@ -270,7 +270,7 @@
     - Initial import at master release start. | 15.1.0 | U | Default | 2021-09-24
 * python3-covdefaults 2.3.0 2.3.0 Up-to-date
     - python3-covdefaults: Add initial recipe 2.3.0 | 2.3.0 | U | Default | 2023-06-26
-* python3-coverage 7.8.0 7.13.0 Not updated
+* python3-coverage 7.8.0 7.13.1 Not updated
     - python3-coverage: upgrade 7.7.1 -> 7.8.0 | 7.8.0 | U | Default | 2025-04-07
     - python3-coverage: upgrade 7.6.12 -> 7.7.1 | 7.7.1 | U | Default | 2025-03-25
     - python3-coverage: Upgrade 7.6.10 -> 7.6.12 | 7.6.12 | U | Default | 2025-02-13
@@ -411,7 +411,7 @@
     - python3-expandvars: add recipe | 0.12.0 | U | Default | 2023-12-19
 * python3-fields 5.0.0 5.0.0 Up-to-date
     - Initial import at master release start. | 5.0.0 | U | Default | 2021-09-24
-* python3-filelock 3.18.0 3.20.1 Not updated
+* python3-filelock 3.18.0 3.20.2 Not updated
     - python3-filelock: Upgrade 3.17.0 -> 3.18.0 | 3.18.0 | U | Default | 2025-03-18
     - python3-filelock: Upgrade 3.16.1 -> 3.17.0 | 3.17.0 | U | Default | 2025-01-25
     - python3-filelock: upgrade 3.16.0 -> 3.16.1 | 3.16.1 | U | Default | 2024-09-19
@@ -727,7 +727,7 @@
     - Initial import at master release start. | 4.8.0 | U | Default | 2021-09-24
 * python3-pid 3.0.4 3.0.4 Up-to-date
     - Initial import at master release start. | 3.0.4 | U | Default | 2021-09-24
-* python3-pillow 11.1.0 12.0.0 Not updated
+* python3-pillow 11.1.0 12.1.0 Not updated
     - python3-pillow: upgrade 11.0.0 -> 11.1.0 | 11.1.0 | U | Default | 2025-01-07
     - python3-pillow: upgrade 10.4.0 -> 11.0.0 | 11.0.0 | U | Default | 2024-12-22
     - python3-pillow: upgrade 10.3.0 -> 10.4.0 | 10.4.0 | U | Default | 2024-07-15
@@ -871,7 +871,7 @@
     - python3-pybind11: upgrade 2.8.1 -> 2.9.2 | 2.9.2 | U | Default | 2022-07-07
     - python3-pybind11: update to 2.8.1 | 2.8.1 | U | Default | 2021-11-01
     - Initial import at master release start. | 2.7.0 | U | Default | 2021-09-24
-* python3-pycares 4.6.0 5.0.0 Not updated
+* python3-pycares 4.6.0 5.0.1 Not updated
     - python3-pycares: upgrade 4.5.0 -> 4.6.0 | 4.6.0 | U | Default | 2025-04-07
     - python3-pycares: upgrade 4.4.0 -> 4.5.0 | 4.5.0 | U | Default | 2024-12-03
     - python3-pycares: upgrade 4.3.0 -> 4.4.0 | 4.4.0 | U | Default | 2023-10-23
@@ -1175,7 +1175,7 @@
 * python3-systemd 235 235 Up-to-date
     - python-systemd: update from v234 to v235 | 235 | U | Default | 2023-02-22
     - Initial import at master release start. | 234 | U | Default | 2021-09-24
-* python3-termcolor 3.0.1 3.2.0 Not updated
+* python3-termcolor 3.0.1 3.3.0 Not updated
     - python3-termcolor: upgrade 2.5.0 -> 3.0.1 | 3.0.1 | U | Default | 2025-04-07
     - python3-termcolor: upgrade 2.4.0 -> 2.5.0 | 2.5.0 | U | Default | 2024-10-14
     - python3-termcolor: update to version 2.4.0 | 2.4.0 | U | Default | 2023-12-13
@@ -1213,7 +1213,7 @@
     - python3-tornado: upgrade 6.2 -> 6.3 | 6.3 | U | Default | 2023-04-24
     - python3-tornado: Upgrade 6.1 -> 6.2 | 6.2 | U | Default | 2022-07-11
     - Initial import at master release start. | 6.1 | U | Default | 2021-09-24
-* python3-tox 4.25.0 4.32.0 Not updated
+* python3-tox 4.25.0 4.33.0 Not updated
     - python3-tox: upgrade 4.24.2 -> 4.25.0 | 4.25.0 | U | Default | 2025-03-31
     - python3-tox: upgrade 4.24.1 -> 4.24.2 | 4.24.2 | U | Default | 2025-03-12
     - python3-tox: Upgrade 4.23.2 -> 4.24.1 | 4.24.1 | U | Default | 2025-01-25
