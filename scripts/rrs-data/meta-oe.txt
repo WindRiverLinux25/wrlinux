@@ -1,6 +1,6 @@
 * 7zip 24.09 25.01 Not updated
     - Use 7zip 24.09 to replace p7zip 16.02 | 24.09 | U | Default | 2024-12-19
-* abseil-cpp 20250127.1 20250814.1 Not updated
+* abseil-cpp 20250127.1 20260107.0 Not updated
     - abseil-cpp: upgrade 20250127.0 -> 20250127.1 | 20250127.1 | U | Default | 2025-03-25
     - abseil-cpp: upgrade 20240722.0 -> 20250127.0 | 20250127.0 | U | Default | 2025-02-27
     - abseil-cpp: upgrade 20240116.2 -> 20240722.0 | 20240722.0 | U | Default | 2024-09-23
@@ -168,7 +168,7 @@
 * devmem2 2.0 2.0 Up-to-date
     - devmem2: the source and patches moved to github repo | 2.0 | U | Default | 2022-05-31
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
-* dialog 1.3-20250116 1.3-20251223 Not updated
+* dialog 1.3-20250116 1.3-20260107 Not updated
     - dialog: upgrade 1.3-20240619 -> 1.3-20250116 | 1.3-20250116 | U | Default | 2025-01-25
     - dialog: upgrade 1.3-20240307 -> 1.3-20240619 | 1.3-20240619 | U | Default | 2024-06-27
     - dialog: upgrade 1.3-20240101 -> 1.3-20240307 | 1.3-20240307 | U | Default | 2024-03-20
@@ -183,7 +183,7 @@
     - dlt-daemon: Bump to latest revision on master | 2.18.8+2.18.9gitAUTOINC+0138c00811 | U | Default | 2022-01-26
     - dlt-daemon: upgrade 2.18.7 -> 2.18.8 | 2.18.8 | U | Default | 2022-01-25
     - Initial import at master release start. | 2.18.7 | U | Default | 2021-09-24
-* doxygen 1.13.2 1.15.0 Not updated
+* doxygen 1.13.2 1.16.0 Not updated
     - doxygen: upgrade 1.13.1 -> 1.13.2 | 1.13.2 | U | Default | 2025-01-14
     - doxygen: upgrade 1.13.0 -> 1.13.1 | 1.13.1 | U | Default | 2025-01-07
     - doxygen: upgrade 1.12.0 -> 1.13.0 | 1.13.0 | U | Default | 2024-12-30
@@ -316,9 +316,9 @@
     - Initial import at master release start. | 1.38.1 | U | Default | 2021-09-24
 * gtk+ 2.24.33 2.24.33 Up-to-date
     - Initial import at master release start. | 2.24.33 | U | Default | 2021-09-24
-* gtkmm 2.24.5 4.21.1 Not updated
+* gtkmm 2.24.5 4.21.2 Not updated
     - Initial import at master release start. | 2.24.5 | U | Default | 2021-09-24
-* gtkmm3 3.24.7 4.21.1 Not updated
+* gtkmm3 3.24.7 4.21.2 Not updated
     - gtkmm3: upgrade 3.24.5 -> 3.24.7 | 3.24.7 | U | Default | 2022-10-13
     - Initial import at master release start. | 3.24.5 | U | Default | 2021-09-24
 * haveged 1.9.19 1.9.19 Up-to-date
@@ -563,7 +563,7 @@
     - Initial import at master release start. | 1.14 | U | Default | 2021-09-24
 * liblogging 1.0.6 1.0.8 Not updated
     - Initial import at master release start. | 1.0.6 | U | Default | 2021-09-24
-* libmbim 1.30.0 1.33.1 Not updated
+* libmbim 1.30.0 1.34.0 Not updated
     - Revert "libmbim: upgrade 1.30.0 -> 1.31.2" | 1.30.0 | D | Default | 2024-04-05
     - libmbim: upgrade 1.30.0 -> 1.31.2 | 1.31.2 | U | Default | 2024-04-02
     - libmbim: Revert back to the latest stable 1.30.0 | 1.30.0 | D | Default | 2024-03-17
@@ -635,7 +635,7 @@
     - Initial import at master release start. | 2.10.7 | U | Default | 2021-09-24
 * libsocketcan 0.0.12 0.0.12 Up-to-date
     - Initial import at master release start. | 0.0.12 | U | Default | 2021-09-24
-* libsodium 1.0.20 1.0.20 Up-to-date
+* libsodium 1.0.20 1.0.21 Not updated
     - libsodium: upgrade 1.0.19 -> 1.0.20 | 1.0.20 | U | Default | 2024-06-07
     - libsodium: upgrade 1.0.18 -> 1.0.19 | 1.0.19 | U | Default | 2023-11-06
     - Initial import at master release start. | 1.0.18 | U | Default | 2021-09-24
@@ -689,7 +689,7 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
 * lockfile-progs 0.1.19 0.2.0 Not updated
     - Initial import at master release start. | 0.1.19 | U | Default | 2021-09-24
-* lsscsi 0.32  Unknown
+* lsscsi 0.32 0.32 Up-to-date
     - lsscsi: revert to version 0.32 | 0.32 | D | Default | 2025-06-30
     - lsscsi: upgrade 0.32 -> 030 | 030 | U | Default | 2023-11-06
     - lsscsi: upgrade 0.31 -> 0.32 | 0.32 | U | Default | 2022-04-25
@@ -712,7 +712,8 @@
     - Initial import at master release start. | 2.03.11 | U | Default | 2021-09-24
 * lxdm 0.5.3  Unknown
     - Initial import at master release start. | 0.5.3 | U | Default | 2021-09-24
-* mariadb 11.4.6 12.2.1 Not updated
+* mariadb 11.4.9  Unknown
+    - mariadb: Upgrade 11.4.6 -> 11.4.9 | 11.4.9 | U | Default | 2026-01-05
     - mariadb: upgrade 11.4.5 -> 11.4.6 | 11.4.6 | U | Default | 2025-08-14
     - mariadb: upgrade 11.4.4 -> 11.4.5 | 11.4.5 | U | Default | 2025-04-07
     - mariadb: Upgrade to 11.4.4 | 11.4.4 | U | Default | 2025-01-15
@@ -797,7 +798,7 @@
     - nlohmann-json: upgrade 3.10.4 -> 3.10.5 | 3.10.5 | U | Default | 2022-01-18
     - nlohmann-json: upgrade 3.10.2 -> 3.10.4 | 3.10.4 | U | Default | 2021-10-19
     - Initial import at master release start. | 3.10.2 | U | Default | 2021-09-24
-* nmap 7.95 7.98-1 Not updated
+* nmap 7.95 7.98 Not updated
     - nmap: disable build 7.95 | 7.95 | U | Default | 2025-05-15
     - nmap: add recipe for 7.92 | 7.92 | D | Default | 2025-05-15
     - nmap: Upgrade to 7.95 | 7.95 | U | Default | 2024-09-04
@@ -830,7 +831,7 @@
     - nspr: upgrade 4.35 -> 4.36 | 4.36 | U | Default | 2025-01-02
     - nspr: Upgrade to 4.35 | 4.35 | U | Default | 2022-12-18
     - Initial import at master release start. | 4.29 | U | Default | 2021-09-24
-* nss 3.110 3.119.1 Not updated
+* nss 3.110 3.120 Not updated
     - nss: upgrade 3.109 -> 3.110 | 3.110 | U | Default | 2025-03-31
     - nss: upgrade 3.108 -> 3.109 | 3.109 | U | Default | 2025-03-12
     - nss: upgrade 3.107 -> 3.108 | 3.108 | U | Default | 2025-02-12
@@ -882,7 +883,7 @@
     - openjpeg: upgrade 2.5.0 -> 2.5.2 | 2.5.2 | U | Default | 2024-09-15
     - openjpeg: upgrade 2.4.0 -> 2.5.0 | 2.5.0 | U | Default | 2022-05-16
     - Initial import at master release start. | 2.4.0 | U | Default | 2021-09-24
-* openldap 2.6.9 2.6.10 Not updated
+* openldap 2.6.9  Unknown
     - openldap: upgrade 2.6.8 -> 2.6.9 | 2.6.9 | U | Default | 2025-01-02
     - openldap: upgrade 2.6.7 -> 2.6.8 | 2.6.8 | U | Default | 2024-06-27
     - openldap: upgrade 2.5.16 -> 2.6.7 | 2.6.7 | U | Default | 2024-03-02
@@ -1147,7 +1148,7 @@
     - Initial import at master release start. | 2020.11.01 | U | Default | 2021-09-24
 * rfkill 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
-* rocksdb 9.10.0 10.7.5 Not updated
+* rocksdb 9.10.0 10.9.1 Not updated
     - rocksdb: upgrade 9.0.0 -> 9.10.0 | 9.10.0 | U | Default | 2025-03-12
     - rocksdb: upgrade 7.9.2 -> 9.0.0 | 9.0.0 | U | Default | 2024-03-21
     - rocksdb: Upgrade to 7.9.2 | 7.9.2 | U | Default | 2023-01-26
@@ -1199,7 +1200,7 @@
 * snappy 1.1.10 1.2.2 Not updated
     - snappy: upgrade 1.1.9 -> 1.1.10 | 1.1.10 | U | Default | 2023-12-08
     - Initial import at master release start. | 1.1.9 | U | Default | 2021-09-24
-* softhsm 2.6.1  Unknown
+* softhsm 2.6.1 2.6.1 Up-to-date
     - Initial import at master release start. | 2.6.1 | U | Default | 2021-09-24
 * sound-theme-freedesktop 0.8 0.8 Up-to-date
     - Initial import at master release start. | 0.8 | U | Default | 2021-09-24
