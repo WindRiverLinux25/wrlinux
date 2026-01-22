@@ -26,7 +26,7 @@
     - Initial import at master release start. | 1.48.1 | U | Default | 2021-09-24
 * keybinder 3.0+gitAUTOINC+736ccef40d 3.0 Up-to-date
     - Initial import at master release start. | 3.0+gitAUTOINC+736ccef40d | U | Default | 2021-09-24
-* libgsf 1.14.53 1.14.54 Not updated
+* libgsf 1.14.53 1.14.55 Not updated
     - libgsf: upgrade 1.14.52 -> 1.14.53 | 1.14.53 | U | Default | 2024-10-14
     - libgsf: upgrade 1.14.51 -> 1.14.52 | 1.14.52 | U | Default | 2024-02-09
     - libgsf: Upgrade 1.14.50 -> 1.14.51 | 1.14.51 | U | Default | 2023-11-06

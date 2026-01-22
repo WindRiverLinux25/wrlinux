@@ -1,4 +1,5 @@
-* 7zip 24.09 25.01 Not updated
+* 7zip 25.01  Unknown
+    - 7zip: upgrade 24.09 -> 25.01 | 25.01 | U | Default | 2026-01-13
     - Use 7zip 24.09 to replace p7zip 16.02 | 24.09 | U | Default | 2024-12-19
 * abseil-cpp 20250127.1 20260107.0 Not updated
     - abseil-cpp: upgrade 20250127.0 -> 20250127.1 | 20250127.1 | U | Default | 2025-03-25
@@ -71,7 +72,8 @@
     - bubblewrap: upgrade 0.8.0 -> 0.9.0 | 0.9.0 | U | Default | 2024-06-07
     - bubblewrap: upgrade 0.7.0 -> 0.8.0 | 0.8.0 | U | Default | 2023-03-04
     - bubblewrap: import recipe from meta-security | 0.7.0 | U | Default | 2022-12-23
-* c-ares 1.34.5  Unknown
+* c-ares 1.34.6  Unknown
+    - c-ares: upgrade 1.34.5 -> 1.34.6 | 1.34.6 | U | Default | 2026-01-15
     - c-ares: update 1.34.4 -> 1.34.5 | 1.34.5 | U | Default | 2025-06-20
     - c-ares: upgrade 1.34.3 -> 1.34.4 | 1.34.4 | U | Default | 2025-06-20
     - c-ares: upgrade 1.34.2 -> 1.34.3 | 1.34.3 | U | Default | 2025-05-17
@@ -122,7 +124,7 @@
     - cjson: upgrade 1.7.16 -> 1.7.17 | 1.7.17 | U | Default | 2023-12-29
     - cjson: upgrade 1.7.15 -> 1.7.16 | 1.7.16 | U | Default | 2023-11-06
     - Initial import at master release start. | 1.7.15 | U | Default | 2021-09-24
-* cmocka 1.1.7+gitAUTOINC+a01cc69ee9 2.0.1 Not updated
+* cmocka 1.1.7+gitAUTOINC+a01cc69ee9 2.0.2 Not updated
     - cmocka: update from 1.1.5+ to 1.1.7 | 1.1.7+gitAUTOINC+a01cc69ee9 | U | Default | 2023-03-22
     - Initial import at master release start. | 1.1.5+gitAUTOINC+a4fc3dd770 | U | Default | 2021-09-24
 * cpupower 1.0 1.0 Up-to-date
@@ -183,7 +185,7 @@
     - dlt-daemon: Bump to latest revision on master | 2.18.8+2.18.9gitAUTOINC+0138c00811 | U | Default | 2022-01-26
     - dlt-daemon: upgrade 2.18.7 -> 2.18.8 | 2.18.8 | U | Default | 2022-01-25
     - Initial import at master release start. | 2.18.7 | U | Default | 2021-09-24
-* doxygen 1.13.2 1.16.0 Not updated
+* doxygen 1.13.2 1.16.1 Not updated
     - doxygen: upgrade 1.13.1 -> 1.13.2 | 1.13.2 | U | Default | 2025-01-14
     - doxygen: upgrade 1.13.0 -> 1.13.1 | 1.13.1 | U | Default | 2025-01-07
     - doxygen: upgrade 1.12.0 -> 1.13.0 | 1.13.0 | U | Default | 2024-12-30
@@ -689,7 +691,7 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
 * lockfile-progs 0.1.19 0.2.0 Not updated
     - Initial import at master release start. | 0.1.19 | U | Default | 2021-09-24
-* lsscsi 0.32 0.32 Up-to-date
+* lsscsi 0.32  Unknown
     - lsscsi: revert to version 0.32 | 0.32 | D | Default | 2025-06-30
     - lsscsi: upgrade 0.32 -> 030 | 030 | U | Default | 2023-11-06
     - lsscsi: upgrade 0.31 -> 0.32 | 0.32 | U | Default | 2022-04-25
@@ -766,7 +768,7 @@
     - multipath-tools: upgrade 0.9.3 -> 0.9.8 | 0.9.8 | U | Default | 2024-03-05
     - multipath-tools: upgrade 0.8.4 -> 0.9.3 | 0.9.3 | U | Default | 2022-12-12
     - Initial import at master release start. | 0.8.4 | U | Default | 2021-09-24
-* nano 8.3 8.7 Not updated
+* nano 8.3  Unknown
     - nano: upgrade 8.2 -> 8.3 | 8.3 | U | Default | 2024-12-24
     - nano: upgrade 8.1 -> 8.2 | 8.2 | U | Default | 2024-09-10
     - nano: upgrade 8.0 -> 8.1 | 8.1 | U | Default | 2024-07-15
@@ -798,12 +800,12 @@
     - nlohmann-json: upgrade 3.10.4 -> 3.10.5 | 3.10.5 | U | Default | 2022-01-18
     - nlohmann-json: upgrade 3.10.2 -> 3.10.4 | 3.10.4 | U | Default | 2021-10-19
     - Initial import at master release start. | 3.10.2 | U | Default | 2021-09-24
-* nmap 7.95 7.98 Not updated
+* nmap 7.95 7.98-1 Not updated
     - nmap: disable build 7.95 | 7.95 | U | Default | 2025-05-15
     - nmap: add recipe for 7.92 | 7.92 | D | Default | 2025-05-15
     - nmap: Upgrade to 7.95 | 7.95 | U | Default | 2024-09-04
     - Initial import at master release start. | 7.80 | U | Default | 2021-09-24
-* nodejs 22.14.0 25.2.1 Not updated
+* nodejs 22.14.0 25.3.0 Not updated
     - nodejs: upgrade 22.13.0 -> 22.14.0 | 22.14.0 | U | Default | 2025-03-18
     - nodejs: upgrade 22.12.0 -> 22.13.1 | 22.13.1 | U | Default | 2025-01-25
     - nodejs: upgrade 22.11.0 -> 22.12.0 | 22.12.0 | U | Default | 2024-12-04
@@ -883,7 +885,7 @@
     - openjpeg: upgrade 2.5.0 -> 2.5.2 | 2.5.2 | U | Default | 2024-09-15
     - openjpeg: upgrade 2.4.0 -> 2.5.0 | 2.5.0 | U | Default | 2022-05-16
     - Initial import at master release start. | 2.4.0 | U | Default | 2021-09-24
-* openldap 2.6.9  Unknown
+* openldap 2.6.9 2.6.10 Not updated
     - openldap: upgrade 2.6.8 -> 2.6.9 | 2.6.9 | U | Default | 2025-01-02
     - openldap: upgrade 2.6.7 -> 2.6.8 | 2.6.8 | U | Default | 2024-06-27
     - openldap: upgrade 2.5.16 -> 2.6.7 | 2.6.7 | U | Default | 2024-03-02
@@ -1200,7 +1202,7 @@
 * snappy 1.1.10 1.2.2 Not updated
     - snappy: upgrade 1.1.9 -> 1.1.10 | 1.1.10 | U | Default | 2023-12-08
     - Initial import at master release start. | 1.1.9 | U | Default | 2021-09-24
-* softhsm 2.6.1 2.6.1 Up-to-date
+* softhsm 2.6.1  Unknown
     - Initial import at master release start. | 2.6.1 | U | Default | 2021-09-24
 * sound-theme-freedesktop 0.8 0.8 Up-to-date
     - Initial import at master release start. | 0.8 | U | Default | 2021-09-24

@@ -9,7 +9,7 @@
     - python3-absl: upgrade 0.14.1 -> 0.15.0 | 0.15.0 | U | Default | 2021-10-28
     - python3-absl: update 0.14.1 | 0.14.1 | U | Default | 2021-10-18
     - Initial import at master release start. | 0.13.0 | U | Default | 2021-09-24
-* python3-aiodns 3.2.0 3.6.1 Not updated
+* python3-aiodns 3.2.0 4.0.0 Not updated
     - python3-aiodns: upgrade 3.1.1 -> 3.2.0 | 3.2.0 | U | Default | 2024-04-18
     - python3-aiodns: upgrade 3.0.0 -> 3.1.1 | 3.1.1 | U | Default | 2023-10-23
     - Add python3-aiodns 3.0.0 | 3.0.0 | U | Default | 2022-07-27
@@ -342,7 +342,8 @@
     - python3-distro: Upgrade 1.7.0 -> 1.8.0 | 1.8.0 | U | Default | 2022-10-18
     - python3-distro: Upgrade 1.6.0 -> 1.7.0 | 1.7.0 | U | Default | 2022-02-24
     - Initial import at master release start. | 1.6.0 | U | Default | 2021-09-24
-* python3-django 5.0.13 5.2 Not updated
+* python3-django 5.0.14 5.2 Not updated
+    - python3-django: upgrade 5.0.13 -> 5.0.14 | 5.0.14 | U | Default | 2026-01-14
     - python3-django: upgrade 5.0.11 -> 5.0.13 | 5.0.13 | U | Default | 2025-04-05
     - python3-django: upgrade 4.2.18 -> 4.2.20 | 4.2.20 | U | Default | 2025-04-05
     - python3-django: upgrade 4.2.17 -> 4.2.18 | 4.2.18 | D | Default | 2025-02-21
@@ -1191,12 +1192,12 @@
     - Initial import at master release start. | 1.6.4 | U | Default | 2021-09-24
 * python3-toml 0.10.2 0.10.2 Up-to-date
     - python3-toml: add from openembedded-core | 0.10.2 | U | Default | 2024-08-09
-* python3-tomli 2.2.1 2.3.0 Not updated
+* python3-tomli 2.2.1 2.4.0 Not updated
     - python3-tomli: upgrade 2.1.0 -> 2.2.1 | 2.2.1 | U | Default | 2024-12-03
     - python3-tomli: upgrade 2.0.2 -> 2.1.0 | 2.1.0 | U | Default | 2024-11-20
     - python3-tomli: upgrade 2.0.1 -> 2.0.2 | 2.0.2 | U | Default | 2024-10-14
     - python3-tomli: add from openembedded-core | 2.0.1 | U | Default | 2024-08-09
-* python3-tomlkit 0.13.2 0.13.3 Not updated
+* python3-tomlkit 0.13.2 0.14.0 Not updated
     - python3-tomlkit: upgrade 0.13.0 -> 0.13.2 | 0.13.2 | U | Default | 2024-08-28
     - python3-tomlkit: upgrade 0.12.5 -> 0.13.0 | 0.13.0 | U | Default | 2024-07-15
     - python3-tomlkit: upgrade 0.12.3 -> 0.12.5 | 0.12.5 | U | Default | 2024-06-12
@@ -1351,7 +1352,7 @@
     - python3-werkzeug: upgrade 2.0.2 -> 2.0.3 | 2.0.3 | U | Default | 2022-02-16
     - python3-werkzeug: upgrade 2.0.1 -> 2.0.2 | 2.0.2 | U | Default | 2021-10-25
     - Initial import at master release start. | 2.0.1 | U | Default | 2021-09-24
-* python3-wrapt 1.17.2 2.0.1 Not updated
+* python3-wrapt 1.17.2 2.1.0 Not updated
     - python3-wrapt: Upgrade 1.17.1 -> 1.17.2 | 1.17.2 | U | Default | 2025-01-25
     - python3-wrapt: upgrade 1.17.0 -> 1.17.1 | 1.17.1 | U | Default | 2025-01-14
     - python3-wrapt: Upgrade 1.17.0rc1 -> 1.17.0 | 1.17.0 | D | Default | 2024-11-28

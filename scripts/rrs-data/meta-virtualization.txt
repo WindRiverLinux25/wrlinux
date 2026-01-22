@@ -33,7 +33,7 @@
     - cni: update to 1.1.0 | v1.1.0+git940e66269988c38f4c09b00bda4456d2db007b35 | U | Default | 2022-06-03
     - cni: update to v1.0.1 | v1.0.1+git35efaabf93d23a28fb2fb01dccbe80caed196d19 | U | Default | 2022-03-21
     - Initial import at master release start. | v0.8.0+gitb5ab16f010e822936eb974690ecec38ba69afc01 | U | Default | 2021-09-22
-* conmon 2.1.12+git 2.1.13 Not updated
+* conmon 2.1.12+git 2.2.0 Not updated
     - conmon: update to 2.1.12 | 2.1.12+git | U | Default | 2024-07-11
     - conmon: update to 2.1.10 | 2.1.10+git | U | Default | 2024-03-15
     - conmon: update to 2.1.8 | 2.1.8+git | U | Default | 2023-09-15
@@ -254,7 +254,8 @@
     - Initial import at master release start. | 0.17.0 | U | Default | 2021-09-22
 * python3-fastentrypoints 0.12 0.12 Up-to-date
     - Initial import at master release start. | 0.12 | U | Default | 2021-09-22
-* runc-opencontainers 1.2.6+git 1.4.0 Not updated
+* runc-opencontainers 1.2.9+git 1.4.0 Not updated
+    - runc-opencontainers: upgrade from 1.2.6 to 1.2.9 | 1.2.9+git | U | Default | 2026-01-12
     - runc-opencontainers: upgrade to 1.2.6 | 1.2.6+git | U | Default | 2025-04-21
     - runc-opencontainers: update to v1.2.0 | 1.2.0+git | U | Default | 2025-01-17
     - runc: update to v1.2.0-rc.3 | 1.2.0-rc.3+git | U | Default | 2024-10-03
