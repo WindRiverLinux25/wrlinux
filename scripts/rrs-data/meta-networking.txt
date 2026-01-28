@@ -126,14 +126,14 @@
     - libnftnl: upgrade 1.2.1 -> 1.2.2 | 1.2.2 | U | Default | 2022-06-30
     - libnftnl: upgrade 1.2.0 -> 1.2.1 | 1.2.1 | U | Default | 2021-12-01
     - Initial import at master release start. | 1.2.0 | U | Default | 2021-09-24
-* libtalloc 2.4.3 2.4.3 Up-to-date
+* libtalloc 2.4.3 2.4.4 Not updated
     - libtalloc: upgrade 2.4.2 -> 2.4.3 | 2.4.3 | U | Default | 2025-02-26
     - libtalloc: upgrade 2.4.1 -> 2.4.2 | 2.4.2 | U | Default | 2024-03-08
     - libtalloc: upgrade 2.4.0 -> 2.4.1 | 2.4.1 | U | Default | 2024-01-09
     - libtalloc: upgrade 2.3.4 -> 2.4.0 | 2.4.0 | U | Default | 2023-02-18
     - libtalloc: upgrade 2.3.3 -> 2.3.4 | 2.3.4 | U | Default | 2023-01-01
     - Initial import at master release start. | 2.3.3 | U | Default | 2021-09-24
-* libtdb 1.4.13 1.4.14 Not updated
+* libtdb 1.4.13 1.4.15 Not updated
     - libtdb: upgrade 1.4.12 -> 1.4.13 | 1.4.13 | U | Default | 2025-02-26
     - libtdb: upgrade 1.4.11 -> 1.4.12 | 1.4.12 | U | Default | 2024-08-28
     - libtdb: upgrade 1.4.10 -> 1.4.11 | 1.4.11 | U | Default | 2024-08-09
@@ -343,7 +343,7 @@
     - Initial import at master release start. | 1.5 | U | Default | 2021-09-24
 * vsftpd 3.0.5 3.0.5 Up-to-date
     - Initial import at master release start. | 3.0.5 | U | Default | 2021-09-24
-* vsomeip 3.5.5  Unknown
+* vsomeip 3.5.5 3.6.1 Not updated
     - vsomeip: upgrade 3.5.3 -> 3.5.5 | 3.5.5 | U | Default | 2025-04-25
     - vsomeip: Upgrade to 3.5.3 | 3.5.3 | U | Default | 2025-01-13
     - vsomeip: upgrade 3.3.8 -> 3.4.10 | 3.4.10 | U | Default | 2024-01-02

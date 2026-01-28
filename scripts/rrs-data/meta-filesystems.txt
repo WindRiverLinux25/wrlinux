@@ -29,6 +29,6 @@
     - xfsprogs: upgrade 6.0.0 -> 6.1.0 | 6.1.0 | U | Default | 2023-01-11
     - xfsprogs: Upgrade to 6.0.0 | 6.0.0 | U | Default | 2022-12-23
     - Initial import at master release start. | 5.13.0 | U | Default | 2021-09-24
-* yaffs2-utils 20221209  Unknown
+* yaffs2-utils 20221209 20221209-new-commits-available Not updated
     - yaffs2-utils: Upgrade to 20221209 | 20221209 | U | Default | 2024-03-08
     - Initial import at master release start. | 0.0+gitAUTOINC+9a6f486e56 | U | Default | 2021-09-24

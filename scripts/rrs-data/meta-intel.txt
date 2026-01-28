@@ -27,7 +27,7 @@
     - intel-microcode: upgrade 20220207 -> 20220419 | 20220419 | U | Default | 2022-05-06
     - intel-microcode: upgrade 20210608 -> 20220207 | 20220207 | U | Default | 2022-02-09
     - Initial import at master release start. | 20210608 | U | Default | 2021-09-30
-* itt 3.26.1 3.26.4 Not updated
+* itt 3.26.1 3.26.5 Not updated
     - itt: upgrade 3.25.3 -> 3.26.1 | 3.26.1 | U | Default | 2025-05-19
     - itt : upgrade 3.25.2-> 3.25.3 | 3.25.3 | U | Default | 2024-10-22
     - itt : upgrade 3.25.1 -> 3.25.2 | 3.25.2 | U | Default | 2024-08-23
