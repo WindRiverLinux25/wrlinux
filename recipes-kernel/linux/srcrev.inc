@@ -57,7 +57,7 @@ SRCREV_machine:kb-v6.12-standard-preempt-rt-ti-soc ?= "b89293990dfaab196ab321c0f
 LINUX_VERSION:kb-v6.12-standard-preempt-rt-ti-soc = "6.12.67"
 SRCREV_machine:kb-v6.12-standard-preempt-rt-x86 ?= "38c356dfa95ce4c74df9c7e1204fc7267804e4ca"
 LINUX_VERSION:kb-v6.12-standard-preempt-rt-x86 = "6.12.67"
-SRCREV_machine:kb-v6.12-standard-preempt-rt-xlnx-soc ?= "91cc264f59c296eb93cf663debb2bf7baba5f6dc"
+SRCREV_machine:kb-v6.12-standard-preempt-rt-xlnx-soc ?= "08ed83cdbdbf88880f826bf48a440dc644f7cbe6"
 LINUX_VERSION:kb-v6.12-standard-preempt-rt-xlnx-soc = "6.12.67"
 SRCREV_machine:kb-v6.12-standard-qemuppc ?= "d6e05511ebbf86afdb7db2c9f551a6e5d82e725a"
 LINUX_VERSION:kb-v6.12-standard-qemuppc = "6.12.67"
@@ -73,7 +73,7 @@ SRCREV_machine:kb-v6.12-standard-x86 ?= "21160ce396adeb8f102583be54358a6d332dcae
 LINUX_VERSION:kb-v6.12-standard-x86 = "6.12.67"
 SRCREV_machine:kb-v6.12-standard-xilinx-zynqmp ?= "82f5549cbff852dd94691c57bf5f4ba406886c53"
 LINUX_VERSION:kb-v6.12-standard-xilinx-zynqmp = "6.12.67"
-SRCREV_machine:kb-v6.12-standard-xlnx-soc ?= "0590df07a39d5a5ffe9fe03d815f6caedf7a4e8a"
+SRCREV_machine:kb-v6.12-standard-xlnx-soc ?= "92144293753468fe24c5d0d7f88edf33b6913196"
 LINUX_VERSION:kb-v6.12-standard-xlnx-soc = "6.12.67"
 
 # yocto-kernel-cache entries
