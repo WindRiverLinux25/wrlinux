@@ -9,7 +9,7 @@
 * qat20 1.2.30-00090  Unknown
     - qat20: upgrade to version 1.2.30-00090 | 1.2.30-00090 | U | Default | 2025-05-06
     - qat20: add recipe for Intel QAT Hardware Version 2.0 | 1.1.50-00003 | U | Default | 2024-09-30
-* qatlib 24.09.0 25.08.0 Not updated
+* qatlib 24.09.0 26.02.0 Not updated
     - qatlib: upgrade to version 24.09.0 | 24.09.0 | U | Default | 2025-05-19
     - qatlib: upgrade 23.11.0 --> 24.02.0 | 24.02.0 | U | Default | 2024-09-04
     - qatlib: add recipe for QATlib 23.11.0 release. | 23.11.0 | U | Default | 2023-12-08

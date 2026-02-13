@@ -21,7 +21,7 @@
     - chrony: upgrade 4.2 -> 4.3 | 4.3 | U | Default | 2022-09-05
     - chrony: upgrade 4.1 -> 4.2 | 4.2 | U | Default | 2021-12-22
     - Initial import at master release start. | 4.1 | U | Default | 2021-09-24
-* conntrack-tools 1.4.8 1.4.8 Up-to-date
+* conntrack-tools 1.4.8 1.4.9 Not updated
     - conntrack-tools: upgrade 1.4.7 -> 1.4.8 | 1.4.8 | U | Default | 2023-10-24
     - conntrack-tools: Upgrade 1.4.6 -> 1.4.7 | 1.4.7 | U | Default | 2022-10-17
     - Initial import at master release start. | 1.4.6 | U | Default | 2021-09-24
@@ -85,7 +85,7 @@
     - Initial import at master release start. | 7.11 | U | Default | 2021-09-24
 * lftp 4.9.2  Unknown
     - Initial import at master release start. | 4.9.2 | U | Default | 2021-09-24
-* libdnet 1.18.0 1.18.0 Up-to-date
+* libdnet 1.18.0 1.18.2 Not updated
     - libdnet: upgrade 1.17.0 -> 1.18.0 | 1.18.0 | U | Default | 2024-03-20
     - libdnet: upgrade 1.16.3 -> 1.17.0 | 1.17.0 | U | Default | 2023-11-12
     - libdnet: Upgrade to 1.16.3 | 1.16.3 | U | Default | 2023-04-06
@@ -100,7 +100,7 @@
     - libldb: upgrade 2.3.2 -> 2.3.3 | 2.3.3 | U | Default | 2022-04-14
     - libldb: upgrade 2.3.0 -> 2.3.2 | 2.3.2 | U | Default | 2021-11-16
     - Initial import at master release start. | 2.3.0 | U | Default | 2021-09-24
-* libnetfilter-conntrack 1.1.0 1.1.0 Up-to-date
+* libnetfilter-conntrack 1.1.0 1.1.1 Not updated
     - libnetfilter-conntrack: upgrade 1.0.9 -> 1.1.0 | 1.1.0 | U | Default | 2024-09-29
     - libnetfilter-conntrack: upgrade 1.0.8 -> 1.0.9 | 1.0.9 | U | Default | 2022-04-01
     - Initial import at master release start. | 1.0.8 | U | Default | 2021-09-24

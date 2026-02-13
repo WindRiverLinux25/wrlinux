@@ -26,7 +26,7 @@
     - Initial import at master release start. | 1.97 | U | Default | 2021-09-24
 * atkmm 2.28.2 2.36.3 Not updated
     - Initial import at master release start. | 2.28.2 | U | Default | 2021-09-24
-* audit 4.0.3 4.1.2 Not updated
+* audit 4.0.3 4.1.3 Not updated
     - audit: upgrade 4.0.2 -> 4.0.3 | 4.0.3 | U | Default | 2025-01-26
     - audit: upgrade 4.0.1 -> 4.0.2 | 4.0.2 | U | Default | 2024-08-14
     - audit: upgrade 4.0 -> 4.0.1 | 4.0.1 | U | Default | 2024-03-22
@@ -136,7 +136,7 @@
     - crash: Upgrade to 8.0.2 | 8.0.2 | U | Default | 2023-03-09
     - crash: Upgrade to 8.0.0 | 8.0.0 | U | Default | 2022-04-23
     - Initial import at master release start. | 7.3.0 | U | Default | 2021-09-24
-* cryptsetup 2.7.5 2.8.3 Not updated
+* cryptsetup 2.7.5 2.8.4 Not updated
     - cryptsetup: upgrade 2.7.4 -> 2.7.5 | 2.7.5 | U | Default | 2024-09-04
     - cryptsetup: upgrade 2.7.3 -> 2.7.4 | 2.7.4 | U | Default | 2024-08-09
     - cryptsetup: upgrade 2.7.2 -> 2.7.3 | 2.7.3 | U | Default | 2024-06-27
@@ -178,7 +178,7 @@
     - dialog: upgrade 1.3-20230209 -> 1.3-20231002 | 1.3-20231002 | U | Default | 2023-10-23
     - dialog: upgrade 1.3-20210509 -> 1.3-20230209 | 1.3-20230209 | U | Default | 2023-09-07
     - Initial import at master release start. | 1.3-20210509 | U | Default | 2021-09-24
-* dlt-daemon 2.18.10 2.18.11 Not updated
+* dlt-daemon 2.18.10 3.0.0 Not updated
     - dlt-daemon: upgrade 2.18.9 -> 2.18.10 (commit: 0f2d4cfffada6f8448a2cb27995b38eb4271044f) | 2.18.10 | U | Default | 2023-08-17
     - dlt-daemon: upgrade 2.18.8 -> 2.18.9 (commit: 9a2312d3512a27620d41b9a325338b6e7b3d42de) | 2.18.9 | U | Default | 2023-04-29
     - dlt-daemon: upgrade to commit 6a3bd901d8 to fix CVE-2022-31291 | 2.18.8+2.18.9gitAUTOINC+6a3bd901d8 | U | Default | 2022-07-06
@@ -288,7 +288,7 @@
     - gosu: Upgrade to 1.17 | 1.17 | U | Default | 2024-03-08
     - gosu: Upgrade to 1.16 release | 1.16 | U | Default | 2023-06-16
     - gosu: add new recipe | 1.14 | U | Default | 2022-03-04
-* gperftools 2.16 2.17.2 Not updated
+* gperftools 2.16 2.18 Not updated
     - gperftools: upgrade from 2.15 to 2.16 | 2.16 | U | Default | 2025-02-28
     - gperftools: 2.10 -> 2.15 | 2.15 | U | Default | 2024-03-21
     - gperftools: upgrade 2.9.1 -> 2.10 | 2.10 | U | Default | 2022-07-02
@@ -318,9 +318,9 @@
     - Initial import at master release start. | 1.38.1 | U | Default | 2021-09-24
 * gtk+ 2.24.33 2.24.33 Up-to-date
     - Initial import at master release start. | 2.24.33 | U | Default | 2021-09-24
-* gtkmm 2.24.5 4.21.2 Not updated
+* gtkmm 2.24.5 4.21.3 Not updated
     - Initial import at master release start. | 2.24.5 | U | Default | 2021-09-24
-* gtkmm3 3.24.7 4.21.2 Not updated
+* gtkmm3 3.24.7 4.21.3 Not updated
     - gtkmm3: upgrade 3.24.5 -> 3.24.7 | 3.24.7 | U | Default | 2022-10-13
     - Initial import at master release start. | 3.24.5 | U | Default | 2021-09-24
 * haveged 1.9.19 1.9.19 Up-to-date
@@ -430,7 +430,7 @@
 * keyutils 1.6.3 1.6.3 Up-to-date
     - keyutils: Upgrade 1.6.1 -> 1.6.3 | 1.6.3 | U | Default | 2023-01-26
     - Initial import at master release start. | 1.6.1 | U | Default | 2021-09-24
-* krb5 1.21.3 1.22.1 Not updated
+* krb5 1.21.3 1.22.2 Not updated
     - krb5: upgrade 1.21.2 -> 1.21.3 | 1.21.3 | U | Default | 2024-07-04
     - krb5: upgrade 1.20.2 -> 1.21.2 | 1.21.2 | U | Default | 2024-03-02
     - krb5: Upgrade 1.20.1 -> 1.20.2 | 1.20.2 | U | Default | 2023-09-07
@@ -448,7 +448,7 @@
     - lcms: upgrade 2.13.1 -> 2.14 | 2.14 | U | Default | 2022-11-07
     - lcms: upgrade 2.12 -> 2.13.1 | 2.13.1 | U | Default | 2022-02-08
     - Initial import at master release start. | 2.12 | U | Default | 2021-09-24
-* libatasmart 0.19 0.19 Up-to-date
+* libatasmart 0.19  Unknown
     - Initial import at master release start. | 0.19 | U | Default | 2021-09-24
 * libblockdev 3.2.1 3.4.0 Not updated
     - libblockdev: upgrade 3.2.0 -> 3.2.1 | 3.2.1 | U | Default | 2024-11-20
@@ -460,7 +460,7 @@
     - libblockdev: upgrade 2.27 -> 2.28 | 2.28 | U | Default | 2022-09-21
     - libblockdev: upgrade 2.26 -> 2.27 | 2.27 | U | Default | 2022-09-06
     - Initial import at master release start. | 2.26 | U | Default | 2021-09-24
-* libbpf 1.5.0 1.6.2 Not updated
+* libbpf 1.5.0 1.6.3 Not updated
     - libbpf: upgrade 1.4.7 -> 1.5.0 | 1.5.0 | U | Default | 2025-01-07
     - libbpf: upgrade 1.4.6 -> 1.4.7 | 1.4.7 | U | Default | 2025-01-02
     - libbpf: upgrade 1.4.5 -> 1.4.6 | 1.4.6 | U | Default | 2024-09-10
@@ -604,7 +604,7 @@
 * libosinfo 1.11.0 1.12.0 Not updated
     - libosinfo: upgrade 1.10 -> 1.11.0 | 1.11.0 | U | Default | 2023-11-06
     - libosinfo: add recipe | 1.10 | U | Default | 2023-08-27
-* libp11 0.4.13 0.4.16 Not updated
+* libp11 0.4.13 0.4.17 Not updated
     - libp11: update 0.4.12 -> 0.4.13 | 0.4.13 | U | Default | 2024-12-19
     - libp11: upgrade 0.4.11 -> 0.4.12 | 0.4.12 | U | Default | 2022-07-20
     - Initial import at master release start. | 0.4.11 | U | Default | 2021-09-24
@@ -676,13 +676,13 @@
     - libyang: upgrade 2.0.164 -> 2.0.194 | 2.0.194 | U | Default | 2022-05-09
     - libyang: update from 2.0.7 to 2.0.164 | 2.0.164 | U | Default | 2022-03-19
     - Initial import at master release start. | 2.0.7 | U | Default | 2021-09-24
-* linuxptp 4.4  Unknown
+* linuxptp 4.4 4.4 Up-to-date
     - linuxptp: upgrade 4.1 -> 4.4 | 4.4 | U | Default | 2024-09-29
     - linuxptp: update linuxptp recipe to 4.1 | 4.1 | U | Default | 2023-10-13
     - Initial import at master release start. | 3.1.1 | U | Default | 2021-09-24
 * lmbench 3.0-a9 3.0-a9 Up-to-date
     - Initial import at master release start. | 3.0-a9 | U | Default | 2021-09-24
-* lmdb 0.9.31 0.9.31 Up-to-date
+* lmdb 0.9.31 0.9.35 Not updated
     - lmdb: upgrade 0.9.29 -> 0.9.31 | 0.9.31 | U | Default | 2023-07-21
     - Initial import at master release start. | 0.9.29 | U | Default | 2021-09-24
 * lmsensors 3.6.0 3 Unknown
@@ -761,14 +761,14 @@
     - modemmanager: update to 1.18.8 | 1.18.8 | U | Default | 2022-06-06
     - modemmanager: update 1.16.8 -> 1.18.6 | 1.18.6 | U | Default | 2022-03-04
     - Initial import at master release start. | 1.16.8 | U | Default | 2021-09-24
-* multipath-tools 0.11.1 0.14.0 Not updated
+* multipath-tools 0.11.1 0.14.3 Not updated
     - multipath-tools: upgrade 0.11.0 -> 0.11.1 | 0.11.1 | U | Default | 2025-02-26
     - multipath-tools: upgrade 0.10.0 -> 0.11.0 | 0.11.0 | U | Default | 2025-02-12
     - multipath-tools: upgrade 0.9.8 -> 0.10.0 | 0.10.0 | U | Default | 2024-10-06
     - multipath-tools: upgrade 0.9.3 -> 0.9.8 | 0.9.8 | U | Default | 2024-03-05
     - multipath-tools: upgrade 0.8.4 -> 0.9.3 | 0.9.3 | U | Default | 2022-12-12
     - Initial import at master release start. | 0.8.4 | U | Default | 2021-09-24
-* nano 8.3 8.7 Not updated
+* nano 8.3 8.7.1 Not updated
     - nano: upgrade 8.2 -> 8.3 | 8.3 | U | Default | 2024-12-24
     - nano: upgrade 8.1 -> 8.2 | 8.2 | U | Default | 2024-09-10
     - nano: upgrade 8.0 -> 8.1 | 8.1 | U | Default | 2024-07-15
@@ -786,7 +786,7 @@
     - ndctl: Update to v78 | v78 | U | Default | 2024-01-27
     - ndctl: Upgrade to v73 | v73 | U | Default | 2022-03-27
     - Initial import at master release start. | v69 | U | Default | 2021-09-24
-* netplan 1.1.2 1.2 Not updated
+* netplan 1.1.2 1.2.1 Not updated
     - netplan: upgrade 1.1.1 -> 1.1.2 | 1.1.2 | U | Default | 2025-03-31
     - netplan: upgrade 1.1 -> 1.1.1 | 1.1.1 | U | Default | 2024-10-22
     - netplan: upgrade 1.0.1 -> 1.1 | 1.1 | U | Default | 2024-09-15
@@ -805,7 +805,7 @@
     - nmap: add recipe for 7.92 | 7.92 | D | Default | 2025-05-15
     - nmap: Upgrade to 7.95 | 7.95 | U | Default | 2024-09-04
     - Initial import at master release start. | 7.80 | U | Default | 2021-09-24
-* nodejs 22.14.0 25.4.0 Not updated
+* nodejs 22.14.0 25.6.0 Not updated
     - nodejs: upgrade 22.13.0 -> 22.14.0 | 22.14.0 | U | Default | 2025-03-18
     - nodejs: upgrade 22.12.0 -> 22.13.1 | 22.13.1 | U | Default | 2025-01-25
     - nodejs: upgrade 22.11.0 -> 22.12.0 | 22.12.0 | U | Default | 2024-12-04
@@ -1150,7 +1150,7 @@
     - Initial import at master release start. | 2020.11.01 | U | Default | 2021-09-24
 * rfkill 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
-* rocksdb 9.10.0 10.9.1 Not updated
+* rocksdb 9.10.0 10.10.1 Not updated
     - rocksdb: upgrade 9.0.0 -> 9.10.0 | 9.10.0 | U | Default | 2025-03-12
     - rocksdb: upgrade 7.9.2 -> 9.0.0 | 9.0.0 | U | Default | 2024-03-21
     - rocksdb: Upgrade to 7.9.2 | 7.9.2 | U | Default | 2023-01-26
@@ -1262,7 +1262,7 @@
     - tmux: Upgrade to 3.4 | 3.4 | U | Default | 2024-09-14
     - tmux: update to tmux_3.3a | 3.3a | U | Default | 2023-02-10
     - Initial import at master release start. | 3.1c | U | Default | 2021-09-24
-* tree 2.2.1 2.2.1 Up-to-date
+* tree 2.2.1 2.3.1 Not updated
     - tree: upgrade 2.1.3 -> 2.2.1 | 2.2.1 | U | Default | 2024-12-03
     - tree: upgrade 2.1.1 -> 2.1.3 | 2.1.3 | U | Default | 2024-07-15
     - tree: upgrade 2.1.0 -> 2.1.1 | 2.1.1 | U | Default | 2023-06-05
@@ -1313,7 +1313,7 @@
     - valkey: Upgrade 8.0.1 -> 8.0.2 | 8.0.2 | U | Default | 2025-02-07
     - valkey: Upgrade 8.0.0 -> 8.0.1 | 8.0.1 | U | Default | 2024-10-11
     - valkey: Add recipe | 8.0.0 | U | Default | 2024-09-26
-* vboxguestdrivers 7.1.4 7.2.4 Not updated
+* vboxguestdrivers 7.1.4 7.2.6 Not updated
     - vbxguestdrivers: upgrade 7.0.22 -> 7.1.4 | 7.1.4 | U | Default | 2024-12-13
     - vboxguestdrivers: update to 7.0.22 | 7.0.22 | U | Default | 2024-12-11
     - vbxguestdrivers: upgrade 7.0.18 -> 7.0.20 | 7.0.20 | U | Default | 2024-07-18
@@ -1376,7 +1376,7 @@
 * yajl 1.0.12 1.0.12 Up-to-date
     - Initial import at master release start. | 1.0.12 | U | Default | 2021-09-24
     - Initial import at master release start. | 2.1.0 | U | Default | 2021-09-24
-* yaml-cpp 0.8.0+git 0.8.0 Up-to-date
+* yaml-cpp 0.8.0+git 0.9.0 Not updated
     - yaml-cpp: Upgrade to tip of trunk | 0.8.0+git | U | Default | 2025-03-20
     - yaml-cpp: upgrade 0.7.0 -> 0.8.0 | 0.8.0 | U | Default | 2023-08-16
     - yaml-cpp: bump 0.7.0 | 0.7.0 | U | Default | 2022-02-11

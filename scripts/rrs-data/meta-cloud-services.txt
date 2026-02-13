@@ -1,7 +1,7 @@
 * nss-pam-ldapd 0.9.12  Unknown
     - kirkstone[][PATCH] nss-pam-ldapd: upgrade 0.9.8 -> 0.9.12 | 0.9.12 | U | Default | 2023-10-16
     - Initial import at master release start. | 0.9.8 | U | Default | 2021-10-29
-* python3-ansible 2.17.7 2.20.1 Not updated
+* python3-ansible 2.17.7 2.20.2 Not updated
     - python3-ansible: Upgrade 2.17.6 -> 2.17.7 | 2.17.7 | U | Default | 2025-04-09
     - python3-ansible: Upgrade 2.16.5 -> 2.17.6 | 2.17.6 | U | Default | 2024-12-10
     - python3-ansible: Upgrade 2.14.5 -> 2.16.5 | 2.16.5 | U | Default | 2024-04-09

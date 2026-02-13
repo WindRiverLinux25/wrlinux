@@ -1,6 +1,6 @@
-* imx-secure-enclave git 6.12.49 Unknown
+* imx-secure-enclave git 6.18.2 Unknown
     - Rename all the layers in meta-imx [YOCIMX-7393] | git | U | Default | 2023-12-08
-* imx-secure-enclave-seco git 6.12.49 Unknown
+* imx-secure-enclave-seco git 6.18.2 Unknown
     - Rename all the layers in meta-imx [YOCIMX-7393] | git | U | Default | 2023-12-08
 * kernel-module-isp-vvcam 4.2.2.25.1 16.0.0.1.2.0 Not updated
     - kernel-module-isp-vvcam: Upgrade version from 4.2.2.24.4 to 4.2.2.25.1 [YOCIMX-8467] | 4.2.2.25.1 | U | Default | 2024-10-28

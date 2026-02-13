@@ -8,7 +8,7 @@
     - gtksourceview4: Upgrade 4.8.2 -> 4.8.4 | 4.8.4 | U | Default | 2023-11-14
     - gtksourceview4: upgrade 4.8.1 -> 4.8.2 | 4.8.2 | U | Default | 2022-01-05
     - Initial import at master release start. | 4.8.1 | U | Default | 2021-09-24
-* gvfs 1.57.2 1.58.0 Not updated
+* gvfs 1.57.2 1.58.1 Not updated
     - gvfs: update 1.56.1 -> 1.57.2 | 1.57.2 | U | Default | 2025-03-18
     - gvfs: update 1.56.0 -> 1.56.1 | 1.56.1 | U | Default | 2024-12-11
     - gvfs: update 1.54.0 -> 1.56.0 | 1.56.0 | U | Default | 2024-10-11
