@@ -54,7 +54,7 @@
     - freeradius: 3.0.26 -> 3.2.3 | 3.2.3 | U | Default | 2024-04-02
     - freeradius: upgrade 3.0.21 -> 3.0.26 | 3.0.26 | U | Default | 2023-01-09
     - Initial import at master release start. | 3.0.21 | U | Default | 2021-09-24
-* frr 10.3 10.5.1 Not updated
+* frr 10.3 10.5.2 Not updated
     - frr: upgrade 10.2.1 -> 10.3 | 10.3 | U | Default | 2025-03-31
     - frr: upgrade 10.2 -> 10.2.1 | 10.2.1 | U | Default | 2025-01-02
     - frr: upgrade 10.1.1 -> 10.2 | 10.2 | U | Default | 2024-12-26
@@ -328,7 +328,7 @@
     - tcpslice: upgrade 1.5 -> 1.6 | 1.6 | U | Default | 2022-10-24
     - tcpslice: upgrade 1.2a3 -> 1.5 | 1.5 | U | Default | 2022-02-03
     - Initial import at master release start. | 1.2a3 | U | Default | 2021-09-24
-* tnftp 20230507 20230507 Up-to-date
+* tnftp 20230507 20260211 Not updated
     - tnftp: upgrade 20210827 -> 20230507 | 20230507 | U | Default | 2023-11-06
     - tnftp: upgrade 20151004 -> 20210827 | 20210827 | U | Default | 2022-01-18
     - Initial import at master release start. | 20151004 | U | Default | 2021-09-24

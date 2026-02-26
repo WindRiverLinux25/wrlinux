@@ -1,4 +1,4 @@
-* bcc 0.33.0+git 0.36.0 Not updated
+* bcc 0.33.0+git 0.36.1 Not updated
     - bcc: Upgrade to 0.33.0+ | 0.33.0+git | U | Default | 2025-03-22
     - bcc: Upgrade to 0.30.0+ | 0.30.0+git | U | Default | 2024-07-15
     - bcc: Upgrade to 0.29.1 | 0.29.1 | U | Default | 2024-01-23

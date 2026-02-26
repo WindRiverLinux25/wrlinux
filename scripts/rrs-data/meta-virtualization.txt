@@ -33,7 +33,7 @@
     - cni: update to 1.1.0 | v1.1.0+git940e66269988c38f4c09b00bda4456d2db007b35 | U | Default | 2022-06-03
     - cni: update to v1.0.1 | v1.0.1+git35efaabf93d23a28fb2fb01dccbe80caed196d19 | U | Default | 2022-03-21
     - Initial import at master release start. | v0.8.0+gitb5ab16f010e822936eb974690ecec38ba69afc01 | U | Default | 2021-09-22
-* conmon 2.1.12+git 2.2.0 Not updated
+* conmon 2.1.12+git 2.2.1 Not updated
     - conmon: update to 2.1.12 | 2.1.12+git | U | Default | 2024-07-11
     - conmon: update to 2.1.10 | 2.1.10+git | U | Default | 2024-03-15
     - conmon: update to 2.1.8 | 2.1.8+git | U | Default | 2023-09-15
@@ -120,7 +120,7 @@
     - irqbalance: update to 1.8.0-tip | 1.8.0+gitAUTOINC+b3adb5fd14 | U | Default | 2022-03-29
     - irqbalance: bump SRCREV to latest | 1.8.0+gitAUTOINC+a972665483 | U | Default | 2021-11-08
     - Initial import at master release start. | 1.8.0 | U | Default | 2021-09-22
-* kubernetes v1.32.10+git 1.35.0 Not updated
+* kubernetes v1.32.10+git 1.35.1 Not updated
     - kubernetes: upgrade to 1.32.10 | v1.32.10+git | U | Default | 2025-12-10
     - kubernetes: Upgrade to 1.32.6 | v1.32.6+git | U | Default | 2025-08-14
     - kubernetes: fix runtime init error caused by git shallow tarball | v1.32.0+git | U | Default | 2025-04-15
@@ -206,7 +206,7 @@
     - Initial import at master release start. | 2.15+AUTOINC+8dc1733eae | U | Default | 2021-09-22
 * packagegroup-container 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
-* podman v5.4.2 5.7.1 Not updated
+* podman v5.4.2 5.8.0 Not updated
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | v5.4.2 | U | Default | 2025-10-24
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | v5.4.2 | U | Default | 2025-10-24
     - podman: fix CVE-2025-9566 | v5.4.1 | D | Default | 2025-10-14
@@ -279,7 +279,7 @@
     - runc: update to v1.1.0 | 1.1.0+gitAUTOINC+d7f7b22a85 | U | Default | 2022-02-03
     - runc: update to 1.0.3 | 1.0.3+gitAUTOINC+e0124d569c | U | Default | 2021-12-10
     - Initial import at master release start. | 1.0.2+gitAUTOINC+86d83333d7 | U | Default | 2021-09-22
-* skopeo v1.18.0+git 1.21.0 Not updated
+* skopeo v1.18.0+git 1.22.0 Not updated
     - skopeo: update to v1.18.0 | v1.18.0+git | U | Default | 2025-03-24
     - skopeo: update to v1.17.0 | v1.17.0+git | U | Default | 2025-01-17
     - skopeo: update to v1.16.0 | v1.16.0+git | U | Default | 2024-08-20
