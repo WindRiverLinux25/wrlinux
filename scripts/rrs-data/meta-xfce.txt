@@ -230,7 +230,7 @@
 * xfce4-weather-plugin 0.11.1 0.12.0 Not updated
     - xfce4-weather-plugin: upgrade 0.11.0 -> 0.11.1 | 0.11.1 | U | Default | 2023-11-06
     - Initial import at master release start. | 0.11.0 | U | Default | 2021-09-24
-* xfce4-whiskermenu-plugin 2.7.1 2.10.0 Not updated
+* xfce4-whiskermenu-plugin 2.7.1 2.10.1 Not updated
     - xfce4-whiskermenu-plugin: upgrade 2.6.2 -> 2.7.1 | 2.7.1 | U | Default | 2022-01-05
     - xfce4-whiskermenu-plugin: upgrade 2.5.3 -> 2.6.2 | 2.6.2 | U | Default | 2021-11-20
     - Initial import at master release start. | 2.5.3 | U | Default | 2021-09-24

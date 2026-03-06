@@ -527,7 +527,7 @@
     - libgphoto2: upgrade 2.5.30 -> 2.5.31 | 2.5.31 | U | Default | 2023-09-07
     - gphoto2: Upgrade to 2.5.28 | 2.5.30 | U | Default | 2022-09-06
     - Initial import at master release start. | 2.5.27 | U | Default | 2021-09-24
-* libgpiod 2.2.2 2.2.2 Not updated
+* libgpiod 2.2.2 2.2.3 Not updated
     - libgpiod: update to v2.2.2 | 2.2.2 | U | Default | 2025-10-13
     - libgpiod: update to v2.2.1 | 2.2.1 | U | Default | 2025-02-19
     - libgpiod: update to v2.2 | 2.2 | U | Default | 2024-10-24
@@ -691,7 +691,7 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
 * lockfile-progs 0.1.19 0.2.0 Not updated
     - Initial import at master release start. | 0.1.19 | U | Default | 2021-09-24
-* lsscsi 0.32 0.32 Up-to-date
+* lsscsi 0.32  Unknown
     - lsscsi: revert to version 0.32 | 0.32 | D | Default | 2025-06-30
     - lsscsi: upgrade 0.32 -> 030 | 030 | U | Default | 2023-11-06
     - lsscsi: upgrade 0.31 -> 0.32 | 0.32 | U | Default | 2022-04-25
@@ -800,12 +800,12 @@
     - nlohmann-json: upgrade 3.10.4 -> 3.10.5 | 3.10.5 | U | Default | 2022-01-18
     - nlohmann-json: upgrade 3.10.2 -> 3.10.4 | 3.10.4 | U | Default | 2021-10-19
     - Initial import at master release start. | 3.10.2 | U | Default | 2021-09-24
-* nmap 7.95 7.98 Not updated
+* nmap 7.95 7.98-1 Not updated
     - nmap: disable build 7.95 | 7.95 | U | Default | 2025-05-15
     - nmap: add recipe for 7.92 | 7.92 | D | Default | 2025-05-15
     - nmap: Upgrade to 7.95 | 7.95 | U | Default | 2024-09-04
     - Initial import at master release start. | 7.80 | U | Default | 2021-09-24
-* nodejs 22.14.0 25.6.1 Not updated
+* nodejs 22.14.0 25.7.0 Not updated
     - nodejs: upgrade 22.13.0 -> 22.14.0 | 22.14.0 | U | Default | 2025-03-18
     - nodejs: upgrade 22.12.0 -> 22.13.1 | 22.13.1 | U | Default | 2025-01-25
     - nodejs: upgrade 22.11.0 -> 22.12.0 | 22.12.0 | U | Default | 2024-12-04
@@ -885,7 +885,7 @@
     - openjpeg: upgrade 2.5.0 -> 2.5.2 | 2.5.2 | U | Default | 2024-09-15
     - openjpeg: upgrade 2.4.0 -> 2.5.0 | 2.5.0 | U | Default | 2022-05-16
     - Initial import at master release start. | 2.4.0 | U | Default | 2021-09-24
-* openldap 2.6.9 2.6.12 Not updated
+* openldap 2.6.9  Unknown
     - openldap: upgrade 2.6.8 -> 2.6.9 | 2.6.9 | U | Default | 2025-01-02
     - openldap: upgrade 2.6.7 -> 2.6.8 | 2.6.8 | U | Default | 2024-06-27
     - openldap: upgrade 2.5.16 -> 2.6.7 | 2.6.7 | U | Default | 2024-03-02
@@ -1203,7 +1203,7 @@
 * snappy 1.1.10 1.2.2 Not updated
     - snappy: upgrade 1.1.9 -> 1.1.10 | 1.1.10 | U | Default | 2023-12-08
     - Initial import at master release start. | 1.1.9 | U | Default | 2021-09-24
-* softhsm 2.6.1 2.7.0 Not updated
+* softhsm 2.6.1  Unknown
     - Initial import at master release start. | 2.6.1 | U | Default | 2021-09-24
 * sound-theme-freedesktop 0.8 0.8 Up-to-date
     - Initial import at master release start. | 0.8 | U | Default | 2021-09-24
@@ -1277,7 +1277,7 @@
 * turbostat 1.0 1.0 Up-to-date
     - turbostat: make turbostat's version align with kernel version | 1.0 | D | Default | 2025-04-24
     - Initial import at master release start. | 3.4 | U | Default | 2021-09-24
-* udisks2 2.10.1 2.11.0 Not updated
+* udisks2 2.10.1 2.11.1 Not updated
     - udisks2: Upgrade 2.9.4 -> 2.10.1 | 2.10.1 | U | Default | 2023-09-25
     - udisks2: upgrade 2.9.3 -> 2.9.4 | 2.9.4 | U | Default | 2021-11-03
     - Initial import at master release start. | 2.9.3 | U | Default | 2021-09-24

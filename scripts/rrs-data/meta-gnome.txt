@@ -4,7 +4,7 @@
     - Rename gnome-menus3 -> gnome-menus | 3.36.0 | U | Default | 2022-01-05
 * gtksourceview3 3.24.11 5.18.0 Not updated
     - Initial import at master release start. | 3.24.11 | U | Default | 2021-09-24
-* gtksourceview4 4.8.4 5.18.0 Not updated
+* gtksourceview4 4.8.4 5.19.0 Not updated
     - gtksourceview4: Upgrade 4.8.2 -> 4.8.4 | 4.8.4 | U | Default | 2023-11-14
     - gtksourceview4: upgrade 4.8.1 -> 4.8.2 | 4.8.2 | U | Default | 2022-01-05
     - Initial import at master release start. | 4.8.1 | U | Default | 2021-09-24

@@ -11,7 +11,7 @@
     - add recipe python3-scancode-native and its depends | 2.10.70 | U | Default | 2024-09-30
 * python3-container-inspector-native 32.0.1 32.0.1 Up-to-date
     - add recipe python3-scancode-native and its depends | 32.0.1 | U | Default | 2024-09-30
-* python3-debian-inspector-native 31.1.0 31.1.1 Not updated
+* python3-debian-inspector-native 31.1.0  Unknown
     - add recipe python3-scancode-native and its depends | 31.1.0 | U | Default | 2024-09-30
 * python3-dockerfile-parse-native 2.0.1 2.0.1 Up-to-date
     - add recipe python3-scancode-native and its depends | 2.0.1 | U | Default | 2024-09-30
