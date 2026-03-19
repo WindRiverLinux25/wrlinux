@@ -32,7 +32,11 @@ THIRD_PARTY_DL_MSG_PN ?= "${PN} is not supported by Wind River Linux. ${THIRD_PA
 THIRD_PARTY_DL_MSG_PV ?= "${PV} is not supported by Wind River Linux. ${THIRD_PARTY_DL_MSG_COMMON}"
 
 python() {
-    d.appendVarFlag("do_fetch", "vardeps", "%s" % d.getVarFlag('WRL_RECIPE_VERSION', d.getVar('PN')))
+    deps = ""
+    for n in (d.getVar('PN'), d.getVar('BPN')):
+        deps += ' %s' % d.getVarFlag("WRL_RECIPE_VERSION", n)
+        deps += ' %s' % d.getVar('WRLINUX_SUPPORTED_RECIPE:pn-%s' % n)
+    d.appendVarFlag("do_fetch", "vardeps", deps)
 }
 
 python third_party_dl() {
@@ -48,16 +52,18 @@ python third_party_dl() {
     pn = d.getVar('PN')
     bpn = d.getVar('BPN')
     support = d.getVarFlag('WRL_RECIPE_VERSION', pn) or d.getVarFlag('WRL_RECIPE_VERSION', bpn) or ''
+    # Make the following previous settings can ignore the warnings:
+    # WRLINUX_SUPPORTED_RECIPE:pn-<PN> = "2"
+    ignore = d.getVar('WRLINUX_SUPPORTED_RECIPE:pn-%s' % pn) or d.getVar('WRLINUX_SUPPORTED_RECIPE:pn-%s' % bpn) or ''
+    ignore = ignore.strip()
     # Not in WRLinux
     if not support:
         bb.debug(1, '%s is not in WRLinux' % pn)
-        return
+    # Ignored
+    elif support == 'I' or ignore == '2':
+        bb.debug(1, 'Ignore checking for %s' % pn)
     elif support == 'N':
         bb.warn(d.getVar('THIRD_PARTY_DL_MSG_PN'))
-    # Ignored
-    elif support == 'I':
-        bb.debug(1, 'Ignore checking for %s' % pn)
-        return
     else:
         pv = d.getVar('PV')
         if not pv in support.split():
