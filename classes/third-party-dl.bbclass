@@ -20,6 +20,8 @@
 # EXTENDED_WRL_RECIPE_VERSION += "conf/layername-recipe-version.inc"
 #
 
+require conf/wrlinux-recipes-list.inc
+
 require conf/wrlinux-recipe-version.inc
 EXTENDED_WRL_RECIPE_VERSION ??= ""
 include ${EXTENDED_WRL_RECIPE_VERSION}
