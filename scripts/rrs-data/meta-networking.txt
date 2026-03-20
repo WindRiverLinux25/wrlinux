@@ -54,7 +54,7 @@
     - freeradius: 3.0.26 -> 3.2.3 | 3.2.3 | U | Default | 2024-04-02
     - freeradius: upgrade 3.0.21 -> 3.0.26 | 3.0.26 | U | Default | 2023-01-09
     - Initial import at master release start. | 3.0.21 | U | Default | 2021-09-24
-* frr 10.3 10.5.2 Not updated
+* frr 10.3 10.5.3 Not updated
     - frr: upgrade 10.2.1 -> 10.3 | 10.3 | U | Default | 2025-03-31
     - frr: upgrade 10.2 -> 10.2.1 | 10.2.1 | U | Default | 2025-01-02
     - frr: upgrade 10.1.1 -> 10.2 | 10.2 | U | Default | 2024-12-26

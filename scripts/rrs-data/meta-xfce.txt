@@ -20,7 +20,7 @@
 * gigolo 0.5.3 0.6.0 Not updated
     - gigolo: upgrade 0.5.2 -> 0.5.3 | 0.5.3 | U | Default | 2023-11-06
     - Initial import at master release start. | 0.5.2 | U | Default | 2021-09-24
-* libxfce4ui 4.20.0 4.21.3 Not updated
+* libxfce4ui 4.20.0 4.21.7 Not updated
     - libxfce4ui: 4.19.6 -> 4.20.0 | 4.20.0 | U | Default | 2024-12-19
     - libxfce4ui: Upgrade 4.19.3 -> 4.19.6 | 4.19.6 | U | Default | 2024-11-26
     - libxfce4ui: upgrade 4.18.3 -> 4.19.3 | 4.19.3 | U | Default | 2023-11-06
@@ -42,7 +42,7 @@
     - menulibre: upgrade 2.2.3 -> 2.3.2 | 2.3.2 | U | Default | 2023-11-06
     - menulibre: upgrade 2.2.1 -> 2.2.3 | 2.2.3 | U | Default | 2022-01-05
     - Initial import at master release start. | 2.2.1 | U | Default | 2021-09-24
-* mousepad 0.6.1 0.6.5 Not updated
+* mousepad 0.6.1 0.7.0 Not updated
     - mousepad: upgrade 0.5.9 -> 0.6.1 | 0.6.1 | U | Default | 2023-11-06
     - mousepad: upgrade 0.5.8 -> 0.5.9 | 0.5.9 | U | Default | 2022-04-07
     - mousepad: upgrade 0.5.7 -> 0.5.8 | 0.5.8 | U | Default | 2022-01-05
@@ -52,7 +52,7 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
 * packagegroup-xfce-extended 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
-* ristretto 0.13.1 0.13.4 Not updated
+* ristretto 0.13.1 0.14.0 Not updated
     - ristretto: Upgrade to 0.13.1 release | 0.13.1 | U | Default | 2023-06-22
     - ristretto: upgrade 0.12.1 -> 0.12.2 | 0.12.2 | U | Default | 2022-04-07
     - ristretto: upgrade 0.12.0 -> 0.12.1 | 0.12.1 | U | Default | 2022-01-05
@@ -173,7 +173,7 @@
 * xfce4-pulseaudio-plugin 0.4.8 0.5.1 Not updated
     - xfce4-pulseaudio-plugin: upgrade 0.4.3 -> 0.4.8 | 0.4.8 | U | Default | 2023-11-06
     - Initial import at master release start. | 0.4.3 | U | Default | 2021-09-24
-* xfce4-screensaver 4.18.1 4.20.1 Not updated
+* xfce4-screensaver 4.18.1 4.20.2 Not updated
     - xfce4-screensaver: 4.16.0 -> 4.18.1 | 4.18.1 | U | Default | 2023-04-17
     - Initial import at master release start. | 4.16.0 | U | Default | 2021-09-24
 * xfce4-screenshooter 1.10.4 1.11.3 Not updated
@@ -211,7 +211,7 @@
     - xfce4-taskmanager: upgrade 1.5.5 -> 1.5.6 | 1.5.6 | U | Default | 2023-11-06
     - xfce4-taskmanager: 1.5.2 -> 1.5.5 | 1.5.5 | U | Default | 2023-04-07
     - Initial import at master release start. | 1.5.2 | U | Default | 2021-09-24
-* xfce4-terminal 1.0.4 1.1.5 Not updated
+* xfce4-terminal 1.0.4 1.2.0 Not updated
     - xfce4-terminal: 1.0.0 -> 1.0.4 | 1.0.4 | U | Default | 2023-04-07
     - xfce4-terminal: upgrade 0.8.10 -> 1.0.0 | 1.0.0 | U | Default | 2022-04-07
     - Initial import at master release start. | 0.8.10 | U | Default | 2021-09-24
@@ -236,7 +236,7 @@
     - Initial import at master release start. | 2.5.3 | U | Default | 2021-09-24
 * xfce4-xkb-plugin 0.8.2 0.9.0 Not updated
     - Initial import at master release start. | 0.8.2 | U | Default | 2021-09-24
-* xfconf 4.20.0 4.21.0 Not updated
+* xfconf 4.20.0 4.21.1 Not updated
     - xfconf: 4.18.2 -> 4.20.0 | 4.20.0 | U | Default | 2024-12-19
     - xfconf: Upgrade 4.18.1 -> 4.18.2 | 4.18.2 | U | Default | 2024-11-25
     - xfconf: Upgrade 4.18.0 -> 4.18.1 | 4.18.1 | U | Default | 2024-11-23

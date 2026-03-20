@@ -45,7 +45,7 @@
     - Initial import at master release start. | 2.0.29+gitAUTOINC+1ef246896b | U | Default | 2021-09-22
 * container-host-config 1.0 1.0 Up-to-date
     - containers: add container-host-config recipe | 1.0 | U | Default | 2023-02-17
-* containerd v2.0.7 2.2.1 Not updated
+* containerd v2.0.7 2.2.2 Not updated
     - containerd: upgrade from 2.0.5 to 2.0.7 | v2.0.7 | U | Default | 2026-01-21
     - containerd: upgrade to 2.0.5 | v2.0.5 | U | Default | 2025-04-22
     - containerd: update to v2.0.3 | v2.0.2+git | U | Default | 2025-03-06
@@ -57,7 +57,7 @@
     - containerd: update to v2.0.0-rc.2 | v2.0.0-rc.2+git | U | Default | 2024-05-29
     - containerd: update to v2.0.0-rc.1 | v2.0.0-rc.1+git | U | Default | 2024-05-14
     - containerd: consolidate to "containerd" | v2.0.0-beta.0+git | U | Default | 2024-05-14
-* cri-o 1.32.2+git318db72eb0b3d18c22c995aa7614a13142287296 1.35.0 Not updated
+* cri-o 1.32.2+git318db72eb0b3d18c22c995aa7614a13142287296 1.35.1 Not updated
     - cri-o: update to v1.32.2 | 1.32.2+git318db72eb0b3d18c22c995aa7614a13142287296 | U | Default | 2025-03-11
     - cri-o: update to v1.31.4-tip | 1.31.4+git33d75981bee230f791709975125d7386fe2c530a | U | Default | 2025-01-17
     - cri-o: update to v1.31.0 | 1.31.0+git04500243ec0cd775e76bcec1c822aaa3faa11177 | U | Default | 2024-07-11
@@ -206,7 +206,7 @@
     - Initial import at master release start. | 2.15+AUTOINC+8dc1733eae | U | Default | 2021-09-22
 * packagegroup-container 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
-* podman v5.4.2 5.8.0 Not updated
+* podman v5.4.2 5.8.1 Not updated
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | v5.4.2 | U | Default | 2025-10-24
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | v5.4.2 | U | Default | 2025-10-24
     - podman: fix CVE-2025-9566 | v5.4.1 | D | Default | 2025-10-14
@@ -255,7 +255,7 @@
     - Initial import at master release start. | 0.17.0 | U | Default | 2021-09-22
 * python3-fastentrypoints 0.12 0.12 Up-to-date
     - Initial import at master release start. | 0.12 | U | Default | 2021-09-22
-* runc-opencontainers 1.2.9+git 1.4.0 Not updated
+* runc-opencontainers 1.2.9+git 1.4.1 Not updated
     - runc-opencontainers: upgrade from 1.2.6 to 1.2.9 | 1.2.9+git | U | Default | 2026-01-12
     - runc-opencontainers: upgrade to 1.2.6 | 1.2.6+git | U | Default | 2025-04-21
     - runc-opencontainers: update to v1.2.0 | 1.2.0+git | U | Default | 2025-01-17
