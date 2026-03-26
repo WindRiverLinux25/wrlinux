@@ -1058,7 +1058,8 @@
 * poppler-data 0.4.12 0.4.12 Up-to-date
     - poppler-data: upgrade 0.4.11 -> 0.4.12 | 0.4.12 | U | Default | 2023-02-20
     - Initial import at master release start. | 0.4.11 | U | Default | 2021-09-24
-* postgresql 17.6  Unknown
+* postgresql 17.8  Unknown
+    - postgresql: upgrade 17.6 -> 17.8 | 17.8 | U | Default | 2026-03-17
     - postgresql: upgrade 17.5 -> 17.6 | 17.6 | U | Default | 2025-09-07
     - postgresql: upgrade 17.4 -> 17.5 | 17.5 | U | Default | 2025-06-20
     - postgresql: upgrade 16.8 -> 17.4 | 17.4 | U | Default | 2025-02-27
