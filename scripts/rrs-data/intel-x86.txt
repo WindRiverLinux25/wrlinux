@@ -1,2 +1,4 @@
-* tmon 1.0 1.0 Up-to-date
-    - Initial import at master release start. | 1.0 | U | Default | 2021-09-29
+* iotg-tsn-ref-sw 1.0-git 4 Not updated
+    - Add recipe for iotg-tsn-ref-sw | 1.0-git | U | Default | 2025-11-05
+* libbpf-iotg 0.7.0 1.7.0 Not updated
+    - Add recipe of libbpf-iotg_0.7.0.bb | 0.7.0 | U | Default | 2025-11-12

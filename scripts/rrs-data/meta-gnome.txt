@@ -2,9 +2,9 @@
     - Initial import at master release start. | 0.40.0 | U | Default | 2021-09-24
 * gnome-menus 3.36.0 3.38.1 Not updated
     - Rename gnome-menus3 -> gnome-menus | 3.36.0 | U | Default | 2022-01-05
-* gtksourceview3 3.24.11 5.18.0 Not updated
+* gtksourceview3 3.24.11 5.20.0 Not updated
     - Initial import at master release start. | 3.24.11 | U | Default | 2021-09-24
-* gtksourceview4 4.8.4 5.19.0 Not updated
+* gtksourceview4 4.8.4 5.20.0 Not updated
     - gtksourceview4: Upgrade 4.8.2 -> 4.8.4 | 4.8.4 | U | Default | 2023-11-14
     - gtksourceview4: upgrade 4.8.1 -> 4.8.2 | 4.8.2 | U | Default | 2022-01-05
     - Initial import at master release start. | 4.8.1 | U | Default | 2021-09-24
@@ -26,7 +26,7 @@
     - Initial import at master release start. | 1.48.1 | U | Default | 2021-09-24
 * keybinder 3.0+gitAUTOINC+736ccef40d 3.0 Up-to-date
     - Initial import at master release start. | 3.0+gitAUTOINC+736ccef40d | U | Default | 2021-09-24
-* libgsf 1.14.53 1.14.55 Not updated
+* libgsf 1.14.53 1.14.56 Not updated
     - libgsf: upgrade 1.14.52 -> 1.14.53 | 1.14.53 | U | Default | 2024-10-14
     - libgsf: upgrade 1.14.51 -> 1.14.52 | 1.14.52 | U | Default | 2024-02-09
     - libgsf: Upgrade 1.14.50 -> 1.14.51 | 1.14.51 | U | Default | 2023-11-06
@@ -53,6 +53,11 @@
     - Initial import at master release start. | 0.62 | U | Default | 2021-09-24
 * libwnck 2.31.0 43.3 Not updated
     - Initial import at master release start. | 2.31.0 | U | Default | 2021-09-24
+* libwnck3 43.2  Unknown
+    - libwnck: update to 43.2 and fix build errors | 43.2 | U | Default | 2025-09-10
+    - libwnck3: update 40.1 -> 43.0 | 43.0 | U | Default | 2022-12-31
+    - libwnck3: upgrade 40.0 -> 40.1 | 40.1 | U | Default | 2022-02-22
+    - Initial import at master release start. | 40.0 | U | Default | 2021-09-24
 * libxklavier 5.4 5.4 Up-to-date
     - Initial import at master release start. | 5.4 | U | Default | 2021-09-24
 * metacity 3.52.0 3.58.1 Not updated

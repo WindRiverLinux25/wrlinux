@@ -4,15 +4,15 @@
     - Initial import at master release start. | 1.15 | U | Default | 2021-11-07
 * mingw-libgnurx 2.5.1  Unknown
     - Initial import at master release start. | 2.5.1 | U | Default | 2021-11-07
-* nativesdk-mingw-w64-headers 12.0.0 13.0.0 Not updated
+* nativesdk-mingw-w64-headers 12.0.0 14.0.0 Not updated
     - mingw-w64: Upgrade to 12.0.0 release | 12.0.0 | U | Default | 2024-05-30
     - mingw-w64: Upgrade runtime/headers/winpthreads to 9.0.0 | 9.0.0 | U | Default | 2022-02-13
     - Initial import at master release start. | 8.0.0 | U | Default | 2021-11-07
-* nativesdk-mingw-w64-runtime 12.0.0 13.0.0 Not updated
+* nativesdk-mingw-w64-runtime 12.0.0 14.0.0 Not updated
     - mingw-w64: Upgrade to 12.0.0 release | 12.0.0 | U | Default | 2024-05-30
     - mingw-w64: Upgrade runtime/headers/winpthreads to 9.0.0 | 9.0.0 | U | Default | 2022-02-13
     - Initial import at master release start. | 8.0.0 | U | Default | 2021-11-07
-* nativesdk-mingw-w64-winpthreads 12.0.0 13.0.0 Not updated
+* nativesdk-mingw-w64-winpthreads 12.0.0 14.0.0 Not updated
     - mingw-w64: Upgrade to 12.0.0 release | 12.0.0 | U | Default | 2024-05-30
     - mingw-w64: Upgrade runtime/headers/winpthreads to 9.0.0 | 9.0.0 | U | Default | 2022-02-13
     - Initial import at master release start. | 8.0.0 | U | Default | 2021-11-07

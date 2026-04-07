@@ -1,2 +1,5 @@
 * key-store 0.1 0.1 Up-to-date
     - Initial import at master release start. | 0.1 | U | Default | 2021-10-21
+* pesign 116+git 116 Up-to-date
+    - pesign: upgrade to latest git rev | 116+git | U | Default | 2024-02-26
+    - pesign: add recipe | 116+gitAUTOINC+227435af46 | U | Default | 2023-06-24
