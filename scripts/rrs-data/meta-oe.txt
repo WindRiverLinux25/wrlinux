@@ -353,7 +353,7 @@
 * hstr 3.1.0  Unknown
     - hstr: upgrade 2.5.0 -> 3.1.0 | 3.1.0 | U | Default | 2023-12-27
     - hstr: add new recipe | 2.5.0 | U | Default | 2022-03-03
-* htop 3.3.0 3.4.1 Not updated
+* htop 3.3.0 3.5.0 Not updated
     - htop: upgrade 3.2.2 -> 3.3.0 | 3.3.0 | U | Default | 2024-01-23
     - htop: upgrade 3.2.1 -> 3.2.2 | 3.2.2 | U | Default | 2023-02-18
     - htop: upgrade 3.2.0 -> 3.2.1 | 3.2.1 | U | Default | 2022-06-06
@@ -397,7 +397,7 @@
     - iozone3: upgrade 506 -> 507 | 507 | U | Default | 2025-03-12
     - iozone3: upgrade 492 -> 506 | 506 | U | Default | 2023-05-09
     - Initial import at master release start. | 492 | U | Default | 2021-09-24
-* iperf3 3.18 3.20 Not updated
+* iperf3 3.18 3.21 Not updated
     - iperf3: upgrade 3.17.1 -> 3.18 | 3.18 | U | Default | 2025-03-26
     - iperf3: upgrade 3.16 -> 3.17.1 | 3.17.1 | U | Default | 2024-06-07
     - iperf3: upgrade 3.15 -> 3.16 | 3.16 | U | Default | 2024-03-01
@@ -534,7 +534,7 @@
     - libgphoto2: upgrade 2.5.30 -> 2.5.31 | 2.5.31 | U | Default | 2023-09-07
     - gphoto2: Upgrade to 2.5.28 | 2.5.30 | U | Default | 2022-09-06
     - Initial import at master release start. | 2.5.27 | U | Default | 2021-09-24
-* libgpiod 2.2.2 2.2.3 Not updated
+* libgpiod 2.2.2 2.2.4 Not updated
     - libgpiod: update to v2.2.2 | 2.2.2 | U | Default | 2025-10-13
     - libgpiod: update to v2.2.1 | 2.2.1 | U | Default | 2025-02-19
     - libgpiod: update to v2.2 | 2.2 | U | Default | 2024-10-24
@@ -644,7 +644,7 @@
     - Initial import at master release start. | 2.10.7 | U | Default | 2021-09-24
 * libsocketcan 0.0.12 0.0.12 Up-to-date
     - Initial import at master release start. | 0.0.12 | U | Default | 2021-09-24
-* libsodium 1.0.20 1.0.21 Not updated
+* libsodium 1.0.20 1.0.22 Not updated
     - libsodium: upgrade 1.0.19 -> 1.0.20 | 1.0.20 | U | Default | 2024-06-07
     - libsodium: upgrade 1.0.18 -> 1.0.19 | 1.0.19 | U | Default | 2023-11-06
     - Initial import at master release start. | 1.0.18 | U | Default | 2021-09-24
@@ -722,7 +722,8 @@
     - Initial import at master release start. | 2.03.11 | U | Default | 2021-09-24
 * lxdm 0.5.3  Unknown
     - Initial import at master release start. | 0.5.3 | U | Default | 2021-09-24
-* mariadb 11.4.9  Unknown
+* mariadb 11.4.10  Unknown
+    - mariadb: Upgrade 11.4.9 -> 11.4.10 | 11.4.10 | U | Default | 2026-04-07
     - mariadb: Upgrade 11.4.6 -> 11.4.9 | 11.4.9 | U | Default | 2026-01-05
     - mariadb: upgrade 11.4.5 -> 11.4.6 | 11.4.6 | U | Default | 2025-07-27
     - mariadb: upgrade 11.4.4 -> 11.4.5 | 11.4.5 | U | Default | 2025-04-07
@@ -776,7 +777,7 @@
     - multipath-tools: upgrade 0.9.3 -> 0.9.8 | 0.9.8 | U | Default | 2024-03-05
     - multipath-tools: upgrade 0.8.4 -> 0.9.3 | 0.9.3 | U | Default | 2022-12-12
     - Initial import at master release start. | 0.8.4 | U | Default | 2021-09-24
-* nano 8.3 8.7.1 Not updated
+* nano 8.3 9.0 Not updated
     - nano: upgrade 8.2 -> 8.3 | 8.3 | U | Default | 2024-12-24
     - nano: upgrade 8.1 -> 8.2 | 8.2 | U | Default | 2024-09-10
     - nano: upgrade 8.0 -> 8.1 | 8.1 | U | Default | 2024-07-15
@@ -893,7 +894,7 @@
     - openjpeg: upgrade 2.5.0 -> 2.5.2 | 2.5.2 | U | Default | 2024-09-15
     - openjpeg: upgrade 2.4.0 -> 2.5.0 | 2.5.0 | U | Default | 2022-05-16
     - Initial import at master release start. | 2.4.0 | U | Default | 2021-09-24
-* openldap 2.6.9  Unknown
+* openldap 2.6.9 2.6.13 Not updated
     - openldap: upgrade 2.6.8 -> 2.6.9 | 2.6.9 | U | Default | 2025-01-02
     - openldap: upgrade 2.6.7 -> 2.6.8 | 2.6.8 | U | Default | 2024-06-27
     - openldap: upgrade 2.5.16 -> 2.6.7 | 2.6.7 | U | Default | 2024-03-02
@@ -909,7 +910,7 @@
 * osinfo-db-tools 1.12.0 1.12.0 Up-to-date
     - osinfo-db-tools: upgrade 1.11.0 -> 1.12.0 | 1.12.0 | U | Default | 2024-11-06
     - libosinfo: add runtime dependency osinfo-db | 1.11.0 | U | Default | 2024-08-14
-* ostree 2024.10 2025.7 Not updated
+* ostree 2024.10 2026.1 Not updated
     - ostree: upgrade 2024.9 -> 2024.10 | 2024.10 | U | Default | 2024-12-24
     - ostree: upgrade 2024.8 -> 2024.9 | 2024.9 | U | Default | 2024-11-20
     - ostree: upgrade 2024.7 -> 2024.8 | 2024.8 | U | Default | 2024-09-30
@@ -1160,7 +1161,7 @@
     - Initial import at master release start. | 2020.11.01 | U | Default | 2021-09-24
 * rfkill 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
-* rocksdb 9.10.0 10.10.1 Not updated
+* rocksdb 9.10.0 11.0.4 Not updated
     - rocksdb: upgrade 9.0.0 -> 9.10.0 | 9.10.0 | U | Default | 2025-03-12
     - rocksdb: upgrade 7.9.2 -> 9.0.0 | 9.0.0 | U | Default | 2024-03-21
     - rocksdb: Upgrade to 7.9.2 | 7.9.2 | U | Default | 2023-01-26

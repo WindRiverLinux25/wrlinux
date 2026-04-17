@@ -454,7 +454,7 @@
     - python3-gmpy2: upgrade 2.1.0rc1 -> 2.1.1 | 2.1.1 | U | Default | 2021-12-22
     - python3-gmpy2: update 2.0.8 -> 2.1.0rc1 | 2.1.0rc1 | U | Default | 2021-10-14
     - Initial import at master release start. | 2.0.8 | U | Default | 2021-09-24
-* python3-gpiod 2.3.0 2.4.1 Not updated
+* python3-gpiod 2.3.0 2.4.2 Not updated
     - python3-gpiod: update to v2.3.0 | 2.3.0 | U | Default | 2025-02-19
     - python3-gpiod: update to v2.2.4 | 2.2.4 | U | Default | 2025-02-12
     - python3-gpiod: update v2.2.2 -> v2.2.3 | 2.2.3 | U | Default | 2024-12-21
@@ -747,7 +747,7 @@
     - Initial import at master release start. | 8.3.2 | U | Default | 2021-09-24
 * python3-pkgconfig 1.5.5 1.6.0 Not updated
     - Initial import at master release start. | 1.5.5 | U | Default | 2021-09-24
-* python3-platformdirs 4.3.7 4.9.4 Not updated
+* python3-platformdirs 4.3.7 4.9.6 Not updated
     - python3-platformdirs: upgrade 4.3.6 -> 4.3.7 | 4.3.7 | U | Default | 2025-03-25
     - python3-platformdirs: upgrade 4.3.1 -> 4.3.6 | 4.3.6 | U | Default | 2024-09-19
     - python3-platformdirs: upgrade 4.2.2 -> 4.3.1 | 4.3.1 | U | Default | 2024-09-10
@@ -1108,7 +1108,7 @@
     - Initial import at master release start. | 0.9.1 | U | Default | 2021-09-24
 * python3-requests-unixsocket 0.3.0 0.3.0 Up-to-date
     - Add python-requests-unixsocket recipe | 0.3.0 | U | Default | 2022-08-06
-* python3-rich 14.0.0 14.3.3 Not updated
+* python3-rich 14.0.0 14.3.4 Not updated
     - python3-rich: upgrade 13.9.4 -> 14.0.0 | 14.0.0 | U | Default | 2025-04-07
     - python3-rich: upgrade 13.9.3 -> 13.9.4 | 13.9.4 | U | Default | 2024-11-06
     - python3-rich: Upgrade 13.9.2 -> 13.9.3 | 13.9.3 | U | Default | 2024-10-24
@@ -1216,7 +1216,7 @@
     - python3-tornado: upgrade 6.2 -> 6.3 | 6.3 | U | Default | 2023-04-24
     - python3-tornado: Upgrade 6.1 -> 6.2 | 6.2 | U | Default | 2022-07-11
     - Initial import at master release start. | 6.1 | U | Default | 2021-09-24
-* python3-tox 4.25.0 4.52.0 Not updated
+* python3-tox 4.25.0 4.52.1 Not updated
     - python3-tox: upgrade 4.24.2 -> 4.25.0 | 4.25.0 | U | Default | 2025-03-31
     - python3-tox: upgrade 4.24.1 -> 4.24.2 | 4.24.2 | U | Default | 2025-03-12
     - python3-tox: Upgrade 4.23.2 -> 4.24.1 | 4.24.1 | U | Default | 2025-01-25
@@ -1281,7 +1281,7 @@
     - python3-types-setuptools: add 68.0.0.3 | 68.0.0.3 | U | Default | 2023-08-11
 * python3-versioneer 0.29 0.29 Up-to-date
     - python3-versioneer: add recipe | 0.29 | U | Default | 2023-07-25
-* python3-virtualenv 20.30.0 21.2.0 Not updated
+* python3-virtualenv 20.30.0 21.2.1 Not updated
     - python3-virtualenv: upgrade 20.29.3 -> 20.30.0 | 20.30.0 | U | Default | 2025-04-07
     - python3-virtualenv: upgrade 20.29.2 -> 20.29.3 | 20.29.3 | U | Default | 2025-03-12
     - python3-virtualenv: upgrade 20.29.1 -> 20.29.2 | 20.29.2 | U | Default | 2025-02-26

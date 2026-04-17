@@ -1,11 +1,11 @@
-* aardvark-dns 1.14.0 1.17.0 Not updated
+* aardvark-dns 1.14.0 1.17.1 Not updated
     - aardvark-dns: update to v1.14.0 | 1.14.0 | U | Default | 2025-03-11
     - aardvark-dns: update to v1.11.0 | 1.11.0 | U | Default | 2024-07-10
     - aardvark-dns: update to v1.10.0 | 1.10.0 | U | Default | 2024-03-15
     - aardvark-dns: update to v1.9.0 | 1.9.0 | U | Default | 2024-01-04
     - aardvark-dns: update to v1.7.0 | 1.7.0 | U | Default | 2023-08-24
     - aardvark-dns: add the recipe | 1.2.0 | U | Default | 2023-03-08
-* buildah 1.39.1 1.43.0 Not updated
+* buildah 1.39.1 1.43.1 Not updated
     - buildah: update to v1.39.1 | 1.39.1 | U | Default | 2025-03-06
     - buildah: update to v1.37.5 | 1.37.5 | U | Default | 2025-01-17
     - buildah: update to v1.37.1 | 1.37.1 | U | Default | 2024-08-20
@@ -90,7 +90,7 @@
     - criu: Upgrade to 3.17 to fix restore and fix build | 3.17+gitAUTOINC+4f8f295e57 | U | Default | 2022-05-12
     - criu: update to 3.16.1 | 3.16.1+gitAUTOINC+4a1731891e | U | Default | 2021-10-18
     - Initial import at master release start. | 3.14+gitAUTOINC+e49ce513c8 | U | Default | 2021-09-22
-* docker-compose v2.33.1 5.1.1 Not updated
+* docker-compose v2.33.1 5.1.2 Not updated
     - docker-compose: update to v2.33.1 | v2.33.1 | U | Default | 2025-03-11
     - Revert "docker-compose: WIP [needs go 1.22.10+]: not for merge: update to v2.32.2" | v2.28.1 | D | Default | 2025-01-17
     - docker-compose: WIP [needs go 1.22.10+]: not for merge: update to v2.32.2 | v2.32.2 | U | Default | 2025-01-17
@@ -279,7 +279,7 @@
     - runc: update to v1.1.0 | 1.1.0+gitAUTOINC+d7f7b22a85 | U | Default | 2022-02-03
     - runc: update to 1.0.3 | 1.0.3+gitAUTOINC+e0124d569c | U | Default | 2021-12-10
     - Initial import at master release start. | 1.0.2+gitAUTOINC+86d83333d7 | U | Default | 2021-09-22
-* skopeo v1.18.0+git 1.22.0 Not updated
+* skopeo v1.18.0+git 1.22.1 Not updated
     - skopeo: update to v1.18.0 | v1.18.0+git | U | Default | 2025-03-24
     - skopeo: update to v1.17.0 | v1.17.0+git | U | Default | 2025-01-17
     - skopeo: update to v1.16.0 | v1.16.0+git | U | Default | 2024-08-20
