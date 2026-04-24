@@ -1,8 +1,8 @@
 [Unit]
 Description=Dynamic Host Configuration Protocol (DHCP)
-Wants=network.target
+Wants=network.target systemd-udev-settle.service
 Before=network.target
-After=systemd-udevd.service
+After=systemd-udevd.service systemd-udev-settle.service
 
 [Service]
 EnvironmentFile=@SYSCONFDIR@/default/dhcpcd
