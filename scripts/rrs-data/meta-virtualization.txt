@@ -45,7 +45,7 @@
     - Initial import at master release start. | 2.0.29+gitAUTOINC+1ef246896b | U | Default | 2021-09-22
 * container-host-config 1.0 1.0 Up-to-date
     - containers: add container-host-config recipe | 1.0 | U | Default | 2023-02-17
-* containerd v2.0.7 2.2.2 Not updated
+* containerd v2.0.7 2.2.3 Not updated
     - containerd: upgrade from 2.0.5 to 2.0.7 | v2.0.7 | U | Default | 2026-01-21
     - containerd: upgrade to 2.0.5 | v2.0.5 | U | Default | 2025-04-22
     - containerd: update to v2.0.3 | v2.0.2+git | U | Default | 2025-03-06
@@ -73,7 +73,7 @@
     - cri-o: update to 1.23.1 | 1.23.1+git1607c6ec2eddc927ef736db5525761e49df13e24 | U | Default | 2022-03-21
     - cri-o: update to 1.22.1 | 1.22.1+gite3dfe61cafa3922bf7ad9b0a2ac3dc7e6873209b | U | Default | 2021-11-22
     - Initial import at master release start. | 1.22.0+git1d447191ee73ead59f344f354edac5d64f377e15 | U | Default | 2021-09-22
-* cri-tools 1.30.0+git767879cca5c6bd2f89b6cf6c7829736109c99b2a 1.35.0 Not updated
+* cri-tools 1.30.0+git767879cca5c6bd2f89b6cf6c7829736109c99b2a 1.36.0 Not updated
     - cri-tools: update to v1.30.0 | 1.30.0+git767879cca5c6bd2f89b6cf6c7829736109c99b2a | U | Default | 2024-07-11
     - cri-tools: update to v1.29.0 | 1.29.0+git17b4dd65d660fec94d7a5a070e3e89ef640f1087 | U | Default | 2024-03-15
     - cri-tools: update to v1.28.0 | 1.28.0+gitd5f3f2df025a319368b68a3c7b3f3c7d890979ca | U | Default | 2023-09-15
@@ -90,7 +90,7 @@
     - criu: Upgrade to 3.17 to fix restore and fix build | 3.17+gitAUTOINC+4f8f295e57 | U | Default | 2022-05-12
     - criu: update to 3.16.1 | 3.16.1+gitAUTOINC+4a1731891e | U | Default | 2021-10-18
     - Initial import at master release start. | 3.14+gitAUTOINC+e49ce513c8 | U | Default | 2021-09-22
-* docker-compose v2.33.1 5.1.2 Not updated
+* docker-compose v2.33.1 5.1.3 Not updated
     - docker-compose: update to v2.33.1 | v2.33.1 | U | Default | 2025-03-11
     - Revert "docker-compose: WIP [needs go 1.22.10+]: not for merge: update to v2.32.2" | v2.28.1 | D | Default | 2025-01-17
     - docker-compose: WIP [needs go 1.22.10+]: not for merge: update to v2.32.2 | v2.32.2 | U | Default | 2025-01-17
@@ -120,7 +120,7 @@
     - irqbalance: update to 1.8.0-tip | 1.8.0+gitAUTOINC+b3adb5fd14 | U | Default | 2022-03-29
     - irqbalance: bump SRCREV to latest | 1.8.0+gitAUTOINC+a972665483 | U | Default | 2021-11-08
     - Initial import at master release start. | 1.8.0 | U | Default | 2021-09-22
-* kubernetes v1.32.10+git 1.35.3 Not updated
+* kubernetes v1.32.10+git 1.36.0 Not updated
     - kubernetes: upgrade to 1.32.10 | v1.32.10+git | U | Default | 2025-12-10
     - kubernetes: Upgrade to 1.32.6 | v1.32.6+git | U | Default | 2025-07-16
     - kubernetes: fix runtime init error caused by git shallow tarball | v1.32.0+git | U | Default | 2025-04-15
@@ -206,7 +206,7 @@
     - Initial import at master release start. | 2.15+AUTOINC+8dc1733eae | U | Default | 2021-09-22
 * packagegroup-container 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
-* podman v5.4.2 5.8.1 Not updated
+* podman v5.4.2 5.8.2 Not updated
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | v5.4.2 | U | Default | 2025-10-24
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | v5.4.2 | U | Default | 2025-10-24
     - podman: fix CVE-2025-9566 | v5.4.1 | D | Default | 2025-10-14
@@ -279,7 +279,7 @@
     - runc: update to v1.1.0 | 1.1.0+gitAUTOINC+d7f7b22a85 | U | Default | 2022-02-03
     - runc: update to 1.0.3 | 1.0.3+gitAUTOINC+e0124d569c | U | Default | 2021-12-10
     - Initial import at master release start. | 1.0.2+gitAUTOINC+86d83333d7 | U | Default | 2021-09-22
-* skopeo v1.18.0+git 1.22.1 Not updated
+* skopeo v1.18.0+git 1.22.2 Not updated
     - skopeo: update to v1.18.0 | v1.18.0+git | U | Default | 2025-03-24
     - skopeo: update to v1.17.0 | v1.17.0+git | U | Default | 2025-01-17
     - skopeo: update to v1.16.0 | v1.16.0+git | U | Default | 2024-08-20

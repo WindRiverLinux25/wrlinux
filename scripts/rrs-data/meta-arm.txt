@@ -1,4 +1,4 @@
-* opencsd 1.5.6 1.8.0 Not updated
+* opencsd 1.5.6 1.8.1 Not updated
     - arm/opencsd: update to v1.5.6 | 1.5.6 | U | Default | 2025-03-20
     - arm/opencsd: update to 1.5.5 | 1.5.5 | U | Default | 2025-02-25
     - arm/opencsd: update to 1.5.4 | 1.5.4 | U | Default | 2024-10-01
@@ -11,7 +11,7 @@
     - arm/opencsd: update to version 1.3.1 | 1.3.1 | U | Default | 2022-11-02
     - arm/opencsd: upgrade to 1.2.0 | 1.2.0 | U | Default | 2022-01-11
     - Initial import at master release start. | 1.1.0 | U | Default | 2021-09-27
-* optee-client 4.3.0 4.9.0 Not updated
+* optee-client 4.3.0 4.10.0 Not updated
     - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
     - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
     - arm/optee: update to 4.3.0 | 4.3.0 | U | Default | 2024-10-01
@@ -39,7 +39,7 @@
     - arm/optee: remove redundant ${S} in LIC_FILES_CHKSUM | 3.14.0 | D | Default | 2022-05-06
     - arm/optee: Upgrade from 3.14 to 3.16 | 3.16.0 | U | Default | 2022-03-16
     - Initial import at master release start. | 3.14.0 | U | Default | 2021-09-27
-* optee-examples 4.3.0 4.9.0 Not updated
+* optee-examples 4.3.0 4.10.0 Not updated
     - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
     - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
     - arm/optee: update to 4.3.0 | 4.3.0 | U | Default | 2024-10-01
@@ -67,7 +67,7 @@
     - arm/optee: Add optee 3.14 recipes | 3.14.0 | D | Default | 2022-05-04
     - arm/optee: Upgrade from 3.14 to 3.16 | 3.16.0 | U | Default | 2022-03-16
     - Initial import at master release start. | 3.14.0 | U | Default | 2021-09-27
-* optee-os 4.3.0 4.9.0 Not updated
+* optee-os 4.3.0 4.10.0 Not updated
     - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
     - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
     - arm/optee: update to 4.3.0 | 4.3.0 | U | Default | 2024-10-01
@@ -97,7 +97,7 @@
     - arm/optee: remove redundant ${S} in LIC_FILES_CHKSUM | 3.14.0 | D | Default | 2022-05-06
     - arm/optee: Upgrade from 3.14 to 3.16 | 3.16.0 | U | Default | 2022-03-16
     - Initial import at master release start. | 3.14.0 | U | Default | 2021-09-27
-* optee-os-tadevkit 4.3.0 4.9.0 Not updated
+* optee-os-tadevkit 4.3.0 4.10.0 Not updated
     - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
     - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
     - arm/optee: update to 4.3.0 | 4.3.0 | U | Default | 2024-10-01
@@ -125,7 +125,7 @@
     - arm/optee: Add optee 3.14 recipes | 3.14.0 | D | Default | 2022-05-04
     - arm/optee: Upgrade from 3.14 to 3.16 | 3.16.0 | U | Default | 2022-03-16
     - optee: update optee-os.inc to support external TAs | 3.14.0 | U | Default | 2021-11-19
-* optee-test 4.3.0 4.9.0 Not updated
+* optee-test 4.3.0 4.10.0 Not updated
     - optee-client: fix udev and systemd handling | 4.3.0 | D | Default | 2025-04-02
     - optee-os: add v4.4 | 4.4.0 | U | Default | 2025-04-02
     - arm/optee: update to 4.3.0 | 4.3.0 | U | Default | 2024-10-01

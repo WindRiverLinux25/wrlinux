@@ -27,7 +27,7 @@
     - intel-microcode: upgrade 20220207 -> 20220419 | 20220419 | U | Default | 2022-05-06
     - intel-microcode: upgrade 20210608 -> 20220207 | 20220207 | U | Default | 2022-02-09
     - Initial import at master release start. | 20210608 | U | Default | 2021-09-30
-* itt 3.26.1 3.26.7 Not updated
+* itt 3.26.1 3.27.0 Not updated
     - itt: upgrade 3.25.3 -> 3.26.1 | 3.26.1 | U | Default | 2025-05-19
     - itt : upgrade 3.25.2-> 3.25.3 | 3.25.3 | U | Default | 2024-10-22
     - itt : upgrade 3.25.1 -> 3.25.2 | 3.25.2 | U | Default | 2024-08-23
@@ -44,7 +44,7 @@
     - Initial import at master release start. | 3.20.1 | U | Default | 2021-09-30
 * iucode-tool 2.3.1  Unknown
     - Initial import at master release start. | 2.3.1 | U | Default | 2021-09-30
-* level-zero 1.21.1 1.28.3 Not updated
+* level-zero 1.21.1 1.28.4 Not updated
     - level-zero: upgrade 1.17.42 -> 1.21.1 | 1.21.1 | U | Default | 2025-05-20
     - level-zero: upgrade 1.15.8 -> 1.17.42 | 1.17.42 | U | Default | 2025-01-15
     - level-zero: upgrade 1.11.0 -> 1.15.8 | 1.15.8 | U | Default | 2024-01-24
@@ -54,6 +54,6 @@
     - level-zero: upgrade 1.5.4 -> 1.6.2 | 1.6.2 | U | Default | 2021-11-24
     - level-zero: upgrade 1.4.1 -> 1.5.4 | 1.5.4 | U | Default | 2021-10-11
     - Initial import at master release start. | 1.4.1 | U | Default | 2021-09-30
-* linux-npu-driver 1.17.0 1.32.0 Not updated
+* linux-npu-driver 1.17.0 1.32.1 Not updated
     - linux-npu-driver : upgrade 1.2.0 -> 1.17.0 | 1.17.0 | U | Default | 2025-05-19
     - linux-npu-driver: add recipe | 1.2.0 | U | Default | 2024-05-29
