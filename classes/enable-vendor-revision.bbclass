@@ -1,7 +1,7 @@
 #
-# Copyright (C) 2024 Wind River Systems, Inc
+# Copyright (C) 2026 Wind River Systems, Inc
 #
-# SPDX-License-Identifier: GPL-2.0
+# SPDX-License-Identifier: MIT
 #
 
 # To avoid confusions with PR Server
