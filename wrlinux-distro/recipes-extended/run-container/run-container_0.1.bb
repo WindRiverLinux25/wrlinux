@@ -10,6 +10,8 @@ SRC_URI =  " \
     file://run-ptest \
 "
 
+S = "${UNPACKDIR}"
+
 inherit allarch ptest systemd
 
 SYSTEMD_PACKAGES = "${PN}"
