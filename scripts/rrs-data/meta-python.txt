@@ -9,7 +9,7 @@
     - python3-absl: upgrade 0.14.1 -> 0.15.0 | 0.15.0 | U | Default | 2021-10-28
     - python3-absl: update 0.14.1 | 0.14.1 | U | Default | 2021-10-18
     - Initial import at master release start. | 0.13.0 | U | Default | 2021-09-24
-* python3-aiodns 3.2.0 4.0.0 Not updated
+* python3-aiodns 3.2.0 4.0.3 Not updated
     - python3-aiodns: upgrade 3.1.1 -> 3.2.0 | 3.2.0 | U | Default | 2024-04-18
     - python3-aiodns: upgrade 3.0.0 -> 3.1.1 | 3.1.1 | U | Default | 2023-10-23
     - Add python3-aiodns 3.0.0 | 3.0.0 | U | Default | 2022-07-27
@@ -212,7 +212,7 @@
 * python3-cached-property 2.0.1 1.5.2 Unknown
     - python3-cached-property: Upgrade 1.5.2 -> 2.0.1 | 2.0.1 | U | Default | 2025-01-10
     - Initial import at master release start. | 1.5.2 | U | Default | 2021-09-24
-* python3-cachetools 5.5.2 7.1.0 Not updated
+* python3-cachetools 5.5.2 7.1.1 Not updated
     - python3-cachetools: upgrade 5.5.1 -> 5.5.2 | 5.5.2 | U | Default | 2025-02-26
     - python3-cachetools: Upgrade 5.5.0 -> 5.5.1 | 5.5.1 | U | Default | 2025-01-25
     - python3-cachetools: upgrade 5.4.0 -> 5.5.0 | 5.5.0 | U | Default | 2024-08-28
@@ -271,7 +271,7 @@
     - Initial import at master release start. | 15.1.0 | U | Default | 2021-09-24
 * python3-covdefaults 2.3.0 2.3.0 Up-to-date
     - python3-covdefaults: Add initial recipe 2.3.0 | 2.3.0 | U | Default | 2023-06-26
-* python3-coverage 7.8.0 7.13.5 Not updated
+* python3-coverage 7.8.0 7.14.0 Not updated
     - python3-coverage: upgrade 7.7.1 -> 7.8.0 | 7.8.0 | U | Default | 2025-04-07
     - python3-coverage: upgrade 7.6.12 -> 7.7.1 | 7.7.1 | U | Default | 2025-03-25
     - python3-coverage: Upgrade 7.6.10 -> 7.6.12 | 7.6.12 | U | Default | 2025-02-13
@@ -583,7 +583,7 @@
 * python3-mccabe 0.7.0 0.7.0 Up-to-date
     - python3-mccabe: upgrade 0.6.1 -> 0.7.0 | 0.7.0 | U | Default | 2022-03-01
     - Initial import at master release start. | 0.6.1 | U | Default | 2021-09-24
-* python3-meh 0.52 0.52 Up-to-date
+* python3-meh 0.52 0.53 Not updated
     - python3-meh: upgrade 0.51 -> 0.52 | 0.52 | U | Default | 2024-06-27
     - python3-meh: upgrade 0.50.1 -> 0.51 | 0.51 | U | Default | 2023-02-08
     - python3-meh: upgrade 0.50 -> 0.50.1 | 0.50.1 | U | Default | 2022-01-06
@@ -606,7 +606,7 @@
     - python3-multidict: upgrade 5.2.0 -> 6.0.2 | 6.0.2 | U | Default | 2022-01-31
     - python3-multidict: upgrade 5.1.0 -> 5.2.0 | 5.2.0 | U | Default | 2021-10-14
     - Initial import at master release start. | 5.1.0 | U | Default | 2021-09-24
-* python3-mypy 1.15.0 1.20.2 Not updated
+* python3-mypy 1.15.0 2.1.0 Not updated
     - python3-mypy: Upgrade 1.10.0 -> 1.15.0 | 1.15.0 | U | Default | 2025-02-15
     - python3-mypy: upgrade 1.9.0 -> 1.10.0 | 1.10.0 | U | Default | 2024-05-02
     - python3-mypy: upgrade 1.8.0 -> 1.9.0 | 1.9.0 | U | Default | 2024-03-20
@@ -679,7 +679,7 @@
     - python3-paho-mqtt: Upgrade 1.6.1 -> 2.0.0 | 2.0.0 | U | Default | 2024-03-25
     - python3-paho-mqtt: Upgrade 1.5.1 -> 1.6.1 | 1.6.1 | U | Default | 2021-10-28
     - Initial import at master release start. | 1.5.1 | U | Default | 2021-09-24
-* python3-pandas 2.2.2 3.0.2 Not updated
+* python3-pandas 2.2.2 3.0.3 Not updated
     - python3-pandas: upgrade 2.0.3 -> 2.2.2 | 2.2.2 | U | Default | 2024-08-24
     - python3-pandas: upgrade 1.5.3 -> 2.0.3 | 2.0.3 | U | Default | 2023-07-25
     - python3-pandas: upgrade 1.5.2 -> 1.5.3 | 1.5.3 | U | Default | 2023-02-08
@@ -694,7 +694,7 @@
     - python3-pandas: upgrade 1.3.4 -> 1.3.5 | 1.3.5 | U | Default | 2022-01-06
     - python3-pandas: upgrade 1.3.3 -> 1.3.4 | 1.3.4 | U | Default | 2021-10-28
     - Initial import at master release start. | 1.3.3 | U | Default | 2021-09-24
-* python3-paramiko 3.5.1 4.0.0 Not updated
+* python3-paramiko 3.5.1 5.0.0 Not updated
     - python3-paramiko: upgrade 3.5.0 -> 3.5.1 | 3.5.1 | U | Default | 2025-02-12
     - python3-paramiko: upgrade 3.4.1 -> 3.5.0 | 3.5.0 | U | Default | 2024-09-19
     - python3-paramiko: upgrade 3.4.0 -> 3.4.1 | 3.4.1 | U | Default | 2024-08-28
@@ -808,7 +808,7 @@
     - python3-prompt-toolkit: Upgrade 3.0.21 -> 3.0.22 | 3.0.22 | U | Default | 2021-11-20
     - python3-prompt-toolkit: Upgrade 3.0.19 -> 3.0.21 | 3.0.21 | U | Default | 2021-10-28
     - Initial import at master release start. | 3.0.19 | U | Default | 2021-09-24
-* python3-propcache 0.3.1 0.4.1 Not updated
+* python3-propcache 0.3.1 0.5.2 Not updated
     - python3-propcache: upgrade 0.3.0 -> 0.3.1 | 0.3.1 | U | Default | 2025-03-31
     - python3-propcache: upgrade 0.2.1 -> 0.3.0 | 0.3.0 | U | Default | 2025-02-26
     - python3-propcache: upgrade 0.2.0 -> 0.2.1 | 0.2.1 | U | Default | 2024-12-22
@@ -992,7 +992,7 @@
     - python3-pytest-benchmark: upgrade 4.0.0 -> 5.1.0 | 5.1.0 | U | Default | 2024-12-24
     - python3-pytest-benchmark: upgrade 3.4.1 -> 4.0.0 | 4.0.0 | U | Default | 2022-11-07
     - Initial import at master release start. | 3.4.1 | U | Default | 2021-09-24
-* python3-pytest-codspeed 3.0.0 4.5.0 Not updated
+* python3-pytest-codspeed 3.0.0 5.0.2 Not updated
     - python3-pytest-codspeed: upgrade 2.2.1 -> 3.0.0 | 3.0.0 | U | Default | 2024-11-06
     - python3-pytest-codspeed: Add recipe | 2.2.1 | U | Default | 2024-10-15
 * python3-pytest-cov 6.0.0 6.0.0 Up-to-date
@@ -1200,7 +1200,7 @@
     - python3-tomli: upgrade 2.0.2 -> 2.1.0 | 2.1.0 | U | Default | 2024-11-20
     - python3-tomli: upgrade 2.0.1 -> 2.0.2 | 2.0.2 | U | Default | 2024-10-14
     - python3-tomli: add from openembedded-core | 2.0.1 | U | Default | 2024-08-09
-* python3-tomlkit 0.13.2 0.14.0 Not updated
+* python3-tomlkit 0.13.2 0.15.0 Not updated
     - python3-tomlkit: upgrade 0.13.0 -> 0.13.2 | 0.13.2 | U | Default | 2024-08-28
     - python3-tomlkit: upgrade 0.12.5 -> 0.13.0 | 0.13.0 | U | Default | 2024-07-15
     - python3-tomlkit: upgrade 0.12.3 -> 0.12.5 | 0.12.5 | U | Default | 2024-06-12
@@ -1217,7 +1217,7 @@
     - python3-tornado: upgrade 6.2 -> 6.3 | 6.3 | U | Default | 2023-04-24
     - python3-tornado: Upgrade 6.1 -> 6.2 | 6.2 | U | Default | 2022-07-11
     - Initial import at master release start. | 6.1 | U | Default | 2021-09-24
-* python3-tox 4.25.0 4.53.0 Not updated
+* python3-tox 4.25.0 4.54.0 Not updated
     - python3-tox: upgrade 4.24.2 -> 4.25.0 | 4.25.0 | U | Default | 2025-03-31
     - python3-tox: upgrade 4.24.1 -> 4.24.2 | 4.24.2 | U | Default | 2025-03-12
     - python3-tox: Upgrade 4.23.2 -> 4.24.1 | 4.24.1 | U | Default | 2025-01-25
@@ -1241,7 +1241,7 @@
     - python3-trustme: Upgrade 1.1.0 -> 1.2.0 | 1.2.0 | U | Default | 2024-10-24
     - python3-trustme: upgrade 0.9.0 -> 1.1.0 | 1.1.0 | U | Default | 2023-11-06
     - Introduce python3-trustme to fix ptest error of python3-requests-toolbelt | 0.9.0 | U | Default | 2023-03-22
-* python3-twisted 24.11.0 25.5.0 Not updated
+* python3-twisted 24.11.0 26.4.0 Not updated
     - python3-twisted: upgrade 24.10.0 -> 24.11.0 | 24.11.0 | U | Default | 2024-12-03
     - python3-twisted: upgrade 24.7.0 -> 24.10.0 | 24.10.0 | U | Default | 2024-10-29
     - python3-twisted: upgrade 24.3.0 -> 24.7.0 | 24.7.0 | U | Default | 2024-08-10
@@ -1282,7 +1282,7 @@
     - python3-types-setuptools: add 68.0.0.3 | 68.0.0.3 | U | Default | 2023-08-11
 * python3-versioneer 0.29 0.29 Up-to-date
     - python3-versioneer: add recipe | 0.29 | U | Default | 2023-07-25
-* python3-virtualenv 20.30.0 21.3.0 Not updated
+* python3-virtualenv 20.30.0 21.3.3 Not updated
     - python3-virtualenv: upgrade 20.29.3 -> 20.30.0 | 20.30.0 | U | Default | 2025-04-07
     - python3-virtualenv: upgrade 20.29.2 -> 20.29.3 | 20.29.3 | U | Default | 2025-03-12
     - python3-virtualenv: upgrade 20.29.1 -> 20.29.2 | 20.29.2 | U | Default | 2025-02-26

@@ -108,7 +108,7 @@
     - can-utils: Upgrade 2023.03 -> 2025.01 | 2025.01 | U | Default | 2025-02-13
     - can-utils: upgrade 2021.08.0 -> 2023.03 | 2023.03 | U | Default | 2023-03-24
     - Initial import at master release start. | 2021.08.0 | U | Default | 2021-09-24
-* catch2 3.8.1 3.14.0 Not updated
+* catch2 3.8.1 3.15.0 Not updated
     - catch2: upgrade 3.8.0 -> 3.8.1 | 3.8.1 | U | Default | 2025-05-17
     - catch2: upgrade 3.7.1 -> 3.8.0 | 3.8.0 | U | Default | 2025-03-11
     - catch2: upgrade 3.7.0 -> 3.7.1 | 3.7.1 | U | Default | 2024-09-29
@@ -307,7 +307,7 @@
     - graphviz: Upgrade to 8.1.0 release | 8.1.0 | U | Default | 2023-07-13
     - graphviz: 2.44.1 -> 2.50.0 | 2.50.0 | U | Default | 2022-03-17
     - Initial import at master release start. | 2.44.1 | U | Default | 2021-09-24
-* grpc 1.71.0 1.80.0 Not updated
+* grpc 1.71.0 1.81.0 Not updated
     - grpc: Upgrade to 1.71.0 Release | 1.71.0 | U | Default | 2025-03-12
     - grpc: upgrade 1.66.1 -> 1.68.0 | 1.68.0 | U | Default | 2025-01-03
     - grpc: Upgrade to 1.66.1 release | 1.66.1 | U | Default | 2024-09-04
@@ -511,7 +511,7 @@
 * libdev-checklib-perl 1.16 1.16 Up-to-date
     - libdev-checklib-perl: upgrade 1.14 -> 1.16 | 1.16 | U | Default | 2022-09-06
     - Initial import at master release start. | 1.14 | U | Default | 2021-09-24
-* libdevmapper 2.03.31 2.03.40 Not updated
+* libdevmapper 2.03.31 2.03.41 Not updated
     - lvm2: upgrade 2.03.30 -> 2.03.31 | 2.03.31 | U | Default | 2025-03-02
     - lvm2: update 2.03.29 -> 2.03.30 | 2.03.30 | U | Default | 2025-01-25
     - lvm2: update 2.03.28 -> 2.03.29 | 2.03.29 | U | Default | 2024-12-19
@@ -699,7 +699,7 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
 * lockfile-progs 0.1.19 0.2.0 Not updated
     - Initial import at master release start. | 0.1.19 | U | Default | 2021-09-24
-* lsscsi 0.32 0.32 Up-to-date
+* lsscsi 0.32  Unknown
     - lsscsi: revert to version 0.32 | 0.32 | D | Default | 2025-06-30
     - lsscsi: upgrade 0.32 -> 030 | 030 | U | Default | 2023-11-06
     - lsscsi: upgrade 0.31 -> 0.32 | 0.32 | U | Default | 2022-04-25
@@ -708,7 +708,7 @@
     - luajit: upgrade 2.1beta -> 2.1 | 2.1 | D | Default | 2024-01-09
     - luajit: Update to latest on v2.1 branch | 2.1.0~beta3-220721 | U | Default | 2023-01-08
     - Initial import at master release start. | 2.1.0~beta3-210112 | U | Default | 2021-09-24
-* lvm2 2.03.31 2.03.40 Not updated
+* lvm2 2.03.31 2.03.41 Not updated
     - lvm2: upgrade 2.03.30 -> 2.03.31 | 2.03.31 | U | Default | 2025-03-02
     - lvm2: update 2.03.29 -> 2.03.30 | 2.03.30 | U | Default | 2025-01-25
     - lvm2: update 2.03.28 -> 2.03.29 | 2.03.29 | U | Default | 2024-12-19
@@ -809,12 +809,13 @@
     - nlohmann-json: upgrade 3.10.4 -> 3.10.5 | 3.10.5 | U | Default | 2022-01-18
     - nlohmann-json: upgrade 3.10.2 -> 3.10.4 | 3.10.4 | U | Default | 2021-10-19
     - Initial import at master release start. | 3.10.2 | U | Default | 2021-09-24
-* nmap 7.95 7.99 Not updated
+* nmap 7.95 7.99-1 Not updated
     - nmap: disable build 7.95 | 7.95 | U | Default | 2025-05-15
     - nmap: add recipe for 7.92 | 7.92 | D | Default | 2025-05-15
     - nmap: Upgrade to 7.95 | 7.95 | U | Default | 2024-09-04
     - Initial import at master release start. | 7.80 | U | Default | 2021-09-24
-* nodejs 22.14.0 25.9.0 Not updated
+* nodejs 22.22.2  Unknown
+    - nodejs: upgrade 22.14.0 -> 22.22.2 | 22.22.2 | U | Default | 2026-05-07
     - nodejs: upgrade 22.13.0 -> 22.14.0 | 22.14.0 | U | Default | 2025-03-18
     - nodejs: upgrade 22.12.0 -> 22.13.1 | 22.13.1 | U | Default | 2025-01-25
     - nodejs: upgrade 22.11.0 -> 22.12.0 | 22.12.0 | U | Default | 2024-12-04
@@ -838,11 +839,11 @@
     - nodejs: Upgrade to 16.11.1 | 16.11.1 | U | Default | 2021-10-20
     - nodejs: Upgrade to 14.18.1 | 14.18.1 | U | Default | 2021-10-17
     - Initial import at master release start. | 14.17.1 | U | Default | 2021-09-24
-* nspr 4.36 4.38.2 Not updated
+* nspr 4.36 4.39 Not updated
     - nspr: upgrade 4.35 -> 4.36 | 4.36 | U | Default | 2025-01-02
     - nspr: Upgrade to 4.35 | 4.35 | U | Default | 2022-12-18
     - Initial import at master release start. | 4.29 | U | Default | 2021-09-24
-* nss 3.110 3.123.1 Not updated
+* nss 3.110 3.124 Not updated
     - nss: upgrade 3.109 -> 3.110 | 3.110 | U | Default | 2025-03-31
     - nss: upgrade 3.108 -> 3.109 | 3.109 | U | Default | 2025-03-12
     - nss: upgrade 3.107 -> 3.108 | 3.108 | U | Default | 2025-02-12
@@ -1013,7 +1014,7 @@
     - picocom: upgrade 2023-04 -> 2024 | 2024 | U | Default | 2024-08-09
     - picocom: Update to 2023-04 | 2023-04+git | U | Default | 2024-01-04
     - Initial import at master release start. | 3.1+gitAUTOINC+90385aabe2 | U | Default | 2021-09-24
-* plymouth 24.004.60 24.004.60 Up-to-date
+* plymouth 24.004.60 26.134.222 Not updated
     - plymouth: uprev to 24.004.60 | 24.004.60 | U | Default | 2024-02-15
     - plymouth: uprev to 22.02.122 | 22.02.122 | U | Default | 2022-10-02
     - Initial import at master release start. | 0.9.5 | U | Default | 2021-09-24
@@ -1215,7 +1216,7 @@
 * snappy 1.1.10 1.2.2 Not updated
     - snappy: upgrade 1.1.9 -> 1.1.10 | 1.1.10 | U | Default | 2023-12-08
     - Initial import at master release start. | 1.1.9 | U | Default | 2021-09-24
-* softhsm 2.6.1 2.7.0 Not updated
+* softhsm 2.6.1  Unknown
     - Initial import at master release start. | 2.6.1 | U | Default | 2021-09-24
 * sound-theme-freedesktop 0.8 0.8 Up-to-date
     - Initial import at master release start. | 0.8 | U | Default | 2021-09-24
@@ -1289,7 +1290,8 @@
 * turbostat 1.0 1.0 Up-to-date
     - turbostat: make turbostat's version align with kernel version | 1.0 | D | Default | 2025-04-24
     - Initial import at master release start. | 3.4 | U | Default | 2021-09-24
-* udisks2 2.10.1 2.11.1 Not updated
+* udisks2 2.10.2  Unknown
+    - udisks2: rename recipe to match actual version 2.10.2 | 2.10.2 | U | Default | 2026-05-11
     - udisks2: Upgrade 2.9.4 -> 2.10.1 | 2.10.1 | U | Default | 2023-09-25
     - udisks2: upgrade 2.9.3 -> 2.9.4 | 2.9.4 | U | Default | 2021-11-03
     - Initial import at master release start. | 2.9.3 | U | Default | 2021-09-24
@@ -1354,7 +1356,7 @@
     - fixup! wxwidgets: 3.1.5 -> 3.2.1 | 3.2.1 | U | Default | 2022-11-28
     - wxwidgets: 3.1.4 -> 3.1.5 | 3.1.5 | U | Default | 2022-03-30
     - Initial import at master release start. | 3.1.4 | U | Default | 2021-09-24
-* xf86-video-armsoc 1.4.1  Unknown
+* xf86-video-armsoc 1.4.1 1.4.1 Up-to-date
     - Initial import at master release start. | 1.4.1 | U | Default | 2021-09-24
 * xf86-video-ati 22.0.0 22.0.0 Up-to-date
     - xf86-video-ati: upgrade 19.1.0 -> 22.0.0 | 22.0.0 | U | Default | 2023-12-07

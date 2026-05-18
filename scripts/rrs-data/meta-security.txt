@@ -2,7 +2,7 @@
     - Initial import at master release start. | 0.6.1 | U | Default | 2021-09-28
 * dm-verity-image-initramfs 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-28
-* ecryptfs-utils 111  Unknown
+* ecryptfs-utils 111 111 Up-to-date
     - Initial import at master release start. | 111 | U | Default | 2021-09-28
 * libgssglue 0.9 011 Not updated
     - libgssglue: upgrade 0.8 -> 0.9 | 0.9 | U | Default | 2025-04-13

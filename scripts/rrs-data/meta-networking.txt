@@ -31,7 +31,7 @@
     - dhcp-relay: upgrade 4.4.3 -> 4.4.3-P1 | 4.4.3p1 | U | Default | 2022-10-11
     - dhcp-relay: upgrade 4.4.2p1 -> 4.4.3 | 4.4.3 | U | Default | 2022-03-24
     - Initial import at master release start. | 4.4.2p1 | U | Default | 2021-09-24
-* dnsmasq 2.91 2.92 Not updated
+* dnsmasq 2.91 2.92rel2 Not updated
     - dnsmasq: upgrade 2.90 -> 2.91 | 2.91 | U | Default | 2025-03-24
     - dnsmasq: Upgrade 2.89 -> 2.90 | 2.90 | U | Default | 2024-02-26
     - dnsmasq: Upgrade 2.88 -> 2.89 | 2.89 | U | Default | 2023-02-07
@@ -90,7 +90,8 @@
     - libdnet: upgrade 1.16.3 -> 1.17.0 | 1.17.0 | U | Default | 2023-11-12
     - libdnet: Upgrade to 1.16.3 | 1.16.3 | U | Default | 2023-04-06
     - Initial import at master release start. | 1.14 | U | Default | 2021-09-24
-* libldb 2.8.1 2.9.2 Not updated
+* libldb 2.8.2  Unknown
+    - libldb: upgrade 2.8.1 -> 2.8.2 | 2.8.2 | U | Default | 2026-05-11
     - libldb: upgrade 2.8.0 -> 2.8.1 | 2.8.1 | U | Default | 2024-06-21
     - libldb: upgrade 2.7.2 -> 2.8.0 | 2.8.0 | U | Default | 2024-01-09
     - libldb: upgrade 2.7.1 -> 2.7.2 | 2.7.2 | U | Default | 2023-04-04
@@ -153,7 +154,7 @@
     - lksctp-tools: upgrade 1.0.20 -> 1.0.21 | 1.0.21 | U | Default | 2024-09-29
     - lksctp-tools: upgrade 1.0.19 -> 1.0.20 | 1.0.20 | U | Default | 2024-09-23
     - Initial import at master release start. | 1.0.19+gitAUTOINC+05b50d379f | U | Default | 2021-09-24
-* lldpd 1.0.19 1.0.21 Not updated
+* lldpd 1.0.19 1.0.22 Not updated
     - lldpd: upgrade 1.0.18 -> 1.0.19 | 1.0.19 | U | Default | 2025-01-14
     - lldpd: upgrade 1.0.17 -> 1.0.18 | 1.0.18 | U | Default | 2024-01-23
     - lldpd: upgrade 1.0.16 -> 1.0.17 | 1.0.17 | U | Default | 2023-05-25
@@ -354,7 +355,7 @@
     - Initial import at master release start. | 1.5 | U | Default | 2021-09-24
 * vsftpd 3.0.5 3.0.5 Up-to-date
     - Initial import at master release start. | 3.0.5 | U | Default | 2021-09-24
-* vsomeip 3.5.5 3.7.2 Not updated
+* vsomeip 3.5.5  Unknown
     - vsomeip: upgrade 3.5.3 -> 3.5.5 | 3.5.5 | U | Default | 2025-04-25
     - vsomeip: Upgrade to 3.5.3 | 3.5.3 | U | Default | 2025-01-13
     - vsomeip: upgrade 3.3.8 -> 3.4.10 | 3.4.10 | U | Default | 2024-01-02
