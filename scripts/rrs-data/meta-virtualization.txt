@@ -45,7 +45,7 @@
     - Initial import at master release start. | 2.0.29+gitAUTOINC+1ef246896b | U | Default | 2021-09-22
 * container-host-config 1.0 1.0 Up-to-date
     - containers: add container-host-config recipe | 1.0 | U | Default | 2023-02-17
-* containerd v2.0.7 2.3.0 Not updated
+* containerd v2.0.7 2.3.1 Not updated
     - containerd: upgrade from 2.0.5 to 2.0.7 | v2.0.7 | U | Default | 2026-01-21
     - containerd: upgrade to 2.0.5 | v2.0.5 | U | Default | 2025-04-22
     - containerd: update to v2.0.3 | v2.0.2+git | U | Default | 2025-03-06
@@ -90,7 +90,7 @@
     - criu: Upgrade to 3.17 to fix restore and fix build | 3.17+gitAUTOINC+4f8f295e57 | U | Default | 2022-05-12
     - criu: update to 3.16.1 | 3.16.1+gitAUTOINC+4a1731891e | U | Default | 2021-10-18
     - Initial import at master release start. | 3.14+gitAUTOINC+e49ce513c8 | U | Default | 2021-09-22
-* docker-compose v2.33.1 5.1.3 Not updated
+* docker-compose v2.33.1 5.1.4 Not updated
     - docker-compose: update to v2.33.1 | v2.33.1 | U | Default | 2025-03-11
     - Revert "docker-compose: WIP [needs go 1.22.10+]: not for merge: update to v2.32.2" | v2.28.1 | D | Default | 2025-01-17
     - docker-compose: WIP [needs go 1.22.10+]: not for merge: update to v2.32.2 | v2.32.2 | U | Default | 2025-01-17
@@ -164,7 +164,7 @@
     - lxc: update to 4.0.12 | 4.0.12+gitAUTOINC+5ba5725cb4 | U | Default | 2022-03-21
     - lxc: update to 4.0.11 | 4.0.11+gitAUTOINC+48e079bf31 | U | Default | 2021-11-02
     - Initial import at master release start. | 4.0.10+gitAUTOINC+cec7cb14b2 | U | Default | 2021-09-22
-* nerdctl v2.0.3 2.3.0 Not updated
+* nerdctl v2.0.3 2.3.1 Not updated
     - nerdctl: update to v2.0.3 | v2.0.3 | U | Default | 2025-03-24
     - nerdctl: update to v2.0.2 | v2.0.2 | U | Default | 2025-01-17
     - nerdctl: update to v2.0.0-beta | v2.0.0-beta.1 | U | Default | 2024-03-15

@@ -330,7 +330,7 @@
 * gtkmm3 3.24.7 4.22.0 Not updated
     - gtkmm3: upgrade 3.24.5 -> 3.24.7 | 3.24.7 | U | Default | 2022-10-13
     - Initial import at master release start. | 3.24.5 | U | Default | 2021-09-24
-* haveged 1.9.19 1.9.20 Not updated
+* haveged 1.9.19 1.9.22 Not updated
     - haveged: upgrade 1.9.18 -> 1.9.19 | 1.9.19 | U | Default | 2024-10-10
     - haveged: upgrade 1.9.17 -> 1.9.18 | 1.9.18 | U | Default | 2022-04-11
     - haveged: update from 1.9.14 to 1.9.17 | 1.9.17 | U | Default | 2022-03-24
@@ -668,7 +668,7 @@
     - libtracefs: upgrade 1.6.4 -> 1.7.0 | 1.7.0 | U | Default | 2023-06-14
     - libtracefs: upgrade 1.6.3 -> 1.6.4 | 1.6.4 | U | Default | 2023-01-17
     - libtracefs: Add recipe | 1.6.3 | U | Default | 2022-12-24
-* libusb-compat 0.1.8 0.1.8 Up-to-date
+* libusb-compat 0.1.8 0.1.9 Not updated
     - libusb-compat: upgrade 0.1.7 -> 0.1.8 | 0.1.8 | U | Default | 2023-02-18
     - Initial import at master release start. | 0.1.7 | U | Default | 2021-09-24
 * libxpresent 1.0.1 1.0.2 Not updated
@@ -690,7 +690,7 @@
     - Initial import at master release start. | 3.1.1 | U | Default | 2021-09-24
 * lmbench 3.0-a9 3.0-a9 Up-to-date
     - Initial import at master release start. | 3.0-a9 | U | Default | 2021-09-24
-* lmdb 0.9.31 0.9.35 Not updated
+* lmdb 0.9.31 1.0.0 Not updated
     - lmdb: upgrade 0.9.29 -> 0.9.31 | 0.9.31 | U | Default | 2023-07-21
     - Initial import at master release start. | 0.9.29 | U | Default | 2021-09-24
 * lmsensors 3.6.0 3 Unknown
@@ -699,7 +699,7 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
 * lockfile-progs 0.1.19 0.2.0 Not updated
     - Initial import at master release start. | 0.1.19 | U | Default | 2021-09-24
-* lsscsi 0.32  Unknown
+* lsscsi 0.32 0.32 Up-to-date
     - lsscsi: revert to version 0.32 | 0.32 | D | Default | 2025-06-30
     - lsscsi: upgrade 0.32 -> 030 | 030 | U | Default | 2023-11-06
     - lsscsi: upgrade 0.31 -> 0.32 | 0.32 | U | Default | 2022-04-25
@@ -744,7 +744,7 @@
     - Initial import at master release start. | git | U | Default | 2021-09-24
 * memstat 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
-* minicoredumper 2.0.7 2.0.7 Up-to-date
+* minicoredumper 2.0.7 2.0.8 Not updated
     - minicoredumper: upgrade 2.0.6 -> 2.0.7 | 2.0.7 | U | Default | 2024-01-27
     - minicoredumper: upgrade 2.0.3 -> 2.0.6 | 2.0.6 | U | Default | 2023-07-07
     - minicoredumper: upgrade 2.0.2 -> 2.0.3 | 2.0.3 | U | Default | 2023-02-18
@@ -809,7 +809,7 @@
     - nlohmann-json: upgrade 3.10.4 -> 3.10.5 | 3.10.5 | U | Default | 2022-01-18
     - nlohmann-json: upgrade 3.10.2 -> 3.10.4 | 3.10.4 | U | Default | 2021-10-19
     - Initial import at master release start. | 3.10.2 | U | Default | 2021-09-24
-* nmap 7.95 7.99-1 Not updated
+* nmap 7.95 7.99 Not updated
     - nmap: disable build 7.95 | 7.95 | U | Default | 2025-05-15
     - nmap: add recipe for 7.92 | 7.92 | D | Default | 2025-05-15
     - nmap: Upgrade to 7.95 | 7.95 | U | Default | 2024-09-04
@@ -1170,7 +1170,7 @@
     - rocksdb: Upgrade to 7.9.2 | 7.9.2 | U | Default | 2023-01-26
     - rocksdb: Upgrade to 7.5.3 release | 7.5.3 | U | Default | 2022-09-12
     - Initial import at master release start. | 6.20.3 | U | Default | 2021-09-24
-* rrdtool 1.9.0 1.9.0 Up-to-date
+* rrdtool 1.9.0 1.10.2 Not updated
     - rrdtool: upgrade 1.8.0 -> 1.9.0 | 1.9.0 | U | Default | 2025-03-12
     - rrdtool: upgrade 1.7.2 -> 1.8.0 | 1.8.0 | U | Default | 2022-03-24
     - Initial import at master release start. | 1.7.2 | U | Default | 2021-09-24
@@ -1216,7 +1216,7 @@
 * snappy 1.1.10 1.2.2 Not updated
     - snappy: upgrade 1.1.9 -> 1.1.10 | 1.1.10 | U | Default | 2023-12-08
     - Initial import at master release start. | 1.1.9 | U | Default | 2021-09-24
-* softhsm 2.6.1  Unknown
+* softhsm 2.6.1 2.7.0 Not updated
     - Initial import at master release start. | 2.6.1 | U | Default | 2021-09-24
 * sound-theme-freedesktop 0.8 0.8 Up-to-date
     - Initial import at master release start. | 0.8 | U | Default | 2021-09-24

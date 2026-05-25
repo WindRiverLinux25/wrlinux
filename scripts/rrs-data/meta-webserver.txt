@@ -22,7 +22,7 @@
     - Apache: Several CVE fixes | 2.4.51 | U | Default | 2021-10-22
     - apache2: upgrade 2.4.48 -> 2.4.49 | 2.4.49 | U | Default | 2021-09-24
     - Initial import at master release start. | 2.4.48 | U | Default | 2021-09-24
-* nginx 1.27.4 1.31.0 Not updated
+* nginx 1.27.4 1.31.1 Not updated
     - nginx: upgrade 1.27.3 to 1.27.4 | 1.27.4 | U | Default | 2025-02-17
     - nginx: upgrade 1.26.2 to 1.26.3 | 1.26.3 | D | Default | 2025-02-17
     - nginx: Upgrade mainline release version 1.27.1 -> 1.27.3 | 1.27.3 | U | Default | 2024-12-10
@@ -42,7 +42,8 @@
     - nginx: upgrade 1.20.1 -> 1.23.3 | 1.23.3 | U | Default | 2023-03-10
     - Initial import at master release start. | 1.20.1 | U | Default | 2021-09-24
     - Initial import at master release start. | 1.21.1 | U | Default | 2021-09-24
-* phpmyadmin 5.2.2 5.2.3 Not updated
+* phpmyadmin 5.2.3  Unknown
+    - phpmyadmin: upgrade 5.2.2 -> 5.2.3 | 5.2.3 | U | Default | 2026-05-20
     - phpmyadmin: upgrade 5.2.1 -> 5.2.2 | 5.2.2 | U | Default | 2025-02-10
     - phpmyadmin: upgrade 5.2.0 -> 5.2.1 | 5.2.1 | U | Default | 2023-02-24
     - phpmyadmin: upgrade 5.1.3 -> 5.2.0 | 5.2.0 | U | Default | 2022-05-16
