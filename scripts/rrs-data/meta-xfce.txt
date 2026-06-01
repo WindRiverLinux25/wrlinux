@@ -35,7 +35,7 @@
     - libxfce4util: 4.18.0 -> 4.18.1 | 4.18.1 | U | Default | 2023-04-13
     - libxfce4util: 4.16.0 -> 4.18.0 | 4.18.0 | U | Default | 2022-12-28
     - Initial import at master release start. | 4.16.0 | U | Default | 2021-09-24
-* libxfce4windowing 4.20.0 4.20.5 Not updated
+* libxfce4windowing 4.20.0 4.20.6 Not updated
     - libxfce4windowing: add recipe | 4.20.0 | U | Default | 2024-12-19
 * menulibre 2.4.0  Unknown
     - menulibre: Upgrade to 2.4.0 | 2.4.0 | U | Default | 2024-05-23

@@ -24,7 +24,7 @@
     - Initial import at master release start. | 0.1.1f | U | Default | 2021-09-24
 * agent-proxy 1.97 1.97 Up-to-date
     - Initial import at master release start. | 1.97 | U | Default | 2021-09-24
-* atkmm 2.28.2 2.36.3 Not updated
+* atkmm 2.28.2 2.36.4 Not updated
     - Initial import at master release start. | 2.28.2 | U | Default | 2021-09-24
 * audit 4.0.3 4.1.4 Not updated
     - audit: upgrade 4.0.2 -> 4.0.3 | 4.0.3 | U | Default | 2025-01-26
@@ -300,7 +300,7 @@
     - gperftools: 2.10 -> 2.15 | 2.15 | U | Default | 2024-03-21
     - gperftools: upgrade 2.9.1 -> 2.10 | 2.10 | U | Default | 2022-07-02
     - Initial import at master release start. | 2.9.1 | U | Default | 2021-09-24
-* graphviz 12.2.1 14.1.5 Not updated
+* graphviz 12.2.1 15.0.0 Not updated
     - graphviz: upgrade 12.2.0 -> 12.2.1 | 12.2.1 | U | Default | 2024-12-19
     - graphviz: upgrade 12.1.2 -> 12.2.0 | 12.2.0 | U | Default | 2024-11-20
     - graphviz: upgrade 8.1.0 -> 12.1.2 | 12.1.2 | U | Default | 2024-10-14
@@ -699,7 +699,7 @@
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-24
 * lockfile-progs 0.1.19 0.2.0 Not updated
     - Initial import at master release start. | 0.1.19 | U | Default | 2021-09-24
-* lsscsi 0.32 0.32 Up-to-date
+* lsscsi 0.32  Unknown
     - lsscsi: revert to version 0.32 | 0.32 | D | Default | 2025-06-30
     - lsscsi: upgrade 0.32 -> 030 | 030 | U | Default | 2023-11-06
     - lsscsi: upgrade 0.31 -> 0.32 | 0.32 | U | Default | 2022-04-25
@@ -809,7 +809,7 @@
     - nlohmann-json: upgrade 3.10.4 -> 3.10.5 | 3.10.5 | U | Default | 2022-01-18
     - nlohmann-json: upgrade 3.10.2 -> 3.10.4 | 3.10.4 | U | Default | 2021-10-19
     - Initial import at master release start. | 3.10.2 | U | Default | 2021-09-24
-* nmap 7.95 7.99 Not updated
+* nmap 7.95 7.99-1 Not updated
     - nmap: disable build 7.95 | 7.95 | U | Default | 2025-05-15
     - nmap: add recipe for 7.92 | 7.92 | D | Default | 2025-05-15
     - nmap: Upgrade to 7.95 | 7.95 | U | Default | 2024-09-04
@@ -860,11 +860,11 @@
     - onig: upgrade 6.9.8 -> 6.9.9 | 6.9.9 | U | Default | 2024-01-05
     - onig: Upgrade 6.9.4 -> 6.9.8 | 6.9.8 | U | Default | 2022-09-29
     - Initial import at master release start. | 6.9.4 | U | Default | 2021-09-24
-* opencl-clhpp 2024.05.08 2025.07.22 Not updated
+* opencl-clhpp 2024.05.08 2026.05.29 Not updated
     - opencl-clhpp: Update to 2024.05.08 | 2024.05.08 | U | Default | 2025-03-29
     - opencl-clhpp: Update 2.0.15 -> 2.0.16 | 2.0.16+gitAUTOINC+1df82b9749 | U | Default | 2022-03-14
     - Initial import at master release start. | 2.0.15+gitAUTOINC+f7237f3799 | U | Default | 2021-09-24
-* opencl-headers 2024.05.08 2025.07.22 Not updated
+* opencl-headers 2024.05.08 2026.05.29 Not updated
     - opencl-headers: upgrade 2023.12.14 -> 2024.05.08 | 2024.05.08 | U | Default | 2024-05-19
     - opencl-headers: upgrade 2023.04.17 -> 2023.12.14 | 2023.12.14 | U | Default | 2023-12-29
     - opencl-headers: upgrade 04.17 -> 2023.04.17 | 2023.04.17 | U | Default | 2023-11-06
@@ -875,7 +875,7 @@
     - opencl-headers: upgrade 2022.01.04 -> 2022.05.18 | 2022.05.18 | U | Default | 2022-05-24
     - opencl-headers: Update v2020.12.18 -> v2022.01.04 | v2022.01.04+gitAUTOINC+59ac4dc2f2 | U | Default | 2022-03-14
     - Initial import at master release start. | git | U | Default | 2021-09-24
-* opencl-icd-loader 2024.05.08 2025.07.22 Not updated
+* opencl-icd-loader 2024.05.08 2026.05.29 Not updated
     - opencl-icd-loader: upgrade 2023.12.14 -> 2024.05.08 | 2024.05.08 | U | Default | 2024-05-19
     - opencl-icd-loader: upgrade 2023.04.17 -> 2023.12.14 | 2023.12.14 | U | Default | 2023-12-29
     - opencl-icd-loader: upgrade v2022.01.04 -> v2023.04.17 | 2023.04.17 | U | Default | 2023-11-17
@@ -1069,7 +1069,8 @@
 * poppler-data 0.4.12 0.4.12 Up-to-date
     - poppler-data: upgrade 0.4.11 -> 0.4.12 | 0.4.12 | U | Default | 2023-02-20
     - Initial import at master release start. | 0.4.11 | U | Default | 2021-09-24
-* postgresql 17.8  Unknown
+* postgresql 17.10  Unknown
+    - postgresql: upgrade 17.8 -> 17.10 | 17.10 | U | Default | 2026-05-26
     - postgresql: upgrade 17.6 -> 17.8 | 17.8 | U | Default | 2026-03-17
     - postgresql: upgrade 17.5 -> 17.6 | 17.6 | U | Default | 2025-09-07
     - postgresql: upgrade 17.4 -> 17.5 | 17.5 | U | Default | 2025-06-20
@@ -1170,7 +1171,7 @@
     - rocksdb: Upgrade to 7.9.2 | 7.9.2 | U | Default | 2023-01-26
     - rocksdb: Upgrade to 7.5.3 release | 7.5.3 | U | Default | 2022-09-12
     - Initial import at master release start. | 6.20.3 | U | Default | 2021-09-24
-* rrdtool 1.9.0 1.10.2 Not updated
+* rrdtool 1.9.0 1.10.3 Not updated
     - rrdtool: upgrade 1.8.0 -> 1.9.0 | 1.9.0 | U | Default | 2025-03-12
     - rrdtool: upgrade 1.7.2 -> 1.8.0 | 1.8.0 | U | Default | 2022-03-24
     - Initial import at master release start. | 1.7.2 | U | Default | 2021-09-24
@@ -1216,7 +1217,7 @@
 * snappy 1.1.10 1.2.2 Not updated
     - snappy: upgrade 1.1.9 -> 1.1.10 | 1.1.10 | U | Default | 2023-12-08
     - Initial import at master release start. | 1.1.9 | U | Default | 2021-09-24
-* softhsm 2.6.1 2.7.0 Not updated
+* softhsm 2.6.1  Unknown
     - Initial import at master release start. | 2.6.1 | U | Default | 2021-09-24
 * sound-theme-freedesktop 0.8 0.8 Up-to-date
     - Initial import at master release start. | 0.8 | U | Default | 2021-09-24

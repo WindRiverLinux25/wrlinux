@@ -44,7 +44,7 @@
     - Initial import at master release start. | 3.20.1 | U | Default | 2021-09-30
 * iucode-tool 2.3.1  Unknown
     - Initial import at master release start. | 2.3.1 | U | Default | 2021-09-30
-* level-zero 1.21.1 1.28.6 Not updated
+* level-zero 1.21.1 1.29.0 Not updated
     - level-zero: upgrade 1.17.42 -> 1.21.1 | 1.21.1 | U | Default | 2025-05-20
     - level-zero: upgrade 1.15.8 -> 1.17.42 | 1.17.42 | U | Default | 2025-01-15
     - level-zero: upgrade 1.11.0 -> 1.15.8 | 1.15.8 | U | Default | 2024-01-24

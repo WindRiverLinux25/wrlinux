@@ -271,7 +271,7 @@
     - Initial import at master release start. | 15.1.0 | U | Default | 2021-09-24
 * python3-covdefaults 2.3.0 2.3.0 Up-to-date
     - python3-covdefaults: Add initial recipe 2.3.0 | 2.3.0 | U | Default | 2023-06-26
-* python3-coverage 7.8.0 7.14.0 Not updated
+* python3-coverage 7.8.0 7.14.1 Not updated
     - python3-coverage: upgrade 7.7.1 -> 7.8.0 | 7.8.0 | U | Default | 2025-04-07
     - python3-coverage: upgrade 7.6.12 -> 7.7.1 | 7.7.1 | U | Default | 2025-03-25
     - python3-coverage: Upgrade 7.6.10 -> 7.6.12 | 7.6.12 | U | Default | 2025-02-13
@@ -574,7 +574,7 @@
     - python3-lazy-object-proxy: upgrade 1.7.1 -> 1.8.0 | 1.8.0 | U | Default | 2022-11-07
     - python3-lazy-object-proxy: upgrade 1.6.0 > 1.7.1 | 1.7.1 | U | Default | 2022-01-04
     - Initial import at master release start. | 1.6.0 | U | Default | 2021-09-24
-* python3-m2crypto 0.44.0 0.47.0 Not updated
+* python3-m2crypto 0.44.0 0.48.0 Not updated
     - python3-m2crypto: Upgrade 0.42.0 -> 0.44.0 | 0.44.0 | U | Default | 2025-03-28
     - python3-m2crypto: update 0.40.1 -> 0.42.0 | 0.42.0 | U | Default | 2024-10-16
     - python3-m2crypto: upgrade 0.39.0 -> 0.40.1 | 0.40.1 | U | Default | 2023-11-06
@@ -748,7 +748,7 @@
     - Initial import at master release start. | 8.3.2 | U | Default | 2021-09-24
 * python3-pkgconfig 1.5.5 1.6.0 Not updated
     - Initial import at master release start. | 1.5.5 | U | Default | 2021-09-24
-* python3-platformdirs 4.3.7 4.9.6 Not updated
+* python3-platformdirs 4.3.7 4.10.0 Not updated
     - python3-platformdirs: upgrade 4.3.6 -> 4.3.7 | 4.3.7 | U | Default | 2025-03-25
     - python3-platformdirs: upgrade 4.3.1 -> 4.3.6 | 4.3.6 | U | Default | 2024-09-19
     - python3-platformdirs: upgrade 4.2.2 -> 4.3.1 | 4.3.1 | U | Default | 2024-09-10
@@ -962,7 +962,7 @@
 * python3-pyperclip 1.9.0 1.11.0 Not updated
     - python3-pyperclip: Upgrade 1.8.2 -> 1.9.0 | 1.9.0 | U | Default | 2024-06-22
     - Initial import at master release start. | 1.8.2 | U | Default | 2021-09-24
-* python3-pyproject-api 1.8.0 1.10.0 Not updated
+* python3-pyproject-api 1.8.0 1.10.1 Not updated
     - python3-pyproject-api: upgrade 1.7.2 -> 1.8.0 | 1.8.0 | U | Default | 2024-12-24
     - python3-pyproject-api: upgrade 1.7.1 -> 1.7.2 | 1.7.2 | U | Default | 2024-09-19
     - python3-pyproject-api: upgrade 1.6.1 -> 1.7.1 | 1.7.1 | U | Default | 2024-06-27
@@ -1064,7 +1064,7 @@
     - python3-qface: upgrade 2.0.7 -> 2.0.8 | 2.0.8 | U | Default | 2022-05-17
     - python3-qface: upgrade 2.0.6 -> 2.0.7 | 2.0.7 | U | Default | 2022-04-06
     - python3-qface: add recipe | 2.0.6 | U | Default | 2022-03-03
-* python3-redis 5.2.1 7.4.0 Not updated
+* python3-redis 5.2.1 8.0.0 Not updated
     - python3-redis: upgrade 5.1.1 -> 5.2.1 | 5.2.1 | U | Default | 2024-12-24
     - python3-redis: Upgrade 5.0.8 -> 5.1.1 | 5.1.1 | U | Default | 2024-10-11
     - python3-redis: upgrade 5.0.8 -> 5.1.0 | 5.1.0 | U | Default | 2024-09-30
@@ -1208,7 +1208,7 @@
     - python3-tomlkit: upgrade 0.12.1 -> 0.12.2 | 0.12.2 | U | Default | 2023-11-06
     - python3-tomlkit: upgrade 0.11.8 -> 0.12.1 | 0.12.1 | U | Default | 2023-08-01
     - python3-tomlkit: Add recipe | 0.11.8 | U | Default | 2023-05-09
-* python3-tornado 6.5 6.5.5 Not updated
+* python3-tornado 6.5 6.5.6 Not updated
     - python3-tornado: upgrade 6.4.2 -> 6.5 | 6.5 | U | Default | 2025-07-27
     - python3-tornado: Upgrade 6.4.1 -> 6.4.2 | 6.4.2 | U | Default | 2024-11-25
     - python3-tornado: Upgrade 6.4 -> 6.4.1 | 6.4.1 | U | Default | 2024-06-21
@@ -1217,7 +1217,7 @@
     - python3-tornado: upgrade 6.2 -> 6.3 | 6.3 | U | Default | 2023-04-24
     - python3-tornado: Upgrade 6.1 -> 6.2 | 6.2 | U | Default | 2022-07-11
     - Initial import at master release start. | 6.1 | U | Default | 2021-09-24
-* python3-tox 4.25.0 4.54.0 Not updated
+* python3-tox 4.25.0 4.55.0 Not updated
     - python3-tox: upgrade 4.24.2 -> 4.25.0 | 4.25.0 | U | Default | 2025-03-31
     - python3-tox: upgrade 4.24.1 -> 4.24.2 | 4.24.2 | U | Default | 2025-03-12
     - python3-tox: Upgrade 4.23.2 -> 4.24.1 | 4.24.1 | U | Default | 2025-01-25
@@ -1282,7 +1282,7 @@
     - python3-types-setuptools: add 68.0.0.3 | 68.0.0.3 | U | Default | 2023-08-11
 * python3-versioneer 0.29 0.29 Up-to-date
     - python3-versioneer: add recipe | 0.29 | U | Default | 2023-07-25
-* python3-virtualenv 20.30.0 21.3.3 Not updated
+* python3-virtualenv 20.30.0 21.4.1 Not updated
     - python3-virtualenv: upgrade 20.29.3 -> 20.30.0 | 20.30.0 | U | Default | 2025-04-07
     - python3-virtualenv: upgrade 20.29.2 -> 20.29.3 | 20.29.3 | U | Default | 2025-03-12
     - python3-virtualenv: upgrade 20.29.1 -> 20.29.2 | 20.29.2 | U | Default | 2025-02-26

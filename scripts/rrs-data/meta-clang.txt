@@ -8,7 +8,7 @@
     - bcc: Upgrade to 0.25.0 | 0.25.0+gitAUTOINC+711f03024d | U | Default | 2022-08-14
     - bcc: Upgrade to 0.24.0 | 0.24.0+gitAUTOINC+8f40d6f57a | U | Default | 2022-02-16
     - Initial import at master release start. | 0.20.0+gitAUTOINC+b2a76fa63f | U | Default | 2021-09-25
-* bpftrace 0.23.0+git 0.25.1 Not updated
+* bpftrace 0.23.0+git 0.26.0 Not updated
     - bpftrace: Upgrade to 0.23.x branch | 0.23.0+git | U | Default | 2025-03-22
     - bpftrace: Upgrade to 0.21.2+ | 0.21.2+git | U | Default | 2024-09-03
     - bpftrace: Upgrade to 0.20+ and fix with llvm 18 | 0.20.1+git | U | Default | 2024-03-07
