@@ -120,6 +120,8 @@ SKIP_RECIPE[musl-obstack] ?= "only glibc is supported for wrlinux"
 SKIP_RECIPE[musl-utils] ?= "only glibc is supported for wrlinux"
 SKIP_RECIPE[libc-test] ?= "only glibc is supported for wrlinux"
 SKIP_RECIPE[newlib] ?= "only glibc is supported for wrlinux"
+SKIP_RECIPE[barebox] ?= "barebox is not supported for wrlinux"
+SKIP_RECIPE[barebox-tools] ?= "barebox-tools is not supported for wrlinux"
 
 # SANITY_TESTED_DISTROS used to defined the distribution list which we used to build wrlinux
 SANITY_TESTED_DISTROS ?= " \
