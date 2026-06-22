@@ -1,4 +1,4 @@
-* aardvark-dns 1.14.0 1.17.1 Not updated
+* aardvark-dns 1.14.0 2.0.0 Not updated
     - aardvark-dns: update to v1.14.0 | 1.14.0 | U | Default | 2025-03-11
     - aardvark-dns: update to v1.11.0 | 1.11.0 | U | Default | 2024-07-10
     - aardvark-dns: update to v1.10.0 | 1.10.0 | U | Default | 2024-03-15
@@ -45,7 +45,7 @@
     - Initial import at master release start. | 2.0.29+gitAUTOINC+1ef246896b | U | Default | 2021-09-22
 * container-host-config 1.0 1.0 Up-to-date
     - containers: add container-host-config recipe | 1.0 | U | Default | 2023-02-17
-* containerd v2.0.7 2.3.1 Not updated
+* containerd v2.0.7 2.3.2 Not updated
     - containerd: upgrade from 2.0.5 to 2.0.7 | v2.0.7 | U | Default | 2026-01-21
     - containerd: upgrade to 2.0.5 | v2.0.5 | U | Default | 2025-04-22
     - containerd: update to v2.0.3 | v2.0.2+git | U | Default | 2025-03-06
@@ -111,7 +111,7 @@
     - docker-distribution: upgrade to 2.8.1 | v2.8.1+gitAUTOINC+b5ca020cfb | U | Default | 2022-06-20
     - docker-distribution: update to 2.8.0 | v2.8.0+gitAUTOINC+3b7b534569 | U | Default | 2022-03-21
     - Initial import at master release start. | v2.7.1 | U | Default | 2021-09-22
-* fuse-overlayfs 1.9 1.16 Not updated
+* fuse-overlayfs 1.9 1.17 Not updated
     - fuse-overlayfs: Update to v1.9 | 1.9 | U | Default | 2022-07-15
     - Initial import at master release start. | 0.6.4 | U | Default | 2021-09-22
 * go-md2man 1.0.10+gitAUTOINC+f79a8a8ca6 2.0.7 Not updated
@@ -120,7 +120,7 @@
     - irqbalance: update to 1.8.0-tip | 1.8.0+gitAUTOINC+b3adb5fd14 | U | Default | 2022-03-29
     - irqbalance: bump SRCREV to latest | 1.8.0+gitAUTOINC+a972665483 | U | Default | 2021-11-08
     - Initial import at master release start. | 1.8.0 | U | Default | 2021-09-22
-* kubernetes v1.32.10+git 1.36.1 Not updated
+* kubernetes v1.32.10+git 1.36.2 Not updated
     - kubernetes: upgrade to 1.32.10 | v1.32.10+git | U | Default | 2025-12-10
     - kubernetes: Upgrade to 1.32.6 | v1.32.6+git | U | Default | 2025-07-16
     - kubernetes: fix runtime init error caused by git shallow tarball | v1.32.0+git | U | Default | 2025-04-15
@@ -164,7 +164,7 @@
     - lxc: update to 4.0.12 | 4.0.12+gitAUTOINC+5ba5725cb4 | U | Default | 2022-03-21
     - lxc: update to 4.0.11 | 4.0.11+gitAUTOINC+48e079bf31 | U | Default | 2021-11-02
     - Initial import at master release start. | 4.0.10+gitAUTOINC+cec7cb14b2 | U | Default | 2021-09-22
-* nerdctl v2.0.3 2.3.1 Not updated
+* nerdctl v2.0.3 2.3.3 Not updated
     - nerdctl: update to v2.0.3 | v2.0.3 | U | Default | 2025-03-24
     - nerdctl: update to v2.0.2 | v2.0.2 | U | Default | 2025-01-17
     - nerdctl: update to v2.0.0-beta | v2.0.0-beta.1 | U | Default | 2024-03-15
@@ -173,7 +173,7 @@
     - nerdctl: update to 0.22.2 | v0.22.2 | U | Default | 2022-08-09
     - nerdctl: update to v0.18 | v0.18.0 | U | Default | 2022-04-21
     - nerdctl: introduce recipe | v0.17.0 | U | Default | 2022-03-21
-* netavark 1.14.1 1.17.2 Not updated
+* netavark 1.14.1 2.0.0 Not updated
     - netavark: update to v1.14.1 | 1.14.1 | U | Default | 2025-03-24
     - netavark: update to v1.13.1 | 1.13.1 | U | Default | 2025-01-17
     - netavark: update to v1.11.0 | 1.11.0 | U | Default | 2024-07-16
@@ -206,7 +206,7 @@
     - Initial import at master release start. | 2.15+AUTOINC+8dc1733eae | U | Default | 2021-09-22
 * packagegroup-container 1.0 1.0 Up-to-date
     - Initial import at master release start. | 1.0 | U | Default | 2021-09-22
-* podman v5.4.2 5.8.2 Not updated
+* podman v5.4.2 5.8.3 Not updated
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | v5.4.2 | U | Default | 2025-10-24
     - Merge remote-tracking branch 'base/upstream-walnascar' into WRLINUX_10_25_LTS | v5.4.2 | U | Default | 2025-10-24
     - podman: fix CVE-2025-9566 | v5.4.1 | D | Default | 2025-10-14
@@ -255,7 +255,7 @@
     - Initial import at master release start. | 0.17.0 | U | Default | 2021-09-22
 * python3-fastentrypoints 0.12 0.12 Up-to-date
     - Initial import at master release start. | 0.12 | U | Default | 2021-09-22
-* runc-opencontainers 1.2.9+git 1.4.2 Not updated
+* runc-opencontainers 1.2.9+git 1.5.0 Not updated
     - runc-opencontainers: upgrade from 1.2.6 to 1.2.9 | 1.2.9+git | U | Default | 2026-01-12
     - runc-opencontainers: upgrade to 1.2.6 | 1.2.6+git | U | Default | 2025-04-21
     - runc-opencontainers: update to v1.2.0 | 1.2.0+git | U | Default | 2025-01-17

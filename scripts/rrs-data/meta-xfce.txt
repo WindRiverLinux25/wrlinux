@@ -20,7 +20,7 @@
 * gigolo 0.5.3 0.6.0 Not updated
     - gigolo: upgrade 0.5.2 -> 0.5.3 | 0.5.3 | U | Default | 2023-11-06
     - Initial import at master release start. | 0.5.2 | U | Default | 2021-09-24
-* libxfce4ui 4.20.0 4.21.7 Not updated
+* libxfce4ui 4.20.0 4.21.8 Not updated
     - libxfce4ui: 4.19.6 -> 4.20.0 | 4.20.0 | U | Default | 2024-12-19
     - libxfce4ui: Upgrade 4.19.3 -> 4.19.6 | 4.19.6 | U | Default | 2024-11-26
     - libxfce4ui: upgrade 4.18.3 -> 4.19.3 | 4.19.3 | U | Default | 2023-11-06
@@ -117,7 +117,7 @@
     - Initial import at master release start. | 0.8.1 | U | Default | 2021-09-24
 * xfce4-datetime-setter 3.32.2  Unknown
     - Initial import at master release start. | 3.32.2 | U | Default | 2021-09-24
-* xfce4-dev-tools 4.20.0 4.21.1 Not updated
+* xfce4-dev-tools 4.20.0 4.21.2 Not updated
     - xfce4-dev-tools: 4.18.1 -> 4.20.0 | 4.20.0 | U | Default | 2024-12-19
     - xfce4-dev-tools: Upgrade 4.18.0 -> 4.18.1 | 4.18.1 | U | Default | 2024-11-23
     - xfce4-dev-tools: 4.16.0 -> 4.18.0 | 4.18.0 | U | Default | 2022-12-28
@@ -150,7 +150,7 @@
     - xfce4-notifyd: 0.6.3 -> 0.8.2 | 0.8.2 | U | Default | 2023-04-07
     - xfce4-notifyd: upgrade 0.6.2 -> 0.6.3 | 0.6.3 | U | Default | 2022-04-07
     - Initial import at master release start. | 0.6.2 | U | Default | 2021-09-24
-* xfce4-panel 4.20.0 4.21.1 Not updated
+* xfce4-panel 4.20.0 4.21.2 Not updated
     - xfce4-panel: 4.18.6 -> 4.20.0 | 4.20.0 | U | Default | 2024-12-19
     - xfce4-panel: upgrade 4.18.5 -> 4.18.6 | 4.18.6 | U | Default | 2024-11-19
     - xfce4-panel: upgrade 4.18.4 -> 4.18.5 | 4.18.5 | U | Default | 2024-10-04

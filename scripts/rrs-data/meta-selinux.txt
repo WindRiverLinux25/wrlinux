@@ -66,7 +66,7 @@
     - policycoreutils: upgrade 3.3 -> 3.4 | 3.4 | U | Default | 2022-08-28
     - selinux: upgrade 3.2 -> 3.3 | 3.3 | U | Default | 2021-12-08
     - Initial import at master release start. | 3.2 | U | Default | 2021-09-30
-* refpolicy-mcs 2.20250213+git 2.20260312 Not updated
+* refpolicy-mcs 2.20250213+git 2.20260616 Not updated
     - refpolicy: update to 20250213+git | 2.20250213+git | U | Default | 2025-03-07
     - refpolicy: upgrade 20240226+git -> 20240916+git | 2.20240916+git | U | Default | 2024-10-09
     - refpolicy: upgrade 20231002+git -> 20240226+git | 2.20240226+git | U | Default | 2024-03-12
@@ -74,7 +74,7 @@
     - refpolicy: update to latest git rev | 2.20221101+gitAUTOINC+8e8f5e3ca3 | U | Default | 2023-03-27
     - refpolicy: upgrade 20210203+git -> 20210908+git | 2.20210908+gitAUTOINC+23a8d103f3 | U | Default | 2022-01-18
     - Initial import at master release start. | 2.20210203+gitAUTOINC+1167739da1 | U | Default | 2021-09-30
-* refpolicy-minimum 2.20250213+git 2.20260312 Not updated
+* refpolicy-minimum 2.20250213+git 2.20260616 Not updated
     - refpolicy: update to 20250213+git | 2.20250213+git | U | Default | 2025-03-07
     - refpolicy: upgrade 20240226+git -> 20240916+git | 2.20240916+git | U | Default | 2024-10-09
     - refpolicy: upgrade 20231002+git -> 20240226+git | 2.20240226+git | U | Default | 2024-03-12
@@ -82,7 +82,7 @@
     - refpolicy: update to latest git rev | 2.20221101+gitAUTOINC+8e8f5e3ca3 | U | Default | 2023-03-27
     - refpolicy: upgrade 20210203+git -> 20210908+git | 2.20210908+gitAUTOINC+23a8d103f3 | U | Default | 2022-01-18
     - Initial import at master release start. | 2.20210203+gitAUTOINC+1167739da1 | U | Default | 2021-09-30
-* refpolicy-mls 2.20250213+git 2.20260312 Not updated
+* refpolicy-mls 2.20250213+git 2.20260616 Not updated
     - refpolicy: update to 20250213+git | 2.20250213+git | U | Default | 2025-03-07
     - refpolicy: upgrade 20240226+git -> 20240916+git | 2.20240916+git | U | Default | 2024-10-09
     - refpolicy: upgrade 20231002+git -> 20240226+git | 2.20240226+git | U | Default | 2024-03-12
@@ -90,7 +90,7 @@
     - refpolicy: update to latest git rev | 2.20221101+gitAUTOINC+8e8f5e3ca3 | U | Default | 2023-03-27
     - refpolicy: upgrade 20210203+git -> 20210908+git | 2.20210908+gitAUTOINC+23a8d103f3 | U | Default | 2022-01-18
     - Initial import at master release start. | 2.20210203+gitAUTOINC+1167739da1 | U | Default | 2021-09-30
-* refpolicy-standard 2.20250213+git 2.20260312 Not updated
+* refpolicy-standard 2.20250213+git 2.20260616 Not updated
     - refpolicy: update to 20250213+git | 2.20250213+git | U | Default | 2025-03-07
     - refpolicy: upgrade 20240226+git -> 20240916+git | 2.20240916+git | U | Default | 2024-10-09
     - refpolicy: upgrade 20231002+git -> 20240226+git | 2.20240226+git | U | Default | 2024-03-12
@@ -98,7 +98,7 @@
     - refpolicy: update to latest git rev | 2.20221101+gitAUTOINC+8e8f5e3ca3 | U | Default | 2023-03-27
     - refpolicy: upgrade 20210203+git -> 20210908+git | 2.20210908+gitAUTOINC+23a8d103f3 | U | Default | 2022-01-18
     - Initial import at master release start. | 2.20210203+gitAUTOINC+1167739da1 | U | Default | 2021-09-30
-* refpolicy-targeted 2.20250213+git 2.20260312 Not updated
+* refpolicy-targeted 2.20250213+git 2.20260616 Not updated
     - refpolicy: update to 20250213+git | 2.20250213+git | U | Default | 2025-03-07
     - refpolicy: upgrade 20240226+git -> 20240916+git | 2.20240916+git | U | Default | 2024-10-09
     - refpolicy: upgrade 20231002+git -> 20240226+git | 2.20240226+git | U | Default | 2024-03-12
